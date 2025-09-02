@@ -1,1 +1,351 @@
-{"sections":{"section_divider_LVQYBN":{"type":"section-divider","custom_css":["{margin-bottom: 0px; position: relative; z-index: 2;}"],"name":"Section dividers","settings":{"shape":"waves_2","flip_horizontal":false,"flip_vertical":true,"wave_height":26,"wave_height_mobile":26,"shape_color":"#7cb342","background_color":"#7cb342","padding_top":0,"padding_bottom":0}},"section_divider_cfJai9":{"type":"section-divider","custom_css":["{margin-bottom: -17px; margin-top: -5px; position: relative; z-index: 2;}"],"name":"Section dividers","settings":{"shape":"waves_2","flip_horizontal":true,"flip_vertical":true,"wave_height":26,"wave_height_mobile":26,"shape_color":"#7cb342","background_color":"#f9f9f6","padding_top":0,"padding_bottom":0}},"ss_video_banner_gd7R6D":{"type":"ss-video-banner","blocks":{"slide_mfiy96":{"type":"slide","settings":{"autoplay":true,"video":"shopify:\/\/files\/videos\/0827(1).mov","video_url":"","title":"","subtitle":"","button":"","button_url":"shopify:\/\/collections\/all","second_button":"","second_button_url":"shopify:\/\/collections\/all"}}},"block_order":["slide_mfiy96"],"name":"SS - Video Banner","settings":{"height":600,"height_mobile":360,"overlay_opacity":0,"interval":5,"image_object_fit":"fill","vertical_alignment":"center","horizontal_alignment":"center","title_custom":true,"title_font":"bungee_n4","title_size":50,"title_size_mobile":26,"title_height":110,"subtitle_custom":false,"subtitle_font":"josefin_sans_n4","subtitle_size":16,"subtitle_size_mobile":12,"subtitle_height":130,"subtitle_mt":14,"buttons_mt":0,"buttons_gap":14,"button_custom":false,"button_font":"josefin_sans_n4","button_size":15,"button_size_mobile":15,"button_height":130,"button_padding_vertical":18,"button_padding_vertical_mobile":10,"button_padding_horizontal":16,"button_padding_horizontal_mobile":16,"button_radius":80,"button_border_thickness":0,"button_color":"#ffffff","button_hover_color":"#ffffff","button_bg_color":"#5c8638","button_bg_hover_color":"#5c8638","button_border_color":"#000000","button_border_hover_color":"#000000","second_button_color":"#000000","second_button_hover_color":"#ffffff","second_button_bg_color":"#ffffff","second_button_bg_hover_color":"#000000","second_button_border_color":"#000000","second_button_border_hover_color":"#000000","title_color":"#121212","subtitle_color":"#121212","overlay_color":"#000000","background_color":"#121212","padding_top":0,"padding_bottom":0,"padding_horizontal":0,"padding_horizontal_mobile":0,"margin_top":0,"margin_bottom":0,"margin_horizontal":0,"margin_horizontal_mobile":0,"section_width":120,"section_radius":0,"lazy":false}},"section_divider_GiLUhz":{"type":"section-divider","custom_css":["{margin-top: -20px; position: relative; z-index: 1;}"],"name":"Section dividers","settings":{"shape":"waves_2","flip_horizontal":true,"flip_vertical":false,"wave_height":26,"wave_height_mobile":26,"shape_color":"#7cb342","background_color":"#f9f9f6","padding_top":0,"padding_bottom":0}},"section_divider_cW4HwU":{"type":"section-divider","custom_css":["{margin-top: -5px;}"],"name":"Section dividers","settings":{"shape":"waves_2","flip_horizontal":false,"flip_vertical":false,"wave_height":26,"wave_height_mobile":26,"shape_color":"#7cb342","background_color":"#7cb342","padding_top":0,"padding_bottom":0}},"rich_text_k8cB9B":{"type":"rich-text","blocks":{"heading_RyU7AD":{"type":"heading","settings":{"heading":"Play. Learn. Grow.","heading_size":"h2"}}},"block_order":["heading_RyU7AD"],"name":"t:sections.rich-text.presets.name","settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-13e6cbf9-1b3a-4de9-b723-3638ee32287d","full_width":true,"padding_top":0,"padding_bottom":0}},"section_divider_feDWbG":{"type":"section-divider","custom_css":["{margin-bottom: -0px;}"],"name":"Section dividers","settings":{"shape":"waves_1","flip_horizontal":false,"flip_vertical":true,"wave_height":26,"wave_height_mobile":26,"shape_color":"#5c8638","background_color":"#7cb342","padding_top":0,"padding_bottom":0}},"rich_text_aDEtj3":{"type":"rich-text","blocks":{"heading_HdG9fW":{"type":"heading","settings":{"heading":"","heading_size":"h1"}},"text_GgVeL6":{"type":"text","settings":{"text":"<p>\"Welcome to Twiggy, where play meets learning! Explore our carefully curated collection of toys that inspire curiosity, spark imagination, and support your child's growth every step of the way.\"<\/p>"}},"button_hGzEtT":{"type":"button","settings":{"button_label":"Shop All","button_link":"shopify:\/\/collections","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_HdG9fW","text_GgVeL6","button_hGzEtT"],"custom_css":["{line-height: 22px;}"],"name":"t:sections.rich-text.presets.name","settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c","full_width":true,"padding_top":0,"padding_bottom":12}},"section_divider_Kj6QF8":{"type":"section-divider","name":"Section dividers","settings":{"shape":"waves_2","flip_horizontal":false,"flip_vertical":false,"wave_height":26,"wave_height_mobile":26,"shape_color":"#c49a6c","background_color":"#7cb342","padding_top":0,"padding_bottom":0}},"rich_text_7frmBx":{"type":"rich-text","blocks":{"heading_zry9wf":{"type":"heading","settings":{"heading":"Our Products","heading_size":"h2"}}},"block_order":["heading_zry9wf"],"name":"t:sections.rich-text.presets.name","settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-13e6cbf9-1b3a-4de9-b723-3638ee32287d","full_width":true,"padding_top":0,"padding_bottom":0}},"section_divider_kKTBxa":{"type":"section-divider","name":"Section dividers","settings":{"shape":"waves_1","flip_horizontal":false,"flip_vertical":true,"wave_height":26,"wave_height_mobile":26,"shape_color":"#c49a6c","background_color":"#7cb342","padding_top":0,"padding_bottom":0}},"featured_collection":{"type":"featured-collection","custom_css":[".card__heading {font-size: 20px;}",".rating-count {font-size: 15px;}",".rating-star {font-size: 20px;}",".price-item--regular {color: #c49a6c;}",".price-item--sale {color: #7cb342;}",".price {margin-top: -5px; font-size: 20px;}"],"settings":{"collection":"all","products_to_show":8,"title":"","heading_size":"h2","description":"","show_description":false,"description_style":"body","columns_desktop":4,"enable_desktop_slider":true,"full_width":true,"show_view_all":false,"view_all_style":"solid","color_scheme":"scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":true,"quick_add":"standard","columns_mobile":"2","swipe_on_mobile":true,"padding_top":0,"padding_bottom":16}}},"order":["section_divider_LVQYBN","section_divider_cfJai9","ss_video_banner_gd7R6D","section_divider_GiLUhz","section_divider_cW4HwU","rich_text_k8cB9B","section_divider_feDWbG","rich_text_aDEtj3","section_divider_Kj6QF8","rich_text_7frmBx","section_divider_kKTBxa","featured_collection"]}
+{
+    "sections": {
+        "section_divider_LVQYBN": {
+            "type": "section-divider",
+            "custom_css": [
+                "{margin-bottom: 0px; position: relative; z-index: 2;}"
+            ],
+            "name": "Section dividers",
+            "settings": {
+                "shape": "waves_2",
+                "flip_horizontal": false,
+                "flip_vertical": true,
+                "wave_height": 26,
+                "wave_height_mobile": 26,
+                "shape_color": "#7cb342",
+                "background_color": "#7cb342",
+                "padding_top": 0,
+                "padding_bottom": 0
+            }
+        },
+        "section_divider_cfJai9": {
+            "type": "section-divider",
+            "custom_css": [
+                "{margin-bottom: -17px; margin-top: -5px; position: relative; z-index: 2;}"
+            ],
+            "name": "Section dividers",
+            "settings": {
+                "shape": "waves_2",
+                "flip_horizontal": true,
+                "flip_vertical": true,
+                "wave_height": 26,
+                "wave_height_mobile": 26,
+                "shape_color": "#7cb342",
+                "background_color": "#f9f9f6",
+                "padding_top": 0,
+                "padding_bottom": 0
+            }
+        },
+        "ss_video_banner_gd7R6D": {
+            "type": "ss-video-banner",
+            "blocks": {
+                "slide_mfiy96": {
+                    "type": "slide",
+                    "settings": {
+                        "autoplay": true,
+                        "video": "shopify:\/\/files\/videos\/0827(1).mov",
+                        "video_url": "",
+                        "title": "",
+                        "subtitle": "",
+                        "button": "",
+                        "button_url": "shopify:\/\/collections\/all",
+                        "second_button": "",
+                        "second_button_url": "shopify:\/\/collections\/all"
+                    }
+                }
+            },
+            "block_order": [
+                "slide_mfiy96"
+            ],
+            "name": "SS - Video Banner",
+            "settings": {
+                "height": 600,
+                "height_mobile": 360,
+                "overlay_opacity": 0,
+                "interval": 5,
+                "image_object_fit": "fill",
+                "vertical_alignment": "center",
+                "horizontal_alignment": "center",
+                "title_custom": true,
+                "title_font": "bungee_n4",
+                "title_size": 50,
+                "title_size_mobile": 26,
+                "title_height": 110,
+                "subtitle_custom": false,
+                "subtitle_font": "josefin_sans_n4",
+                "subtitle_size": 16,
+                "subtitle_size_mobile": 12,
+                "subtitle_height": 130,
+                "subtitle_mt": 14,
+                "buttons_mt": 0,
+                "buttons_gap": 14,
+                "button_custom": false,
+                "button_font": "josefin_sans_n4",
+                "button_size": 15,
+                "button_size_mobile": 15,
+                "button_height": 130,
+                "button_padding_vertical": 18,
+                "button_padding_vertical_mobile": 10,
+                "button_padding_horizontal": 16,
+                "button_padding_horizontal_mobile": 16,
+                "button_radius": 80,
+                "button_border_thickness": 0,
+                "button_color": "#ffffff",
+                "button_hover_color": "#ffffff",
+                "button_bg_color": "#5c8638",
+                "button_bg_hover_color": "#5c8638",
+                "button_border_color": "#000000",
+                "button_border_hover_color": "#000000",
+                "second_button_color": "#000000",
+                "second_button_hover_color": "#ffffff",
+                "second_button_bg_color": "#ffffff",
+                "second_button_bg_hover_color": "#000000",
+                "second_button_border_color": "#000000",
+                "second_button_border_hover_color": "#000000",
+                "title_color": "#121212",
+                "subtitle_color": "#121212",
+                "overlay_color": "#000000",
+                "background_color": "#121212",
+                "padding_top": 0,
+                "padding_bottom": 0,
+                "padding_horizontal": 0,
+                "padding_horizontal_mobile": 0,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "margin_horizontal": 0,
+                "margin_horizontal_mobile": 0,
+                "section_width": 120,
+                "section_radius": 0,
+                "lazy": false
+            }
+        },
+        "section_divider_GiLUhz": {
+            "type": "section-divider",
+            "custom_css": [
+                "{margin-top: -20px; position: relative; z-index: 1;}"
+            ],
+            "name": "Section dividers",
+            "settings": {
+                "shape": "waves_2",
+                "flip_horizontal": true,
+                "flip_vertical": false,
+                "wave_height": 26,
+                "wave_height_mobile": 26,
+                "shape_color": "#7cb342",
+                "background_color": "#f9f9f6",
+                "padding_top": 0,
+                "padding_bottom": 0
+            }
+        },
+        "section_divider_cW4HwU": {
+            "type": "section-divider",
+            "custom_css": [
+                "{margin-top: -5px;}"
+            ],
+            "name": "Section dividers",
+            "settings": {
+                "shape": "waves_2",
+                "flip_horizontal": false,
+                "flip_vertical": false,
+                "wave_height": 26,
+                "wave_height_mobile": 26,
+                "shape_color": "#7cb342",
+                "background_color": "#7cb342",
+                "padding_top": 0,
+                "padding_bottom": 0
+            }
+        },
+        "rich_text_k8cB9B": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_RyU7AD": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Play. Learn. Grow.",
+                        "heading_size": "h2"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_RyU7AD"
+            ],
+            "name": "t:sections.rich-text.presets.name",
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "scheme-13e6cbf9-1b3a-4de9-b723-3638ee32287d",
+                "full_width": true,
+                "padding_top": 0,
+                "padding_bottom": 0
+            }
+        },
+        "section_divider_feDWbG": {
+            "type": "section-divider",
+            "custom_css": [
+                "{margin-bottom: -0px;}"
+            ],
+            "name": "Section dividers",
+            "settings": {
+                "shape": "waves_1",
+                "flip_horizontal": false,
+                "flip_vertical": true,
+                "wave_height": 26,
+                "wave_height_mobile": 26,
+                "shape_color": "#5c8638",
+                "background_color": "#7cb342",
+                "padding_top": 0,
+                "padding_bottom": 0
+            }
+        },
+        "rich_text_aDEtj3": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_HdG9fW": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "",
+                        "heading_size": "h1"
+                    }
+                },
+                "text_GgVeL6": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>\"Welcome to Twiggy, where play meets learning! Explore our carefully curated collection of toys that inspire curiosity, spark imagination, and support your child's growth every step of the way.\"<\/p>"
+                    }
+                },
+                "button_hGzEtT": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "Shop All",
+                        "button_link": "shopify:\/\/collections",
+                        "button_style_secondary": false,
+                        "button_label_2": "",
+                        "button_link_2": "",
+                        "button_style_secondary_2": false
+                    }
+                }
+            },
+            "block_order": [
+                "heading_HdG9fW",
+                "text_GgVeL6",
+                "button_hGzEtT"
+            ],
+            "custom_css": [
+                "{line-height: 22px;}"
+            ],
+            "name": "t:sections.rich-text.presets.name",
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+                "full_width": true,
+                "padding_top": 0,
+                "padding_bottom": 12
+            }
+        },
+        "section_divider_Kj6QF8": {
+            "type": "section-divider",
+            "name": "Section dividers",
+            "settings": {
+                "shape": "waves_2",
+                "flip_horizontal": false,
+                "flip_vertical": false,
+                "wave_height": 26,
+                "wave_height_mobile": 26,
+                "shape_color": "#c49a6c",
+                "background_color": "#7cb342",
+                "padding_top": 0,
+                "padding_bottom": 0
+            }
+        },
+        "rich_text_7frmBx": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_zry9wf": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Our Products",
+                        "heading_size": "h2"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_zry9wf"
+            ],
+            "name": "t:sections.rich-text.presets.name",
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "scheme-13e6cbf9-1b3a-4de9-b723-3638ee32287d",
+                "full_width": true,
+                "padding_top": 0,
+                "padding_bottom": 0
+            }
+        },
+        "section_divider_kKTBxa": {
+            "type": "section-divider",
+            "name": "Section dividers",
+            "settings": {
+                "shape": "waves_1",
+                "flip_horizontal": false,
+                "flip_vertical": true,
+                "wave_height": 26,
+                "wave_height_mobile": 26,
+                "shape_color": "#c49a6c",
+                "background_color": "#7cb342",
+                "padding_top": 0,
+                "padding_bottom": 0
+            }
+        },
+        "featured_collection": {
+            "type": "featured-collection",
+            "custom_css": [
+                ".card__heading {font-size: 20px;}",
+                ".rating-count {font-size: 15px;}",
+                ".rating-star {font-size: 20px;}",
+                ".price-item--regular {color: #c49a6c;}",
+                ".price-item--sale {color: #7cb342;}",
+                ".price {margin-top: -5px; font-size: 20px;}"
+            ],
+            "settings": {
+                "collection": "all",
+                "products_to_show": 8,
+                "title": "",
+                "heading_size": "h2",
+                "description": "",
+                "show_description": false,
+                "description_style": "body",
+                "columns_desktop": 4,
+                "enable_desktop_slider": true,
+                "full_width": true,
+                "show_view_all": false,
+                "view_all_style": "solid",
+                "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+                "image_ratio": "square",
+                "image_shape": "default",
+                "show_secondary_image": true,
+                "show_vendor": false,
+                "show_rating": true,
+                "quick_add": "standard",
+                "columns_mobile": "2",
+                "swipe_on_mobile": true,
+                "padding_top": 0,
+                "padding_bottom": 16
+            }
+        }
+    },
+    "order": [
+        "section_divider_LVQYBN",
+        "section_divider_cfJai9",
+        "ss_video_banner_gd7R6D",
+        "section_divider_GiLUhz",
+        "section_divider_cW4HwU",
+        "rich_text_k8cB9B",
+        "section_divider_feDWbG",
+        "rich_text_aDEtj3",
+        "section_divider_Kj6QF8",
+        "rich_text_7frmBx",
+        "section_divider_kKTBxa",
+        "featured_collection"
+    ]
+}
