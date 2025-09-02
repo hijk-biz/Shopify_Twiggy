@@ -1,0 +1,1147 @@
+ 
+             
+            {%- liquid
+  if section.settings.flip_horizontal
+    assign scaleX = 'scaleX(-1)'
+  else
+    assign scaleX = 'scaleX(1)'
+  endif
+
+  if section.settings.flip_vertical
+    assign scaleY = 'scaleY(-1)'
+  else
+    assign scaleY = 'scaleY(1)'
+  endif
+-%}
+<style>
+    .s-d-conatiner--{{section.id}} svg.sep1{
+       max-height: none ;
+    }
+
+    .section-wrapper--{{section.id}} {
+      position: relative;
+    }
+
+  .section-wrapper--{{section.id}}::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: calc(100% - 1px);
+      top: -1px;
+      z-index: -1;
+      width: 100%;
+  }
+
+  .s-d-conatiner--{{section.id}} {
+      --max-height: {{ section.settings.wave_height_mobile}}px;
+      background: none;
+      position: relative;
+      overflow: hidden;
+      transform: translateY(0px);
+  }
+
+  .s-d-conatiner--{{section.id}} svg {
+      color: {{ section.settings.background_color }};
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      max-height: var(--max-height);
+  }
+
+  .waves-animated-1 {
+      --max-height: {{ section.settings.wave_height_mobile}}px;
+      margin: 0;
+  }
+
+  .scroll-effect1 > use {
+      animation: loop-animation1 10s linear infinite;
+  }
+
+  .scroll-effect2 > use {
+      animation: loop-animation2 8s linear infinite;
+      opacity: 0.4;
+  }
+
+  .scroll-effect3 > use {
+      animation: loop-animation3 6s linear infinite;
+      opacity: 0.3;
+  }
+
+  .scroll-effect4 > use {
+      animation: loop-animation4 4s linear infinite;
+      opacity: 0.2;
+  }
+
+  @keyframes loop-animation1 {
+      0% {
+          transform: translate(85px, 0%);
+      }
+
+      100% {
+          transform: translate(-90px, 0%);
+      }
+  }
+
+  @keyframes loop-animation2 {
+      0% {
+          transform: translate(-90px, 0%);
+      }
+
+      100% {
+          transform: translate(85px, 0%);
+      }
+  }
+
+  @keyframes loop-animation3 {
+      0% {
+          transform: translate(85px, 0%);
+      }
+
+      100% {
+          transform: translate(-90px, 0%);
+      }
+  }
+
+  @keyframes loop-animation4 {
+      0% {
+          transform: translate(-90px, 0%);
+      }
+
+      100% {
+          transform: translate(85px, 0%);
+      }
+  }
+
+  @media screen and (min-width: 1000px) {
+      .waves-animated-1 {
+          --max-height:{{ section.settings.wave_height}}px;;
+      }
+      .s-d-conatiner--{{section.id}} svg{
+       max-height: {{ section.settings.wave_height}}px;
+    }
+  }
+</style>
+
+{% style %}
+  .s-d-main-container--{{section.id}} {
+    transform: {{ scaleX }} {{ scaleY }};
+  }
+  .section-{{ section.id }}-top-padding {
+    height: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+  }
+  .section-{{ section.id }}-bottom-padding {
+    height: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-top-padding {
+      height: {{ section.settings.padding_top }}px;
+    }
+    .section-{{ section.id }}-bottom-padding {
+      height: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="section-{{ section.id }}-top-padding color-{% if section.settings.flip_vertical %}{{ section.settings.shape_color }}{% else %}{{ section.settings.background_color }}{% endif %}">
+   
+</div>
+<div class="section-wrapper--{{section.id}} s-d-main-container--{{section.id}}">
+  <div class="s-d-conatiner--{{section.id}}" style="background:transparent;">
+
+  {% comment %}
+  <div class="s-d-conatiner--{{section.id}}" style="background:{{ section.settings.shape_color }};">
+  {% endcomment %}
+
+    {% case section.settings.shape %}
+      {% when 'arc_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="200"
+          viewBox="0 0 1000 100"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" fill-opacity="1" d="M0 0v100S0 4 500 4s500 96 500 96V0H0Z"></path>
+        </svg>
+      {% when 'arch_divider' %}
+        <svg
+          id="bigHalfCircle"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="200"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" fill-opacity="1" d="M0 100 C40 0 60 0 100 100 Z"/>
+        </svg>
+
+      {% when 'bubble_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0 0v4c250 0 250 96 500 96S750 4 1000 4V0H0Z"></path>
+        </svg>
+
+      {% when 'bubble_side_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path  fill="currentColor" d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
+        </svg>
+      {% when 'curve_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path>
+        </svg>
+
+      {% when 'double_buble' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M500 4c-125 0-125 96-250 96S125 4 0 4V0h1000v4c-125 0-125 96-250 96S625 4 500 4Z"></path>
+        </svg>
+
+      {% when 'frame_4' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0 0v4c136 143.8 183.8-73.2 297 26.6 72.2 63.7 97 99 184.7 33.2a30.5 30.5 0 0 1 36.6 0c87.6 65.8 112.5 30.5 184.7-33.2C816.2-69.2 864 147.7 1000 4V0H0Z"></path>
+        </svg>
+
+      {% when 'grunge_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0 0v47.6l5-2c1 0 11 3 12 0 2 3 6-3 6 0 0-4 12 3 12 0 0 3 15-1 17 0 2-2 5-1 6 0 0-2 6 2 6 0s2 4 4 0c5 2 12-3 16 0 2-2 4-3 4 0 0 2 6-1 6 0 1 4 15-2 17 0h7c0 1 3-3 6 0h17c2 2 3 1 6 0h6c1-2 21-1 24 0 2 1 4 2 6 0 0-1 22 4 24 0 0 0 5-3 5 0 2-2 10 2 12 0 2 2 6 1 6 0 2 3 4-2 6 0 1 0 25-2 25 1l10-1c3 1 6 6 7 0 1 5 4-2 6 0 2-2 4 3 5 0h12c6 1 36 2 36 0 0 2 3 0 6 0h6c5-2 7 4 11 0 2 0 15 2 17 0h13c3-4 5 1 7 0h29c0-3 6 0 6 0h5c0 2 16-1 18 0 1 4 9-1 12 0s6-2 6 0c8-2 3 4 13 0h10c3 4 19 1 19 0 2 0 21 1 23-1 1 4 3-1 6 1 1 2 11-1 12-1 3 3 9 0 12 1 3-4 6 1 6 0h6c0-3 5 1 6-1 0 3 2 1 4 1 3 4 10-1 13 0 3-2 6-1 6 0 2 2 2 0 6 0 1-2 6 2 6 0 2 0 4 5 6 0h18c2 3 4 1 6 0l6-1c3 2 12 3 17 1 14 3 18 1 24 0 2-1 3 3 5 0 6 2 10-1 16 0 1 3 6 0 9 0 0-2 3 2 5 0 6-6 8 7 13 0 0-2 5 2 5 0 3 3 10 0 10 0 1 2 5-2 8 0 3-1 8 3 12 0h6c2 1 10 4 12 0h6c1-1 5 2 6 0 1 2 4-1 6 0 0-2 5 3 6-1 2 1 6 5 5 1 1 1 3-2 6 0 2-1 5 3 6 0 0 1 6 2 6 0 2 3 4-4 6 0 0-2 3 2 6 0 3 0 6 3 6 0 5 3 8-1 13 0 3-4 6 1 6 0h5c0-1 9 2 12 0 1-1 9 3 11 0h6c2 2 4 4 7 0 3 2 5-4 5-1 10 4 15-2 18 2 0-1 6 2 6-2 0 0 6-2 6 1 1 6 12 2 12 0 1 3 4-3 7 2 2-2 5 2 5 0 1 5 4-5 6 0 2-1 4 2 6 0 1 3 1 0 5 0V0H0Z"></path>
+        </svg>
+
+      {% when 'intersecting_curves' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0 0v100c250 0 375-24 500-48 125 24 250 48 500 48V0H0Z" opacity=".5"></path><path d="M0 0v4c250 0 375 24 500 48C625 28 750 4 1000 4V0H0Z"></path>
+        </svg>
+
+      {% when 'intersecting_tilt_angles' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0 0v100l500-48 500 48V0H0z" opacity=".5"></path><path d="M0 0h1000v52H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z"></path>
+        </svg>
+
+      {% when 'intersecting_wave_layers' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0 0v100c166.7 0 166.7-66 333.3-66S500 77 666.7 77 833.3 28 1000 28V0H0Z" opacity=".5"></path><path d="M0 0v100c166.7 0 166.7-66 333.3-66S500 70 666.7 70 833.3 16 1000 16V0H0Z" opacity=".5"></path><path d="M0 0v100c166.7 0 166.7-66 333.3-66S500 63 666.7 63 833.3 4 1000 4V0H0Z"></path>
+        </svg>
+
+      {% when 'intersecting_waves_scattered' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path>
+        </svg>
+
+      {% when 'intersecting_waves_split' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0 0v99.7C62 69 122.4 48.7 205 66c83.8 17.6 160.5 20.4 240-12 54-22 110-26 173-10a392.2 392.2 0 0 0 222-5c55-17 110.3-36.9 160-27.2V0H0Z" opacity=".5"></path><path d="M0 0v74.7C62 44 122.4 28.7 205 46c83.8 17.6 160.5 25.4 240-7 54-22 110-21 173-5 76.5 19.4 146.5 23.3 222 0 55-17 110.3-31.9 160-22.2V0H0Z"></path>
+        </svg>
+
+      {% when 'layered_arch' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0 0h1000v4H0z"></path>
+          <path fill="currentColor" d="M0 0h1000v80.8S550 100 500 100 0 80.8 0 80.8V0Z" opacity=".2"></path>
+          <path fill="currentColor" d="M0 0h1000v61.6S600 100 500 100 0 61.6 0 61.6V0Z" opacity=".3"></path>
+          <path fill="currentColor" d="M0 0h1000v42.4S650 100 500 100 0 42.4 0 42.4V0Z" opacity=".4"></path>
+          <path fill="currentColor" d="M0 0h1000v23.2S700 100 500 100 0 23.2 0 23.2V0Z" opacity=".5"></path>
+          <path fill="currentColor" d="M0 0v4s250 96 500 96 500-96 500-96V0H0Z"></path>
+        </svg>
+
+      {% when 'layered_curves' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z" opacity=".3"></path>
+          <path fill="currentColor" d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z" opacity=".5"></path>
+          <path fill="currentColor" d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z"></path>
+        </svg>
+
+      {% when 'layered_slants' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0 100V0h1000v4L0 100z"></path>
+          <path fill="currentColor" d="M0 100V0h1000v24L0 100z" opacity=".5"></path>
+          <path fill="currentColor" d="M0 100V0h1000v44L0 100z" opacity=".4"></path>
+          <path fill="currentColor" d="M0 100V0h1000v64L0 100z" opacity=".4"></path>
+          <path fill="currentColor" d="M0 100V0h1000v84L0 100z" opacity=".2"></path>
+        </svg>
+
+      {% when 'layered_triangle' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0 0v84l500 16 500-16V0H0z" opacity=".2"></path>
+          <path fill="currentColor" d="M0 0v64l500 36 500-36V0H0z" opacity=".4"></path>
+          <path fill="currentColor" d="M0 0v44l500 56 500-56V0H0z" opacity=".4"></path>
+          <path fill="currentColor" d="M0 0v24l500 76 500-76V0H0z" opacity=".5"></path>
+          <path fill="currentColor" d="M0 0v4l500 96 500-96V0H0z"></path>
+        </svg>
+
+      {% when 'layered_wave' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M1000 100C500 100 500 64 0 64V0h1000v100Z" opacity=".5"></path>
+          <path fill="currentColor" d="M1000 100C500 100 500 34 0 34V0h1000v100Z" opacity=".5"></path>
+          <path fill="currentColor" d="M1000 100C500 100 500 4 0 4V0h1000v100Z"></path>
+        </svg>
+
+      {% when 'mountain_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/mountain-divider.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="m0 4 150 40h160l190 50 190-50h160l150-40V0H0v4z"></path>
+        </svg>
+
+      {% when 'oval_halves_inverse' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/oval-halves-inverse.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v100C0 47 112 4 250 4s250 43 250 96c0-53 112-96 250-96s250 43 250 96V0H0Z"></path>
+        </svg>
+
+      {% when 'oval_halves' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/oval-halves.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v4c0 53 112 96 250 96S500 57 500 4c0 53 112 96 250 96s250-43 250-96V0H0Z"></path>
+        </svg>
+
+      {% when 'pyramid_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/pyramid-divider.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v4l250 64 125-32 250 64 375-96V0H0z"></path>
+        </svg>
+
+      {% when 'slant_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/slant-divider.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 100V0h1000v4L0 100z"></path>
+        </svg>
+
+      {% when 'slope_asymmetrical_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/slope-asymmetrical-divider.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v100-79.4a1892 1892 0 0 1 500 0l500 66.7V0H0Z"></path>
+        </svg>
+      {% when 'slope_subtle_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/slope-subtle-divider.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v100S500 4 1000 4V0H0Z"></path>
+        </svg>
+
+      {% when 'spikes_divider_medium' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/spikes-divider-medium.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0h1000v4H0zM10 100 0 4h20l-10 96zM30 100 20 4h20l-10 96zM50 100 40 4h20l-10 96zM70 100 60 4h20l-10 96zM90 100 80 4h20l-10 96zM110 100 100 4h20l-10 96zM130 100 120 4h20l-10 96zM150 100 140 4h20l-10 96zM170 100 160 4h20l-10 96zM190 100 180 4h20l-10 96zM210 100 200 4h20l-10 96zM230 100 220 4h20l-10 96zM250 100 240 4h20l-10 96zM270 100 260 4h20l-10 96zM290 100 280 4h20l-10 96zM310 100 300 4h20l-10 96zM330 100 320 4h20l-10 96zM350 100 340 4h20l-10 96zM370 100 360 4h20l-10 96zM390 100 380 4h20l-10 96zM410 100 400 4h20l-10 96zM430 100 420 4h20l-10 96zM450 100 440 4h20l-10 96zM470 100 460 4h20l-10 96zM490 100 480 4h20l-10 96zM510 100 500 4h20l-10 96zM530 100 520 4h20l-10 96zM550 100 540 4h20l-10 96zM570 100 560 4h20l-10 96zM590 100 580 4h20l-10 96zM610 100 600 4h20l-10 96zM630 100 620 4h20l-10 96zM650 100 640 4h20l-10 96zM670 100 660 4h20l-10 96zM690 100 680 4h20l-10 96zM710 100 700 4h20l-10 96zM730 100 720 4h20l-10 96zM750 100 740 4h20l-10 96zM770 100 760 4h20l-10 96zM790 100 780 4h20l-10 96zM810 100 800 4h20l-10 96zM830 100 820 4h20l-10 96zM850 100 840 4h20l-10 96zM870 100 860 4h20l-10 96zM890 100 880 4h20l-10 96zM910 100 900 4h20l-10 96zM930 100 920 4h20l-10 96zM950 100 940 4h20l-10 96zM970 100 960 4h20l-10 96zM990 100 980 4h20l-10 96z"></path>
+        </svg>
+
+      {% when 'steps_divider_round' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/steps-divider-round.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v80l227.5 18c12.1 1 22.5-8.6 22.5-20.7s10.4-21.8 22.5-20.8l205 16.3c12.1 1 22.5-8.6 22.5-20.8s10.4-21.7 22.5-20.8l205 16.3c12.1 1 22.5-8.6 22.5-20.8S760.4 5 772.5 6L1000 24V0H0Z"></path>
+        </svg>
+
+      {% when 'stripes_divider_large' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/stripes-divider-large.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0h10v100H0zM20 0h10v100H20zM40 0h10v100H40zM60 0h10v100H60zM80 0h10v100H80zM100 0h10v100h-10zM120 0h10v100h-10zM140 0h10v100h-10zM160 0h10v100h-10zM180 0h10v100h-10zM200 0h10v100h-10zM220 0h10v100h-10zM240 0h10v100h-10zM260 0h10v100h-10zM280 0h10v100h-10zM300 0h10v100h-10zM320 0h10v100h-10zM340 0h10v100h-10zM360 0h10v100h-10zM380 0h10v100h-10zM400 0h10v100h-10zM420 0h10v100h-10zM440 0h10v100h-10zM460 0h10v100h-10zM480 0h10v100h-10zM500 0h10v100h-10zM520 0h10v100h-10zM540 0h10v100h-10zM560 0h10v100h-10zM580 0h10v100h-10zM600 0h10v100h-10zM620 0h10v100h-10zM640 0h10v100h-10zM660 0h10v100h-10zM680 0h10v100h-10zM700 0h10v100h-10zM720 0h10v100h-10zM740 0h10v100h-10zM760 0h10v100h-10zM780 0h10v100h-10zM800 0h10v100h-10zM820 0h10v100h-10zM840 0h10v100h-10zM860 0h10v100h-10zM880 0h10v100h-10zM900 0h10v100h-10zM920 0h10v100h-10zM940 0h10v100h-10zM960 0h10v100h-10zM980 0h10v100h-10z"></path>
+        </svg>
+
+      {% when 'triangle_asymmetrical_divider_inverse' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/triangle-asymmetrical-divider-inverse.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v36L250 4l750 96V0H0z"></path>
+        </svg>
+
+      {% when 'triangle_curve_divider_inverse' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/triangle-curve-divider-inverse.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v100c500 0 475-96 500-96s0 96 500 96V0H0Z"></path>
+        </svg>
+
+      {% when 'triangle_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/triangle-divider.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v4l500 96 500-96V0H0z"></path>
+        </svg>
+
+      {% when 'triangle_round_asymmetrical' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/triangle-round-asymmetrical.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v4l594.5 84a1118.6 1118.6 0 0 0 311 0l94.5-13.3V0H0Z"></path>
+        </svg>
+
+      {% when 'triangle_rounded_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/triangle-rounded-divider.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v4l396.3 84a500.1 500.1 0 0 0 207.4 0L1000 4V0H0Z"></path>
+        </svg>
+
+      {% when 'triangle_slope_divider_inverse' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/triangle-slope-divider-inverse.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v100c250 0 500-96 500-96s250 96 500 96V0H0Z"></path>
+        </svg>
+
+      {% when 'valley_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/valley-divider.svg"
+          loading="lazy"
+        >
+          <path  fill="currentColor"d="m0 4 86.6 23.1c42.1 11.2 85.5 16.9 129 16.9h29.7c73 0 129.8 17.1 127.3 16.5 83.5 22 171.3 22 254.8 0 123.2-32.4 162.9-.6 286-33.4L1000 4V0H0v4Z"></path>
+        </svg>
+
+      {% when 'waves_2_large' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/waves-2-large.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v60c9 0 18-3 25-10 13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s36 14 50 0c13-14 36-14 50 0s37 13 50 0c14-14 37-14 50 0 7 7 16 10 25 10V0H0Z"></path>
+        </svg>
+
+      {% when 'waves_simple_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/waves-simple-divider.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v41s40 117.6 337 20.7c46.7-15.2 104.8-46 163-46 58.1 0 116.3 30.8 163 46 297 97 337-20.7 337-20.7V0H0Z"></path>
+        </svg>
+
+      {% when 'waves_water_divider_inverse' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/waves-water-divider-inverse.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v92.3C106.3 35 276 23.6 343.6 73.7 458.2 18.3 637 8.5 693 57.3 779.6 18.6 915.7-2.4 1000 16.1V0H0Z"></path>
+        </svg>
+
+      {% when 'wavy_mantle_divider' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/wavy-mantle-divider.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v4c154 96 190 17.9 300 17.9 92 0 92 78.1 200 78.1s108-78.2 200-78.2c110 0 146 78.2 300-17.8V0H0Z"></path>
+        </svg>
+
+      {% when 'wavy_steps' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          data-inject-url="https://www.svgbackgrounds.com/svg/shape-dividers/wavy-steps.svg"
+          loading="lazy"
+        >
+          <path fill="currentColor" d="M0 0v90.2C49.7 99.9 105 82 160 65c75.5-23.3 145.5-22.4 222-3 63 16 119 14 173-8 79.5-32.4 156.2-27.6 240-10 82.6 17.4 143-1 205-31.7V0H0Z"></path>
+        </svg>
+
+      {% when 'triangle_shadow' %}
+        <svg
+          id="bigTriangleShadow"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="200"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <path style="opacity:1" fill="currentColor" id="trianglePath1" d="M0 0 L50 100 L100 0 Z" />
+          <path style="opacity:0.5" fill="currentColor" id="trianglePath2" d="M50 100 L100 40 L100 0 Z" />
+        </svg>
+
+      {% when 'clouds' %}
+        <svg
+          id="clouds"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="200"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" fill-opacity="1" d="M-5 100 Q 0 20 5 100 Z
+          		 M0 100 Q 5 0 10 100
+          		 M5 100 Q 10 30 15 100
+          		 M10 100 Q 15 10 20 100
+          		 M15 100 Q 20 30 25 100
+          		 M20 100 Q 25 -10 30 100
+          		 M25 100 Q 30 10 35 100
+          		 M30 100 Q 35 30 40 100
+          		 M35 100 Q 40 10 45 100
+          		 M40 100 Q 45 50 50 100
+          		 M45 100 Q 50 20 55 100
+          		 M50 100 Q 55 40 60 100
+          		 M55 100 Q 60 60 65 100
+          		 M60 100 Q 65 50 70 100
+          		 M65 100 Q 70 20 75 100
+          		 M70 100 Q 75 45 80 100
+          		 M75 100 Q 80 30 85 100
+          		 M80 100 Q 85 20 90 100
+          		 M85 100 Q 90 50 95 100
+          		 M90 100 Q 95 25 100 100
+          		 M95 100 Q 100 15 105 100 Z">
+          </path>
+        </svg>
+
+      {% when 'slit' %}
+        <svg
+          id="slit"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="100%"
+          height="200"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <path style="opacity:0.5"  fill="currentColor" id="slitPath2" d="M50 100 C49 80 47 0 40 0 L47 0 Z" />
+          <path style="opacity:0.5" fill="currentColor" id="slitPath3" d="M50 100 C51 80 53 0 60 0 L53 0 Z" />
+          <path fill="currentColor" id="slitPath1" d="M47 0 L50 100 L53 0 Z" />
+        </svg>
+      {% when 'sharp_1' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          height="200"
+          width="100%"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" fill-opacity="1" d="M0,160L240,288L480,288L720,160L960,224L1200,32L1440,96L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #007acc;"></path>
+        </svg>
+      {% when 'sharp_2' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          height="200"
+          width="100%"
+          preserveAspectRatio="none"
+          style="--max-height: 170px;"
+        >
+          <path fill="currentColor" fill-opacity="1" d="M0,32L240,32L480,224L720,192L960,224L1200,192L1440,96L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #007acc;"></path>
+        </svg>
+      {% when 'sharp_3' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          height="200"
+          width="100%"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" fill-opacity="1" d="M0,0L360,32L720,160L1080,96L1440,224L1440,320L1080,320L720,320L360,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #007acc;"></path>
+        </svg>
+      {% when 'sharp_4' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          height="200"
+          width="100%"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" fill-opacity="1" d="M0,64L240,192L480,224L720,96L960,256L1200,160L1440,288L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #007acc;"></path>
+        </svg>
+      {% when 'random_1' %}
+        <svg
+          class="section-wrapper--{{section.id}}"
+          viewBox="0 0 1920 60"
+          aria-hidden="true"
+          height="200"
+          width="100%"
+          preserveAspectRatio="none"
+        >
+          <path fill="currentColor" d="M0,80.75H1920V45.833H1742.083a80.491,80.491,0,0,1,12.863-1.55c5.2-.26,17.24-.3,24.153-.24,26.69.222,54.377,1.094,79.341.96,19.287-.1,37.1-.372,53.573-.788L1920,44V34.078l-6.614.216-9.221.256c-6.252.147-12.7.249-19.265.32-13.132.14-26.739.15-40.206.125-26.935-.052-53.313-.247-74.22.168-14.367-1.4-32.582-.756-48.293-1.92-10.145.509-20.876.936-24.149,2.4-16.09-.266-37.611,2.532-50.019.479V34.684c-10.959-2.291-33.371-1.869-48.292-3.84-15.861-.512-26.214,1.347-39.671,1.92-7.032.178-5.941-.773-13.8-.481-40.751-.071-41.131,5.477-62.087,8.16-4.569-5.691-47.085-5.126-77.622-5.04-2.333-4.154-22.643-5.808-50.015-6.479-4.677-2.069-17.763-2.969-22.423-5.04-4.7-.175-3.474.477-6.9.479-11.485-2.964-40.092-2.449-63.813-3.36-23.312.6-29.4,3.589-55.195,3.841-8.3-3.783-56.5-4.561-84.513-3.361-.316-1.857-5.682-3.862-20.7-4.8-2.193-.137-6.78.122-10.352,0-16.331-.564-22.974-3.145-39.671-1.441-22.812-1.938-73.831-3.919-98.311-.719-4.315-2.2-15.369-3.462-20.7-5.521-23.122-.714-41.26-2.815-65.54-2.64-13.5,1-29.918,1.6-39.671,3.12.27,1.317-1.305,2.38-6.9,2.88-35.562-1.333-83.117-2.545-93.139,2.88-14.338-.314-8.341,2.2-22.423,1.92-5.17-.16-2.615-1.4-6.9-1.68-36.327-1.894-80.653-1.762-100.041,2.161-12.433-1.631-21.648-3.708-36.221-5.04-13.359.1-36.33-.325-48.293-1.2-32.483.6-42.463,4.331-53.471,7.92-25.227-.147-43.752,2.274-58.641,4.321-11.966-1.189-27.56-.426-39.67-1.441-19.514,1.284-40.772,2.328-53.468,4.561C301.584,31.04,294,33.888,283.7,37.8c-15.047-.774-19.865-3.5-36.221-4.321-10.453-.522-37.12-1.01-48.3-.959-10.184.046-17.188,1.062-27.595.719-18.244,2.022-31.516,4.736-46.57,7.2-3.726,2.091-9.8,3.854-17.5,5.39H4.061c-.734-1.281-1.512-2.592-2.344-3.949-.546-.09-1.13-.175-1.717-.26Z"/>
+        </svg>
+      {% when 'waves_1' %}
+        <svg
+          id="wave"
+          style="transform:rotate(0deg); transition: 0.3s"
+          viewBox="0 0 1440 250"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          height="200"
+          width="100%"
+          preserveAspectRatio="none"
+        >
+          <path style="transform:translate(0, 0px); opacity:1" fill="currentColor" d="M0,125L30,120.8C60,117,120,108,180,104.2C240,100,300,100,360,120.8C420,142,480,183,540,191.7C600,200,660,175,720,162.5C780,150,840,150,900,145.8C960,142,1020,133,1080,125C1140,117,1200,108,1260,108.3C1320,108,1380,117,1440,133.3C1500,150,1560,175,1620,170.8C1680,167,1740,133,1800,125C1860,117,1920,133,1980,125C2040,117,2100,83,2160,62.5C2220,42,2280,33,2340,25C2400,17,2460,8,2520,16.7C2580,25,2640,50,2700,58.3C2760,67,2820,58,2880,50C2940,42,3000,33,3060,41.7C3120,50,3180,75,3240,108.3C3300,142,3360,183,3420,183.3C3480,183,3540,142,3600,108.3C3660,75,3720,50,3780,33.3C3840,17,3900,8,3960,37.5C4020,67,4080,133,4140,158.3C4200,183,4260,167,4290,158.3L4320,150L4320,250L4290,250C4260,250,4200,250,4140,250C4080,250,4020,250,3960,250C3900,250,3840,250,3780,250C3720,250,3660,250,3600,250C3540,250,3480,250,3420,250C3360,250,3300,250,3240,250C3180,250,3120,250,3060,250C3000,250,2940,250,2880,250C2820,250,2760,250,2700,250C2640,250,2580,250,2520,250C2460,250,2400,250,2340,250C2280,250,2220,250,2160,250C2100,250,2040,250,1980,250C1920,250,1860,250,1800,250C1740,250,1680,250,1620,250C1560,250,1500,250,1440,250C1380,250,1320,250,1260,250C1200,250,1140,250,1080,250C1020,250,960,250,900,250C840,250,780,250,720,250C660,250,600,250,540,250C480,250,420,250,360,250C300,250,240,250,180,250C120,250,60,250,30,250L0,250Z"></path>
+          <path style="transform:translate(0, 15%); opacity:0.5" fill="currentColor" d="M0,75L30,62.5C60,50,120,25,180,41.7C240,58,300,117,360,125C420,133,480,92,540,87.5C600,83,660,117,720,116.7C780,117,840,83,900,62.5C960,42,1020,33,1080,50C1140,67,1200,108,1260,129.2C1320,150,1380,150,1440,141.7C1500,133,1560,117,1620,95.8C1680,75,1740,50,1800,70.8C1860,92,1920,158,1980,158.3C2040,158,2100,92,2160,79.2C2220,67,2280,108,2340,129.2C2400,150,2460,150,2520,150C2580,150,2640,150,2700,162.5C2760,175,2820,200,2880,212.5C2940,225,3000,225,3060,187.5C3120,150,3180,75,3240,66.7C3300,58,3360,117,3420,116.7C3480,117,3540,58,3600,50C3660,42,3720,83,3780,83.3C3840,83,3900,42,3960,37.5C4020,33,4080,67,4140,100C4200,133,4260,167,4290,183.3L4320,200L4320,250L4290,250C4260,250,4200,250,4140,250C4080,250,4020,250,3960,250C3900,250,3840,250,3780,250C3720,250,3660,250,3600,250C3540,250,3480,250,3420,250C3360,250,3300,250,3240,250C3180,250,3120,250,3060,250C3000,250,2940,250,2880,250C2820,250,2760,250,2700,250C2640,250,2580,250,2520,250C2460,250,2400,250,2340,250C2280,250,2220,250,2160,250C2100,250,2040,250,1980,250C1920,250,1860,250,1800,250C1740,250,1680,250,1620,250C1560,250,1500,250,1440,250C1380,250,1320,250,1260,250C1200,250,1140,250,1080,250C1020,250,960,250,900,250C840,250,780,250,720,250C660,250,600,250,540,250C480,250,420,250,360,250C300,250,240,250,180,250C120,250,60,250,30,250L0,250Z"></path>
+        </svg>
+      {% when 'waves_2' %}
+        <svg
+          id="wave"
+          style="transform:rotate(0deg); transition: 0.3s"
+          viewBox="0 0 1440 250"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          height="200"
+          width="100%"
+          preserveAspectRatio="none"
+        >
+          <path style="transform:translate(-5%, -5%); opacity:0.3" fill="currentColor" d="M0,100L30,100C60,100,120,100,180,83.3C240,67,300,33,360,45.8C420,58,480,117,540,133.3C600,150,660,125,720,133.3C780,142,840,183,900,175C960,167,1020,108,1080,91.7C1140,75,1200,100,1260,104.2C1320,108,1380,92,1440,108.3C1500,125,1560,175,1620,166.7C1680,158,1740,92,1800,83.3C1860,75,1920,125,1980,137.5C2040,150,2100,125,2160,120.8C2220,117,2280,133,2340,120.8C2400,108,2460,67,2520,41.7C2580,17,2640,8,2700,12.5C2760,17,2820,33,2880,41.7C2940,50,3000,50,3060,79.2C3120,108,3180,167,3240,187.5C3300,208,3360,192,3420,187.5C3480,183,3540,192,3600,195.8C3660,200,3720,200,3780,187.5C3840,175,3900,150,3960,133.3C4020,117,4080,108,4140,125C4200,142,4260,183,4290,204.2L4320,225L4320,250L4290,250C4260,250,4200,250,4140,250C4080,250,4020,250,3960,250C3900,250,3840,250,3780,250C3720,250,3660,250,3600,250C3540,250,3480,250,3420,250C3360,250,3300,250,3240,250C3180,250,3120,250,3060,250C3000,250,2940,250,2880,250C2820,250,2760,250,2700,250C2640,250,2580,250,2520,250C2460,250,2400,250,2340,250C2280,250,2220,250,2160,250C2100,250,2040,250,1980,250C1920,250,1860,250,1800,250C1740,250,1680,250,1620,250C1560,250,1500,250,1440,250C1380,250,1320,250,1260,250C1200,250,1140,250,1080,250C1020,250,960,250,900,250C840,250,780,250,720,250C660,250,600,250,540,250C480,250,420,250,360,250C300,250,240,250,180,250C120,250,60,250,30,250L0,250Z"></path>
+          <path style="transform:translate(0, 0); opacity:1" fill="currentColor" d="M0,75L30,87.5C60,100,120,125,180,116.7C240,108,300,67,360,66.7C420,67,480,108,540,133.3C600,158,660,167,720,154.2C780,142,840,108,900,112.5C960,117,1020,158,1080,154.2C1140,150,1200,100,1260,91.7C1320,83,1380,117,1440,141.7C1500,167,1560,183,1620,162.5C1680,142,1740,83,1800,54.2C1860,25,1920,25,1980,58.3C2040,92,2100,158,2160,183.3C2220,208,2280,192,2340,187.5C2400,183,2460,192,2520,183.3C2580,175,2640,150,2700,154.2C2760,158,2820,192,2880,175C2940,158,3000,92,3060,91.7C3120,92,3180,158,3240,154.2C3300,150,3360,75,3420,41.7C3480,8,3540,17,3600,54.2C3660,92,3720,158,3780,158.3C3840,158,3900,92,3960,79.2C4020,67,4080,108,4140,133.3C4200,158,4260,167,4290,170.8L4320,175L4320,250L4290,250C4260,250,4200,250,4140,250C4080,250,4020,250,3960,250C3900,250,3840,250,3780,250C3720,250,3660,250,3600,250C3540,250,3480,250,3420,250C3360,250,3300,250,3240,250C3180,250,3120,250,3060,250C3000,250,2940,250,2880,250C2820,250,2760,250,2700,250C2640,250,2580,250,2520,250C2460,250,2400,250,2340,250C2280,250,2220,250,2160,250C2100,250,2040,250,1980,250C1920,250,1860,250,1800,250C1740,250,1680,250,1620,250C1560,250,1500,250,1440,250C1380,250,1320,250,1260,250C1200,250,1140,250,1080,250C1020,250,960,250,900,250C840,250,780,250,720,250C660,250,600,250,540,250C480,250,420,250,360,250C300,250,240,250,180,250C120,250,60,250,30,250L0,250Z"></path>
+        </svg>
+      {% when 'waves_3' %}
+        <svg
+          class="waves-animated-1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <path id="gentle-wave"
+            d="M-160 44c30 0
+              58-18 88-18s
+              58 18 88 18
+              58-18 88-18
+              58 18 88 18
+              v44h-352z" />
+          </defs>
+          <g class="scroll-effect1">
+            <use xlink:href="#gentle-wave" x="50" y="3" fill="currentColor"/>
+          </g>
+          <g class="scroll-effect2">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="currentColor"/>
+          </g>
+          <g class="scroll-effect3">
+            <use xlink:href="#gentle-wave" x="50" y="9" fill="currentColor"/>
+          </g>
+          <g class="scroll-effect4">
+            <use xlink:href="#gentle-wave" x="50" y="6" fill="currentColor"/>
+          </g>
+        </svg>
+
+      {% when 'rough' %}
+        <svg
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          version="1.1"
+          width="100%"
+          height="200"
+        >
+          <g fill="currentColor">
+            <path fill="currentColor" d="M167 61zM98 62zM98 60a1 1 0 000 1 1 1 0 010 1 5 5 0 001-1l-1-1zM171 71a3 3 0 000 1v-1 1a1 1 0 000-1zM229 64l-1 1v1a7 7 0 000 1l1-2v-1zM270 62v1a6 6 0 000 1v-1-1z" fill-rule="evenodd"></path>
+            <path fill="currentColor" d="M9 61l2 1a6 6 0 010-2v2a3 3 0 010 1l2 1v-1 2a21 21 0 011-2v-1 0h1v-2 1a4 4 0 010-2v1a4 4 0 011-1v-1-1 1a6 6 0 010 1 6 6 0 010 1 2 2 0 011 1v-1c0-1 0 1 0 0a9 9 0 010-2h0v3a3 3 0 011 2 7 7 0 011 1v-1l1 2 1-1c1 0 0 1 0 0v1h2v2a15 15 0 010 1c0 2 1-1 1 1v1c0 2-1-1-1-1a1 1 0 000 1 1 1 0 010 1h-1l1-1h-1v1a4 4 0 010-1v-1l-1-1v0l-1-1v4l1 1v3h1a3 3 0 010 1v-2h2a1 1 0 010-1c0-1 0 0 0 0v1a3 3 0 010-1v1s0-1 0 0a3 3 0 010 1v-1a2 2 0 010 1l1-2v1h1a4 4 0 010-2v1a15 15 0 002-1l2-4v-1-1-1c0-1 0 0 0 0v2l1-1a2 2 0 010 1l-1 1v-1a2 2 0 000 1c1 1 1 2 2 1l4-5h4l3-2a5 5 0 004-2c1-1 0-4 2-4h5l4 1h1l2 3v1a17 17 0 011-4v4c0 1 0 0 0 0v-2 1a5 5 0 010 1 6 6 0 010-2h1a4 4 0 010-1v-2 1a6 6 0 010 1 25 25 0 010 5v1a2 2 0 002 1v-1l1-2v1l1 2v-2l1 1h1v1a5 5 0 010 1h2a10 10 0 011-2c0-1 0 0 0 0v-2-1h1v2l2 1a2 2 0 010 1 3 3 0 010 1 5 5 0 010-2c1-1 1 1 1 2v-1 1h1a2 2 0 000-1h0v1-1a3 3 0 010-1 3 3 0 000-1 1 1 0 010-1h1v-1 0c0-1 1-2 1 0s-1 0-1 1c0 2 1 1 1 1a7 7 0 010 1h1v-1-1l1 2v-1a3 3 0 010 1v-1-1c0-1 0 0 0 0v-1l1 1v-2 2a4 4 0 000-1v-1l1 1v0a11 11 0 010 2v-2 1s0-1 0 0a3 3 0 011 0v-1-1l1-1v-1c0-1 0 0 0 0v0l1 1v1l1-5v1c0 1 0 0 0 0v1l1-1v-1-1 4l1-4v0l1-1v-2 1a5 5 0 010 1 6 6 0 010-2 4 4 0 011-1v-2 1a6 6 0 010 1 25 25 0 011 5v2h1v0a4 4 0 010 1 7 7 0 010 1 17 17 0 011-2v0l-1-1a1 1 0 011-1v-1h1v3l1-2v1h2v3c1 2 1-1 1 1a13 13 0 001-1 4 4 0 010-1v1l2-4 2-4c2-2 3-4 4-3a4 4 0 013 2l2 1 2-3c1-1 1-4 3-5l3-2a3 3 0 011-2v2a4 4 0 011 0v-1-1-1l1 2v-1l1-2v3l1-2v2l1-1v2a6 6 0 001-2l1-2 1 2v0a5 5 0 012-2l3-1a11 11 0 010-2 15 15 0 010-2 8 8 0 010-2l1-1v1h1s1-1 1 1l-1-1v2l1-1v1a8 8 0 010 2l1-1v-1-2a3 3 0 010 2 11 11 0 002-2c0-3 2-6 3-4l4 8 3 9c1-1 2 2 3 4v-1a8 8 0 010 2l1 1v-2a6 6 0 010 3l1 1v-3-1c1 0 1 2 2 1l-1-2c0-1 0 1 0 0l1-2 1-3v2l-1 1 1 1a1 1 0 010 1c-1 1-1-3-1-2a8 8 0 000 2 5 5 0 000 1v-1c1 1 1 5 2 3l-1-1a3 3 0 011-2 5 5 0 011-2v-1a7 7 0 010 3c0 1-1-1-1 1a5 5 0 000 1h1a8 8 0 011 3 4 4 0 010 1l-1 2v2l1 4v-2l1 2v-2 1a3 3 0 011-1v-1-1h1v1l1-1v1l1 1a9 9 0 010 2 6 6 0 010 1 5 5 0 01-1 1l1-1h-1c0 1 0 1 0 0a1 1 0 010-1l-1 1v-1 3l1 1c0-1 0-1 0 0l1-2a2 2 0 010-1h1v1a14 14 0 011-3l-1 2 1 1v-2 1a9 9 0 010-1l1-2a11 11 0 010 1v-2 1a6 6 0 010 1 3 3 0 010 1 3 3 0 001-2l-1-2a14 14 0 011 2 4 4 0 010 1l1 1v-1a3 3 0 010-1s0 1 0 0v-1a6 6 0 010 2 4 4 0 010 1v1c1 0 0-6 1-5v8-1c0-1 0-2 1-1a5 5 0 010 1v-1a7 7 0 010-3h1c0-1 0 0 0 0v-1 5l1-2v2a3 3 0 012 3 7 7 0 013-1c4-1 3 0 4 2a5 5 0 000 1 13 13 0 011 2 2 2 0 001-1s0 1 0 0v-2-3c1-1 1 3 1 1l1-2v3l-1 2c1 1 1-2 2-1a5 5 0 010 2h-1a3 3 0 000 1c1 1 1-1 1 1a1 1 0 010 1l-1-1c0 3 2 1 2 4a9 9 0 01-1 3l-1 1v-2-2-3l-1 2v2a43 43 0 011 3v1l1 1v-1 1l2-1a4 4 0 00-1-1v-3 1a3 3 0 011-3v1l1-1v1s1-1 1 1-2-1-1 2a6 6 0 000 1 9 9 0 001-2 10 10 0 010-3 7 7 0 011 2v-1a4 4 0 000-1v-1l-1-1-1 1v-5 4c-1 2-1 2-2 0v-1c0-5 2-5 3-4 0 0 0-1 0 0v1c0 2 1 0 1 0l1-1 1-1 1-1v-1 2l1-2v3c0 1 0 0 0 0l1-5 1-3a4 4 0 010 1c1-3 0-4 2-5a22 22 0 002-2l4 1c1-1 2-1 2 1s0 9 2 10 1 2 3 1l3-3c2-3 1-4 3-4s3 1 4 4v-1a4 4 0 010 1s0-1 0 0v2a9 9 0 011-1s0-1 0 0l-1 1a7 7 0 001 1v1a11 11 0 010-2v2h1v-1-1-2 1a5 5 0 010 1 6 6 0 011-3v1a4 4 0 010-1v-1-1 1a7 7 0 010 1 25 25 0 010 5v1h2v-1l1-1 1 2a7 7 0 011-1v1h1l5-6 4 6 5 6 4 3h1v-1c0-1 0 1 0 0a7 7 0 010-1v2h2v-1 1a9 9 0 000-2 3 3 0 010-1l1-1v-1-1s0-1 0 0v3l1-3c0-1 0-2 0 0v2a6 6 0 010 1l1 1v-1 0l1-1-1-1c1-2 1 1 1 2v-1a2 2 0 010 1v-1h1c0-3-1 0-1-1v-1l1-1c1 0 0 0 0 0v1a1 1 0 010 1 1 1 0 011 0v-1l-1-1a1 1 0 011-1v2c0-1 0 0 0 0h1l1-1v-1a4 4 0 000 1c0 1 0 0 0 0v-3 3a1 1 0 001-1v-1 1c0 1 0 1 0 0l1-5v4l1-1c1 0 0-1 0 0v-2-1 1h1l-1 3v-1 1l1-4v-1 1a4 4 0 010 1 1 1 0 000 1l1-1v-2c0-1 0 0 0 0v-2c0-1 0 0 0 0a5 5 0 010 1 6 6 0 011-2v1a4 4 0 010-1v-1-2 1a6 6 0 010 2 25 25 0 010 5v1a3 3 0 011 2l-1-1v1a11 11 0 012-2v-1l1-1a3 3 0 011 1l1-1h2l1-1h1v-5c1-1 1 1 1 2l-1 1 1-1 1-1c1 0 0 0 0 0v-1c0-1 0 0 0 0v-1l1 2v-1l1-3-1 3 1 1c0 1 0 0 0 0l1-2v1l1 1-1 1h1a6 6 0 001-2l1-2 1 2h-1l1 1v-1h1s0-2 1-1v1l-1 3h1v1l-1 1 2-1 1-1v1a6 6 0 011 0 11 11 0 004 0 6 6 0 013 0 6 6 0 010-2l1-2a4 4 0 00-1-2v-1a6 6 0 010-2v-1l1 4v-1-1 1l1-1 1 2h1v1c1 0 0 0 0 0v-1 2l1-1 1 1v-1a12 12 0 000 2l1 1 1-1 2 6v1c1-1 1 0 1 1l-1-1 2 4v-3-2 3l1-2a7 7 0 010 3l-1 2v1a4 4 0 000 1 5 5 0 011-1v-1l1 1-1-5 1-1 1 1v-2c0-1 0 1 0 0v-2c1-2 1-5 2-3l-1 1 1 1-1 1 1 1a1 1 0 010 1c-1 1-1-3-1-2a8 8 0 000 2 5 5 0 000 1v-1c1 1 1 4 2 3l-1-2a3 3 0 010-1 5 5 0 012-2h1v-1a7 7 0 01-1 3s0-1 0 0a5 5 0 000 2l1-1a8 8 0 011 3 2 2 0 010 1h6l4-1h2V42v28c4-7 10-7 10-7l1 1a6 6 0 010-2l1 1v-1 2c0-1 0 0 0 0a3 3 0 010 1l1 1v-1l1 1v-1-1 2l1-2v1a3 3 0 010 1h-1 1v-2-1-2 1a3 3 0 010 1l1-1a4 4 0 010-1v-1-2l1 1a6 6 0 01-1 1v1a6 6 0 011 1l1-1h-1a9 9 0 011-1v-1a4 4 0 010 1v2a3 3 0 011 2 7 7 0 010 1v-1l1 1v2l1-1c0-1 0 0 0 0h1l1 1v2c0 1 0 0 0 0v-1l1 2v1a3 3 0 010-1v1c0 3 0-1-1 0a2 2 0 000 1v-1 1h-1a3 3 0 011 0l-1-1-1-1v-1 1l-1 2h1v3a2 2 0 010 1v1h1s0-1 0 0v-1a3 3 0 010 1v-1h1l1-1v0a1 1 0 010-1 1 1 0 010 1l1-1-1 1a3 3 0 010 2l1-1v-1a4 4 0 000 1l1-1a5 5 0 010-1v1a15 15 0 002-1c0-1 0 0 0 0l2-5v-1-1c0-1 0 0 0 0v1h1a2 2 0 010 1h-1c-1-1 1 0 0 0a2 2 0 000 1c2 1 1 2 3 1s2-5 3-5h4c2-1 2-3 4-3a5 5 0 003-2c1-1 0-3 2-3h5l4 1h1l2 3v1a2 2 0 000-1 16 16 0 011-3v3a6 6 0 010 1v-2c0-1 0 0 0 0a5 5 0 010 1 6 6 0 011-2v1a4 4 0 010-1v-1-1a6 6 0 010 2 25 25 0 010 5 2 2 0 002 1 1 1 0 010-1l1-1 1 2v-1h1v1h1c1 0 0 0 0 0a5 5 0 010 1 18 18 0 002 0 9 9 0 011-2s0 1 0 0v-1-2c0-1 0 0 0 0h1v3l2 1a2 2 0 010 1 5 5 0 010-2l1 2v-1 1h1v-1c0-1 0 0 0 0v1a3 3 0 010-2h1a1 1 0 01-1-1h1a2 2 0 010-1v-1 1c0-1 1-2 1 0v1 1a4 4 0 010 1 2 2 0 011 0v-1-1c0-2 1 0 1 1v-1-1-1h1v2a4 4 0 001-1l-1-1a1 1 0 010-1l1 1v1a11 11 0 010 1v-1 1l1-1-1 1a3 3 0 011 0v-1 1a1 1 0 010-1v-1-1h1a4 4 0 000 1c0 1 0 0 0 0v-3 3a1 1 0 001-1v-2 2l1-5v3l1-2v-1 3c0 1 0 0 0 0s0 1 0 0l1-4v1a4 4 0 010 1 1 1 0 000 1v-1-2l1-1v-2 1a5 5 0 010 1 6 6 0 011-2v-1-2 1a6 6 0 010 2 25 25 0 010 4v2a2 2 0 010 1h1v0a4 4 0 011 1 7 7 0 010 1 17 17 0 010-2v-1a1 1 0 010-1l1-1 1 2v-1h1v1h1c1 0 0-1 0 0v2l1 1v-2a15 15 0 010 2c0 1 1-1 1 1a13 13 0 001-2l1-3 2-4c1-2 3-4 5-4a4 4 0 013 2l3 2 1-4 3-4 4-3a3 3 0 010-1v1l1 1a4 4 0 010-1v-1l1 1v-2h-1 1v1l1-1 1-2-1 3 1 1 1-3-1 3 1-1v2h1c1 0-1 0 0 0a6 6 0 001-2v-2c1 0 2 0 1 1v1h1a5 5 0 011-2l3-1v-1 1l1-1a11 11 0 01-1-2 15 15 0 010-2 8 8 0 010-2l1-1 1 2v-1l2 1h-1v1a8 8 0 011 2v-1h1v-2a3 3 0 010 2 11 11 0 001-3c1-2 3-5 4-3l3 7c1 0 3 10 4 9l2 5 1-1a8 8 0 010 2s0-2 1-1a6 6 0 010 2v-1l1-1v-1l1 2-1-2 1-1v-2l1-3v5a1 1 0 010 1s0-4-1-3a8 8 0 000 2 5 5 0 000 1h1l1 2v-1a4 4 0 010-1 5 5 0 011-2h1v-1a7 7 0 01-1 3h-1a5 5 0 001 2l1-1a8 8 0 010 3 4 4 0 010 2l-1 2 1 2c0 1 0 4 1 3v-1-1l1 2a3 3 0 010-1 3 3 0 010-1h1v-1-1l1 2s0-1 0 0v-1l1 1v1a9 9 0 010 1v1c-1 0 0 0 0 0a9 9 0 010 1 5 5 0 010 1v-1a1 1 0 010-1l-1-1v3a1 1 0 010 1l1 1a1 1 0 010-1l1-2s0-1 0 0h1a13 13 0 010-3v3a15 15 0 010-1c0-1 0 0 0 0a3 3 0 010 1h1a7 7 0 010-1v-3a11 11 0 010 2v-1-1a6 6 0 010 2 3 3 0 010 1 1 1 0 011 0 3 3 0 000-3v-2a14 14 0 011 3v-1a4 4 0 010 1v0a3 3 0 010-1h1a6 6 0 010 1 4 4 0 010 1v1h-1l1-4v7a1 1 0 010-1l1-1a5 5 0 010 1v-1a7 7 0 010-2l1-1 1-1-1 4v1h1v-1 2a3 3 0 012 2 7 7 0 013-1c4-1 3 0 4 2a4 4 0 000 1 14 14 0 012 2h1l-1-2 1-1v-2l1 1v-2l1 2-1 2c0 2 1-1 1-1a5 5 0 010 2c0 1 0-1 0 0a3 3 0 000 2c0 1 1-1 1 1a1 1 0 010 1l-1-1 1 3a9 9 0 010 3l-1 1v-1l-1-2v-3 2h-1l1 1a40 40 0 011 4c0 2 0 2 1 1l1-1v-3l-1 2v-2a3 3 0 011-2l1 1v-1l1 1h1c0 3-2 0-2 2a6 6 0 000 1 9 9 0 002-2 10 10 0 010-3 7 7 0 010 3l1-1a4 4 0 000-1l-1 1v-3l-1-1v-2l-1-1v4c0 2-1 1-1 0l-1-1c0-5 2-5 3-5l1 1-1 1h1l1-1 2-1v-1-2l1 2v-2 3h1l1-4a2 2 0 010-1v-2a4 4 0 010 1l2-5a22 22 0 003-3l4 2c1 0 1-2 2 1s0 8 1 9 2 2 3 1l3-3c2-3 1-4 3-4s3 1 4 4l1-1a4 4 0 010 1h-1a3 3 0 000 1l1 2a9 9 0 010-1c0-1 0-1 0 0 0 0 0-1 0 0v2h1a11 11 0 010-1v1a3 3 0 000 1v-2-1-2l1 1c1 0 0 0 0 0a5 5 0 010 1 6 6 0 010-2l1-1v-2 1a6 6 0 010 2 25 25 0 010 4v2h2v-1l1-1c1 0 0 0 0 0v2h1a7 7 0 010-1h1v1a2 2 0 001-1l5-6 4 6 5 7 4 2h1a8 8 0 010-1v2h1v-1a2 2 0 011 1v-2 1a9 9 0 000-2 3 3 0 010-1h1v-2-1 0c0-1 1-2 1 0s0 0-1 1c0 2 1 1 1 1a7 7 0 010 1v1a2 2 0 010 1l1-2v-1-1l1 2s0-1 0 0v-1-1c0-1 0 0 0 0v-1l1 1v-2 0l1 1-1 1h1v-1a2 2 0 010 1 5 5 0 010-1v1s0-1 0 0h1v-1-1l1-1v1a4 4 0 00-1 0v1l1-1v-3 1l1 1v-4c1-1 1 0 1 1v1l1 1v-3-1 4l1-4v0l1-1v-2 1a5 5 0 010 1 6 6 0 010-2 4 4 0 011-1v-1-1 1a6 6 0 010 1 25 25 0 010 5v2a3 3 0 010 1s0-1 0 0a11 11 0 012-2v-1l1-1a3 3 0 010 1l2-1c0-1 0 0 0 0h2v-1h1l1-5v3l1-1v-1h1v-1h-1l1-1v2l1-1 1-2-1 3h1l1-2-1 2 1-1v2 1h1v-1a6 6 0 001-1l1-3v3l1-1h1v-1 4c0 1 0-1 0 0v2h2a2 2 0 010-1l1-1v1a6 6 0 011 0 11 11 0 004 0 6 6 0 012 0 6 6 0 011-2v-2a4 4 0 000-1l-1-2a6 6 0 011-2v3l1-1v-1 1l1-1 1 2v1h1c0 1 0-1 0 0v1l1-1v1l1-1a13 13 0 000 2v1h2l2 6 1 1-1-1 1 4v-2l1-3v3c1 0 0-2 1-1a7 7 0 01-1 3v2a1 1 0 010 1 4 4 0 010-1v-1h1s0 2 1 1l-1-5h1v-1s1 3 1 1l-1-2h1v-2l1-3v3c0 1 0 0 0 0v2c0 1 0-3-1-2a8 8 0 000 2 5 5 0 000 1h1l1 2v-1a3 3 0 010-2 5 5 0 011-1l1-1c1 0 0-1 0 0a7 7 0 01-1 3h-1a5 5 0 001 1h1a8 8 0 010 3 2 2 0 010 1h7l4-1h2v-1c4-7 9-7 9-7l2 1a6 6 0 011-2v2c0-1 0 0 0 0a3 3 0 010 1l1 1 1-1v1a19 19 0 010-2v2l1-2v1a4 4 0 010 1v-2-1-2 1h1a3 3 0 010 1v-1a4 4 0 010-1v-1-2l1 1a6 6 0 01-1 1v1a6 6 0 011 1l1-1h-1a9 9 0 011-1v-1a4 4 0 010 1v2a3 3 0 011 2 6 6 0 010 1l1-1v1l1 2v-1c0-1 0 0 0 0h2v3h1v-1a15 15 0 010 2l1 1v-1 1c0 3-1-1-2 0 0 1 0 0 0 0v0l-1-1h-1v-1 6a2 2 0 010 1v1h1s0-1 0 0v-1a3 3 0 011 1v-1c0-1 0 0 0 0a3 3 0 011 0v-1 0a1 1 0 010-1h1a1 1 0 010 1v-1 1h-1 1a3 3 0 010 2v-1l1-1v1-1h1a4 4 0 010-1v1a16 16 0 001-1c0-1 0 0 0 0l2-5v-1-1c0-1 0 0 0 0h1v1c1 0 0 0 0 0a2 2 0 010 1s0 1 0 0a2 2 0 000 1c1 1 0 2 2 1s3-5 4-5h3l4-3a5 5 0 003-2c1-1 1-3 3-3h4l5 1c0-1 0 0 0 0 1 0 1-1 3 3v1a2 2 0 000-1 16 16 0 010-3v2c0-1 0 0 0 0h1a5 5 0 010 1 6 6 0 010-2v1a4 4 0 010-1v-1l1-1c1 0 0 0 0 0a6 6 0 01-1 2 1 1 0 011 0 25 25 0 010 5 2 2 0 002 1v-1-1h1v2h1v-1s0 1 0 0v1h2a5 5 0 010 1 18 18 0 002 0 9 9 0 010-2s0 1 0 0v-1-2h1l1 3 1 1a2 2 0 010 1h1a5 5 0 010-2v2h1v-1 0c0-1 0 0 0 0v1a3 3 0 011-2s0 1 0 0v-1a2 2 0 010-1v-1 4c1 1 1-2 1-3s0-2 0 0v2a5 5 0 011 0 4 4 0 010 1 1 1 0 010-1v1l1-1v-1 1l1-1c0-2-1 1-1-1l1-1v0l1 2v-1 1a4 4 0 000-1v-1a1 1 0 010-1v2a11 11 0 010 1v-1l1 1v-1 1-1 1a1 1 0 010-1l1-1v-1s0-1 0 0a4 4 0 000 1c0 1 0 0 0 0l1-3v3a1 1 0 000-1v-2 1l1 1v-5 3l1-1v-1 1l1-2v0l-1 3h1s0 1 0 0v-4 2s0-2 1-1-1 1-1 1l1-2v1a4 4 0 010 1 1 1 0 000 1v-1-2-1-2 1h1a5 5 0 010 1 6 6 0 010-2v-1l1-2v1a6 6 0 01-1 2 25 25 0 011 4v2a2 2 0 010 1h1v0a4 4 0 010 1 7 7 0 010 1 17 17 0 011-2l-1-1a1 1 0 011-1v-1h1v2l1-1v1h2v1l1 2v1a13 13 0 001-2l2-3 2-4 4-4a4 4 0 013 2l3 2c1 0 0-3 2-4s1-3 3-4l3-3a3 3 0 010-1c1-1 1 1 1 1v-1l1 1v-2s0 1 0 0c0 0 0-1 0 0 0 0 0 2 1 1v-1l1-2-1 3h1v1l1-3-1 3 1-1 1 1-1 1h1a6 6 0 001-2l1-2 1 1-1 1h1a5 5 0 012-2l2-1v-1l1 1v-1a11 11 0 01-1-2 15 15 0 010-2 8 8 0 010-2l1-1 1 2v-1l2 1h-1v1a8 8 0 011 2l1-1v-2a3 3 0 010 2 11 11 0 001-3c1-2 3-5 4-3l3 7s3 10 4 9l3 5v-1a8 8 0 010 2l1-1a6 6 0 010 2l1 2-1-3 1-1v-1l1 2-1-2 1-1v-2l1-3v2l1 1-1 1 1 1a1 1 0 01-1 1s0-4-1-3a7 7 0 000 2 4 4 0 000 1h1l1 2v-1a4 4 0 010-1 5 5 0 011-2h1v-1a6 6 0 01-1 3s0-1 0 0a5 5 0 000 2l1-1a8 8 0 011 3 4 4 0 01-1 2l-1 2 1 2c0 1 0 4 1 3v-1 1l1-2v2a3 3 0 010-1 3 3 0 010-1h1v-1-1l1 2s0-1 0 0l1-1v1l1 1a9 9 0 010 1v1h-1a6 6 0 010 1 5 5 0 010 1v-1a1 1 0 010-1v-1l-1 2v-2 4l1 1a2 2 0 010-1l1-2s0-1 0 0h1a14 14 0 010-3v3a15 15 0 010-1c0-1 0 0 0 0h1a3 3 0 010 1 9 9 0 010-1c0-2 0-4 1-3a10 10 0 01-1 2l1-1v-1 1a6 6 0 010 1 3 3 0 010 1 3 3 0 000-3v-2a14 14 0 011 3v1h1a2 2 0 010-1s-1 1 0 0c0-1 0 0 0 0v-1a6 6 0 010 1 1 1 0 010 1 4 4 0 010 1v-4 7h1a5 5 0 010-1v-1a5 5 0 010 1h1v-1h-1a7 7 0 011-2v-1l1 1v-1l-1 3v1h1v-1 2a3 3 0 012 2 7 7 0 013-1c4-1 3 1 4 3a4 4 0 001 1 14 14 0 011 1h1l-1-2 1-1v-2l1 1v-2l1 2-1 3 1-2a5 5 0 010 2c0 1 0-1 0 0a3 3 0 000 2c0 1 1-1 1 1a1 1 0 010 1l-1-1 1 4a9 9 0 010 2l-1 1v-1l-1-2v-3 2h-1l1 1v2l1 2c0 2 0 2 1 1l1-1v-3l-1 2v-2a3 3 0 011-2l1 1v-1l1 1h1c0 3-2 0-2 2a6 6 0 000 1 9 9 0 002-2 10 10 0 010-3 7 7 0 010 3l1-1a4 4 0 000-1l-1 1v-3l-1-1v-2c0-1 0-2-1-1v4c0 2-1 1-1 0l-1-1c0-5 2-5 3-5l1 1-1 1h1l1-1 2-1v-1-1l1 1v-2 3h1l1-4a2 2 0 010-1v-2a4 4 0 010 1l2-5a22 22 0 003-3l4 2c1 0 1-2 2 1s0 8 1 9 2 2 4 1l2-3 3-4c1 0 3 1 4 4l1-1a3 3 0 010 1 3 3 0 000 1v1a7 7 0 010-1l1 1h-1v1a7 7 0 001 0v1a11 11 0 010-1v0l1-1v-2 1a5 5 0 010 1 6 6 0 010-2 4 4 0 011 0v-1-2 1a6 6 0 010 2 25 25 0 010 4v2h2v-1l1-1 1 2a7 7 0 010-1h1v1a2 2 0 001-1l5-6 4 7 5 6 4 2h1v-1 2h1v-1a2 2 0 010 1h1v-2 1a9 9 0 000-1 3 3 0 010-2v-2h1v-1 1s1-3 1-1 0 0-1 1c0 2 1 1 1 1a7 7 0 010 1v1a2 2 0 010 1l1-2v-1-1l1 2s0-1 0 0v-1-1c0-1 0 0 0 0v-1l1 1v-2 2h1v-1a2 2 0 010 1 7 7 0 010-1v1s0-1 0 0h1v-1-1l1-1-1 1v1l1-1v-2c0-1 0 0 0 0v0l1 1v1l1-5v1c0 1 0 0 0 0v2l1-1v-1-2 4l1-4v0l1-1v-2 1a5 5 0 010 1 6 6 0 010-2 4 4 0 011-1v-2 1a7 7 0 010 1 25 25 0 010 5v2a3 3 0 011 1 11 11 0 012-2l1-2v1l1-1h1c0-1 0 0 0 0h1l1-1 1 1 1-6v3l1-1v-1s0 1 0 0v-1l1-1v2l1-1c0-1 0-3 1-2s-1 2-1 3c1 0 1-3 2-2s-1 3-1 3l1-1v1a6 6 0 001-1l1-2 1 1v1h1v-1l1-1v4c1 1 0 0 0 0v2h1a2 2 0 011-1v-1 1a6 6 0 012 0 11 11 0 004 0 6 6 0 012 0 6 6 0 010-2l1-2a4 4 0 000-1l-1-2a6 6 0 011-2v3c0 1 0-1 0 0l1-2v1l1-1 1 2c0 1 0 0 0 0v2h1v-1 1h1v1l1-2a12 12 0 00-1 2l1 1v1l1-1s1-1 3 6l1 1-1-1 1 4v-2c0-1 0-3 1-2s-1 3 0 2v-1a7 7 0 010 3l-1 1 1 1a1 1 0 010 1v-2h1v-4h1v-1s0 3 1 1l-1-2h1v-2l1-3v3c0 1 0 0 0 0v2l-1-2a7 7 0 000 2 4 4 0 000 1h1l1 2v-1a3 3 0 010-1 5 5 0 011-2c0-1 0-1 0 0l1-1a7 7 0 01-1 3h-1a5 5 0 000 1h2a8 8 0 010 3 2 2 0 010 1h7l4-1h2V0L0-2v70c4-7 9-7 9-7zm12 10v-1 1zm0 2v-1 1zm0-3v0zm0 5zm0-4l1-1-1 1zm1 0s0 1 0 0a2 2 0 010 1v-1zm1 2h-1v-1h1c0-1 0 0 0 0a1 1 0 010 1zm0 0v0c0-1 0-1 0 0zm167 7v-1 1zm0-1v-1s1 1 0 0zm164-7zm0 2h0zm1-2v0zm0 5v-1 1zm0-4v-1 1zm0 0v-1 1h0zm1 1v-1 1zm1 0v0l-1 1v-1h1c0 1 0 0 0 0zm167 7v-1 1zm0-1zm163-8zm1 2zm0-2v0zm0 5v-1 1zm0-4v-1 1zm1 0h-1l1-1v1zm0 1v-1 1zm1 0v1h-1 1v-1c0 1 0 0 0 0zm167 7v-1 1zm0-1zm130-31h1l-1-1v1zm-1 1l1 1a3 3 0 010 2l-1-2 1-1zm-8-6l1-1-1 1zm-5 5l1 2-1-2zm-1 6h1v2a3 3 0 010-2zm0-3v-1 1zm-1-1a1 1 0 01-1 1l1-1zm-2-2l1 2v-2zm-3 13a2 2 0 010-1h-1l1-2 1-1a3 3 0 010 1l-1 1v2zm2-3l-1 1v1l-1-1a3 3 0 011-1h1zm-3-5h1v-1a3 3 0 011 1v1l-1-1v2c0 1 0 0 0 0l-1-2zm0 5l1-1v1a3 3 0 01-1 1h-1l1-1zm0-8a3 3 0 010 1v-1zm-1 2zm-3-10l2-1v-1 4l-1-2h-1zm1 4a7 7 0 010-2h1l-1 1 1 1v1s0-1 0 0l-1-1v1l-1 1 1-2zm-2-5h0zm0 3h1v-1a2 2 0 010 1v1l-1 1a3 3 0 010-2zm0 12v-1-2a15 15 0 010-2 8 8 0 010-2l1-1 1 2v-1s1-1 1 1l-1-1v2l1-1v3l1 1h-1s0-1 0 0v1l-1 1 1 1-1 1s1 0 0 0v1l-1 1v2l-1-1 1-1a3 3 0 000-1l-1-1c0-1 0 0 0 0h1v-2 1l-2-1h1zm-5-9l1-1-1 1zm-14 17v-1a1 1 0 010 1zm0-8a9 9 0 010-1h1l-1 1zm0 3v0zm0 2a16 16 0 010-3v3a4 4 0 010 2v-1zm-2-2a3 3 0 011 0v-1a6 6 0 010 1c0 1 0 1 0 0h-1zm0 3a9 9 0 011-1s0-1 0 0l-1 1zm0-2v-1a4 4 0 010 1s0-1 0 0v1a5 5 0 010 1v-1c0-1 0 1 0 0a9 9 0 010-1zm-2-3a9 9 0 010-1v1zm-1 4h1-1zm0 2a16 16 0 010-4v3a4 4 0 010 2v-1zm-1-3v-1a6 6 0 010 2v-1s0 1 0 0zm0 3a9 9 0 010-1v1zm-1-2v-1a3 3 0 010 1v1a5 5 0 010 1v-1c0-1 0 1 0 0a9 9 0 010-1zm-2 7h1l-1-2 1 1-1 1zm1-7v-2 2zm-1 4a8 8 0 010-3l1 1v-1 2a2 2 0 010-1v2l-1-1v1a9 9 0 010-1c1-1 0 0 0 0v1zm0 1v-2a6 6 0 010 2zm-4-2v2a6 6 0 010-2zm-2 8v-1 2s0 1 0 0v-1zm-27-6c0 1 0 1 0 0zm1-7v-1a9 9 0 010-1v2zm-1 3h1c0 1 0 0 0 0h-1zm0 2a16 16 0 010-3v3a4 4 0 010 1v-1zm-1-2a3 3 0 010-1v-1a6 6 0 010 2zm0 2a9 9 0 010-1c0 1 0 0 0 0v1zm-1-2v-1a3 3 0 010 1v1a5 5 0 010 1v-1s0 1 0 0a9 9 0 010-1zm-1-11a4 4 0 010 1v-2zm-1 9v-1a9 9 0 010-1v2zm0 3v0zm-1 2a16 16 0 011-3v3a4 4 0 01-1 1v-1zm-1-2a3 3 0 010-1l1-1a6 6 0 010 2h-1zm-11-2v-1c0 2-1 2-1 1zm-7-16v0zm0 8v0zm-10 3c1-1 1 2 1 3l-1-3zm-5 9l1 1-1-1zm1-2c0 1-1 0 0 0l-1-1c0-2 1 0 1 1zm-2-1v3s0-3 1-2a8 8 0 010 3l-1-1c-1 0 0 0 0 0v-3zm-2 0c1-1 1-1 1 1 0 0 0-1 0 0l-1 1a12 12 0 010-2zm-1 2c0-2 1-3 1-1v1l-1 2a6 6 0 010-2zm-9-3a4 4 0 011 3l-1 1v-4zm-1-5v1l-1 1 1-2zm-1 5h1l-1 1 1 1-1-2zm-5-5a10 10 0 010-1h1l-1 1zm0 3v0zm0 2a16 16 0 010-3v3a4 4 0 010 1s0 1 0 0v-1zm-2-5h0zm-2 1a9 9 0 010-1c0-1 0 0 0 0v1zm-1 3l1 1-1-1zm0-6a9 9 0 010 3c0 1 0 0 0 0v-3zm-1 7l-1 2 1-2zm0-1v-1a6 6 0 010 1c0 1 0 1 0 0zm-5-31v1l-1-2zm-1 2v1a3 3 0 010 1v-2zm-8-7s0-1 0 0zm-6 6l1 2-1-2zm-1 2l1-1-1 1zm-8-4h-1v-1h-1v1a7 7 0 010-3h1l-1 1 1 1v1h1zm-1-5l1-2-1 2v0l-1 1 1-1zm-2-4h0zm0 3v0zm-1 4l1-1v-1a2 2 0 010 1v3a3 3 0 01-1-2zm-5 2l1-1-1 1zm-30 31s0-1 0 0zm-5-5c0 1 0 1 0 0zm1-7v-1a9 9 0 010-1v2zm-1 3h1c0 1 0 0 0 0h-1zm0 2a16 16 0 010-3v3a4 4 0 010 1v-1zm-1-2a3 3 0 010-1v-1a6 6 0 010 2zm0 2a9 9 0 010-1c0 1 0 0 0 0v1zm-1-2v-1a3 3 0 010 1v1a5 5 0 010 1v-1 1a9 9 0 010-2zm-2-2v-1a9 9 0 010-1v2zm0 3v0zm-1 2a16 16 0 011-3v3a4 4 0 01-1 1v-1zm-1-2a3 3 0 010-1l1-1a6 6 0 010 2h-1zm0 3a7 7 0 010-2l1 1h-1v1zm0-3v-1a3 3 0 010 1v1a5 5 0 010 2v-2l-1 1a9 9 0 011-2zm-2 7s0 1 0 0v-1 2zm0-7v-2l1 1-1 2v-1zm-1 4a8 8 0 011-3v2c0-1 0 0 0 0v1a8 8 0 010-1c0-1 0 0 0 0l-1 1zm0 1v-1a6 6 0 010 1zm-3-1c0-1 0 0 0 0l-1 1a6 6 0 010-1zm-2 1h0zm-1 7l1-1c1 0 0-1 0 0l-1 1s0 1 0 0v-1zm-2-9a9 9 0 010 3c0 1 0 0 0 0v-3zm-1 7v0zm-1 0v0zm-1 1v1a7 7 0 010-2v1zm0-4v2-2zm-1 0s0 1 0 0v1a1 1 0 010-1zm-1 1v1s0 1 0 0a2 2 0 010-1zm-6 4v-1a1 1 0 010 1zm0-8v-1a9 9 0 010-1v2zm0 3v0zm0 2a16 16 0 010-3v3a4 4 0 010 1s0 1 0 0v-1zm-2-2a3 3 0 011-1v0a6 6 0 010 1c0 1 0 0 0 0h-1zm0 3a9 9 0 011-1c0-1 0-1 0 0l-1 1zm0-3s0-1 0 0v2a5 5 0 010 1v-1c0-1 0 1 0 0a9 9 0 010-2zm-2-2a9 9 0 010-1c0-1 0 0 0 0v1zm-1 3l1 1-1-1zm-1 0c0-1 0 0 0 0v-1a6 6 0 010 1c0 1 0 0 0 0zm-32 12s0-1 0 0zm-1 1v0zm-1-2c0-1 0 0 0 0zm0 2a1 1 0 010-1v1zm0-2v-1zm-1 4v-1a3 3 0 010 1zm0-1c0-1 0-1 0 0zm0-5a2 2 0 010 1v-1zm-1 3a2 2 0 011-1v1zm0 1v0zm0-5v0zm0 2v0zm0 4zm0-1h-1a2 2 0 011 1h-1a1 1 0 010-1s0 1 0 0a2 2 0 010-1v1a2 2 0 011 1v-1zm0 2a4 4 0 010-2 5 5 0 010 2zm0-6v-1zm-5-5c0 1 0 1 0 0v-1 1zm0-7v-1a8 8 0 011-1l-1 2zm0 3c0-1 0 0 0 0 0 1 0 0 0 0zm0 2a17 17 0 010-3v3a4 4 0 010 1v-1zm-1-2a3 3 0 010-1v-1a6 6 0 010 2zm0 2a9 9 0 010-1c0 1 0 0 0 0v1zm-3-4v-1a10 10 0 010-1v2zm0 3c0-1 0 0 0 0 0 1 0 0 0 0zm-1 2a16 16 0 010-3v3a4 4 0 010 1v-1zm-1-2a3 3 0 010-1v-1a6 6 0 010 2zm0 2a9 9 0 010-1c0 1 0 0 0 0v2zm-1-2l1-1a4 4 0 010 1h-1v1a5 5 0 010 1v-1 1a9 9 0 010-2zm-1 0v-2 2zM11 60v-1l1-1v1l-1 1zm2 0v-1 2a5 5 0 010 1v-1c0-1-1 1 0 0a9 9 0 010-2s0-1 0 0zm1 1l-1 1a9 9 0 010-1h1zm0-2c0 1 0 1 0 0h-1 1v-1a6 6 0 010 1zm1 2a4 4 0 010 1h-1l1-1a16 16 0 010-3v3zm0-1v-1 1zm0-5v1a7 7 0 010-1c0-1 0 0 0 0zm3 5v1a7 7 0 010-1c0-1 0-1 0 0zm0-2c0 1 0 0 0 0a3 3 0 010-1v0a6 6 0 010 1zm1 5v-1 1zm0-3a4 4 0 010 1v-1a16 16 0 010-3v3zm1-1v-1 1zm0-5v0a7 7 0 010-1v1zm6 18c0 1 0 0 0 0zm-1-4v-1 1zm-1-1zm0 5s0-1 0 0a3 3 0 000-1v1a2 2 0 010-1 2 2 0 010 1zm0 1a5 5 0 010-1 4 4 0 010 1zm1 0a1 1 0 01-1-1l1 1c0 1 0 0 0 0zm0-4h-1zm0 2v0zm0-1s0 1 0 0c0 0 0-1 0 0zm0-2h0zm1 5h0v-1a2 2 0 010 1zm0-3v-1 1zm0 1c0-1 0 0 0 0zm1-2zm0 3v-1 1zm1-2zm33-11h-1v-1l1-1a6 6 0 010 2zm1 0c0-1 0 0 0 0zm0-5v1a9 9 0 010-1zm2 4v1a5 5 0 010 1v-1c0-1 0 1 0 0a9 9 0 010-1l1-1a4 4 0 01-1 1zm1 1c0 1 0 0 0 0v1a9 9 0 010-1zm0-1v-1c0-1 0 1 0 0v-1a6 6 0 010 2zm1 4v-1 1zm0-3a4 4 0 010 2v-1a16 16 0 010-4v3zm1-1h-1 1zm0-5v1a9 9 0 010-1zm6 6l-1 1a2 2 0 011-2v1zm1-1h-1a1 1 0 011-1v1zm0 0v0zm0 4v1a7 7 0 010-2v1zm2-1l-1-1 1 1zm1-1l-1 2 1-2zm0-3v-1-2a10 10 0 010 3zm3 6h-1l1-1v-1s0-1 0 0v2zm1-8v0zm1 0a6 6 0 010-1v1c0 1 0 1 0 0zm4 0h-1l1-1a6 6 0 010 1zm0 3v-1-1l1 1-1 1zm0-4v1a9 9 0 010-2c0-1 0 0 0 0v1a8 8 0 010-3v1h1l-1 1h1l-1 1zm1-3v-1-1 2zm1 0v-1 2a5 5 0 010 1v-1c0-1 0 1 0 0a9 9 0 010-2s0-1 0 0a3 3 0 010 1zm1 1v1a9 9 0 010-1s0-1 0 0zm0-2c0 1 0 1 0 0v-1a6 6 0 010 1zm1 2a4 4 0 010 1c0 1 0 1 0 0v-1a16 16 0 010-3v3zm0-1v-1 1zm1-5l-1 1a9 9 0 011-1c0-1 0 0 0 0zm2 3c0 1 0 0 0 0v2a5 5 0 01-1 1l1-1h-1a9 9 0 011-2s0-1 0 0zm1 2h-1v1a9 9 0 010-1h1zm0-2h-1c0-1 0 0 0 0l1-1a6 6 0 010 1zm1 5l-1-1a1 1 0 011 1zm-1-3h1a4 4 0 01-1 1s0 1 0 0v-1a16 16 0 011-3v3zm1-1v-1 1zm0-5v0a10 10 0 010-1v1zm4 13h1zm39-33l-1-2h-1l1-1 1-2v5zm-2-3l-1-1 1 1zm-6 5v-1 1zm6-2l-1 1v1a3 3 0 010-2v-1-1a2 2 0 011 2zm0-7l1 1-1-1zm1 10v-1h-1v1c-1 0 0 0 0 0v-1a7 7 0 011-2c0-1 0-1 0 0v2h1v1h-1zm10 4v-1 1zm1-3v0zm5-5l1-1-1 1zm9 9l-1-2v-1l1 1a3 3 0 010 2zm0-5l1 1-1-1zm6 32l-1 2v-2zm0 0h-1c0-1 0 0 0 0a3 3 0 010-1h1v-1a6 6 0 010 2zm0-3v-1-2a9 9 0 010 3zm1 3c0-1 0 0 0 0 0 1 0 0 0 0zm0-3v-1a10 10 0 010-1v2zm10 0v-1 1zm-8-2l1 1-1-1zm2 6a4 4 0 010 1v-1a16 16 0 010-3v3zm1-2h-1 1c0 1 0 0 0 0zm0-5v1a9 9 0 010-1zm5 6v0zm1 4s0 1 0 0l1-3a4 4 0 010 2l-1 1zm10 0v1a6 6 0 010-2l1-1-1 2zm1-2v2a12 12 0 010-3l1 1h-1zm2 3v-1h-1v-3 3l1-2a8 8 0 010 3zm1-1v0zm0-2v-1l1 2-1-1zm5-4v-2 3zm9-6v0zm0-5v-2h1l-1 2zm7 14l1-2-1 2zm12 1c0 1 0 1 0 0 0 0 0 1 0 0v-1a6 6 0 010 1zm1 2a4 4 0 010 1v-1a16 16 0 010-3v3zm0-1v-1 1zm1-5l-1 1a10 10 0 011-1c0-1 0 0 0 0zm1-7c-1 1-1-1-1-2l1 1a3 3 0 010 1zm1 10c0 1 0 0 0 0v2a5 5 0 01-1 1l1-1h-1a9 9 0 011-2s0-1 0 0zm1 2h-1v1a9 9 0 010-1h1zm0-2h-1c0-1 0 0 0 0l1-1a6 6 0 010 1zm1 5l-1-1a1 1 0 011 1zm-1-3h1a4 4 0 01-1 1s0 1 0 0v-1a17 17 0 011-3v3zm1-1v-1 1zm0-4a9 9 0 010-2v2zm26 14v0l1-1s0-1 0 0c0 2 0 1-1 1zm2-7a6 6 0 011-1l-1 1zm4 0s0 1 0 0v-1a6 6 0 010 1zm1 3v-1s0 1 0 0v-1 2zm0-4a9 9 0 010-1c0-1 0 0 0 0l-1 1a8 8 0 011-3v3zm0-3v-1-2l1 1-1 2zm2-1v2a5 5 0 010 1v-1h-1a9 9 0 011-2v-1a4 4 0 010 1zm1 2s0-1 0 0l-1 1a9 9 0 010-1h1zm0-2h-1a3 3 0 010-1h1a6 6 0 010 1zm1 2a4 4 0 01-1 1v-1a17 17 0 011-3v3zm0-1v-1 1zm0-5v0a9 9 0 010-1v1zm2 3v1a5 5 0 010 2v-2 1a9 9 0 010-2l1-1a4 4 0 01-1 1zm1 2s0-1 0 0v1a9 9 0 010-2v1zm0-2c0 1 0 0 0 0a3 3 0 010-1v-1a6 6 0 010 2zm1 5v-1a1 1 0 010 1zm0-4v1a4 4 0 010 1v-1a16 16 0 010-3v2zm1 0l-1-1c1-1 1 0 1 1zm0-6v1a7 7 0 010-1zm20-17h-1zm3 14v-2a3 3 0 010 2zm0 1h-1 1zm-3-6v0a7 7 0 010-3l1 1h-1l1 1 1 1h-1v-1h-1v1zm1-3v-2l-1 1 1-1 1-2-1 2v2zm-2 0v-1a2 2 0 010 1v3a3 3 0 01-1-2l1-1zm0-3v0zm-6 6l1-1-1 1zm9 8l-1 2v2l-1 1-1 1v1c-1 0 0 0 0 0v-1a3 3 0 000-1v-1-1h1c1-1 0-2-1-2v1s-1 1-1-1v-1l1 1-1-3a15 15 0 010-2 8 8 0 010-2l1-1 1 2v-1l2 1h-1v2l1 2 1 1-1-1h-1l1 1zm1 5l1-2v-1 1a3 3 0 010 1l-1 1zm2 2a2 2 0 01-1-1v-1l1-1v-2a3 3 0 010 1v2 2zm1-4a1 1 0 010 1h-1v0a3 3 0 010-1h1zm-1-3v-1s0 1 0 0v1h-1v-2c1-1 0 1 0 0l1-1a3 3 0 010 1l1 1-1 1zm3-6v1-1zm1 3l-1-1h1a1 1 0 010 1zm1-1l1-1-1 1zm1 5a3 3 0 010-1v-1h1v1l-1 1zm0-7l1 2-1-2zm14 3v-2 1a3 3 0 010 1zm0-5l1 1v1l-1-2zm-8-4s0 1 0 0zm33 20v-1-2 3zm1-1v1a5 5 0 010 1v-1 1a9 9 0 010-2v-1a4 4 0 010 1zm1 2v-1 1a7 7 0 010-1v1zm0-2a3 3 0 010-1v-1a6 6 0 010 2zm1 1v1a4 4 0 010 1v-1a16 16 0 010-3v2zm1-1h-1 1c0 1 0 0 0 0zm0-5v1a8 8 0 010-1zm3 5c0 1 0 0 0 0l-1 1a7 7 0 010-1h1zm0-1h-1a3 3 0 010-1h1v-1a6 6 0 010 2zm1 4c0 1 0 0 0 0v-1 1zm0-3v1a4 4 0 010 1h-1l1-1a17 17 0 010-3v2zm0-1c0-1 0 0 0 0 0 1 0 0 0 0zm0-5v1a6 6 0 010-1zm6 19a1 1 0 010-1v1zm-1-5v-1 1zm0 0v-1 1zm0 4h-1a2 2 0 010 1 1 1 0 010-1s0 1 0 0a2 2 0 010-1v0a2 2 0 011 2v-1zm0 1a5 5 0 010-1 4 4 0 010 2zm0 0zm0-3v-1 1zm0 2v0zm1-2l-1 1a2 2 0 010-1h1zm0-2a3 3 0 010 1v-1zm0 6v-1a2 2 0 010 1zm0-4l1-1-1 1zm1 2a1 1 0 010-1v1zm0-2zm1 3a2 2 0 010-1l-1-1 1 2zm1-2v-1 1zm32-12c0 1 0 0 0 0a3 3 0 010-1v0a6 6 0 010 1zm1 1v-1 1zm1-5l-1 1 1-1a9 9 0 010-1v1zm2 3c0 1 0 0 0 0v2a5 5 0 010 1v-1h-1a9 9 0 011-2v-1a4 4 0 010 1zm1 2l-1 1a9 9 0 010-1h1zm0-2h-1a3 3 0 010-1h1c1 0 0-1 0 0a6 6 0 010 1zm1 5v-1 1zm0-3a4 4 0 01-1 1v-1a16 16 0 011-3v3zm0-1v-1 1zm0-5v0a7 7 0 010-1v1zm6 6c0-1 0 1 0 0a2 2 0 010-1v1zm1-2v1a1 1 0 010-1v1zm0 0l1 2-1-2zm1 4v1a7 7 0 010-2v1zm1 0v-1 1zm1-1s0 2-1 1 1-2 1-1zm1-4c0 1 0 0 0 0v-3a9 9 0 010 3zm2 6s0 1 0 0v-1-1l1 1-1 1zm1-7h0zm1 0a6 6 0 010-1v1zm4 0v-1a6 6 0 010 1zm1 3v-1s0 1 0 0v-1 2zm0-4a9 9 0 010-1h-1v1a8 8 0 011-3v2c0-1 0 0 0 0v1zm0-3v-1-2 3zm2-1h-1v1a5 5 0 010 2v-2 1a9 9 0 010-2l1-1a4 4 0 010 1zm0 2s0-1 0 0v1a9 9 0 010-1c0-1 0-1 0 0zm0-2c0 1 0 0 0 0a3 3 0 010-1 6 6 0 010 1zm1 1v1a4 4 0 010 1v-1a16 16 0 011-3l-1 2zm1 0v-1 1zm0-6v1a9 9 0 010-1zm2 4v1a5 5 0 010 1v-1 1a9 9 0 010-2v-1a4 4 0 010 1zm1 1c0 1 0 0 0 0v1a9 9 0 010-1zm0-1a3 3 0 010-1v-1a6 6 0 010 2zm1 4c0 1 0 1 0 0zm0-3v1a4 4 0 010 1v-1a16 16 0 010-3v2zm0-1h0zm1-5l-1 2 1-1a8 8 0 010-1zm4 14s0-1 0 0zm30-31l1-1-1 1zm8-2v-2h-1l1-1 1-2-1 2v2zm-2-3v-1 1zm0 2v3a3 3 0 01-1-2l1-1v-1a2 2 0 010 1zm0-6h0zm2 9l-1-1c-1 0 0 0 0 0v1a7 7 0 010-3l1 1h-1l1 1v1h0zm9 4l1-1-1 1zm1-2l1 2-1-2zm6-6s0-1 0 0zm8 9v-2 1a3 3 0 010 1zm0-5l1 1v1l-1-2zm6 33l-1 1 1-1zm0-1c0 1 0 1 0 0v-1a6 6 0 010 1zm1-3h-1l1-3a9 9 0 010 3zm0 4v-1l1 1h-1zm0-4h1a9 9 0 010-1c0-1 0 0 0 0l-1 1zm10 1v-2 2zm-7-2h0zm2 5a4 4 0 01-1 1s0 1 0 0v-1a16 16 0 011-3v3zm0-1v-1 1zm0-5v1a10 10 0 010-1c0-1 0 0 0 0zm5 6h1l-1 1 1 1-1-2zm2 4v-4a4 4 0 010 3v1zm9-1v2a6 6 0 010-2c0-2 1-3 1-1l-1 1zm2-1l-1 1a12 12 0 010-2c0-1 1-1 1 1 0 0 0-1 0 0zm2 3l-1-1v-3 3s0-3 1-2a8 8 0 010 3zm0-1l1 1-1-1zm1-2l-1-1c0-2 1 0 1 1h-1zm5-4l-1-3 1 3zm8-6c1-1 1 0 1 1l-1-1zm1-6v-2 2zm6 14c1 0 1-3 1-1l-1 1zm12 2c0 1 0 0 0 0a3 3 0 010-1v-1a6 6 0 010 2zm1 1v1a4 4 0 010 1v-1a16 16 0 011-3l-1 2zm1 0v-1 1zm0-6v1a9 9 0 010-1zm1-6v-2-1a2 2 0 000 1 3 3 0 010 2zm1 10v1a5 5 0 010 1v-1 1a9 9 0 010-2v-1a4 4 0 010 1zm1 1c0 1 0 0 0 0v1a9 9 0 010-1zm0-1a3 3 0 010-1v-1a6 6 0 010 2zm1 4c0 1 0 1 0 0zm0-3v1a4 4 0 010 1v-1a16 16 0 010-3v2zm0-1c0-1 0 0 0 0 0 1 0 0 0 0zm0-3l1-1a9 9 0 010-1l-1 2zm27 14s0 1 0 0v-1-1 2zm2-7a7 7 0 010-2v2zm4 0h-1l1-2a6 6 0 010 2zm0 2c0-1 0 0 0 0v-2l1 1-1 1zm0-3v-1 1a9 9 0 010-2v1s0 1 0 0a8 8 0 010-2v1l1-1-1 2a2 2 0 010-1l1 1-1 1zm1-4v-2 2zm1 0v1a5 5 0 010 1v-1c0-1 0 1 0 0a9 9 0 010-1v-1a4 4 0 010 1zm1 1v1a9 9 0 010-1zm0-1v-1s0 1 0 0v-1a6 6 0 010 2zm1 1a4 4 0 010 2v-1a16 16 0 010-4v3zm0-1c0-1 0 0 0 0 1 0 0 0 0 0zm1-5l-1 1h1a9 9 0 010-1zm2 4s0-1 0 0v1a5 5 0 010 1v-1h-1a9 9 0 011-1v-1a4 4 0 010 1zm1 1l-1 1a7 7 0 010-1h1zm0-2h-1c-1-1 0 1 0 0h1v-1a6 6 0 010 1zm1 5v-1a1 1 0 010 1zm0-3a4 4 0 01-1 2v-1a16 16 0 011-4v3zm0-1v-1 1zm0-5v1a7 7 0 010-1zm14-8v-1 1zm9 4v-1a3 3 0 010 1zm0 1c0 1-1 0 0 0zm-2-5h-1v-1a7 7 0 011-2s0-1 0 0v2h1v1h-1v-1h-1l1 1zm-2-3c1-1 0-2 1-1a2 2 0 010 1l-1 1v1a3 3 0 010-2zm0-3h0zm1-4l1 1-1-1zm2 7l-1-2h-1l2-1v-1 4zm0 11l-1 1v1 1c0 1 1 0 0 0v1l-1 1v2l-1-1 1-1a3 3 0 000-1l-1-1c0-1 0 0 0 0l1-1v-1l-1 1-1-1h1v-1-2a15 15 0 010-2 8 8 0 010-2l1-1 1 2v-1s1-1 1 1l-1-1v2l1-1v3l1 1h-1s0-1 0 0v1zm1 4l1-1 1-1v1a3 3 0 01-1 1h-1zm2 2a2 2 0 010-1h-1l1-2 1-1a3 3 0 010 1l-1 1v2zm1-3v2l-1-1a3 3 0 011-1c0-1 0-1 0 0zm0-4l-1-1v2l-1-2h1v-1a3 3 0 011 1v1c0 1 0 0 0 0zm2-6l1 2-1-2zm1 3h-1l1-1a1 1 0 010 1zm2 0v-1 1zm0 5a3 3 0 010-2h1l-1 2zm1-8v0zm5-5l1-1-1 1zm9 9l-1-2v-1l1 1a3 3 0 010 2zm0-5v1h1l-1-1zm13-10l-1 1 1-1z" fill-rule="evenodd"></path><path d="M301 59v2a2 2 0 000 1l1-1-1-2zM98 61s0 1 0 0l-1 1a4 4 0 011-1l-1-1-1-1v0h-1v3h1a6 6 0 01-1 1 2 2 0 001 0 4 4 0 001-1c0 1 0 1 0 0a3 3 0 001 0v-1zm-2 1v-1 1zm0-1l1 1-1-1zm1 1v-1 1zM171 61l-1 2c-1 0 0 0 0 0v3a3 3 0 010 1c0 1 0 0 0 0v1a1 1 0 011-1v-1l1 2a11 11 0 00-1-6v-1zM264 71zM198 70zM264 71zM23 74zM23 76v-1 1h1l-1-1a2 2 0 000 1zM22 76c0 1 0 0 0 0zM62 61v0c0-1 0 0 0 0zM72 66v-2 2zM19 67v1zM11 62v0c0-1 0 0 0 0zM15 62zM94 59v-1a2 2 0 00-1 1h1a3 3 0 000 1l1 3v-1-1l-1-2zM74 65a1 1 0 000 1h1v-1h-1zM91 52l-1 1v0a3 3 0 010 1 7 7 0 000 1l1-2v-1zM165 60zM88 58a2 2 0 000-1v1zM84 62v-1 1zM85 62a4 4 0 000-1 1 1 0 010 1zM407 67a1 1 0 000 1h1v-1h-1zM396 62l-1 1 1 1v-1-1zM499 62v-1a3 3 0 000 1zM421 59a2 2 0 000-1 2 2 0 010 1zM418 63zM405 67h1a8 8 0 000-1l-1 1zM352 69h1zM348 64v-1a1 1 0 000 1zM344 64c1-1 0 0 0 0zM357 76zM357 77a1 1 0 000 1 1 1 0 010-1zM355 77v1a1 1 0 010-1zM418 64v-1 1zM531 72v-1 1zM562 66v1a7 7 0 000 1v-1-1zM504 63v5a3 3 0 010 1v-1 1a1 1 0 010-1l1-1v2a11 11 0 00-1-5v-1zM604 64s-1 1 0 0l-1 1v-1a3 3 0 010 1 6 6 0 000 1l1-2v-1 1zM505 72h-1v1h1a2 2 0 000-1zM597 73zM598 73zM635 61l-1 2h1v-1-1zM424 54v1a7 7 0 000 1v-1-1zM501 63zM428 61v-1h-1a2 2 0 000 1 3 3 0 001 1v-1zM431 63v-1l-1-1h-1v-1 4c0-1 0-1 0 0a6 6 0 010 1 4 4 0 002-1h-1l1-1v0zm-2 0h0zm1 0v0zm0 1v-1 1zM431 63v1-1z" fill-rule="evenodd"></path><path d="M432 62a1 1 0 00-1 0 2 2 0 000 1l1-1-1 1h1v-1zM740 67a1 1 0 000 1h1v-1h-1zM751 63zM738 67h1v-1l-1 1zM751 64v-1 1zM761 61v-1h-1a2 2 0 000 1 3 3 0 001 1v2l1-2-1-1zM757 54v1a7 7 0 000 1v-1-1zM755 59a2 2 0 000-1 2 2 0 01-1 1h1zM682 64v-1a1 1 0 000 1zM677 64h0zM686 69zM729 62v1h-1l1 1v-1-1zM690 76zM690 77a1 1 0 000 1 1 1 0 010-1zM688 77a8 8 0 000 1h1a1 1 0 01-1-1zM931 73zM895 66v1a7 7 0 000 1v-1-1zM832 62a1 1 0 000-1 1 1 0 000 1zM837 63v5a3 3 0 010 1v-1 1h1a1 1 0 010-1v-1 2a11 11 0 000-5l-1-1zM864 72l1-1-1 1zM937 64s0 1 0 0v0h-1a3 3 0 010 1 7 7 0 000 1c1 1 1-1 1-2v-1 1zM968 61v2a2 2 0 00-1 0h1v-1-1zM930 73h1-1zM838 72h-1a3 3 0 000 1 3 3 0 001 0 2 2 0 000-1z" fill-rule="evenodd"></path><path d="M765 63h-1s0 1 0 0v-1l-1-1s0 1 0 0l-1-1c-1 0 0 0 0 0v4c0-1 0-1 0 0a6 6 0 010 1 2 2 0 001 0 4 4 0 001-1v-1 1l1-1zm-2 0zm0 0v0zm0 1v-1 1z" fill-rule="evenodd"></path><path d="M764 63v1l1-1h-1zM765 62a1 1 0 00-1 0 2 2 0 001 1v-1 0zM834 63z" fill-rule="evenodd"></path></g>
+        </svg>
+
+      {% when 'toxedo' %}
+        <svg
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 100"
+          width="100%"
+          height="200"
+        >
+          <g fill="currentColor"><g opacity=".7"><path d="M1004 13S979 0 938-2c-7-1-15 1-23 3a149 149 0 00-30 12l-17 10a219 219 0 01-62 28 80 80 0 01-22 1 95 95 0 01-32-10l8 5a74 74 0 0022 7c26 5 53-5 76-16 12-6 22-12 34-16a165 165 0 0136-8 136 136 0 0140 2c12 2 24 5 36 11z"></path><path d="M1004 50V26c0-2-12-4-13-5-20-8-43-9-65-7-20 2-39 9-57 18-20 10-44 22-68 23 0 0 19 2 52-10 21-7 42-14 64-16 20-2 38 3 57 9l30 12z" opacity=".5"></path></g><g opacity=".7"><path d="M502 13S477 0 437-2c-8-1-16 1-24 3a149 149 0 00-30 12l-17 10a221 221 0 01-62 28 80 80 0 01-22 1 95 95 0 01-32-10l8 5a75 75 0 0022 7c27 5 53-5 77-16 11-6 22-12 33-16a166 166 0 0136-8 137 137 0 0140 2c13 2 25 4 36 10z"></path>
+            <path fill="currentColor" d="M502 50V26c0-3-11-5-13-6-19-7-42-8-64-6-21 2-40 9-58 18-20 10-44 22-68 23 0 0 19 2 52-10 21-7 42-14 64-16 20-2 39 3 58 9 10 3 20 7 29 12z" opacity=".5"></path></g><g opacity=".7"><path d="M502 12s22-12 63-14c8-1 16 1 24 3a151 151 0 0130 12l17 10a222 222 0 0062 28 81 81 0 0022 1 96 96 0 0032-10l-7 5a75 75 0 01-22 7c-27 5-54-5-77-16-12-6-22-12-34-16a167 167 0 00-36-8 138 138 0 00-41 2c-12 2-22 4-33 10z"></path><path d="M502 50V26c0-3 9-4 10-5 20-8 43-9 65-7 21 2 40 9 58 18 21 10 45 22 68 23 0 0-19 2-52-10-21-7-42-14-64-16-21-2-39 3-58 9-10 3-17 7-27 12z" opacity=".5"></path></g><g opacity=".7"><path d="M-3 13S22 0 63-2c8-1 16 1 23 3a151 151 0 0130 12l18 10a222 222 0 0062 28 81 81 0 0022 1 96 96 0 0032-10l-7 5a75 75 0 01-22 7c-27 5-54-5-78-16-11-6-22-12-34-16a167 167 0 00-35-8 138 138 0 00-41 2C21 18 8 21-3 27z"></path><path d="M-3 50V26c0-2 11-4 13-5 20-8 43-9 65-7 21 2 39 9 58 18 20 10 44 22 68 23 0 0-19 2-52-10-21-7-43-14-65-16-20-2-38 3-57 9-10 3-21 7-30 12z" opacity=".5"></path></g><path d="M548 10a157 157 0 0155 4c22 6 22 12 51 22 18 6 31 10 48 10 24-1 41-10 51-17 9 7 26 16 50 17 17 0 30-4 48-10 29-10 29-16 51-22a157 157 0 0155-4 154 154 0 0147 12V0H501l1 22a149 149 0 0146-12z"></path><path d="M46 10a157 157 0 0155 4c22 6 22 12 50 22 18 6 32 10 49 10 23-1 41-10 50-17 9 7 27 16 50 17 18 0 31-4 49-10 29-10 28-16 51-22a157 157 0 0155-4c21 2 37 7 47 12l-1-22H-1v22a154 154 0 0147-12z"></path></g>
+        </svg>
+
+      {% when 'liquavista' %}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 35.28 2.54"
+          preserveAspectRatio="none"
+          width="100%"
+          height="200"
+        >
+          <path fill="currentColor" d="M35.28.54V0H0v.8C.13.44.35.44.45.54c.1.1-.13.79-.22 1.43-.1.63.42.68.56.43.14-.26-.22-.77-.1-1.2.1-.44.08-.77.54-.72.46.05-.1.28 0 .51.1.23.57.14.42-.26-.14-.4.36-.49.38-.2.01.3-.25.98-.22 1.49.04.51.53.42.43-.18-.1-.6-.18-1.1.01-1.3.2-.2.48-.07.87.12.4.2.3.54.96.54.65 0 .35-.64.8-.66.44-.02.35.52.26.82a.3.3 0 00.5.31c.24-.22-.24-.5-.18-.71.05-.21.32-.27.39-.04s-.18.42 0 .53c.17.1.53.1.35-.29-.18-.38-.27-.83.05-.8.32.03 1.31-.07 1.15.67-.16.74-.01 1.5.32 1.25.34-.24-.21-1.27-.09-1.62.13-.36.43-.14.57.1.14.25-.18.7.25.69.42-.01.21-.4.09-.72-.13-.32.28-.2.28-.2.19.01.34-.1.45 0 .1.11-.13.8-.23 1.44-.09.63.43.68.57.43.14-.26-.22-.77-.11-1.2.1-.44.09-.77.55-.72.46.05-.1.28 0 .51.1.23.57.14.42-.26-.14-.4.36-.49.38-.2.01.3-.25.98-.22 1.49.04.51.53.42.43-.18-.1-.6-.19-1.1.01-1.3.2-.2.48-.07.87.12.4.2.3.54.96.54.65 0 .35-.64.8-.66.44-.02.35.52.26.82a.3.3 0 00.5.31c.24-.22-.24-.5-.18-.71.05-.21.32-.27.39-.04s-.18.42 0 .53c.17.1.53.1.35-.29-.18-.38-.27-.83.05-.8.32.03 1.31-.07 1.15.67-.16.74-.01 1.5.32 1.25.34-.24-.21-1.27-.09-1.62.13-.36.43-.14.57.1.14.25-.18.7.25.69.42-.01.21-.4.09-.72-.13-.32.28-.2.28-.2.13.05.34-.1.45 0 .1.11-.13.8-.23 1.44-.09.63.42.68.57.43.14-.26-.22-.77-.11-1.2.1-.44.09-.77.55-.72.46.05-.1.28 0 .51.1.23.56.14.42-.26-.14-.4.36-.49.37-.2.02.3-.24.98-.2 1.49.03.51.52.42.42-.18-.1-.6-.19-1.1.01-1.3.2-.2.48-.07.87.12.4.2.3.54.96.54.65 0 .35-.64.8-.66.44-.02.35.52.26.82a.3.3 0 00.5.31c.24-.22-.24-.5-.18-.71.05-.21.32-.27.39-.04s-.18.42 0 .53c.17.1.53.1.35-.29-.18-.38-.28-.83.05-.8.32.03 1.31-.07 1.15.67-.16.74-.01 1.5.32 1.25.34-.24-.21-1.27-.09-1.62.13-.36.43-.14.57.1.14.25-.18.7.25.69.42-.01.2-.4.09-.72-.13-.32.28-.2.28-.2.18.01.34-.1.45 0 .1.11-.13.8-.23 1.44-.09.63.42.68.57.43.14-.26-.22-.77-.11-1.2.1-.44.09-.77.55-.72.46.05-.1.28 0 .51.1.23.56.14.42-.26-.14-.4.36-.49.37-.2.02.3-.24.98-.2 1.49.03.51.52.42.42-.18-.11-.6-.19-1.1.01-1.3.2-.2.48-.07.87.12.39.2.3.54.96.54.65 0 .35-.64.8-.66.43-.02.35.52.26.82a.3.3 0 00.5.31c.24-.22-.24-.5-.18-.71.05-.21.31-.27.39-.04.07.23-.18.42 0 .53.17.1.53.1.35-.29-.18-.38-.28-.83.05-.8.32.03 1.31-.07 1.15.67-.16.74-.02 1.5.32 1.25.34-.24-.21-1.27-.09-1.62.13-.36.43-.14.57.1.14.25-.18.7.25.69.42-.01.2-.4.08-.72-.12-.32.29-.2.29-.2" fill="%23000000"></path>
+        </svg>
+      {% when 'swirling' %}
+        <svg
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 2000 78"
+          width="100%"
+          height="200"
+        >
+          <g fill="currentColor"><path fill="currentColor" d="M207 37a1 1 0 00-1 1h2a1 1 0 001 0l-2-1zM209 28a2 2 0 00-1 3c0 1 2 2 3 1a2 2 0 001-2 2 2 0 00-3-2zM215 33a2 2 0 00-1-1c-2 1-2 5-2 7a3 3 0 001 1 2 2 0 002 0 3 3 0 001-1 5 5 0 000-5 3 3 0 00-1-1zM177 27c-3-1-6 1-5 4a4 4 0 006 2 3 3 0 001-2 4 4 0 00-2-4zM119 53c-2-1-4 1-3 3a3 3 0 004 2 2 2 0 001-2 3 3 0 00-2-3zM135 23a1 1 0 000 1c0 1 1 2 2 1a1 1 0 001-1l-3-1zM539 28a2 2 0 00-1 3c0 1 2 2 3 1a2 2 0 001-2 2 2 0 00-3-2zM537 37a1 1 0 00-1 1h2a1 1 0 001 0l-2-1zM545 33a2 2 0 00-1-1c-2 1-2 5-2 7a2 2 0 001 1 2 2 0 002 0 3 3 0 001-1 5 5 0 000-5 3 3 0 00-1-1zM449 53c-2-1-4 1-3 3a3 3 0 004 2 2 2 0 001-2 3 3 0 00-2-3zM507 27c-3-1-6 1-5 4a4 4 0 006 2 3 3 0 001-2 4 4 0 00-2-4zM465 23a1 1 0 000 1c0 1 1 2 2 1a1 1 0 001-1l-3-1zM879 28a2 2 0 00-1 3c0 1 2 2 4 1a2 2 0 000-2 2 2 0 00-3-2zM886 33a2 2 0 00-2-1c-2 1-2 5-2 7a2 2 0 002 1 2 2 0 001 0 3 3 0 001-1 5 5 0 001-5 3 3 0 00-1-1zM877 37a1 1 0 00-1 1h3c0-1-1-2-2-1zM847 27c-3-1-6 1-5 4a4 4 0 006 2 3 3 0 001-2 4 4 0 00-2-4zM789 53c-2-1-4 1-3 3a3 3 0 004 2 2 2 0 001-2 3 3 0 00-2-3zM805 23a1 1 0 000 1c0 1 1 2 2 1a1 1 0 001-1l-3-1z"></path><path d="M1914 0H0v25h1c5 1 12 15 12 35 0 5 0 8 3 9h5c4-3 0-9 1-13 1-3 4-7 7-4l3 3c3 1 4-1 4-3 1-4-2-19 3-25 3-5 8-6 12-4 7 3 18 2 23 9 2 4 2 25-1 30-1 2-3 4-3 7 0 5 5 9 10 9a8 8 0 002 0c6-2 9-9 4-15-2-3-5-14-5-21 1-12 7-22 14-30l14 14a12 12 0 013 10c-2 6 0 12 6 12 6-1 8-5 7-9a13 13 0 00-2-5c-3-4 2-13 7-15a13 13 0 0113 3c5 4 4 8 4 12 0 22-3 27-3 33 0 3 3 7 5 7 7 2 11-2 11-9-1-8-4-10-3-28 0-2 2-4 4-3s0 6 1 8a4 4 0 004 3 4 4 0 004-3l-1-10c-1-8 6-15 15-13 8 1 12 8 13 25l-2 6a6 6 0 003 9 9 9 0 006 0c4-1 5-6 3-9a26 26 0 00-2-3 10 10 0 01-1-5c-1-5 0-9 1-12a63 63 0 018-15c8 9 16 12 16 18 0 3-1 6 1 8h6c3-2 1-4 1-6 0-5 2-8 6-8 9 2 7 8 7 13l1 5c1 1 3 0 4-1s2-3 4-2c3 1 2 6 2 8a42 42 0 00-1 7c0 4 5 8 9 8s8-5 8-9l-2-13c1-6 4-8 7-8 7 0 6 6 10 4 4-1 2-6 4-10 2-1 4 0 5 1s0 4 2 4 1-3 2-5c0-2 3-3 6-2 5 0 4 7 3 8a5 5 0 01-1 2c-4 5-2 11 5 11 5 1 11-5 8-10s-3-10-1-16a3 3 0 002 2 9 9 0 003 1c5 1 13 15 13 35 0 5 0 8 3 9h5c4-3 0-10 1-13s4-7 7-4l3 3c3 1 4-1 4-3 1-4-2-19 3-25 3-5 8-6 11-4 7 2 19 1 24 9 2 4 2 25-1 30-1 2-3 4-3 7 0 4 5 9 10 9a8 8 0 002 0c6-2 9-9 4-15-2-3-5-14-5-21 0-12 7-22 14-30l14 14a12 12 0 013 10c-2 6 0 12 6 12 6-1 7-5 7-9a13 13 0 00-2-5c-3-4 1-13 7-15a13 13 0 0113 3c5 4 4 8 4 12 0 22-3 27-3 33 0 3 3 7 5 7 7 2 11-2 11-9-1-8-4-10-3-28 0-2 2-4 4-3s0 6 1 8a4 4 0 004 3 4 4 0 004-3l-1-10c-1-8 6-15 15-13 8 1 12 8 13 25l-2 6a6 6 0 003 9 9 9 0 006 0c4-1 4-6 3-9a27 27 0 00-2-3 10 10 0 01-1-5c-1-5 0-9 1-12a63 63 0 018-15c9 9 16 12 16 18l1 8h6c3-2 1-4 1-6 0-5 2-8 6-8 10 2 7 8 7 13l1 5c1 1 3 0 4-1s2-3 4-2c3 1 2 6 2 8a42 42 0 00-1 7c0 4 5 8 9 8s8-5 8-9c-1-3-2-10-1-13 0-6 3-8 6-8 7 0 6 6 11 4 3-1 1-6 4-10 1-1 3 0 4 1s0 4 2 4 1-3 2-5c0-2 3-3 6-2 5 0 4 7 3 8a5 5 0 01-1 2c-4 5-2 11 5 11 6 1 11-5 8-10-6-10 1-19 7-27l3 7c0 2-1 5 1 6a9 9 0 004 1c5 1 13 15 12 35 0 5 0 8 3 9h5c4-3 0-10 1-13s5-7 7-4c2 0 2 2 4 3s3-1 4-3c0-4-3-19 2-25 3-5 9-6 12-4 7 2 18 1 23 9 2 4 2 25-1 30-1 2-3 4-3 7 0 4 5 9 10 9a8 8 0 002 0c6-2 9-9 4-15-2-3-5-14-5-21 1-12 7-22 14-30l14 14a12 12 0 013 10c-2 6 0 12 7 12 5-1 7-5 6-9a13 13 0 00-2-5c-3-4 2-13 7-15a13 13 0 0113 3c5 4 4 8 4 12 0 22-3 27-3 33 0 3 3 7 5 7 7 2 12-2 11-9-1-8-4-10-3-28 0-2 2-4 4-3s0 6 1 8a4 4 0 004 3 4 4 0 004-3l-1-10c-1-8 6-15 16-13 8 1 12 8 12 25l-2 6a6 6 0 003 9 9 9 0 006 0c4-1 5-6 3-9a27 27 0 00-2-3 10 10 0 01-1-5c-1-5 0-9 1-12a63 63 0 018-15c9 9 16 12 16 18 0 3 0 6 2 8h5c3-2 1-4 1-6 0-5 2-8 6-8 10 2 7 8 7 13l1 5c1 1 3 0 4-1s2-3 4-2c3 1 2 6 2 8a44 44 0 00-1 7c0 4 5 8 9 8s8-5 8-9c-1-3-2-10-1-13 0-6 3-8 6-8 7 0 6 6 11 4 3-1 1-6 4-10 1-1 3 0 4 1s0 4 2 4 1-3 2-5 3-3 7-2c4 0 3 7 3 8a5 5 0 01-1 2c-5 5-2 11 4 11 6 1 11-5 8-10-5-8-1-16 4-23 5 7 9 15 4 23-3 5 3 11 8 10 7 0 9-6 5-11a5 5 0 01-1-2c-1-1-2-8 3-8 3-1 6 0 7 2s-1 5 1 5 2-2 3-4 3-2 4-1c2 4 0 9 4 10 4 2 4-4 10-4 3 0 6 2 7 8l-1 13c-1 4 2 8 7 9s9-4 9-8a44 44 0 00-1-7c0-2-1-7 2-8 2-1 3 1 4 2s3 2 4 1l1-5c0-5-2-11 7-13 5 0 6 3 6 8 0 2-1 4 1 6h6c2-2 1-5 1-8 0-6 8-9 16-18a63 63 0 018 15c2 3 2 7 2 12a10 10 0 01-2 5 27 27 0 00-2 3c-1 3-1 8 3 9a9 9 0 006 0 6 6 0 003-9l-2-6c1-17 5-24 13-25 9-2 16 5 15 13v10a4 4 0 003 3 4 4 0 004-3c1-2-1-7 2-8 1-1 3 1 3 3 1 18-2 20-3 28 0 7 4 11 11 9 3 0 5-4 5-7 0-6-3-11-3-33 0-4 0-8 4-12a13 13 0 0113-3c6 2 10 11 7 15a13 13 0 00-2 5c0 4 1 8 7 9 6 0 8-6 6-12a12 12 0 013-10l14-14c7 8 14 18 14 30 0 7-3 18-5 21-5 6-2 13 4 15a8 8 0 002 0c5 0 10-4 10-9 0-3-2-5-3-7-3-5-3-26-1-30 5-7 16-6 23-9 4-2 9-1 12 4 5 6 2 21 3 25 0 2 1 4 4 3l3-3c3-3 6 1 7 4 1 4-3 10 1 13h5c3-1 3-4 3-9 0-20 7-34 12-35a9 9 0 004-1c2-1 1-4 2-6l3-7c5 8 12 18 6 27-3 5 3 11 8 11 7-1 9-7 5-12a5 5 0 01-1-2c-1-1-2-8 3-8 3-1 6 0 7 2s-1 5 1 5 2-2 3-4 2-2 4-1c2 4 0 9 4 10 4 2 4-4 10-4 3 0 6 2 7 8l-1 13c-1 4 2 8 7 9s9-4 9-8a42 42 0 00-1-6c0-3-1-8 2-9 2-1 3 1 4 2s3 2 4 1l1-5c0-5-2-11 7-13 5 0 6 3 6 8 0 2-1 4 1 6h6c2-2 1-5 1-8 0-6 8-9 16-18a63 63 0 018 15c2 3 2 7 2 12a10 10 0 01-2 5 27 27 0 00-2 3c-1 3-1 8 3 10a9 9 0 006-1 6 6 0 003-9l-2-6c1-17 5-24 13-25 10-2 17 5 15 13v10a4 4 0 003 3 4 4 0 005-3c0-2-1-7 1-8 1-1 3 1 3 3 1 18-2 20-3 28 0 7 4 11 11 9 3 0 5-4 5-7 0-6-2-11-2-33 0-4-1-8 3-12a13 13 0 0113-3c6 2 10 11 7 15a13 13 0 00-1 5c-1 4 1 8 6 9 6 0 8-6 6-12a12 12 0 013-10l14-14c7 8 14 18 14 30 0 7-2 18-5 21-5 6-2 13 4 15a8 8 0 003 0c5 0 9-4 9-9 1-3-1-5-3-7-3-5-3-26-1-30 5-7 17-6 24-9 3-2 8-1 12 4 4 6 1 21 2 25 0 2 2 4 4 3l3-3c3-3 6 1 7 4 1 4-3 10 2 13h5c2-1 2-4 2-9 0-20 8-34 13-35a9 9 0 003-1 3 3 0 002-1c2 5 3 10-1 15-3 6 3 11 8 11 7-1 9-7 5-12a5 5 0 01-1-2c-1-1-2-8 3-8 3-1 6 0 7 2s-1 5 1 5 2-2 3-4 3-2 4-1c2 4 0 9 4 10 4 2 4-4 10-4 3 0 6 2 7 8l-1 13c-1 4 2 8 7 9s9-3 9-8a42 42 0 00-1-6c0-3-1-8 2-9 2-1 3 1 4 2s3 2 4 1l1-5c0-5-2-11 7-13 5 0 6 3 6 8 0 2-1 4 1 6 2 1 4 2 6 0s1-5 1-8c0-6 8-9 16-18a63 63 0 018 15c2 3 2 7 2 12a10 10 0 01-2 5 26 26 0 00-2 3c-1 3-1 8 3 10a9 9 0 006-1 6 6 0 003-9l-2-6c1-17 5-24 13-25 10-2 17 5 15 13v10a4 4 0 003 3 4 4 0 005-3c0-2-1-7 1-8 1-1 3 1 3 3 1 18-2 20-3 28 0 7 4 11 11 9 3 0 5-4 5-7 0-6-2-11-2-33 0-4-1-8 3-12a13 13 0 0113-3c6 2 10 11 7 15a13 13 0 00-1 5c-1 4 1 8 6 9 6 0 8-6 6-12a12 12 0 013-10l14-14c7 8 14 18 14 30 0 7-2 18-5 21-5 6-2 13 4 15a8 8 0 003 0c5 0 9-4 9-9 1-3-1-5-3-7-3-5-3-26-1-30 5-7 17-6 24-9 3-2 8-1 12 4 4 6 1 21 2 25 0 2 2 4 4 3l3-3c3-3 6 1 7 4 1 4-3 10 2 13h5c2-1 2-4 2-9 0-20 8-34 13-35V0z"></path><path d="M1794 38a1 1 0 000-1c-1-1-2 0-2 1h2zM1792 31a2 2 0 00-1-3 2 2 0 00-2 2 2 2 0 000 2c1 1 3 0 3-1zM1787 32a2 2 0 00-2 1 3 3 0 00-1 1 5 5 0 000 5 3 3 0 001 1 2 2 0 002 0 3 3 0 001-2c1-1 0-5-1-6zM1865 23l-2 1a1 1 0 001 1c0 1 2 0 1-1a1 1 0 000-1zM1881 53a3 3 0 00-1 3 2 2 0 001 2 3 3 0 004-2c0-2-2-4-4-3zM1824 27a4 4 0 00-3 4 3 3 0 002 2 4 4 0 006-2c1-3-3-5-5-4zM1551 53a3 3 0 00-1 3 2 2 0 001 2 3 3 0 004-2c0-2-2-4-4-3zM1535 23l-2 1a1 1 0 001 1c0 1 2 0 1-1a1 1 0 000-1zM1464 38a1 1 0 000-1c-1-1-2 0-2 1h2zM1457 32a2 2 0 00-2 1 3 3 0 00-1 1 5 5 0 000 5 3 3 0 001 1 2 2 0 002 0 2 2 0 001-2c1-1 0-5-1-6zM1494 27a4 4 0 00-3 4 3 3 0 002 2 4 4 0 006-2c1-3-3-5-5-4zM1462 31a2 2 0 00-1-3 2 2 0 00-2 2 2 2 0 000 2c1 1 3 0 3-1zM1124 38a1 1 0 000-1c-1-1-2 0-2 1h2zM1116 32a2 2 0 00-1 1 3 3 0 00-1 1 5 5 0 000 5 3 3 0 001 1 2 2 0 002 0 2 2 0 001-2c1-1 0-5-2-6zM1122 31a2 2 0 00-1-3 2 2 0 00-3 2 2 2 0 001 2c1 1 3 0 3-1zM1195 23l-3 1a1 1 0 002 1c0 1 2 0 1-1a1 1 0 000-1zM1153 27a4 4 0 00-2 4 3 3 0 001 2 4 4 0 007-2c1-3-3-5-6-4zM1211 53a3 3 0 00-2 3 2 2 0 001 2 3 3 0 005-2c0-2-2-4-4-3z"></path></g>
+        </svg>
+    {% endcase %}
+  </div>
+</div>
+<div class="section-{{ section.id }}-bottom-padding color-{% if section.settings.flip_vertical %}{{ section.settings.background_color }}{% else %}{{ section.settings.shape_color }}{% endif %}">
+   
+</div>
+
+{% schema %}
+{
+  "name": "Section dividers",
+  "settings": [
+    {
+      "type": "select",
+      "id": "shape",
+      "options": [
+        {
+          "value": "arc_divider",
+          "label": "Arc Divider"
+        },
+        {
+          "value": "arch_divider",
+          "label": "Arch Divider"
+        },
+        {
+          "value": "bubble_divider",
+          "label": "Bubble Divider"
+        },
+        {
+          "value": "bubble_side_divider",
+          "label": "Bubble Side Divider"
+        },
+        {
+          "value": "curve_divider",
+          "label": "Curve Divider"
+        },
+        {
+          "value": "clouds",
+          "label": "Clouds"
+        },
+        {
+          "value": "double_buble",
+          "label": "Double Divider"
+        },
+        {
+          "value": "frame_4",
+          "label": "Frame Divider"
+        },
+        {
+          "value": "grunge_divider",
+          "label": "Grunge Divider"
+        },
+        {
+          "value": "intersecting_curves",
+          "label": "Intersecting Curves"
+        },
+        {
+          "value": "intersecting_tilt_angles",
+          "label": "Intersecting Tilt Angles"
+        },
+        {
+          "value": "intersecting_wave_layers",
+          "label": "Intersecting Wwave Layers"
+        },
+        {
+          "value": "intersecting_waves_scattered",
+          "label": "Intersecting Waves Scattered"
+        },
+        {
+          "value": "intersecting_waves_split",
+          "label": "Intersecting Waves Split"
+        },
+        {
+          "value": "layered_arch",
+          "label": "Layered Arch"
+        },
+        {
+          "value": "layered_curves",
+          "label": "Layered Curves"
+        },
+        {
+          "value": "layered_slants",
+          "label": "Layered Slants"
+        },
+        {
+          "value": "layered_triangle",
+          "label": "Layered Triangle"
+        },
+        {
+          "value": "layered_wave",
+          "label": "Layered Wave"
+        },
+        {
+          "value": "liquavista",
+          "label": "Liquavista"
+        },
+        {
+          "value": "mountain_divider",
+          "label": "Mountain Divider"
+        },
+        {
+          "value": "oval_halves_inverse",
+          "label": "Oval Halves Inverse"
+        },
+        {
+          "value": "oval_halves",
+          "label": "Oval Halves"
+        },
+        {
+          "value": "pyramid_divider",
+          "label": "Pyramid Divider"
+        },
+        {
+          "value": "rough",
+          "label": "Rough"
+        },
+        {
+          "value": "slit",
+          "label": "Slit"
+        },
+        {
+          "value": "sharp_1",
+          "label": "Sharp 1"
+        },
+        {
+          "value": "sharp_2",
+          "label": "Sharp 2"
+        },
+        {
+          "value": "sharp_3",
+          "label": "Sharp 3"
+        },
+        {
+          "value": "sharp_4",
+          "label": "Sharp 4"
+        },
+        {
+          "value": "slant_divider",
+          "label": "Slant Divider"
+        },
+        {
+          "value": "slope_asymmetrical_divider",
+          "label": "Slope Asymmetrical Divider"
+        },
+        {
+          "value": "slope_subtle_divider",
+          "label": "Slope Subtle Divider"
+        },
+        {
+          "value": "spikes_divider_medium",
+          "label": "Spikes Divider Medium"
+        },
+        {
+          "value": "steps_divider_round",
+          "label": "Steps Divider Round"
+        },
+        {
+          "value": "stripes_divider_large",
+          "label": "Stripes Divider Large"
+        },
+        {
+          "value": "swirling",
+          "label": "Swirling"
+        },
+        {
+          "value": "toxedo",
+          "label": "Toxedo"
+        },
+        {
+          "value": "triangle_asymmetrical_divider_inverse",
+          "label": "Triangle Asymmetrical Divider Inverse"
+        },
+        {
+          "value": "triangle_curve_divider_inverse",
+          "label": "Triangle Curve DividerInverse"
+        },
+        {
+          "value": "triangle_divider",
+          "label": "Triangle Divider"
+        },
+        {
+          "value": "triangle_round_asymmetrical",
+          "label": "Triangle Rround Asymmetrical"
+        },
+        {
+          "value": "triangle_rounded_divider",
+          "label": "Triangle Rounded Divider"
+        },
+        {
+          "value": "triangle_slope_divider_inverse",
+          "label": "Triangle Slope Divider"
+        },
+        {
+          "value": "triangle_shadow",
+          "label": "Triangle shadow"
+        },
+        {
+          "value": "valley_divider",
+          "label": "Valley Divider"
+        },
+        {
+          "value": "waves_2_large",
+          "label": " Waves Large"
+        },
+        {
+          "value": "waves_simple_divider",
+          "label": "Waves Simple Divider"
+        },
+        {
+          "value": "waves_water_divider_inverse",
+          "label": "waves water Divider"
+        },
+        {
+          "value": "wavy_mantle_divider",
+          "label": "Wavy mantle Divider"
+        },
+        {
+          "value": "wavy_steps",
+          "label": "Wavy Steps"
+        },
+        {
+          "value": "waves_1",
+          "label": "Waves 1"
+        },
+        {
+          "value": "waves_2",
+          "label": "Waves 2"
+        },
+        {
+          "value": "waves_3",
+          "label": "Waves 3 (Animated)"
+        },
+        {
+          "value": "random_1",
+          "label": "Random 1"
+        }
+      ],
+      "label": "Shape",
+      "default": "waves_3"
+    },
+    {
+      "type": "checkbox",
+      "id": "flip_horizontal",
+      "label": "Flip horizontal",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "flip_vertical",
+      "label": "Flip vertical",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "wave_height",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Wave Height",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "wave_height_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Wave Height - Mobile",
+      "default": 80
+    },
+    {
+      "type": "color",
+      "id": "shape_color",
+      "label": "Background color"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Shape color"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section dividers"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  }
+}
+{% endschema %}
+
+
+             
+            
