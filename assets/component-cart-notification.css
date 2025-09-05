@@ -110,7 +110,7 @@
   display: inline-flex;
   margin-right: 1.5rem;
   margin-top: 0.5rem;
-  background-color: black !important;
+  background-color: #F9F9F6 !important;
   /* Jon */
 }
 
@@ -121,4 +121,6 @@
 .cart-notification-product__name {
   margin-bottom: 0.5rem;
   margin-top: 0;
+  color: black !important;
+  /* Jon */
 }
