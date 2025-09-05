@@ -94,8 +94,8 @@
         ".price-item--sale {color: #7cb342; font-size: 20px;}",
         ".product__title {margin-bottom: -15px;}",
         ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
-        ".icon-with-text {margin-bottom: -3px; margin-top: -10px;}",
-        ".icon-with-text__item {margin-bottom: 10px; margin-top: 0px;}"
+        ".icon-with-text {margin-bottom: 5px; margin-top: 5px;}",
+        ".icon-with-text__item {margin-bottom: 5px; margin-top: 0px;}"
       ],
       "settings": {
         "enable_sticky_info": true,
