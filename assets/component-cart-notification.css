@@ -22,8 +22,6 @@
   width: 100%;
   box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
   z-index: -1;
-  background-color: #F9F9F6 !important;
-  /* Jon */
 }
 
 .cart-notification.focused {
@@ -112,6 +110,8 @@
   display: inline-flex;
   margin-right: 1.5rem;
   margin-top: 0.5rem;
+  background-color: black !important;
+  /* Jon */
 }
 
 .cart-notification-product__image:after {
