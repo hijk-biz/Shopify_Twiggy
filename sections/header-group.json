@@ -48,7 +48,7 @@
       "type": "header",
       "custom_css": [
         "{z-index: 10;}",
-        ".cart-notification {background-color: black !important;}"
+        ".cart-notification {background-color: #F9F9F6 !important;}"
       ],
       "settings": {
         "logo_position": "top-center",
