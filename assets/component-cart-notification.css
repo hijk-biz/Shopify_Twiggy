@@ -1,7 +1,7 @@
 .cart-notification-wrapper {
   position: relative;
-  background-color: black !important;
-  /* Jon */
+  /* background-color: black !important;
+  Jon */
 }
 
 .cart-notification-wrapper .cart-notification {
@@ -22,6 +22,8 @@
   width: 100%;
   box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
   z-index: -1;
+  background-color: #F9F9F6;
+  /* Jon */
 }
 
 .cart-notification.focused {
