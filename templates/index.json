@@ -31,7 +31,7 @@
     "section_divider_cfJai9": {
       "type": "section-divider",
       "custom_css": [
-        "{margin-bottom: -17px; margin-top: -5px; position: relative; z-index: 2;}"
+        "{margin-bottom: -5px; margin-top: -5px; position: relative; z-index: 2;}"
       ],
       "name": "Section dividers",
       "settings": {
