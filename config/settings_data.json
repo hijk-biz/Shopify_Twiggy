@@ -224,7 +224,7 @@
           "button": "{{ shop.brand.colors.primary[0].foreground }}",
           "button_label": "{{ shop.brand.colors.secondary[1].background }}",
           "secondary_button_label": "{{ shop.brand.colors.primary[0].foreground }}",
-          "shadow": "{{ shop.brand.colors.primary[0].background }}"
+          "shadow": "{{ shop.brand.colors.secondary[1].background }}"
         }
       }
     }
