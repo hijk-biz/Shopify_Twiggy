@@ -221,9 +221,9 @@
           "background": "#f9f9f6",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#c49a6c",
+          "button": "#dc8900",
           "button_label": "#ffffff",
-          "secondary_button_label": "#c49a6c",
+          "secondary_button_label": "#dc8900",
           "shadow": "#121212"
         }
       }
