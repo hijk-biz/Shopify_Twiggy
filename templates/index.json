@@ -11,7 +11,6 @@
   "sections": {
     "section_divider_LVQYBN": {
       "type": "section-divider",
-      "disabled": true,
       "custom_css": [
         "{margin-bottom: 0px; position: relative; z-index: 2;}"
       ],
@@ -22,8 +21,8 @@
         "flip_vertical": true,
         "wave_height": 26,
         "wave_height_mobile": 26,
-        "shape_color": "#7cb342",
-        "background_color": "#7cb342",
+        "shape_color": "{{ shop.brand.colors.primary[0].background }}",
+        "background_color": "{{ shop.brand.colors.primary[0].background }}",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -31,7 +30,7 @@
     "section_divider_cfJai9": {
       "type": "section-divider",
       "custom_css": [
-        "{margin-bottom: -5px; margin-top: -5px; position: relative; z-index: 2;}"
+        "{margin-bottom: -17px; margin-top: -5px; position: relative; z-index: 2;}"
       ],
       "name": "Section dividers",
       "settings": {
