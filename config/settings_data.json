@@ -11,9 +11,9 @@
   "current": {
     "logo": "shopify://shop_images/twiggy_logo_f4dd6832-b36b-42dc-a2b4-3825b4ccf096.png",
     "logo_width": 120,
-    "type_header_font": "assistant_n4",
+    "type_header_font": "poppins_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "manrope_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
