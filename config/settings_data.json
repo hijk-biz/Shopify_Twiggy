@@ -24,9 +24,9 @@
     "buttons_border_thickness": 0,
     "buttons_border_opacity": 0,
     "buttons_radius": 40,
-    "buttons_shadow_opacity": 35,
-    "buttons_shadow_horizontal_offset": 2,
-    "buttons_shadow_vertical_offset": 2,
+    "buttons_shadow_opacity": 30,
+    "buttons_shadow_horizontal_offset": 4,
+    "buttons_shadow_vertical_offset": 4,
     "buttons_shadow_blur": 5,
     "variant_pills_border_thickness": 1,
     "variant_pills_border_opacity": 55,
@@ -196,8 +196,8 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "{{ shop.brand.colors.primary[0].foreground }}",
-          "background_gradient": "",
+          "background": "#b43333",
+          "background_gradient": "linear-gradient(127deg, rgba(254, 217, 81, 1) 11%, rgba(254, 246, 90, 1) 60.791%, rgba(255, 70, 199, 1) 81%)",
           "text": "{{ shop.brand.colors.secondary[1].background }}",
           "button": "#b43333",
           "button_label": "#b43333",
@@ -212,8 +212,8 @@
           "text": "{{ shop.brand.colors.secondary[0].background }}",
           "button": "{{ shop.brand.colors.primary[0].foreground }}",
           "button_label": "{{ shop.brand.colors.secondary[0].background }}",
-          "secondary_button_label": "{{ shop.brand.colors.secondary[1].background }}",
-          "shadow": "{{ shop.brand.colors.secondary[1].background }}"
+          "secondary_button_label": "{{ shop.brand.colors.primary[0].foreground }}",
+          "shadow": "{{ shop.brand.colors.primary[0].foreground }}"
         }
       },
       "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c": {
