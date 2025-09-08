@@ -241,7 +241,7 @@
         "button_hGzEtT"
       ],
       "custom_css": [
-        "{line-height: 17px; letter-spacing:-0.3px}"
+        "{line-height: 17px; letter-spacing: -0.3px;}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
