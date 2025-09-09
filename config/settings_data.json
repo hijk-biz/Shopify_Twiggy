@@ -126,7 +126,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "cart_color_scheme": "scheme-1",
+    "cart_color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -225,6 +225,17 @@
           "button_label": "{{ shop.brand.colors.secondary[1].background }}",
           "secondary_button_label": "{{ shop.brand.colors.primary[0].foreground }}",
           "shadow": "{{ shop.brand.colors.secondary[1].background }}"
+        }
+      },
+      "scheme-368c5a57-138c-4f50-9f64-aef772b7386f": {
+        "settings": {
+          "background": "{{ shop.brand.colors.secondary[0].background }}",
+          "background_gradient": "",
+          "text": "{{ shop.brand.colors.secondary[1].background }}",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
         }
       }
     }
