@@ -91,7 +91,7 @@
       "custom_css": [
         ".product__info-container {margin-bottom: -10px;}",
         ".price-item--regular {color: red; font-size: 20px;}",
-        ".price-item--sale {color: #7cb342; font-size: 20px;}",
+        ".price-item--sale {font-size: 20px;}",
         ".product__title {margin-bottom: -20px;}",
         ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
         ".icon-with-text {margin-bottom: 5px; margin-top: 5px;}",
