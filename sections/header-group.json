@@ -47,7 +47,8 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "{z-index: 10;}"
+        "{z-index: 10;}",
+        ".cart-count-bubble {color: black !important; font-weight: bold;}"
       ],
       "settings": {
         "logo_position": "top-center",
