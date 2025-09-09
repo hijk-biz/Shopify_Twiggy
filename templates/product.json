@@ -90,12 +90,13 @@
       ],
       "custom_css": [
         ".product__info-container {margin-bottom: -10px;}",
-        ".price-item--regular {color: red; font-size: 20px;}",
-        ".price-item--sale {font-size: 20px;}",
-        ".product__title {margin-bottom: -20px;}",
+        ".product__title {margin-bottom: -15px;}",
         ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
         ".icon-with-text {margin-bottom: 5px; margin-top: 5px;}",
-        ".icon-with-text__item {margin-bottom: 5px; margin-top: 0px;}"
+        ".icon-with-text__item {margin-bottom: 5px; margin-top: 0px;}",
+        ".price-item--regular {color: #a3afaf;}",
+        ".price-item--sale {color: #82c041; font-weight: bold;}",
+        ".button--secondary {background-color: black !important;}"
       ],
       "settings": {
         "enable_sticky_info": true,
