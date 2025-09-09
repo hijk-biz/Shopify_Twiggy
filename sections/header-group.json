@@ -47,9 +47,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        "{z-index: 10;}",
-        ".cart-notification {background-color: #f9f9f6 !important;}",
-        ".cart-notification__heading {color: black !important;}"
+        "{z-index: 10;}"
       ],
       "settings": {
         "logo_position": "top-center",
@@ -59,7 +57,7 @@
         "sticky_header_type": "always",
         "show_line_separator": false,
         "color_scheme": "scheme-13e6cbf9-1b3a-4de9-b723-3638ee32287d",
-        "menu_color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "menu_color_scheme": "scheme-368c5a57-138c-4f50-9f64-aef772b7386f",
         "enable_country_selector": false,
         "enable_language_selector": false,
         "enable_customer_avatar": false,
