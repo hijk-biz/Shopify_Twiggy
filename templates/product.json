@@ -96,7 +96,7 @@
         ".icon-with-text__item {margin-bottom: 5px; margin-top: 0px;}",
         ".price-item--regular {color: #a3afaf;}",
         ".price-item--sale {color: #82c041; font-weight: bold;}",
-        ".button--secondary {background-color: black !important;}"
+        ".button--secondary {background-color: #ffd84d !important; color: #3a3a3a; font-size: 20px !important; letter-spacing: 0px;}"
       ],
       "settings": {
         "enable_sticky_info": true,
