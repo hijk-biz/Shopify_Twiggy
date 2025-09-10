@@ -126,23 +126,6 @@
         "padding_bottom": 12
       }
     },
-    "image_banner_FeRVW6": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/Photoroom_20250902_161752.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
     "image_with_text_mAxxW4": {
       "type": "image-with-text",
       "name": "t:sections.image-with-text.presets.name",
@@ -451,7 +434,6 @@
     "section_divider_tPQDzG",
     "rich_text_pPXNfi",
     "rich_text_aDEtj3",
-    "image_banner_FeRVW6",
     "image_with_text_mAxxW4",
     "vso_benefits_grid_J87mf7",
     "section_divider_m9KPtb",
