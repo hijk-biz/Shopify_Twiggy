@@ -126,23 +126,59 @@
         "padding_bottom": 12
       }
     },
-    "image_with_text_mAxxW4": {
-      "type": "image-with-text",
-      "name": "t:sections.image-with-text.presets.name",
+    "slideshow_KmDEhM": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_TEMbrq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Photoroom_20250910_184126.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-4"
+          }
+        },
+        "slide_nELz37": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_TEMbrq",
+        "slide_nELz37"
+      ],
+      "name": "t:sections.slideshow.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Photoroom_20250910_184126.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "mobile_content_alignment": "center",
-        "section_color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
-        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 3,
+        "image_behavior": "ambient",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "vso_benefits_grid_J87mf7": {
@@ -434,7 +470,7 @@
     "section_divider_tPQDzG",
     "rich_text_pPXNfi",
     "rich_text_aDEtj3",
-    "image_with_text_mAxxW4",
+    "slideshow_KmDEhM",
     "vso_benefits_grid_J87mf7",
     "section_divider_m9KPtb",
     "section_divider_GiLUhz",
