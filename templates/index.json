@@ -69,6 +69,48 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_pPXNfi": {
+      "type": "rich-text",
+      "blocks": {
+        "text_cVTDpU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Experience Smarter Play, the Aussie Way.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cVTDpU"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 12
+      }
+    },
+    "image_with_text_mAxxW4": {
+      "type": "image-with-text",
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Photoroom_20250902_161752.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "vso_benefits_grid_J87mf7": {
       "type": "vso-benefits-grid",
       "blocks": {
@@ -402,6 +444,8 @@
     "section_divider_LVQYBN",
     "rich_text_JFqDrH",
     "section_divider_tPQDzG",
+    "rich_text_pPXNfi",
+    "image_with_text_mAxxW4",
     "vso_benefits_grid_J87mf7",
     "section_divider_m9KPtb",
     "section_divider_GiLUhz",
