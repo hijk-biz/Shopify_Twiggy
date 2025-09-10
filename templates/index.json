@@ -95,62 +95,6 @@
         "padding_bottom": 12
       }
     },
-    "slideshow_KmDEhM": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_TEMbrq": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Photoroom_20250910_184126.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "bottom-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c"
-          }
-        },
-        "slide_PLYpLr": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/IMG-7848.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "bottom-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c"
-          }
-        }
-      },
-      "block_order": [
-        "slide_TEMbrq",
-        "slide_PLYpLr"
-      ],
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 3,
-        "image_behavior": "ambient",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "rich_text_aDEtj3": {
       "type": "rich-text",
       "blocks": {
@@ -178,6 +122,64 @@
         "full_width": false,
         "padding_top": 12,
         "padding_bottom": 12
+      }
+    },
+    "slideshow_KmDEhM": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_TEMbrq": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Photoroom_20250902_161752.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c"
+          }
+        },
+        "slide_PLYpLr": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/IMG-7848.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "bottom-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-13e6cbf9-1b3a-4de9-b723-3638ee32287d"
+          }
+        }
+      },
+      "block_order": [
+        "slide_TEMbrq",
+        "slide_PLYpLr"
+      ],
+      "custom_css": [],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "ambient",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "vso_benefits_grid_J87mf7": {
@@ -278,99 +280,6 @@
         "mobile_layout": "column"
       }
     },
-    "section_divider_m9KPtb": {
-      "type": "section-divider",
-      "name": "Section dividers",
-      "settings": {
-        "shape": "waves_3",
-        "flip_horizontal": false,
-        "flip_vertical": false,
-        "wave_height": 120,
-        "wave_height_mobile": 80,
-        "shape_color": "",
-        "background_color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_divider_GiLUhz": {
-      "type": "section-divider",
-      "custom_css": [
-        "{margin-top: -20px; position: relative; z-index: 1;}"
-      ],
-      "name": "Section dividers",
-      "settings": {
-        "shape": "waves_2",
-        "flip_horizontal": true,
-        "flip_vertical": false,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
-        "shape_color": "#7cb342",
-        "background_color": "#f9f9f6",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_divider_cW4HwU": {
-      "type": "section-divider",
-      "custom_css": [
-        "{margin-top: -5px;}"
-      ],
-      "name": "Section dividers",
-      "settings": {
-        "shape": "waves_2",
-        "flip_horizontal": false,
-        "flip_vertical": false,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
-        "shape_color": "{{ shop.brand.colors.primary[0].background }}",
-        "background_color": "{{ shop.brand.colors.primary[0].background }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "rich_text_k8cB9B": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_RyU7AD": {
-          "type": "heading",
-          "settings": {
-            "heading": "Play. Learn. Grow.",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "heading_RyU7AD"
-      ],
-      "name": "Rich Text",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-13e6cbf9-1b3a-4de9-b723-3638ee32287d",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_divider_feDWbG": {
-      "type": "section-divider",
-      "custom_css": [
-        "{margin-bottom: -0px;}"
-      ],
-      "name": "Section dividers",
-      "settings": {
-        "shape": "waves_1",
-        "flip_horizontal": false,
-        "flip_vertical": true,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
-        "shape_color": "{{ shop.brand.colors.primary[0].background }}",
-        "background_color": "{{ shop.brand.colors.primary[0].background }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_divider_Kj6QF8": {
       "type": "section-divider",
       "name": "Section dividers",
@@ -468,14 +377,9 @@
     "rich_text_JFqDrH",
     "section_divider_tPQDzG",
     "rich_text_pPXNfi",
-    "slideshow_KmDEhM",
     "rich_text_aDEtj3",
+    "slideshow_KmDEhM",
     "vso_benefits_grid_J87mf7",
-    "section_divider_m9KPtb",
-    "section_divider_GiLUhz",
-    "section_divider_cW4HwU",
-    "rich_text_k8cB9B",
-    "section_divider_feDWbG",
     "section_divider_Kj6QF8",
     "rich_text_7frmBx",
     "section_divider_kKTBxa",
