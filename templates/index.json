@@ -30,7 +30,7 @@
     "section_divider_cfJai9": {
       "type": "section-divider",
       "custom_css": [
-        "{margin-bottom: -17px; margin-top: -5px; position: relative; z-index: 2;}"
+        "{margin-bottom: -17px; margin-top: -0px; position: relative; z-index: 1;}"
       ],
       "name": "Section dividers",
       "settings": {
@@ -45,9 +45,46 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_JFqDrH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FQJhmq": {
+          "type": "heading",
+          "settings": {
+            "heading": "LEARN. PLAY. GROW.",
+            "heading_size": "hxxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FQJhmq"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "ss_video_banner_gd7R6D": {
       "type": "ss-video-banner",
       "blocks": {
+        "slide_rRTqMd": {
+          "type": "slide",
+          "settings": {
+            "autoplay": true,
+            "video_url": "",
+            "title": "<h1>Meet The Perfect Travel Shoes</h1>",
+            "subtitle": "<p>Super Packable. Versatile. And All-Day (And Night) Adventure Ready.</p>",
+            "button": "Shop Now",
+            "button_url": "shopify://collections/all",
+            "second_button": "Shop Now",
+            "second_button_url": "shopify://collections/all"
+          }
+        },
         "slide_mfiy96": {
           "type": "slide",
           "settings": {
@@ -64,6 +101,7 @@
         }
       },
       "block_order": [
+        "slide_rRTqMd",
         "slide_mfiy96"
       ],
       "name": "SS - Video Banner",
@@ -126,6 +164,104 @@
         "section_width": 120,
         "section_radius": 0,
         "lazy": false
+      }
+    },
+    "vso_benefits_grid_J87mf7": {
+      "type": "vso-benefits-grid",
+      "blocks": {
+        "benefit_fFjnaw": {
+          "type": "benefit",
+          "settings": {
+            "image": "shopify://shop_images/Photoroom_20250902_160937.jpg",
+            "block_title": "BENEFIT TITLE",
+            "block_description": "Describe the benefit or feature here."
+          }
+        },
+        "benefit_WyFEQ7": {
+          "type": "benefit",
+          "settings": {
+            "block_title": "BENEFIT TITLE",
+            "block_description": "Describe the benefit or feature here."
+          }
+        },
+        "benefit_tgkLXW": {
+          "type": "benefit",
+          "settings": {
+            "block_title": "BENEFIT TITLE",
+            "block_description": "Describe the benefit or feature here."
+          }
+        },
+        "benefit_NJeimJ": {
+          "type": "benefit",
+          "settings": {
+            "block_title": "BENEFIT TITLE",
+            "block_description": "Describe the benefit or feature here."
+          }
+        },
+        "benefit_QCEpUF": {
+          "type": "benefit",
+          "settings": {
+            "block_title": "BENEFIT TITLE",
+            "block_description": "Describe the benefit or feature here."
+          }
+        },
+        "benefit_q7Mknq": {
+          "type": "benefit",
+          "settings": {
+            "block_title": "BENEFIT TITLE",
+            "block_description": "Describe the benefit or feature here."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_fFjnaw",
+        "benefit_WyFEQ7",
+        "benefit_tgkLXW",
+        "benefit_NJeimJ",
+        "benefit_QCEpUF",
+        "benefit_q7Mknq"
+      ],
+      "name": "VSO - Benefits Grid",
+      "settings": {
+        "heading_custom_font": false,
+        "heading_font": "poppins_n4",
+        "heading": "",
+        "heading_color": "#000000",
+        "heading_text_alignment": "center",
+        "heading_font_size": 40,
+        "heading_font_size_mobile": 30,
+        "title_margin_bottom": 40,
+        "columns_desktop": 3,
+        "columns_tablet": 2,
+        "mobile_peek_percentage": 10,
+        "mobile_card_gap": 5,
+        "grid_gap": 10,
+        "icon_size": 48,
+        "icon_vertical_alignment": "center",
+        "icon_text_gap": 15,
+        "card_padding_vertical": 20,
+        "card_padding_horizontal": 20,
+        "card_border_radius": 8,
+        "card_bg_color": "#FFFFFF",
+        "card_title_custom_font": true,
+        "card_title_font": "poppins_n4",
+        "card_title_font_size": 18,
+        "card_title_font_size_mobile": 16,
+        "card_desc_custom_font": true,
+        "card_desc_font": "poppins_n4",
+        "card_desc_font_size": 16,
+        "card_desc_font_size_mobile": 14,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "section_bg_color": "#F9F9F9",
+        "content_max_width": 82,
+        "padding_top_mobile": 12,
+        "padding_bottom_mobile": 40,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "mobile_layout": "column"
       }
     },
     "section_divider_GiLUhz": {
@@ -347,7 +483,9 @@
   "order": [
     "section_divider_LVQYBN",
     "section_divider_cfJai9",
+    "rich_text_JFqDrH",
     "ss_video_banner_gd7R6D",
+    "vso_benefits_grid_J87mf7",
     "section_divider_GiLUhz",
     "section_divider_cW4HwU",
     "rich_text_k8cB9B",
