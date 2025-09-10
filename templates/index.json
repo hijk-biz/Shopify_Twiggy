@@ -82,12 +82,15 @@
       "block_order": [
         "text_cVTDpU"
       ],
+      "custom_css": [
+        "{line-height: 22px;font-size: 18px;}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
-        "full_width": true,
+        "full_width": false,
         "padding_top": 16,
         "padding_bottom": 12
       }
