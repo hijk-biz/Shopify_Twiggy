@@ -41,7 +41,9 @@
       "block_order": [
         "heading_FQJhmq"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "{margin-top: -25px;}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "left",
