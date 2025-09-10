@@ -1,0 +1,1339 @@
+{%- comment -%}
+  WARNING: UNAUTHORIZED MODIFICATION PROHIBITED
+  This code is proprietary property of Versio Studio. Any unauthorized tampering, 
+  alteration, or distribution of this file is strictly forbidden and will be prosecuted to the maximum extent permitted by law.
+  All modifications are logged.
+
+  If you require assistance or have questions regarding this code, please contact support@versio.studio.
+{%- endcomment -%}
+
+{%- liquid
+  assign content_max_width       = section.settings.content_max_width
+  assign mobile_padding_top      = section.settings.mobile_padding_top
+  assign mobile_padding_bottom   = section.settings.mobile_padding_bottom
+  assign block_spacing           = section.settings.block_spacing
+  assign background_color        = section.settings.background_color
+  assign full_width             = section.settings.full_width
+  assign content_width          = section.settings.content_width
+-%}
+
+{%- style -%}
+  .vso-hero-promo-section {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    --desktop-heading-size: 42px;
+    --mobile-heading-size: 32px;
+    --desktop-paragraph-size: 18px;
+    --mobile-paragraph-size: 16px;
+    --desktop-rating-size: 16px;
+    --mobile-rating-size: 14px;
+    --star-size: 24px;
+    --star-size-mobile: 18px;
+    --star-gap: 2px;
+    --star-text-gap: 10px;
+    --benefit-icon-size: 20px;
+    --benefit-spacing: 10px;
+    --benefit-font-size-desktop: 14px;
+    --benefit-font-size-mobile: 12px;
+  }
+
+  #vso-hero-promo-{{ section.id }} > .vso-hero-promo-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #vso-hero-promo-{{ section.id }} > .vso-hero-promo-container > .vso-hero-promo-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  #vso-hero-promo-{{ section.id }} > .vso-hero-promo-container > .vso-hero-promo-content > .vso-hero-promo-content-inner {
+    max-width: var(--content-max-width);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--block-spacing);
+    align-items: center;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-content h1,
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-content h2,
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-content p,
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph .rte,
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph .rte p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+  }
+
+  #vso-hero-promo-{{ section.id }} > .vso-hero-promo-container > .vso-hero-promo-image-container {
+    width: 50%;
+    position: relative;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-image-container > .vso-hero-promo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-image-container > .vso-hero-promo-video-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-video-wrapper > .vso-hero-promo-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-video-wrapper > iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+
+  .vso-node {
+    display: none;
+  }
+  .vso-node--v2 {
+    display: block;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-content-inner > .vso-hero-promo-rating-container {
+    background-color: var(--container-background);
+    padding: var(--container-padding-vertical) var(--container-padding-horizontal);
+    border-radius: var(--container-border-radius);
+    border: var(--container-border-width) solid var(--container-border-color);
+    box-shadow: var(--container-shadow);
+    display: inline-block;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-rating-container > .vso-hero-promo-rating {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-rating > .vso-hero-promo-stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-right: var(--star-text-gap);
+    color: var(--star-color);
+    line-height: 1;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-stars > .vso-hero-star-icon {
+    display: inline-block;
+    width: var(--star-size);
+    height: var(--star-size);
+    margin-right: var(--star-gap);
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-star-icon > svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-star-icon > .vso-hero-custom-star {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-stars > .vso-hero-star-icon:last-child {
+    margin-right: 0;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-rating > .vso-hero-promo-rating-text {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: var(--desktop-rating-size);
+    color: var(--rating-text-color);
+    display: flex;
+    align-items: center;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-content-inner > .vso-hero-promo-heading {
+    font-weight: bold;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-heading > h1 {
+    font-size: var(--desktop-heading-size);
+    color: var(--heading-color);
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-content-inner > .vso-hero-promo-paragraph {
+    color: var(--paragraph-color);
+    font-size: var(--desktop-paragraph-size);
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph > .rte,
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph > .rte p {
+    font-size: var(--desktop-paragraph-size);
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-content-inner > .vso-hero-promo-button {
+    padding: 12px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0;
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-content-inner > .vso-hero-promo-benefit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-benefit > .vso-hero-promo-benefit-icon {
+    width: var(--benefit-icon-size);
+    height: var(--benefit-icon-size);
+    margin-right: var(--benefit-spacing);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #vso-hero-promo-{{ section.id }} .vso-hero-promo-benefit > .vso-hero-promo-benefit-text {
+    font-size: var(--benefit-font-size-desktop);
+    color: var(--benefit-font-color);
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    #vso-hero-promo-{{ section.id }} > .vso-hero-promo-container {
+      flex-direction: column-reverse;
+    }
+
+    #vso-hero-promo-{{ section.id }} > .vso-hero-promo-container > .vso-hero-promo-content {
+      width: 100%;
+      padding-top: var(--mobile-padding-top);
+      padding-bottom: var(--mobile-padding-bottom);
+    }
+
+    #vso-hero-promo-{{ section.id }} > .vso-hero-promo-container > .vso-hero-promo-image-container {
+      width: 100%;
+    }
+
+    #vso-hero-promo-{{ section.id }} .vso-hero-promo-heading > h1 {
+      font-size: var(--mobile-heading-size);
+    }
+
+    #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph,
+    #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph > .rte,
+    #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph > .rte p {
+      font-size: var(--mobile-paragraph-size);
+    }
+
+    #vso-hero-promo-{{ section.id }} .vso-hero-promo-rating > .vso-hero-promo-rating-text {
+      font-size: var(--mobile-rating-size);
+    }
+
+    #vso-hero-promo-{{ section.id }} .vso-hero-promo-stars > .vso-hero-star-icon {
+      width: var(--star-size-mobile);
+      height: var(--star-size-mobile);
+    }
+
+    #vso-hero-promo-{{ section.id }} .vso-hero-promo-benefit > .vso-hero-promo-benefit-text {
+      font-size: var(--benefit-font-size-mobile);
+    }
+
+    #vso-hero-promo-{{ section.id }} .vso-hero-promo-content-inner > .vso-hero-promo-button {
+      padding: var(--button-padding-vertical-mobile) var(--button-padding-horizontal-mobile);
+      border-radius: var(--button-border-radius-mobile);
+      font-size: var(--button-font-size-mobile);
+    }
+  }
+{%- endstyle -%}
+
+{% unless full_width %}
+  <style>
+    #vso-hero-promo-{{ section.id }} > .vso-hero-promo-container {
+      max-width: {{ content_width }}rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+{% endunless %}
+
+<div class="vso-node vso-hero-promo-section" id="vso-hero-promo-{{ section.id }}">
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'rating' -%}
+        {%- if block.settings.custom_font -%}
+          <style>
+            #vso-hero-promo-{{ section.id }} .vso-hero-promo-rating-text {
+              font-family: {{ block.settings.font.family }}, {{ block.settings.font.fallback_families }};
+              font-style: {{ block.settings.font.style }};
+            }
+          </style>
+        {%- endif -%}
+      {%- when 'heading' -%}
+        {%- if block.settings.custom_font -%}
+          <style>
+            #vso-hero-promo-{{ section.id }} .vso-hero-promo-heading h1 {
+              font-family: {{ block.settings.font.family }}, {{ block.settings.font.fallback_families }};
+              font-style: {{ block.settings.font.style }};
+            }
+          </style>
+        {%- endif -%}
+      {%- when 'paragraph' -%}
+        {%- if block.settings.custom_font -%}
+          <style>
+            #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph,
+            #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph .rte,
+            #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph .rte p {
+              font-family: {{ block.settings.font.family }}, {{ block.settings.font.fallback_families }};
+              font-style: {{ block.settings.font.style }};
+            }
+          </style>
+        {%- endif -%}
+      {%- when 'button' -%}
+        {%- if block.settings.custom_font -%}
+          <style>
+            #vso-hero-promo-{{ section.id }} .vso-hero-promo-button {
+              font-family: {{ block.settings.font.family }}, {{ block.settings.font.fallback_families }};
+              font-style: {{ block.settings.font.style }};
+            }
+          </style>
+        {%- endif -%}
+      {%- when 'benefit' -%}
+        {%- if block.settings.custom_font -%}
+          <style>
+            #vso-hero-promo-{{ section.id }} .vso-hero-promo-benefit-text {
+              font-family: {{ block.settings.font.family }}, {{ block.settings.font.fallback_families }};
+              font-style: {{ block.settings.font.style }};
+            }
+          </style>
+        {%- endif -%}
+    {%- endcase -%}
+  {%- endfor -%}
+
+  <div class="vso-hero-promo-container">
+    <div class="vso-hero-promo-content"
+         style="--block-spacing: {{ block_spacing }}px; --content-max-width: {{ content_max_width }}px; --mobile-padding-top: {{ mobile_padding_top }}px; --mobile-padding-bottom: {{ mobile_padding_bottom }}px; background-color: {{ background_color }};">
+      <div class="vso-hero-promo-content-inner">
+        {%- assign image_block = null -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'image' -%}
+            {%- assign image_block = block -%}
+            {%- continue -%}
+          {%- endif -%}
+
+          {%- case block.type -%}
+            {%- when 'rating' -%}
+              <div class="vso-hero-promo-rating-container"
+                   style="--container-background: {{ block.settings.background_color }}; --container-padding-vertical: {{ block.settings.inner_padding_vertical }}px; --container-padding-horizontal: {{ block.settings.inner_padding_horizontal }}px; --container-border-radius: {{ block.settings.border_radius }}px; --container-border-width: {{ block.settings.border_width }}px; --container-border-color: {{ block.settings.border_color }};{% if block.settings.enable_shadow %} --container-shadow: 0 0 {{ block.settings.shadow_blur }}px {{ block.settings.shadow_color }};{% else %} --container-shadow: none;{% endif %}"
+                   {{ block.shopify_attributes }}>
+                <div class="vso-hero-promo-rating"
+                     style="--desktop-rating-size: {{ block.settings.text_size_desktop }}px; --mobile-rating-size: {{ block.settings.text_size_mobile }}px; --star-size: {{ block.settings.star_size }}px; --star-size-mobile: {{ block.settings.star_size_mobile }}px; --star-gap: {{ block.settings.star_gap }}px; --star-text-gap: {{ block.settings.star_text_gap }}px; --star-color: {{ block.settings.star_color }}; --star-empty-color: {{ block.settings.star_empty_color }}; --rating-text-color: {{ block.settings.text_color }};">
+                <div class="vso-hero-promo-stars">
+                  {%- if block.settings.star_style == 'custom' and block.settings.custom_star_image != blank -%}
+                    {%- liquid
+                      assign rating = block.settings.star_rating
+                      assign full_stars = rating | floor
+                      assign half_star = rating | modulo: 1
+                      assign empty_stars = 5 | minus: full_stars
+                      if half_star >= 0.5
+                        assign empty_stars = empty_stars | minus: 1
+                      endif
+                    -%}
+
+                    {%- for i in (1..full_stars) -%}
+                      <span class="vso-hero-star-icon">
+                        {{ block.settings.custom_star_image | image_url: width: 50 | image_tag: loading: 'lazy', class: 'vso-hero-custom-star' }}
+                      </span>
+                    {%- endfor -%}
+                    {%- if half_star >= 0.5 -%}
+                      <span class="vso-hero-star-icon">
+                        {{ block.settings.custom_star_image | image_url: width: 50 | image_tag: loading: 'lazy', class: 'vso-hero-custom-star', style: 'opacity: 0.5;' }}
+                      </span>
+                    {%- endif -%}
+                    {%- for i in (1..empty_stars) -%}
+                      <span class="vso-hero-star-icon">
+                        {{ block.settings.custom_star_image | image_url: width: 50 | image_tag: loading: 'lazy', class: 'vso-hero-custom-star', style: 'opacity: 0.2;' }}
+                      </span>
+                    {%- endfor -%}
+                  {%- elsif block.settings.star_style == 'star1' -%}
+                    {%- liquid
+                      assign rating = block.settings.star_rating
+                      assign full_stars = rating | floor
+                      assign half_star = rating | modulo: 1
+                      assign empty_stars = 5 | minus: full_stars
+                      if half_star >= 0.5
+                        assign empty_stars = empty_stars | minus: 1
+                      endif
+                    -%}
+
+                    {%- for i in (1..full_stars) -%}
+                      <span class="vso-hero-star-icon">
+                        <svg fill="currentColor" viewBox="0 0 799.89 761" xmlns="http://www.w3.org/2000/svg"><path d="M799.89 290.83H494.44L400.09 0l-94.64 290.83L0 290.54l247.37 179.92L152.72 761l247.37-179.63L647.16 761l-94.35-290.54z"></path></svg>
+                      </span>
+                    {%- endfor -%}
+                    {%- if half_star >= 0.5 -%}
+                      <span class="vso-hero-star-icon">
+                        <svg viewBox="0 0 799.89 761" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <linearGradient id="half-promo-star-{{ block.id }}" x1="0%" y1="0%" x2="100%" y2="0%">
+                              <stop offset="50%" style="stop-color:currentColor;stop-opacity:1" />
+                              <stop offset="50%" style="stop-color:{{ block.settings.star_empty_color }};stop-opacity:1" />
+                            </linearGradient>
+                          </defs>
+                          <path d="M799.89 290.83H494.44L400.09 0l-94.64 290.83L0 290.54l247.37 179.92L152.72 761l247.37-179.63L647.16 761l-94.35-290.54z" fill="url(#half-promo-star-{{ block.id }})"></path>
+                        </svg>
+                      </span>
+                    {%- endif -%}
+                    {%- for i in (1..empty_stars) -%}
+                      <span class="vso-hero-star-icon">
+                        <svg fill="{{ block.settings.star_empty_color }}" viewBox="0 0 799.89 761" xmlns="http://www.w3.org/2000/svg"><path d="M799.89 290.83H494.44L400.09 0l-94.64 290.83L0 290.54l247.37 179.92L152.72 761l247.37-179.63L647.16 761l-94.35-290.54z"></path></svg>
+                      </span>
+                    {%- endfor -%}
+                  {%- elsif block.settings.star_style == 'star2' -%}
+                    {%- liquid
+                      assign rating = block.settings.star_rating
+                      assign full_stars = rating | floor
+                      assign half_star = rating | modulo: 1
+                      assign empty_stars = 5 | minus: full_stars
+                      if half_star >= 0.5
+                        assign empty_stars = empty_stars | minus: 1
+                      endif
+                    -%}
+
+                    {%- for i in (1..full_stars) -%}
+                      <span class="vso-hero-star-icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>Trustpilot icon</title><path d="M12,17.964l5.214-1.321l2.179,6.714L12,17.964z M24,9.286h-9.179L12,0.643L9.179,9.286 H0l7.429,5.357l-2.821,8.643l7.429-5.357l4.571-3.286L24,9.286L24,9.286L24,9.286L24,9.286z"></path></svg>
+                      </span>
+                    {%- endfor -%}
+                    {%- if half_star >= 0.5 -%}
+                      <span class="vso-hero-star-icon">
+                        <svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <linearGradient id="half-promo-star2-{{ block.id }}" x1="0%" y1="0%" x2="100%" y2="0%">
+                              <stop offset="50%" style="stop-color:currentColor;stop-opacity:1" />
+                              <stop offset="50%" style="stop-color:{{ block.settings.star_empty_color }};stop-opacity:1" />
+                            </linearGradient>
+                          </defs>
+                          <title>Trustpilot icon</title><path d="M12,17.964l5.214-1.321l2.179,6.714L12,17.964z M24,9.286h-9.179L12,0.643L9.179,9.286 H0l7.429,5.357l-2.821,8.643l7.429-5.357l4.571-3.286L24,9.286L24,9.286L24,9.286L24,9.286z" fill="url(#half-promo-star2-{{ block.id }})"></path>
+                        </svg>
+                      </span>
+                    {%- endif -%}
+                    {%- for i in (1..empty_stars) -%}
+                      <span class="vso-hero-star-icon">
+                        <svg fill="{{ block.settings.star_empty_color }}" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>Trustpilot icon</title><path d="M12,17.964l5.214-1.321l2.179,6.714L12,17.964z M24,9.286h-9.179L12,0.643L9.179,9.286 H0l7.429,5.357l-2.821,8.643l7.429-5.357l4.571-3.286L24,9.286L24,9.286L24,9.286L24,9.286z"></path></svg>
+                      </span>
+                    {%- endfor -%}
+                  {%- else -%}
+                    {%- liquid
+                      assign rating = block.settings.star_rating
+                      assign full_stars = rating | floor
+                      assign half_star = rating | modulo: 1
+                      assign empty_stars = 5 | minus: full_stars
+                      if half_star >= 0.5
+                        assign empty_stars = empty_stars | minus: 1
+                      endif
+                    -%}
+
+                    {%- for i in (1..full_stars) -%}
+                      <span class="vso-hero-star-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8.64376 8.20794L11.3273 2.75964C11.6022 2.2015 12.398 2.2015 12.6729 2.75964L15.3565 8.20794L21.3674 9.07654C21.983 9.16549 22.229 9.92194 21.7835 10.356L17.436 14.5921L18.4623 20.5779C18.5674 21.1908 17.9238 21.658 17.3736 21.3682L12.0001 18.5378L6.62666 21.3682C6.07618 21.6582 5.43236 21.1904 5.53802 20.5773L6.56941 14.5921L2.21703 10.3563C1.77116 9.92237 2.01708 9.16552 2.63286 9.07654L8.64376 8.20794Z"></path><path d="M1.16438 18.2185C0.905619 17.8951 0.95806 17.4231 1.28151 17.1644L3.78151 15.1643C4.10495 14.9056 4.57692 14.958 4.83568 15.2815C5.09444 15.6049 5.042 16.0769 4.71855 16.3357L2.21855 18.3357C1.8951 18.5944 1.42313 18.542 1.16438 18.2185Z"></path><path d="M22.7186 17.1643C23.042 17.4231 23.0945 17.8951 22.8357 18.2185C22.5769 18.542 22.105 18.5944 21.7815 18.3357L19.2815 16.3357C18.9581 16.0769 18.9056 15.6049 19.1644 15.2815C19.4232 14.958 19.8951 14.9056 20.2186 15.1643L22.7186 17.1643Z"></path><path d="M1.16438 3.78148C0.905619 4.10492 0.95806 4.57689 1.28151 4.83565L3.78151 6.83565C4.10495 7.09441 4.57692 7.04197 4.83568 6.71852C5.09444 6.39508 5.042 5.92311 4.71855 5.66435L2.21855 3.66435C1.8951 3.40559 1.42313 3.45803 1.16438 3.78148Z"></path><path d="M22.7186 4.83565C23.042 4.57689 23.0945 4.10492 22.8357 3.78148C22.5769 3.45803 22.105 3.40559 21.7815 3.66435L19.2815 5.66435C18.9581 5.92311 18.9056 6.39508 19.1644 6.71852C19.4232 7.04197 19.8951 7.09441 20.2186 6.83565L22.7186 4.83565Z"></path></svg>
+                      </span>
+                    {%- endfor -%}
+                    {%- if half_star >= 0.5 -%}
+                      <span class="vso-hero-star-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <linearGradient id="half-promo-star3-{{ block.id }}" x1="0%" y1="0%" x2="100%" y2="0%">
+                              <stop offset="50%" style="stop-color:currentColor;stop-opacity:1" />
+                              <stop offset="50%" style="stop-color:{{ block.settings.star_empty_color }};stop-opacity:1" />
+                            </linearGradient>
+                          </defs>
+                          <path d="M8.64376 8.20794L11.3273 2.75964C11.6022 2.2015 12.398 2.2015 12.6729 2.75964L15.3565 8.20794L21.3674 9.07654C21.983 9.16549 22.229 9.92194 21.7835 10.356L17.436 14.5921L18.4623 20.5779C18.5674 21.1908 17.9238 21.658 17.3736 21.3682L12.0001 18.5378L6.62666 21.3682C6.07618 21.6582 5.43236 21.1904 5.53802 20.5773L6.56941 14.5921L2.21703 10.3563C1.77116 9.92237 2.01708 9.16552 2.63286 9.07654L8.64376 8.20794Z" fill="url(#half-promo-star3-{{ block.id }})"></path><path d="M1.16438 18.2185C0.905619 17.8951 0.95806 17.4231 1.28151 17.1644L3.78151 15.1643C4.10495 14.9056 4.57692 14.958 4.83568 15.2815C5.09444 15.6049 5.042 16.0769 4.71855 16.3357L2.21855 18.3357C1.8951 18.5944 1.42313 18.542 1.16438 18.2185Z" fill="url(#half-promo-star3-{{ block.id }})"></path><path d="M22.7186 17.1643C23.042 17.4231 23.0945 17.8951 22.8357 18.2185C22.5769 18.542 22.105 18.5944 21.7815 18.3357L19.2815 16.3357C18.9581 16.0769 18.9056 15.6049 19.1644 15.2815C19.4232 14.958 19.8951 14.9056 20.2186 15.1643L22.7186 17.1643Z" fill="url(#half-promo-star3-{{ block.id }})"></path><path d="M1.16438 3.78148C0.905619 4.10492 0.95806 4.57689 1.28151 4.83565L3.78151 6.83565C4.10495 7.09441 4.57692 7.04197 4.83568 6.71852C5.09444 6.39508 5.042 5.92311 4.71855 5.66435L2.21855 3.66435C1.8951 3.40559 1.42313 3.45803 1.16438 3.78148Z" fill="url(#half-promo-star3-{{ block.id }})"></path><path d="M22.7186 4.83565C23.042 4.57689 23.0945 4.10492 22.8357 3.78148C22.5769 3.45803 22.105 3.40559 21.7815 3.66435L19.2815 5.66435C18.9581 5.92311 18.9056 6.39508 19.1644 6.71852C19.4232 7.04197 19.8951 7.09441 20.2186 6.83565L22.7186 4.83565Z" fill="url(#half-promo-star3-{{ block.id }})"></path>
+                        </svg>
+                      </span>
+                    {%- endif -%}
+                    {%- for i in (1..empty_stars) -%}
+                      <span class="vso-hero-star-icon">
+                        <svg viewBox="0 0 24 24" fill="{{ block.settings.star_empty_color }}" xmlns="http://www.w3.org/2000/svg"><path d="M8.64376 8.20794L11.3273 2.75964C11.6022 2.2015 12.398 2.2015 12.6729 2.75964L15.3565 8.20794L21.3674 9.07654C21.983 9.16549 22.229 9.92194 21.7835 10.356L17.436 14.5921L18.4623 20.5779C18.5674 21.1908 17.9238 21.658 17.3736 21.3682L12.0001 18.5378L6.62666 21.3682C6.07618 21.6582 5.43236 21.1904 5.53802 20.5773L6.56941 14.5921L2.21703 10.3563C1.77116 9.92237 2.01708 9.16552 2.63286 9.07654L8.64376 8.20794Z"></path><path d="M1.16438 18.2185C0.905619 17.8951 0.95806 17.4231 1.28151 17.1644L3.78151 15.1643C4.10495 14.9056 4.57692 14.958 4.83568 15.2815C5.09444 15.6049 5.042 16.0769 4.71855 16.3357L2.21855 18.3357C1.8951 18.5944 1.42313 18.542 1.16438 18.2185Z"></path><path d="M22.7186 17.1643C23.042 17.4231 23.0945 17.8951 22.8357 18.2185C22.5769 18.542 22.105 18.5944 21.7815 18.3357L19.2815 16.3357C18.9581 16.0769 18.9056 15.6049 19.1644 15.2815C19.4232 14.958 19.8951 14.9056 20.2186 15.1643L22.7186 17.1643Z"></path><path d="M1.16438 3.78148C0.905619 4.10492 0.95806 4.57689 1.28151 4.83565L3.78151 6.83565C4.10495 7.09441 4.57692 7.04197 4.83568 6.71852C5.09444 6.39508 5.042 5.92311 4.71855 5.66435L2.21855 3.66435C1.8951 3.40559 1.42313 3.45803 1.16438 3.78148Z"></path><path d="M22.7186 4.83565C23.042 4.57689 23.0945 4.10492 22.8357 3.78148C22.5769 3.45803 22.105 3.40559 21.7815 3.66435L19.2815 5.66435C18.9581 5.92311 18.9056 6.39508 19.1644 6.71852C19.4232 7.04197 19.8951 7.09441 20.2186 6.83565L22.7186 4.83565Z"></path></svg>
+                      </span>
+                    {%- endfor -%}
+                  {%- endif -%}
+                </div>
+                <div class="vso-hero-promo-rating-text">{{ block.settings.rating_text }}</div>
+                </div>
+              </div>
+            {%- when 'heading' -%}
+              <div class="vso-hero-promo-heading"
+                   style="--desktop-heading-size: {{ block.settings.font_size_desktop }}px; --mobile-heading-size: {{ block.settings.font_size_mobile }}px; --heading-color: {{ block.settings.font_color }};"
+                   {{ block.shopify_attributes }}>
+                <h1>{{ block.settings.heading }}</h1>
+              </div>
+            {%- when 'paragraph' -%}
+              <div class="vso-hero-promo-paragraph"
+                   style="--desktop-paragraph-size: {{ block.settings.font_size_desktop }}px; --mobile-paragraph-size: {{ block.settings.font_size_mobile }}px; --paragraph-color: {{ block.settings.font_color }};"
+                   {{ block.shopify_attributes }}>
+                <p>{{ block.settings.text }}</p>
+              </div>
+            {%- when 'button' -%}
+              <a href="{{ block.settings.button_link }}"
+                 class="vso-hero-promo-button"
+                 style="background-color: {{ block.settings.button_bg_color }}; color: {{ block.settings.button_text_color }}; padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px; border-radius: {{ block.settings.border_radius }}px; font-size: {{ block.settings.font_size_desktop }}px;"
+                 {{ block.shopify_attributes }}>
+                {{ block.settings.button_label }}
+              </a>
+            {%- when 'benefit' -%}
+              <div class="vso-hero-promo-benefit"
+                   style="--benefit-icon-size: {{ block.settings.icon_size }}px; --benefit-spacing: {{ block.settings.spacing }}px; --benefit-font-size-desktop: {{ block.settings.font_size_desktop }}px; --benefit-font-size-mobile: {{ block.settings.font_size_mobile }}px; --benefit-font-color: {{ block.settings.font_color }};"
+                   {{ block.shopify_attributes }}>
+                {%- if block.settings.benefit_icon != blank -%}
+                  <div class="vso-hero-promo-benefit-icon">
+                    {{ block.settings.benefit_icon | image_url: width: block.settings.icon_size | image_tag: loading: 'lazy' }}
+                  </div>
+                {%- endif -%}
+                <div class="vso-hero-promo-benefit-text">{{ block.settings.benefit_text }}</div>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    {%- if image_block != null -%}
+      <style>
+        #vso-hero-promo-{{ section.id }} > .vso-hero-promo-container > .vso-hero-promo-image-container {
+          height: {{ image_block.settings.media_height_desktop }}px;
+        }
+        @media screen and (max-width: 768px) {
+          #vso-hero-promo-{{ section.id }} > .vso-hero-promo-container > .vso-hero-promo-image-container {
+            height: {{ image_block.settings.media_height_mobile }}px;
+          }
+        }
+      </style>
+      <div class="vso-hero-promo-image-container" {{ image_block.shopify_attributes }}>
+        {%- if image_block.settings.video != blank -%}
+          <div class="vso-hero-promo-video-wrapper">
+            {{ image_block.settings.video | video_tag: controls: false, autoplay: true, loop: true, muted: true, playsinline: true, class: 'vso-hero-promo-video', loading: 'lazy' }}
+          </div>
+        {%- elsif image_block.settings.hero_image != blank -%}
+          {{ image_block.settings.hero_image | image_url: width: 1500 | image_tag: class: 'vso-hero-promo-image', loading: 'lazy' }}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{%- style -%}
+  @media screen and (max-width: 768px) {
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'button' -%}
+        #vso-hero-promo-{{ section.id }} .vso-hero-promo-content-inner > .vso-hero-promo-button {
+          padding: {{ block.settings.padding_vertical_mobile }}px {{ block.settings.padding_horizontal_mobile }}px !important;
+          border-radius: {{ block.settings.border_radius_mobile }}px !important;
+          font-size: {{ block.settings.font_size_mobile }}px !important;
+        }
+      {%- endif -%}
+    {%- endfor -%}
+  }
+
+  {%- for block in section.blocks -%}
+    {%- if block.type == 'button' -%}
+      #vso-hero-promo-{{ section.id }} .vso-hero-promo-content-inner > .vso-hero-promo-button:hover {
+        background-color: {{ block.settings.button_hover_bg_color }} !important;
+        color: {{ block.settings.button_hover_text_color }} !important;
+      }
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'rating' -%}
+        #vso-hero-promo-{{ section.id }} .vso-hero-promo-rating-text {
+          line-height: {{ block.settings.line_height_desktop }};
+        }
+      {%- when 'heading' -%}
+        #vso-hero-promo-{{ section.id }} .vso-hero-promo-heading > h1 {
+          line-height: {{ block.settings.line_height_desktop }};
+        }
+      {%- when 'paragraph' -%}
+        #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph,
+        #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph p {
+          line-height: {{ block.settings.line_height_desktop }};
+        }
+    {%- endcase -%}
+  {%- endfor -%}
+
+  @media screen and (max-width: 768px) {
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'rating' -%}
+          #vso-hero-promo-{{ section.id }} .vso-hero-promo-rating-text {
+            line-height: {{ block.settings.line_height_mobile }};
+          }
+        {%- when 'heading' -%}
+          #vso-hero-promo-{{ section.id }} .vso-hero-promo-heading > h1 {
+            line-height: {{ block.settings.line_height_mobile }};
+          }
+        {%- when 'paragraph' -%}
+          #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph,
+          #vso-hero-promo-{{ section.id }} .vso-hero-promo-paragraph p {
+            line-height: {{ block.settings.line_height_mobile }};
+          }
+      {%- endcase -%}
+    {%- endfor -%}
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "VSO - Hero Section 02",
+  "class": "vso-hero-promo-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Text container Width"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "min": 300,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "label": "Text container max width",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile top padding",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile bottom padding",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Section Spacing Settings"
+    },
+    {
+      "type": "range",
+      "id": "block_spacing",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Space between blocks",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Section Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 30,
+      "max": 200,
+      "step": 2,
+      "unit": "rem",
+      "label": "Section content width",
+      "default": 120
+    }
+  ],
+  "blocks": [
+    {
+      "type": "rating",
+      "name": "Rating Block",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "rating_text",
+          "label": "Rating Text",
+          "default": "Rated 4.9 I 12,000+ reviews"
+        },
+        {
+          "type": "checkbox",
+          "id": "custom_font",
+          "label": "Use Custom Font",
+          "default": false
+        },
+        {
+          "type": "font_picker",
+          "id": "font",
+          "label": "Font",
+          "default": "poppins_n4"
+        },
+        {
+          "type": "select",
+          "id": "star_style",
+          "label": "Star Icon Style",
+          "options": [
+            {
+              "value": "star1",
+              "label": "Star Style 1"
+            },
+            {
+              "value": "star2",
+              "label": "Star Style 2"
+            },
+            {
+              "value": "star3",
+              "label": "Star Style 3"
+            },
+            {
+              "value": "custom",
+              "label": "Custom Image"
+            }
+          ],
+          "default": "star1"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_star_image",
+          "label": "Custom Star Image",
+          "info": "Used if 'Custom Image' is selected above"
+        },
+        {
+          "type": "range",
+          "id": "text_size_desktop",
+          "min": 10,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Text Size - Desktop",
+          "default": 18
+        },
+        {
+          "type": "range",
+          "id": "text_size_mobile",
+          "min": 10,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "Text Size - Mobile",
+          "default": 16
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "star_color",
+          "label": "Star Color",
+          "default": "#ffc107"
+        },
+        {
+          "type": "range",
+          "id": "star_rating",
+          "label": "Star Rating",
+          "min": 0,
+          "max": 5,
+          "step": 0.5,
+          "default": 5
+        },
+        {
+          "type": "color",
+          "id": "star_empty_color",
+          "label": "Empty Star Color",
+          "default": "#e5e7eb"
+        },
+        {
+          "type": "range",
+          "id": "star_size",
+          "min": 10,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Star Size - Desktop",
+          "default": 24
+        },
+        {
+          "type": "range",
+          "id": "star_size_mobile",
+          "min": 8,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Star Size - Mobile",
+          "default": 19
+        },
+        {
+          "type": "range",
+          "id": "star_gap",
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "unit": "px",
+          "label": "Gap Between Stars",
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "star_text_gap",
+          "min": 0,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Gap Between Stars and Text",
+          "default": 10
+        },
+        {
+          "type": "header",
+          "content": "Container Styling"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "range",
+          "id": "border_width",
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "unit": "px",
+          "label": "Border Width",
+          "default": 0
+        },
+        {
+          "type": "color",
+          "id": "border_color",
+          "label": "Border Color",
+          "default": "#dddddd"
+        },
+        {
+          "type": "range",
+          "id": "inner_padding_vertical",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "label": "Inner Padding Vertical",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "inner_padding_horizontal",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "label": "Inner Padding Horizontal",
+          "default": 0
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_shadow",
+          "label": "Enable Shadow",
+          "default": false
+        },
+        {
+          "type": "range",
+          "id": "shadow_blur",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "label": "Shadow Blur",
+          "default": 10
+        },
+        {
+          "type": "color",
+          "id": "shadow_color",
+          "label": "Shadow Color",
+          "default": "rgba(0,0,0,0.1)"
+        },
+        {
+          "type": "range",
+          "id": "border_radius",
+          "min": 0,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Border Radius",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "line_height_desktop",
+          "min": 1,
+          "max": 2,
+          "step": 0.1,
+          "label": "Line Height - Desktop",
+          "default": 1.2
+        },
+        {
+          "type": "range",
+          "id": "line_height_mobile",
+          "min": 1,
+          "max": 2,
+          "step": 0.1,
+          "label": "Line Height - Mobile",
+          "default": 1.2
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading",
+          "default": "<strong>Flawless Skin, Powered By Nature</strong>"
+        },
+        {
+          "type": "checkbox",
+          "id": "custom_font",
+          "label": "Use Custom Font",
+          "default": false
+        },
+        {
+          "type": "font_picker",
+          "id": "font",
+          "label": "Font",
+          "default": "poppins_n4"
+        },
+        {
+          "type": "range",
+          "id": "font_size_desktop",
+          "min": 20,
+          "max": 80,
+          "step": 2,
+          "unit": "px",
+          "label": "Font Size - Desktop",
+          "default": 42
+        },
+        {
+          "type": "range",
+          "id": "font_size_mobile",
+          "min": 16,
+          "max": 48,
+          "step": 2,
+          "unit": "px",
+          "label": "Font Size - Mobile",
+          "default": 32
+        },
+        {
+          "type": "color",
+          "id": "font_color",
+          "label": "Font Color",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "line_height_desktop",
+          "min": 1,
+          "max": 2,
+          "step": 0.1,
+          "label": "Line Height - Desktop",
+          "default": 1.2
+        },
+        {
+          "type": "range",
+          "id": "line_height_mobile",
+          "min": 1,
+          "max": 2,
+          "step": 0.1,
+          "label": "Line Height - Mobile",
+          "default": 1.2
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "name": "Paragraph",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "Nourish your skin with pure, grass-fed tallow for lasting hydration and a natural glow"
+        },
+        {
+          "type": "checkbox",
+          "id": "custom_font",
+          "label": "Use Custom Font",
+          "default": false
+        },
+        {
+          "type": "font_picker",
+          "id": "font",
+          "label": "Font",
+          "default": "poppins_n4"
+        },
+        {
+          "type": "range",
+          "id": "font_size_desktop",
+          "min": 12,
+          "max": 32,
+          "step": 1,
+          "unit": "px",
+          "label": "Font Size - Desktop",
+          "default": 18
+        },
+        {
+          "type": "range",
+          "id": "font_size_mobile",
+          "min": 10,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "Font Size - Mobile",
+          "default": 16
+        },
+        {
+          "type": "color",
+          "id": "font_color",
+          "label": "Font Color",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "line_height_desktop",
+          "min": 1,
+          "max": 2,
+          "step": 0.1,
+          "label": "Line Height - Desktop",
+          "default": 1.5
+        },
+        {
+          "type": "range",
+          "id": "line_height_mobile",
+          "min": 1,
+          "max": 2,
+          "step": 0.1,
+          "label": "Line Height - Mobile",
+          "default": 1.5
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label",
+          "default": "Call to action"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "checkbox",
+          "id": "custom_font",
+          "label": "Use Custom Font",
+          "default": false
+        },
+        {
+          "type": "font_picker",
+          "id": "font",
+          "label": "Font",
+          "default": "poppins_n4"
+        },
+        {
+          "type": "range",
+          "id": "font_size_desktop",
+          "min": 12,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "Font Size - Desktop",
+          "default": 14
+        },
+        {
+          "type": "range",
+          "id": "font_size_mobile",
+          "min": 10,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "label": "Font Size - Mobile",
+          "default": 13
+        },
+        {
+          "type": "range",
+          "id": "padding_vertical",
+          "min": 5,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Vertical Padding - Desktop",
+          "default": 12
+        },
+        {
+          "type": "range",
+          "id": "padding_horizontal",
+          "min": 10,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "label": "Horizontal Padding - Desktop",
+          "default": 25
+        },
+        {
+          "type": "range",
+          "id": "padding_vertical_mobile",
+          "min": 5,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Vertical Padding - Mobile",
+          "default": 10
+        },
+        {
+          "type": "range",
+          "id": "padding_horizontal_mobile",
+          "min": 10,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "label": "Horizontal Padding - Mobile",
+          "default": 20
+        },
+        {
+          "type": "range",
+          "id": "border_radius",
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Border Radius - Desktop",
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "border_radius_mobile",
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Border Radius - Mobile",
+          "default": 0
+        },
+        {
+          "type": "color",
+          "id": "button_bg_color",
+          "label": "Button Background Color",
+          "default": "#333333"
+        },
+        {
+          "type": "color",
+          "id": "button_hover_bg_color",
+          "label": "Button Hover Background Color",
+          "default": "#555555"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Button Text Color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "button_hover_text_color",
+          "label": "Button Hover Text Color",
+          "default": "#ffffff"
+        }
+      ]
+    },
+    {
+      "type": "benefit",
+      "name": "Benefit",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "benefit_text",
+          "label": "Benefit Text",
+          "default": "30 day money back guarantee"
+        },
+        {
+          "type": "image_picker",
+          "id": "benefit_icon",
+          "label": "Benefit Icon"
+        },
+        {
+          "type": "checkbox",
+          "id": "custom_font",
+          "label": "Use Custom Font",
+          "default": false
+        },
+        {
+          "type": "font_picker",
+          "id": "font",
+          "label": "Font",
+          "default": "poppins_n4"
+        },
+        {
+          "type": "range",
+          "id": "font_size_desktop",
+          "min": 10,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "Font Size - Desktop",
+          "default": 14
+        },
+        {
+          "type": "range",
+          "id": "font_size_mobile",
+          "min": 8,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "label": "Font Size - Mobile",
+          "default": 12
+        },
+        {
+          "type": "color",
+          "id": "font_color",
+          "label": "Font Color",
+          "default": "#666666"
+        },
+        {
+          "type": "range",
+          "id": "icon_size",
+          "min": 10,
+          "max": 60,
+          "step": 5,
+          "unit": "px",
+          "label": "Icon Size",
+          "default": 20
+        },
+        {
+          "type": "range",
+          "id": "spacing",
+          "min": 5,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Spacing Between Icon and Text",
+          "default": 10
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Hero Media",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "hero_image",
+          "label": "Hero Image"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Custom video file"
+        },
+        {
+          "type": "header",
+          "content": "Media Dimensions"
+        },
+        {
+          "type": "range",
+          "id": "media_height_desktop",
+          "min": 300,
+          "max": 800,
+          "step": 50,
+          "unit": "px",
+          "label": "Media height - Desktop",
+          "default": 500
+        },
+        {
+          "type": "range",
+          "id": "media_height_mobile",
+          "min": 200,
+          "max": 500,
+          "step": 50,
+          "unit": "px",
+          "label": "Media height - Mobile",
+          "default": 300
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "VSO - Hero Section 02",
+      "blocks": [
+        { "type": "rating" },
+        { "type": "heading" },
+        { "type": "paragraph" },
+        { "type": "button" },
+        { "type": "benefit" },
+        { "type": "image" }
+      ]
+    }
+  ]
+}
+{% endschema %}
