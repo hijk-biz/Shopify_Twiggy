@@ -1,0 +1,761 @@
+{%- comment -%}
+  WARNING: UNAUTHORIZED MODIFICATION PROHIBITED
+  This code is proprietary property of Versio Studio. Any unauthorized tampering, 
+  alteration, or distribution of this file is strictly forbidden and will be prosecuted to the maximum extent permitted by law.
+  All modifications are logged.
+
+  If you require assistance or have questions regarding this code, please contact support@versio.studio.
+{%- endcomment -%}
+
+{%- liquid
+  assign heading_align = section.settings.heading_text_alignment
+  assign card_cols_desktop = section.settings.columns_desktop
+  assign card_cols_tablet = section.settings.columns_tablet
+  assign mobile_peek_percentage = section.settings.mobile_peek_percentage
+  assign mobile_card_gap = section.settings.mobile_card_gap
+  assign mobile_layout = section.settings.mobile_layout | default: 'column'
+-%}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    --section-padding-top-mobile: {{ section.settings.padding_top_mobile }}px;
+    --section-padding-bottom-mobile: {{ section.settings.padding_bottom_mobile }}px;
+    --section-bg-color: {{ section.settings.section_bg_color }};
+    --heading-font-size: {{ section.settings.heading_font_size }}px;
+    --heading-font-size-mobile: {{ section.settings.heading_font_size_mobile }}px;
+    --heading-color: {{ section.settings.heading_color }};
+    --card-bg-color: {{ section.settings.card_bg_color }};
+    --card-padding-vertical: {{ section.settings.card_padding_vertical }}px;
+    --card-padding-horizontal: {{ section.settings.card_padding_horizontal }}px;
+    --card-border-radius: {{ section.settings.card_border_radius }}px;
+    --icon-text-gap: {{ section.settings.icon_text_gap }}px;
+    --card-title-font-size: {{ section.settings.card_title_font_size }}px;
+    --card-title-font-size-mobile: {{ section.settings.card_title_font_size_mobile }}px;
+    --card-desc-font-size: {{ section.settings.card_desc_font_size }}px;
+    --card-desc-font-size-mobile: {{ section.settings.card_desc_font_size_mobile }}px;
+    --grid-gap: {{ section.settings.grid_gap }}px;
+
+    background-color: var(--section-bg-color);
+    padding-top: var(--section-padding-top-mobile);
+    padding-bottom: var(--section-padding-bottom-mobile);
+    margin-top: {{ section.settings.margin_top_mobile }}px;
+    margin-bottom: {{ section.settings.margin_bottom_mobile }}px;
+  }
+
+  #shopify-section-{{ section.id }} > .vso-benefit-section__container {
+    max-width: {{ section.settings.content_max_width }}rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #shopify-section-{{ section.id }} > .vso-benefit-section__container > .vso-benefit-section__title {
+    font-size: var(--heading-font-size-mobile);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 0;
+    color: var(--heading-color);
+  }
+
+  #shopify-section-{{ section.id }} > .vso-benefit-section__container > .vso-benefit-section__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--grid-gap);
+  }
+
+  #shopify-section-{{ section.id }} .vso-benefit-section__card {
+    white-space: normal;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--card-bg-color);
+    padding: var(--card-padding-vertical) var(--card-padding-horizontal);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    align-items: {% if section.settings.icon_vertical_alignment == 'center' %}center{% else %}flex-start{% endif %};
+    gap: var(--icon-text-gap);
+    text-align: left;
+    height: 100%;
+  }
+
+  #shopify-section-{{ section.id }} .vso-benefit-section__card > .vso-benefit-section__icon {
+    flex-shrink: 0;
+    line-height: 0;
+  }
+
+  #shopify-section-{{ section.id }} .vso-benefit-section__card > .vso-benefit-section__icon > img {
+    display: block;
+    object-fit: contain;
+  }
+
+  #shopify-section-{{ section.id }} .vso-benefit-section__card > .vso-benefit-section__text-content {
+    flex-grow: 1;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    align-self: flex-start;
+  }
+
+  #shopify-section-{{ section.id }} .vso-benefit-section__card-title {
+    margin: 0 0 5px;
+    font-size: var(--card-title-font-size-mobile);
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  #shopify-section-{{ section.id }} .vso-benefit-section__card-description {
+    margin: 0;
+    font-size: var(--card-desc-font-size-mobile);
+    line-height: 1.5;
+    color: #555;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  #shopify-section-{{ section.id }} .vso-benefit-section__card-description > p { margin: 0; }
+
+  #shopify-section-{{ section.id }} .text-left { text-align: left; }
+  #shopify-section-{{ section.id }} .text-center { text-align: center; }
+  #shopify-section-{{ section.id }} .text-right { text-align: right; }
+
+  #shopify-section-{{ section.id }} .mobile-only { display: {% if mobile_layout == 'carousel' %}block{% else %}none{% endif %}; }
+  #shopify-section-{{ section.id }} .desktop-tablet-only { display: {% if mobile_layout == 'carousel' %}none{% else %}grid{% endif %}; }
+
+  #shopify-section-{{ section.id }} > .vso-benefit-section__container > .vso-benefit-section__carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  #shopify-section-{{ section.id }} .vso-benefit-section__carousel > .vso-benefit-section__carousel-track {
+    display: flex;
+    align-items: stretch;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 10px 0;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+  }
+  #shopify-section-{{ section.id }} .vso-benefit-section__carousel-track::-webkit-scrollbar { display: none; }
+  #shopify-section-{{ section.id }} .vso-benefit-section__carousel-track:active { cursor: grabbing; }
+
+  #shopify-section-{{ section.id }} .vso-benefit-section__carousel-slide {
+    flex: 0 0 calc(100% - {{ mobile_peek_percentage }}%);
+    max-width: calc(100% - {{ mobile_peek_percentage }}%);
+    scroll-snap-align: start;
+    margin-right: {{ mobile_card_gap }}px;
+    user-select: none;
+    transition: transform 0.1s ease;
+    height: auto;
+  }
+  #shopify-section-{{ section.id }} .vso-benefit-section__carousel-slide:first-child { margin-left: 0; }
+  #shopify-section-{{ section.id }} .vso-benefit-section__carousel-slide:last-child { margin-right: 0; }
+
+  .vso-node { display: none; }
+  .vso-node--v2 { display: block; }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} {
+      padding-top: var(--section-padding-top);
+      padding-bottom: var(--section-padding-bottom);
+      margin-top: {{ section.settings.margin_top }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
+    }
+
+    #shopify-section-{{ section.id }} > .vso-benefit-section__container > .vso-benefit-section__grid {
+      grid-template-columns: repeat({{ card_cols_tablet }}, 1fr);
+    }
+
+    #shopify-section-{{ section.id }} > .vso-benefit-section__container > .vso-benefit-section__title {
+      font-size: var(--heading-font-size);
+    }
+
+    #shopify-section-{{ section.id }} .vso-benefit-section__card-title { font-size: var(--card-title-font-size); }
+    #shopify-section-{{ section.id }} .vso-benefit-section__card-description { font-size: var(--card-desc-font-size); }
+
+    #shopify-section-{{ section.id }} .mobile-only { display: none; }
+    #shopify-section-{{ section.id }} .desktop-tablet-only { display: grid; }
+  }
+
+  @media screen and (min-width: 990px) {
+    #shopify-section-{{ section.id }} > .vso-benefit-section__container > .vso-benefit-section__grid {
+      grid-template-columns: repeat({{ card_cols_desktop }}, 1fr);
+    }
+  }
+
+  #shopify-section-{{ section.id }} .vso-benefit-section__swipe-indicator { display: none !important; }
+  #shopify-section-{{ section.id }} .vso-benefit-section__swipe-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 4px;
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+    padding: 8px 15px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 15px;
+    pointer-events: none;
+  }
+  #shopify-section-{{ section.id }} .vso-benefit-section__swipe-indicator > .indicator-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #555;
+    border-radius: 50%;
+  }
+{%- endstyle -%}
+
+{% if section.settings.heading_custom_font %}
+  <style>
+    #shopify-section-{{ section.id }} .vso-benefit-section__title {
+      font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
+      font-style: {{ section.settings.heading_font.style }};
+    }
+  </style>
+{% endif %}
+
+{% if section.settings.card_title_custom_font %}
+  <style>
+    #shopify-section-{{ section.id }} .vso-benefit-section__card-title {
+      font-family: {{ section.settings.card_title_font.family }}, {{ section.settings.card_title_font.fallback_families }};
+      font-style: {{ section.settings.card_title_font.style }};
+    }
+  </style>
+{% endif %}
+
+{% if section.settings.card_desc_custom_font %}
+  <style>
+    #shopify-section-{{ section.id }} .vso-benefit-section__card-description {
+      font-family: {{ section.settings.card_desc_font.family }}, {{ section.settings.card_desc_font.fallback_families }};
+      font-style: {{ section.settings.card_desc_font.style }};
+    }
+  </style>
+{% endif %}
+
+<div id="shopify-section-{{ section.id }}" class="vso-node section vso-benefit-section-{{ section.id }}">
+  <div class="vso-benefit-section__container page-width">
+    {% if section.settings.heading != blank %}
+      <div class="vso-benefit-section__title {% if heading_align %}text-{{ heading_align }}{% endif %}" style="margin-bottom: {{ section.settings.title_margin_bottom }}px;">
+        {{ section.settings.heading }}
+      </div>
+    {% endif %}
+
+    {% if section.blocks.size > 0 %}
+      <div class="vso-benefit-section__grid desktop-tablet-only" style="display: {% if mobile_layout == 'carousel' %}none{% else %}grid{% endif %};">
+        {% for block in section.blocks %}
+          <div class="vso-benefit-section__card" {{ block.shopify_attributes }}>
+            {% if block.settings.image != blank %}
+              <div class="vso-benefit-section__icon">
+                <img src="{{ block.settings.image | image_url: width: section.settings.icon_size }}" alt="{{ block.settings.image.alt | default: block.settings.block_title | escape }}" loading="lazy" width="{{ section.settings.icon_size }}" height="{{ section.settings.icon_size }}" style="width: {{ section.settings.icon_size }}px; height: {{ section.settings.icon_size }}px;">
+              </div>
+            {% endif %}
+            <div class="vso-benefit-section__text-content">
+              {% if block.settings.block_title != blank %}
+                <h3 class="vso-benefit-section__card-title">{{ block.settings.block_title }}</h3>
+              {% endif %}
+              {% if block.settings.block_description != blank %}
+                <div class="vso-benefit-section__card-description">{{ block.settings.block_description }}</div>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="vso-benefit-section__carousel mobile-only" style="display: {% if mobile_layout == 'carousel' %}block{% else %}none{% endif %};">
+        <div class="vso-benefit-section__carousel-track">
+          {% for block in section.blocks %}
+            <div class="vso-benefit-section__carousel-slide" {{ block.shopify_attributes }}>
+              <div class="vso-benefit-section__card">
+                {% if block.settings.image != blank %}
+                  <div class="vso-benefit-section__icon">
+                    <img src="{{ block.settings.image | image_url: width: section.settings.icon_size }}" alt="{{ block.settings.image.alt | default: block.settings.block_title | escape }}" loading="lazy" width="{{ section.settings.icon_size }}" height="{{ section.settings.icon_size }}" style="width: {{ section.settings.icon_size }}px; height: {{ section.settings.icon_size }}px;">
+                  </div>
+                {% endif %}
+                <div class="vso-benefit-section__text-content">
+                  {% if block.settings.block_title != blank %}
+                    <h3 class="vso-benefit-section__card-title">{{ block.settings.block_title }}</h3>
+                  {% endif %}
+                  {% if block.settings.block_description != blank %}
+                    <div class="vso-benefit-section__card-description">{{ block.settings.block_description }}</div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<script>
+  function initBenefitsGrid{{ section.id | replace: '-', '' }}() {
+    const carouselRoot = document.getElementById('shopify-section-{{ section.id }}');
+    if (!carouselRoot) return;
+    const carousel = carouselRoot.querySelector('.vso-benefit-section__carousel');
+    if (!carousel) return;
+
+    const track = carousel.querySelector('.vso-benefit-section__carousel-track');
+    const slides = carousel.querySelectorAll('.vso-benefit-section__carousel-slide');
+
+    const equalizeCardHeights = () => {
+      slides.forEach(slide => {
+        const card = slide.querySelector('.vso-benefit-section__card');
+        if (card) card.style.height = 'auto';
+      });
+      let maxHeight = 0;
+      slides.forEach(slide => {
+        const card = slide.querySelector('.vso-benefit-section__card');
+        if (card && card.offsetHeight > maxHeight) maxHeight = card.offsetHeight;
+      });
+      if (maxHeight > 0) {
+        slides.forEach(slide => {
+          const card = slide.querySelector('.vso-benefit-section__card');
+          if (card) card.style.height = maxHeight + 'px';
+        });
+      }
+    };
+
+    equalizeCardHeights();
+    window.addEventListener('resize', equalizeCardHeights);
+
+    const indicator = document.createElement('div');
+    indicator.className = 'vso-benefit-section__swipe-indicator';
+    indicator.innerHTML = '<div class="indicator-dot"></div><div class="indicator-dot"></div><div class="indicator-dot"></div>';
+    carousel.appendChild(indicator);
+    setTimeout(() => {
+      indicator.style.opacity = '0';
+      setTimeout(() => indicator.remove(), 1000);
+    }, 3000);
+
+    const getSlideWidth = () => {
+      if (!slides.length) return 0;
+      const style = getComputedStyle(track);
+      const gap = parseInt(style.getPropertyValue('gap') || '0');
+      return slides[0].offsetWidth + gap;
+    };
+
+    let startX, startScrollLeft, isDragging = false;
+
+    const handleStart = (e) => {
+      isDragging = true;
+      startX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+      startScrollLeft = track.scrollLeft;
+      track.style.cursor = 'grabbing';
+      slides.forEach(slide => slide.style.transition = 'none');
+    };
+
+    const handleMove = (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+      const walk = (startX - x) * 1.5;
+      track.scrollLeft = startScrollLeft + walk;
+    };
+
+    const handleEnd = () => {
+      if (!isDragging) return;
+      isDragging = false;
+      track.style.cursor = 'grab';
+      slides.forEach(slide => slide.style.transition = 'transform 0.1s ease');
+      const slideWidth = getSlideWidth();
+      if (slideWidth) {
+        const scrollPosition = track.scrollLeft;
+        const slideIndex = Math.floor(scrollPosition / slideWidth);
+        track.scrollTo({ left: slideIndex * slideWidth, behavior: 'smooth' });
+      }
+    };
+
+    track.addEventListener('mousedown', handleStart);
+    track.addEventListener('mousemove', handleMove);
+    track.addEventListener('mouseup', handleEnd);
+    track.addEventListener('mouseleave', handleEnd);
+
+    track.addEventListener('touchstart', handleStart, { passive: false });
+    track.addEventListener('touchmove', handleMove, { passive: false });
+    track.addEventListener('touchend', handleEnd);
+
+    track.addEventListener('contextmenu', e => {
+      if (e.target.closest('.vso-benefit-section__carousel-slide')) e.preventDefault();
+    });
+
+    const iosScrollFix = () => {
+      if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+        track.style.webkitOverflowScrolling = 'touch';
+      }
+    };
+    iosScrollFix();
+    window.addEventListener('resize', iosScrollFix);
+  }
+
+  document.addEventListener('DOMContentLoaded', initBenefitsGrid{{ section.id | replace: '-', '' }});
+  if (Shopify.designMode) {
+    document.addEventListener('shopify:section:unload', initBenefitsGrid{{ section.id | replace: '-', '' }});
+    document.addEventListener('shopify:section:load', initBenefitsGrid{{ section.id | replace: '-', '' }});
+  }
+</script>
+
+{% schema %}
+{
+  "name": "VSO - Benefits Grid",
+  "class": "section vso-benefit-section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "heading_custom_font",
+      "label": "Use custom font for heading",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading font",
+      "default": "poppins_n4"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Benefits of Collagen"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "heading_text_alignment",
+      "label": "Heading alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "label": "Heading font size (Desktop)",
+      "min": 18, "max": 72, "step": 1, "unit": "px",
+      "default": 40
+    },
+    {
+       "type": "range",
+       "id": "heading_font_size_mobile",
+       "label": "Heading font size (Mobile)",
+       "min": 16, "max": 48, "step": 1, "unit": "px",
+       "default": 30
+    },
+    {
+      "type": "range",
+      "id": "title_margin_bottom",
+      "label": "Heading bottom margin",
+      "min": 0, "max": 100, "step": 5, "unit": "px",
+      "default": 40
+    },
+    {
+        "type": "header",
+        "content": "Grid Layout"
+    },
+    {
+        "type": "range",
+        "id": "columns_desktop",
+        "label": "Columns (Desktop)",
+        "min": 1, "max": 4, "step": 1,
+        "default": 3
+    },
+    {
+        "type": "range",
+        "id": "columns_tablet",
+        "label": "Columns (Tablet)",
+        "min": 1, "max": 3, "step": 1,
+        "default": 2
+    },
+    {
+        "type": "range",
+        "id": "mobile_peek_percentage",
+        "label": "Mobile peek percentage",
+        "min": 0, "max": 20, "step": 1, "unit": "%",
+        "default": 10,
+        "info": "Controls how much of adjacent cards are visible on mobile. Higher values show more of adjacent cards."
+    },
+    {
+        "type": "range",
+        "id": "mobile_card_gap",
+        "label": "Mobile card gap",
+        "min": 5, "max": 30, "step": 1, "unit": "px",
+        "default": 10,
+        "info": "Gap between cards in mobile carousel"
+    },
+    {
+        "type": "range",
+        "id": "grid_gap",
+        "label": "Gap between cards (Desktop/Tablet)",
+        "min": 10, "max": 50, "step": 2, "unit": "px",
+        "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Card Styling"
+    },
+     {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 24, "max": 80, "step": 2, "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "select",
+      "id": "icon_vertical_alignment",
+      "label": "Icon vertical alignment",
+      "options": [
+        { "value": "top", "label": "Top" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "icon_text_gap",
+      "label": "Gap between icon and text",
+      "min": 5, "max": 40, "step": 1, "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "card_padding_vertical",
+      "label": "Card vertical padding",
+      "min": 10, "max": 50, "step": 2, "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_padding_horizontal",
+      "label": "Card horizontal padding",
+      "min": 10, "max": 50, "step": 2, "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Card border radius",
+      "min": 0, "max": 30, "step": 1, "unit": "px",
+      "default": 8
+    },
+     {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card background color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Card Typography"
+    },
+    {
+      "type": "checkbox",
+      "id": "card_title_custom_font",
+      "label": "Use custom font for card titles",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "card_title_font",
+      "label": "Card title font",
+      "default": "poppins_n4"
+    },
+     {
+      "type": "range",
+      "id": "card_title_font_size",
+      "label": "Card title font size (Desktop)",
+      "min": 12, "max": 30, "step": 1, "unit": "px",
+      "default": 18
+    },
+    {
+       "type": "range",
+       "id": "card_title_font_size_mobile",
+       "label": "Card title font size (Mobile)",
+       "min": 12, "max": 24, "step": 1, "unit": "px",
+       "default": 16
+    },
+    {
+      "type": "checkbox",
+      "id": "card_desc_custom_font",
+      "label": "Use custom font for card descriptions",
+      "default": false
+    },
+    {
+      "type": "font_picker",
+      "id": "card_desc_font",
+      "label": "Card description font",
+      "default": "poppins_n4"
+    },
+     {
+      "type": "range",
+      "id": "card_desc_font_size",
+      "label": "Card description font size (Desktop)",
+      "min": 10, "max": 24, "step": 1, "unit": "px",
+      "default": 16
+    },
+    {
+       "type": "range",
+       "id": "card_desc_font_size_mobile",
+       "label": "Card description font size (Mobile)",
+       "min": 10, "max": 20, "step": 1, "unit": "px",
+       "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Section margin (outside)"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "Margin top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "Margin bottom",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Section padding (inside)"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 140, "step": 4, "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 140, "step": 4, "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section background color",
+      "default": "#F9F9F9"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Content max width",
+      "min": 30,
+      "max": 200,
+      "step": 2,
+      "unit": "rem",
+      "default": 80,
+      "info": "Only applies when 'Full width section' is unchecked."
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "Top padding (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "Bottom padding (Mobile)",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "Top margin (Mobile)",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_mobile",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "Bottom margin (Mobile)",
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Mobile layout",
+      "options": [
+        { "value": "carousel", "label": "Carousel" },
+        { "value": "column", "label": "Column" }
+      ],
+      "default": "column"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "benefit",
+      "name": "Benefit Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image (Icon)"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "block_title",
+          "label": "Card Title",
+          "default": "BENEFIT TITLE"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "block_description",
+          "label": "Card Description",
+          "default": "Describe the benefit or feature here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "VSO - Benefits Grid",
+      "blocks": [
+        { "type": "benefit" },
+        { "type": "benefit" },
+        { "type": "benefit" },
+        { "type": "benefit" },
+        { "type": "benefit" },
+        { "type": "benefit" }
+      ]
+    }
+  ]
+}
+{% endschema %}
