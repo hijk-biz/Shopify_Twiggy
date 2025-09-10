@@ -95,6 +95,37 @@
         "padding_bottom": 12
       }
     },
+    "rich_text_aDEtj3": {
+      "type": "rich-text",
+      "blocks": {
+        "button_hGzEtT": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All",
+            "button_link": "shopify://collections",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_hGzEtT"
+      ],
+      "custom_css": [
+        "{line-height: 17px; letter-spacing: -0.3px;}"
+      ],
+      "name": "Shop All Button",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
     "image_with_text_mAxxW4": {
       "type": "image-with-text",
       "name": "t:sections.image-with-text.presets.name",
@@ -277,7 +308,7 @@
       "block_order": [
         "heading_RyU7AD"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Rich Text",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -303,52 +334,6 @@
         "background_color": "{{ shop.brand.colors.primary[0].background }}",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "rich_text_aDEtj3": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_HdG9fW": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "text_GgVeL6": {
-          "type": "text",
-          "settings": {
-            "text": "<p>\"Welcome to Twiggy, where play meets learning! Explore our carefully curated collection of toys that inspire curiosity, spark imagination, and support your child's growth every step of the way.\"</p>"
-          }
-        },
-        "button_hGzEtT": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop All",
-            "button_link": "shopify://collections",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_HdG9fW",
-        "text_GgVeL6",
-        "button_hGzEtT"
-      ],
-      "custom_css": [
-        "{line-height: 17px; letter-spacing: -0.3px;}"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 12
       }
     },
     "section_divider_Kj6QF8": {
@@ -448,6 +433,7 @@
     "rich_text_JFqDrH",
     "section_divider_tPQDzG",
     "rich_text_pPXNfi",
+    "rich_text_aDEtj3",
     "image_with_text_mAxxW4",
     "vso_benefits_grid_J87mf7",
     "section_divider_m9KPtb",
@@ -455,7 +441,6 @@
     "section_divider_cW4HwU",
     "rich_text_k8cB9B",
     "section_divider_feDWbG",
-    "rich_text_aDEtj3",
     "section_divider_Kj6QF8",
     "rich_text_7frmBx",
     "section_divider_kKTBxa",
