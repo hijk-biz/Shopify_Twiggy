@@ -34,7 +34,7 @@
           "type": "heading",
           "settings": {
             "heading": "PLAY.",
-            "heading_size": "hxl"
+            "heading_size": "h0"
           }
         }
       },
@@ -61,7 +61,7 @@
           "type": "heading",
           "settings": {
             "heading": "LEARN.",
-            "heading_size": "hxl"
+            "heading_size": "h0"
           }
         }
       },
@@ -73,7 +73,7 @@
       ],
       "name": "Learn.",
       "settings": {
-        "desktop_content_position": "left",
+        "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-4",
         "full_width": true,
@@ -88,7 +88,7 @@
           "type": "heading",
           "settings": {
             "heading": "GROW.",
-            "heading_size": "hxl"
+            "heading_size": "h0"
           }
         }
       },
@@ -100,7 +100,7 @@
       ],
       "name": "Grow.",
       "settings": {
-        "desktop_content_position": "left",
+        "desktop_content_position": "right",
         "content_alignment": "right",
         "color_scheme": "scheme-4",
         "full_width": true,
@@ -129,7 +129,7 @@
         "text_cVTDpU": {
           "type": "text",
           "settings": {
-            "text": "<p>Experience Smarter Play, the Aussie Way.</p>"
+            "text": "<p>Smarter play isn’t just a promise, it’s the Aussie way of doing things.<br/></p>"
           }
         }
       },
@@ -147,6 +147,43 @@
         "full_width": false,
         "padding_top": 16,
         "padding_bottom": 12
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".card__heading {font-size: 20px;}",
+        ".rating-count {font-size: 15px;}",
+        ".rating-star {font-size: 20px;}",
+        ".price-item--regular {color: #a3afaf;}",
+        ".price-item--sale {color: #82c041;}",
+        ".price {margin-top: 0px; font-size: 20px;}",
+        ".quick-add__submit {font-size: 20px !important; background-color: #ffd84d !important; color: #3a3a3a !important; border: none !important; letter-spacing: 0px;}"
+      ],
+      "settings": {
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 16
       }
     },
     "vso_hero_carousel_01_QkM64n": {
@@ -181,6 +218,7 @@
         "item_ppkBaG",
         "item_YUxiic"
       ],
+      "disabled": true,
       "name": "VSO - Hero Carousel 01",
       "settings": {
         "heading": "",
@@ -383,43 +421,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "custom_css": [
-        ".card__heading {font-size: 20px;}",
-        ".rating-count {font-size: 15px;}",
-        ".rating-star {font-size: 20px;}",
-        ".price-item--regular {color: #a3afaf;}",
-        ".price-item--sale {color: #82c041;}",
-        ".price {margin-top: 0px; font-size: 20px;}",
-        ".quick-add__submit {font-size: 20px !important; background-color: #ffd84d !important; color: #3a3a3a !important; border: none !important; letter-spacing: 0px;}"
-      ],
-      "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": true,
-        "full_width": true,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 16
-      }
     }
   },
   "order": [
@@ -429,11 +430,11 @@
     "rich_text_pEwwMU",
     "section_divider_tPQDzG",
     "rich_text_pPXNfi",
+    "featured_collection",
     "vso_hero_carousel_01_QkM64n",
     "vso_benefits_grid_J87mf7",
     "section_divider_Kj6QF8",
     "rich_text_7frmBx",
-    "section_divider_kKTBxa",
-    "featured_collection"
+    "section_divider_kKTBxa"
   ]
 }
