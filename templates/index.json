@@ -320,9 +320,9 @@
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "waves_1",
+        "shape": "curve_divider",
         "flip_horizontal": false,
-        "flip_vertical": true,
+        "flip_vertical": false,
         "wave_height": 16,
         "wave_height_mobile": 16,
         "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
