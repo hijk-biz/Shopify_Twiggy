@@ -108,21 +108,6 @@
         "padding_bottom": 0
       }
     },
-    "section_divider_tPQDzG": {
-      "type": "section-divider",
-      "name": "Section dividers",
-      "settings": {
-        "shape": "curve_divider",
-        "flip_horizontal": false,
-        "flip_vertical": false,
-        "wave_height": 16,
-        "wave_height_mobile": 16,
-        "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
-        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "rich_text_pPXNfi": {
       "type": "rich-text",
       "blocks": {
@@ -146,7 +131,7 @@
         "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
         "full_width": false,
         "padding_top": 12,
-        "padding_bottom": 0
+        "padding_bottom": 12
       }
     },
     "featured_collection": {
@@ -182,8 +167,23 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "section_divider_Etmxmf": {
+      "type": "section-divider",
+      "name": "Section dividers",
+      "settings": {
+        "shape": "arc_divider",
+        "flip_horizontal": false,
+        "flip_vertical": true,
+        "wave_height": 16,
+        "wave_height_mobile": 16,
+        "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "padding_top": 0,
-        "padding_bottom": 16
+        "padding_bottom": 0
       }
     },
     "vso_hero_carousel_01_QkM64n": {
@@ -325,16 +325,17 @@
         "benefit_QCEpUF",
         "benefit_q7Mknq"
       ],
+      "custom_css": [],
       "name": "VSO - Benefits Grid",
       "settings": {
-        "heading_custom_font": false,
-        "heading_font": "poppins_n4",
-        "heading": "",
+        "heading_custom_font": true,
+        "heading_font": "archivo_black_n4",
+        "heading": "Why shop with us",
         "heading_color": "#000000",
         "heading_text_alignment": "center",
-        "heading_font_size": 40,
-        "heading_font_size_mobile": 30,
-        "title_margin_bottom": 40,
+        "heading_font_size": 30,
+        "heading_font_size_mobile": 25,
+        "title_margin_bottom": 20,
         "columns_desktop": 3,
         "columns_tablet": 2,
         "mobile_peek_percentage": 10,
@@ -359,10 +360,10 @@
         "margin_bottom": 0,
         "padding_top": 60,
         "padding_bottom": 60,
-        "section_bg_color": "#f9f9f9",
+        "section_bg_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "content_max_width": 82,
-        "padding_top_mobile": 12,
-        "padding_bottom_mobile": 40,
+        "padding_top_mobile": 8,
+        "padding_bottom_mobile": 8,
         "margin_top_mobile": 0,
         "margin_bottom_mobile": 0,
         "mobile_layout": "column"
@@ -428,9 +429,9 @@
     "rich_text_JFqDrH",
     "rich_text_hwpgyC",
     "rich_text_pEwwMU",
-    "section_divider_tPQDzG",
     "rich_text_pPXNfi",
     "featured_collection",
+    "section_divider_Etmxmf",
     "vso_hero_carousel_01_QkM64n",
     "vso_benefits_grid_J87mf7",
     "section_divider_Kj6QF8",
