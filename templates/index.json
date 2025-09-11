@@ -320,7 +320,7 @@
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "waves_2",
+        "shape": "waves_1",
         "flip_horizontal": false,
         "flip_vertical": true,
         "wave_height": 16,
