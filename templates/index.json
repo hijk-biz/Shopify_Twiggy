@@ -149,6 +149,21 @@
         "padding_bottom": 12
       }
     },
+    "section_divider_qDkxjM": {
+      "type": "section-divider",
+      "name": "Section dividers",
+      "settings": {
+        "shape": "arch_divider",
+        "flip_horizontal": false,
+        "flip_vertical": false,
+        "wave_height": 16,
+        "wave_height_mobile": 16,
+        "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
+        "background_color": "rgba(0,0,0,0)",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [
@@ -173,7 +188,7 @@
         "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -446,6 +461,7 @@
     "rich_text_pEwwMU",
     "section_divider_DnxLyR",
     "rich_text_pPXNfi",
+    "section_divider_qDkxjM",
     "featured_collection",
     "section_divider_Etmxmf",
     "vso_hero_carousel_01_QkM64n",
