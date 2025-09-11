@@ -21,7 +21,7 @@
         "flip_vertical": false,
         "wave_height": 16,
         "wave_height_mobile": 16,
-        "shape_color": "{{ shop.brand.colors.primary[0].background }}",
+        "shape_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "background_color": "{{ shop.brand.colors.primary[0].background }}",
         "padding_top": 0,
         "padding_bottom": 0
@@ -104,6 +104,21 @@
         "content_alignment": "right",
         "color_scheme": "scheme-4",
         "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_divider_DnxLyR": {
+      "type": "section-divider",
+      "name": "Section dividers",
+      "settings": {
+        "shape": "arch_divider",
+        "flip_horizontal": false,
+        "flip_vertical": true,
+        "wave_height": 16,
+        "wave_height_mobile": 16,
+        "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -277,8 +292,8 @@
           "type": "benefit",
           "settings": {
             "image": "shopify://shop_images/Photoroom_20250902_160937.jpg",
-            "block_title": "BENEFIT TITLE",
-            "block_description": "Describe the benefit or feature here."
+            "block_title": "FREE SHIPPING",
+            "block_description": "No surprises at checkout."
           }
         },
         "benefit_WyFEQ7": {
@@ -429,6 +444,7 @@
     "rich_text_JFqDrH",
     "rich_text_hwpgyC",
     "rich_text_pEwwMU",
+    "section_divider_DnxLyR",
     "rich_text_pPXNfi",
     "featured_collection",
     "section_divider_Etmxmf",
