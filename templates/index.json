@@ -117,7 +117,7 @@
         "flip_vertical": true,
         "wave_height": 16,
         "wave_height_mobile": 16,
-        "shape_color": "{{ shop.brand.colors.primary[0].background }}",
+        "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
         "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "padding_top": 0,
         "padding_bottom": 0
@@ -143,25 +143,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-13e6cbf9-1b3a-4de9-b723-3638ee32287d",
+        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
         "full_width": true,
         "padding_top": 12,
         "padding_bottom": 12
-      }
-    },
-    "section_divider_LGiKrk": {
-      "type": "section-divider",
-      "name": "Section dividers",
-      "settings": {
-        "shape": "arch_divider",
-        "flip_horizontal": false,
-        "flip_vertical": false,
-        "wave_height": 16,
-        "wave_height_mobile": 16,
-        "shape_color": "{{ shop.brand.colors.primary[0].background }}",
-        "background_color": "{{ shop.brand.colors.secondary[0].background }}",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "featured_collection": {
@@ -461,7 +446,6 @@
     "rich_text_pEwwMU",
     "section_divider_DnxLyR",
     "rich_text_pPXNfi",
-    "section_divider_LGiKrk",
     "featured_collection",
     "section_divider_Etmxmf",
     "vso_hero_carousel_01_QkM64n",
