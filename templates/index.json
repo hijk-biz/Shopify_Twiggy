@@ -33,7 +33,7 @@
         "heading_FQJhmq": {
           "type": "heading",
           "settings": {
-            "heading": "LEARN. PLAY. GROW.",
+            "heading": "PLAY.",
             "heading_size": "hxl"
           }
         }
@@ -44,13 +44,67 @@
       "custom_css": [
         "{margin-top: -25px;}"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Play.",
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_hwpgyC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_m9BPYY": {
+          "type": "heading",
+          "settings": {
+            "heading": "LEARN.",
+            "heading_size": "hxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_m9BPYY"
+      ],
+      "custom_css": [
+        "{margin-top: -20px;}"
+      ],
+      "name": "Learn.",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_pEwwMU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MBNJ4W": {
+          "type": "heading",
+          "settings": {
+            "heading": "GROW.",
+            "heading_size": "hxl"
+          }
+        }
+      },
+      "block_order": [
+        "heading_MBNJ4W"
+      ],
+      "custom_css": [
+        "{margin-top: -20px;}"
+      ],
+      "name": "Grow.",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "right",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -371,6 +425,8 @@
   "order": [
     "section_divider_LVQYBN",
     "rich_text_JFqDrH",
+    "rich_text_hwpgyC",
+    "rich_text_pEwwMU",
     "section_divider_tPQDzG",
     "rich_text_pPXNfi",
     "vso_hero_carousel_01_QkM64n",
