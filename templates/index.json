@@ -167,7 +167,7 @@
         "heading_size": "h2",
         "description": "",
         "show_description": false,
-        "description_style": "body",
+        "description_style": "uppercase",
         "columns_desktop": 1,
         "enable_desktop_slider": true,
         "full_width": true,
