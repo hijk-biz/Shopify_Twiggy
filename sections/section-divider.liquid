@@ -148,11 +148,12 @@
    
 </div>
 <div class="section-wrapper--{{section.id}} s-d-main-container--{{section.id}}">
-  <div class="s-d-conatiner--{{section.id}}" style="background:transparent;">
-
   {% comment %}
-  <div class="s-d-conatiner--{{section.id}}" style="background:{{ section.settings.shape_color }};">
+  <div class="s-d-conatiner--{{section.id}}" style="background:transparent;">
+  /* Jon */
   {% endcomment %}
+
+  <div class="s-d-conatiner--{{section.id}}" style="background:{{ section.settings.shape_color }};">
 
     {% case section.settings.shape %}
       {% when 'arc_divider' %}
