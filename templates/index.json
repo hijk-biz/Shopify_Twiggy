@@ -159,7 +159,7 @@
         "wave_height": 16,
         "wave_height_mobile": 16,
         "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
-        "background_color": "rgba(0,0,0,0)",
+        "background_color": "#ffffff",
         "padding_top": 0,
         "padding_bottom": 0
       }
