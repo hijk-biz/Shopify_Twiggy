@@ -439,7 +439,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "body.gradient {background: #f9f9f6 !important;}",
+      "body.gradient {/* background: #f9f9f6 !important; */}",
       ".cart-remove-button {color: #3a3a3a;}",
       ".badge {font-weight: bold; font-size: 15px;}"
     ]
