@@ -69,7 +69,7 @@
         "heading_m9BPYY"
       ],
       "custom_css": [
-        "{margin-top: -20px; padding-top: 0px;}"
+        "{margin-top: -15px; padding-top: 0px;}"
       ],
       "name": "Learn.",
       "settings": {
@@ -96,7 +96,7 @@
         "heading_MBNJ4W"
       ],
       "custom_css": [
-        "{margin-top: -20px; padding-top: 0px;}"
+        "{margin-top: -15px; padding: 0px;}"
       ],
       "name": "Grow.",
       "settings": {
