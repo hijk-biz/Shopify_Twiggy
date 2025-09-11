@@ -174,7 +174,7 @@
         ".price-item--sale {color: #82c041;}",
         ".price {margin-top: 0px; font-size: 20px;}",
         ".quick-add__submit {font-size: 18px !important; background-color: #ffd84d !important; color: #3a3a3a !important; letter-spacing: 0px;}",
-        ".slider-buttons{display: none;}"
+        ".slider-buttons {display: none;}"
       ],
       "settings": {
         "collection": "all",
@@ -215,90 +215,6 @@
         "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "padding_top": 0,
         "padding_bottom": 0
-      }
-    },
-    "vso_hero_carousel_01_QkM64n": {
-      "type": "vso-hero-carousel-01",
-      "blocks": {
-        "item_HMnyGA": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Photoroom_20250902_161752.png",
-            "title": "Card Title",
-            "description": "Card description goes here"
-          }
-        },
-        "item_ppkBaG": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Photoroom_20250902_160937.jpg",
-            "title": "Card Title",
-            "description": "Card description goes here"
-          }
-        },
-        "item_YUxiic": {
-          "type": "item",
-          "settings": {
-            "title": "Card Title",
-            "description": "Card description goes here"
-          }
-        }
-      },
-      "block_order": [
-        "item_HMnyGA",
-        "item_ppkBaG",
-        "item_YUxiic"
-      ],
-      "disabled": true,
-      "name": "VSO - Hero Carousel 01",
-      "settings": {
-        "heading": "",
-        "heading_font_size": 42,
-        "heading_font_size_mobile": 32,
-        "alignment": "center",
-        "header_margin_bottom": 20,
-        "description": "",
-        "description_font_size": 16,
-        "description_font_size_mobile": 14,
-        "top_button_label": "Shop All",
-        "top_button_link": "",
-        "input_button_radius": 0,
-        "cards_per_row": 3,
-        "card_width_mobile": 80,
-        "card_gap": 20,
-        "card_gap_mobile": 10,
-        "image_height": 340,
-        "image_border_radius": 30,
-        "image_object_fit": "cover",
-        "product_title_font_size": 18,
-        "product_title_font_size_mobile": 16,
-        "product_description_font_size": 14,
-        "product_description_font_size_mobile": 12,
-        "product_title_line_height": 120,
-        "product_description_line_height": 140,
-        "show_pagination": false,
-        "pagination_indicator_width": 14,
-        "pagination_indicator_active_width": 22,
-        "pagination_indicator_height": 6,
-        "pagination_indicator_radius": 6,
-        "pagination_indicator_color": "#cccccc",
-        "pagination_indicator_active_color": "#000000",
-        "pagination_indicator_opacity": 0.5,
-        "background_color": "{{ shop.brand.colors.secondary[0].background }}",
-        "background_gradient_color": "",
-        "foreground_color": "#000000",
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
-        "border_color": "#000000",
-        "section_full_width": false,
-        "section_max_width": 100,
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "border_thickness": 0
       }
     },
     "vso_benefits_grid_J87mf7": {
@@ -400,56 +316,17 @@
         "mobile_layout": "column"
       }
     },
-    "section_divider_Kj6QF8": {
+    "section_divider_8VFDMD": {
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
         "shape": "waves_2",
         "flip_horizontal": false,
-        "flip_vertical": false,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
-        "shape_color": "#c49a6c",
-        "background_color": "{{ shop.brand.colors.primary[0].background }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "rich_text_7frmBx": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_zry9wf": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our Products",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "heading_zry9wf"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-13e6cbf9-1b3a-4de9-b723-3638ee32287d",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_divider_kKTBxa": {
-      "type": "section-divider",
-      "name": "Section dividers",
-      "settings": {
-        "shape": "waves_1",
-        "flip_horizontal": false,
         "flip_vertical": true,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
-        "shape_color": "#c49a6c",
-        "background_color": "{{ shop.brand.colors.primary[0].background }}",
+        "wave_height": 16,
+        "wave_height_mobile": 16,
+        "shape_color": "rgba(0,0,0,0)",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -465,10 +342,7 @@
     "section_divider_qDkxjM",
     "featured_collection",
     "section_divider_Etmxmf",
-    "vso_hero_carousel_01_QkM64n",
     "vso_benefits_grid_J87mf7",
-    "section_divider_Kj6QF8",
-    "rich_text_7frmBx",
-    "section_divider_kKTBxa"
+    "section_divider_8VFDMD"
   ]
 }
