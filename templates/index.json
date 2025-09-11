@@ -345,8 +345,8 @@
       "settings": {
         "heading_custom_font": true,
         "heading_font": "archivo_black_n4",
-        "heading": "Why shop with us",
-        "heading_color": "#000000",
+        "heading": "WHY US...",
+        "heading_color": "{{ shop.brand.colors.secondary[1].background }}",
         "heading_text_alignment": "center",
         "heading_font_size": 30,
         "heading_font_size_mobile": 25,
