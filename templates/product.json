@@ -117,7 +117,7 @@
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "waves_2",
+        "shape": "clouds",
         "flip_horizontal": true,
         "flip_vertical": false,
         "wave_height": 26,
@@ -156,7 +156,7 @@
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "waves_2",
+        "shape": "clouds",
         "flip_horizontal": false,
         "flip_vertical": true,
         "wave_height": 26,
