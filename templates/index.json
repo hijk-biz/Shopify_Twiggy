@@ -121,14 +121,12 @@
       "block_order": [
         "button_xBRLRp"
       ],
-      "custom_css": [
-        ".button{background-color: #82c041; color: white; opacity: 1;}"
-      ],
+      "custom_css": [],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 0,
         "padding_bottom": 0
