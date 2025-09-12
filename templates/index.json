@@ -122,7 +122,7 @@
         "button_xBRLRp"
       ],
       "custom_css": [
-        ".button {font-size: 18px !important; letter-spacing: 0px; opacity: 1; outline: 0px solid white; /* black outline */}"
+        ".button {font-size: 18px !important; letter-spacing: 0px; opacity: 1; outline: 2px solid white; /* black outline */}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
