@@ -27,85 +27,80 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_JFqDrH": {
-      "type": "rich-text",
+    "ss_hero_18_RN6wTF": {
+      "type": "ss-hero-18",
       "blocks": {
-        "heading_FQJhmq": {
-          "type": "heading",
+        "sticker_zzCkRr": {
+          "type": "sticker",
           "settings": {
-            "heading": "PLAY.",
-            "heading_size": "h0"
+            "sticker_text": "PLAY. LEARN. GROW.",
+            "sticker_shape": "wavy_circle_2",
+            "shape_shadow": false,
+            "sticker_width": 200,
+            "sticker_width_mobile": 116,
+            "show_mobile": true,
+            "vertical_position": 51,
+            "vertical_position_mobile": 49,
+            "horizontal_position": 8,
+            "horizontal_position_mobile": 8,
+            "rotate": 0,
+            "sticker_text_color": "{{ shop.brand.colors.secondary[1].background }}",
+            "sticker_bg_color": "{{ shop.brand.colors.primary[0].foreground }}",
+            "sticker_shadow_color": "#000000"
           }
         }
       },
       "block_order": [
-        "heading_FQJhmq"
+        "sticker_zzCkRr"
       ],
-      "custom_css": [
-        "{margin-top: -25px; padding-bottom: 0px;}"
-      ],
-      "name": "Play.",
+      "name": "SS - Hero #18",
       "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 32,
-        "padding_bottom": 0
-      }
-    },
-    "rich_text_hwpgyC": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_m9BPYY": {
-          "type": "heading",
-          "settings": {
-            "heading": "LEARN.",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_m9BPYY"
-      ],
-      "custom_css": [
-        "{margin-top: -10px; padding-top: 0px;}"
-      ],
-      "name": "Learn.",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "rich_text_pEwwMU": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_MBNJ4W": {
-          "type": "heading",
-          "settings": {
-            "heading": "GROW.",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_MBNJ4W"
-      ],
-      "custom_css": [
-        "{margin-top: -10px; padding: 0px;}"
-      ],
-      "name": "Grow.",
-      "settings": {
-        "desktop_content_position": "right",
-        "content_alignment": "right",
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "use_paralax": false,
+        "heading": "",
+        "heading_custom": true,
+        "heading_font": "archivo_black_n4",
+        "heading_size": 172,
+        "heading_size_mobile": 56,
+        "heading_height": 100,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "logo_width": 80,
+        "logo_width_mobile": 80,
+        "image": "shopify://shop_images/Photoroom_20250902_161752_1_37200f94-6023-4158-98be-8e9b9b4f23ac.png",
+        "image_mobile": "shopify://shop_images/Photoroom_20250902_161752_1_2b1d4bc6-3125-427a-8cef-b85ed9b42251.png",
+        "image_radius": 20,
+        "image_border_thickness": 2,
+        "image_ratio": "square",
+        "image_ratio_mobile": "landscape",
+        "image_mt": -40,
+        "image_mt_mobile": -48,
+        "use_shadow": false,
+        "sticker_text_custom": true,
+        "sticker_text_font": "archivo_black_n4",
+        "sticker_text_size": 31,
+        "sticker_text_size_mobile": 30,
+        "sticker_text_height": 110,
+        "sticker_text_align": "left",
+        "sticker_text_align_mobile": "left",
+        "image_border_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "image_shadow_color": "#000000",
+        "heading_color": "#000000",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": false,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
       }
     },
     "section_divider_DnxLyR": {
@@ -334,9 +329,7 @@
   },
   "order": [
     "section_divider_LVQYBN",
-    "rich_text_JFqDrH",
-    "rich_text_hwpgyC",
-    "rich_text_pEwwMU",
+    "ss_hero_18_RN6wTF",
     "section_divider_DnxLyR",
     "rich_text_pPXNfi",
     "section_divider_qDkxjM",
