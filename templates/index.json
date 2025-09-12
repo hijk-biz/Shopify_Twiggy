@@ -122,7 +122,7 @@
         "button_xBRLRp"
       ],
       "custom_css": [
-        ".button {background-color: #82c041; opacity: 100; box-shadow: none; color: white;}"
+        ".button {background-color: #82c041; opacity: 100; box-shadow: none !important; color: white;}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
