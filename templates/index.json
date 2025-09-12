@@ -217,6 +217,7 @@
       "blocks": {
         "benefit_fFjnaw": {
           "type": "benefit",
+          "name": "Free Shipping",
           "settings": {
             "image": "shopify://shop_images/DeliveryIcon.svg",
             "block_title": "FREE LOCAL SHIPPING",
@@ -225,6 +226,7 @@
         },
         "benefit_WyFEQ7": {
           "type": "benefit",
+          "name": "Au Owned",
           "settings": {
             "image": "shopify://shop_images/australia_77cf0a51-7ace-4f6c-95d4-2c23d8873edd.png",
             "block_title": "AUSTRALIA OWNED",
@@ -233,7 +235,9 @@
         },
         "benefit_tgkLXW": {
           "type": "benefit",
+          "name": "Money Back",
           "settings": {
+            "image": "shopify://shop_images/WalletIcon.svg",
             "block_title": "30-DAY MONEY BACK",
             "block_description": "Not satisfied, you get your money back."
           }
