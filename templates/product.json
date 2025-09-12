@@ -161,7 +161,7 @@
         "flip_vertical": true,
         "wave_height": 26,
         "wave_height_mobile": 26,
-        "shape_color": "",
+        "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
         "background_color": "{{ shop.brand.colors.primary[0].background }}",
         "padding_top": 0,
         "padding_bottom": 0
@@ -190,20 +190,20 @@
         "content_alignment": "left",
         "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
         "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 4,
+        "padding_bottom": 4
       }
     },
     "section_divider_jH3cwX": {
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "waves_2",
+        "shape": "arch_divider",
         "flip_horizontal": true,
         "flip_vertical": false,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
-        "shape_color": "",
+        "wave_height": 14,
+        "wave_height_mobile": 14,
+        "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
         "background_color": "{{ shop.brand.colors.primary[0].background }}",
         "padding_top": 0,
         "padding_bottom": 0
@@ -237,11 +237,11 @@
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "waves_2",
-        "flip_horizontal": false,
+        "shape": "arch_divider",
+        "flip_horizontal": true,
         "flip_vertical": true,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
+        "wave_height": 14,
+        "wave_height_mobile": 14,
         "shape_color": "",
         "background_color": "{{ shop.brand.colors.primary[0].background }}",
         "padding_top": 0,
