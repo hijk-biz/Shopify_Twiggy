@@ -270,12 +270,21 @@
             "block_title": "60-DAY MONEY BACK",
             "block_description": "Not satisfied, you get your money back."
           }
+        },
+        "benefit_cpz3AX": {
+          "type": "benefit",
+          "settings": {
+            "image": "shopify://shop_images/TransactionIcon.svg",
+            "block_title": "SECURE PAYMENTS",
+            "block_description": "We use industry-standards to protect information during transaction."
+          }
         }
       },
       "block_order": [
         "benefit_fFjnaw",
         "benefit_WyFEQ7",
-        "benefit_tgkLXW"
+        "benefit_tgkLXW",
+        "benefit_cpz3AX"
       ],
       "custom_css": [],
       "name": "VSO - Benefits Grid",
