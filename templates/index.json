@@ -121,7 +121,9 @@
       "block_order": [
         "button_xBRLRp"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".button{opacity: 1;}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
