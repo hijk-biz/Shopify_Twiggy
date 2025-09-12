@@ -267,7 +267,7 @@
           "name": "Money Back",
           "settings": {
             "image": "shopify://shop_images/WalletIcon.svg",
-            "block_title": "30-DAY MONEY BACK",
+            "block_title": "60-DAY MONEY BACK",
             "block_description": "Not satisfied, you get your money back."
           }
         }
