@@ -193,7 +193,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [
-        ".card__heading {font-size: 15px;}",
+        ".card__heading {font-size: 14px; letter-spacing: 0px;}",
         ".rating-count {font-size: 15px;}",
         ".rating-star {font-size: 20px;}",
         ".price-item--regular {color: #a3afaf;}",
