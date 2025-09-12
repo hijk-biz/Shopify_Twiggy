@@ -122,7 +122,7 @@
         "button_xBRLRp"
       ],
       "custom_css": [
-        ".button,.button:focus,.button:active,.button:focus-visible {background-color: #82c041; border: none !important; outline: none !important; box-shadow: none !important; color: white; opacity: 1;}"
+        ".button{background-color: #82c041; color: white; opacity: 1;}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
