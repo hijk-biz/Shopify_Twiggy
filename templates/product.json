@@ -123,7 +123,7 @@
         "wave_height": 26,
         "wave_height_mobile": 26,
         "shape_color": "",
-        "background_color": "{{ shop.brand.colors.primary[0].background }}",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -142,27 +142,12 @@
       "block_order": [
         "heading_HxKGUy"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Prod Spec Title",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-13e6cbf9-1b3a-4de9-b723-3638ee32287d",
+        "color_scheme": "scheme-2",
         "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "section_divider_38NfU4": {
-      "type": "section-divider",
-      "name": "Section dividers",
-      "settings": {
-        "shape": "clouds",
-        "flip_horizontal": false,
-        "flip_vertical": true,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
-        "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
-        "background_color": "{{ shop.brand.colors.primary[0].background }}",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -184,11 +169,11 @@
         "{line-height: 18px;}",
         ".rich-text__wrapper {margin-left: 0px; margin-right: 0px;}"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Prod Spec Body",
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
-        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 4,
         "padding_bottom": 4
@@ -203,7 +188,7 @@
         "flip_vertical": false,
         "wave_height": 14,
         "wave_height_mobile": 14,
-        "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
+        "shape_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "background_color": "{{ shop.brand.colors.primary[0].background }}",
         "padding_top": 0,
         "padding_bottom": 0
@@ -383,7 +368,6 @@
     "main",
     "section_divider_exbzpP",
     "rich_text_RbVMPi",
-    "section_divider_38NfU4",
     "rich_text_zJBnjq",
     "section_divider_jH3cwX",
     "rich_text_khdyWY",
