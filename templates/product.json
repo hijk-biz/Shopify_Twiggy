@@ -44,11 +44,24 @@
           "settings": {
             "layout": "vertical",
             "icon_1": "return",
-            "heading_1": "30-day money back",
+            "heading_1": "60-day money back",
             "icon_2": "star",
             "heading_2": "Secure Payments",
             "icon_3": "truck",
             "heading_3": "Free and Fast Local Shipping"
+          }
+        },
+        "icon_with_text_CpKL4d": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "return",
+            "image_1": "shopify://shop_images/australia_77cf0a51-7ace-4f6c-95d4-2c23d8873edd.png",
+            "heading_1": "Australian owned",
+            "icon_2": "star",
+            "heading_2": "",
+            "icon_3": "truck",
+            "heading_3": ""
           }
         },
         "variant_picker": {
@@ -83,6 +96,7 @@
         "title",
         "price",
         "icon_with_text_aLynxM",
+        "icon_with_text_CpKL4d",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
