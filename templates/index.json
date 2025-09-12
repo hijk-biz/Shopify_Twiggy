@@ -79,7 +79,7 @@
         "sticker_text_font": "archivo_black_n4",
         "sticker_text_size": 35,
         "sticker_text_size_mobile": 35,
-        "sticker_text_height": 110,
+        "sticker_text_height": 130,
         "sticker_text_align": "left",
         "sticker_text_align_mobile": "left",
         "image_border_color": "{{ shop.brand.colors.primary[0].foreground }}",
