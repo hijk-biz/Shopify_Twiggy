@@ -196,8 +196,6 @@
         ".card__heading {font-size: 14px; letter-spacing: 0px;}",
         ".rating-count {font-size: 15px;}",
         ".rating-star {font-size: 20px;}",
-        ".price-item--regular {color: #a3afaf;}",
-        ".price-item--sale {color: #82c041; font-weight: bold;}",
         ".price {margin-top: 0px; font-size: 20px;}",
         ".quick-add__submit {font-size: 18px !important; background-color: #ffd84d !important; color: #3a3a3a !important; letter-spacing: 0px;}",
         ".slider-buttons {display: none;}"

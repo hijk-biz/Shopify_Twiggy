@@ -442,7 +442,7 @@
       "body.gradient {/* background: #f9f9f6 !important; */}",
       ".cart-remove-button {color: #3a3a3a;}",
       ".badge {font-weight: bold; font-size: 15px;}",
-      ".price-item--regular {color: #a3afaf;}",
+      ".price-item--regular {color: #a3afaf !important;}",
       ".price-item--sale {color: #82c041; font-weight: bold;}"
     ]
   }
