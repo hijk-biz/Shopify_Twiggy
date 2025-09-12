@@ -241,36 +241,12 @@
             "block_title": "30-DAY MONEY BACK",
             "block_description": "Not satisfied, you get your money back."
           }
-        },
-        "benefit_NJeimJ": {
-          "type": "benefit",
-          "settings": {
-            "block_title": "BENEFIT TITLE",
-            "block_description": "Describe the benefit or feature here."
-          }
-        },
-        "benefit_QCEpUF": {
-          "type": "benefit",
-          "settings": {
-            "block_title": "BENEFIT TITLE",
-            "block_description": "Describe the benefit or feature here."
-          }
-        },
-        "benefit_q7Mknq": {
-          "type": "benefit",
-          "settings": {
-            "block_title": "BENEFIT TITLE",
-            "block_description": "Describe the benefit or feature here."
-          }
         }
       },
       "block_order": [
         "benefit_fFjnaw",
         "benefit_WyFEQ7",
-        "benefit_tgkLXW",
-        "benefit_NJeimJ",
-        "benefit_QCEpUF",
-        "benefit_q7Mknq"
+        "benefit_tgkLXW"
       ],
       "custom_css": [],
       "name": "VSO - Benefits Grid",
