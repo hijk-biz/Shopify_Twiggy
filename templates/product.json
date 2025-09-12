@@ -13,11 +13,11 @@
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "waves_2",
+        "shape": "bubble_side_divider",
         "flip_horizontal": false,
-        "flip_vertical": true,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
+        "flip_vertical": false,
+        "wave_height": 20,
+        "wave_height_mobile": 20,
         "shape_color": "",
         "background_color": "{{ shop.brand.colors.primary[0].background }}",
         "padding_top": 0,
@@ -89,6 +89,7 @@
         "judge_me_reviews_review_widget_dnUA83"
       ],
       "custom_css": [
+        "{margin-top: -10px;}",
         ".product__info-container {margin-bottom: -10px;}",
         ".product__title {margin-bottom: -15px;}",
         ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
@@ -98,7 +99,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "color_scheme": "scheme-1",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "cover",
