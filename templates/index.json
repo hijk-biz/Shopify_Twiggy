@@ -218,7 +218,7 @@
         "benefit_fFjnaw": {
           "type": "benefit",
           "settings": {
-            "image": "shopify://shop_images/Photoroom_20250902_160937.jpg",
+            "image": "shopify://shop_images/DeliveryIcon.svg",
             "block_title": "FREE LOCAL SHIPPING",
             "block_description": "Sent from Australia. No surprises at checkout."
           }
@@ -226,6 +226,7 @@
         "benefit_WyFEQ7": {
           "type": "benefit",
           "settings": {
+            "image": "shopify://shop_images/australia_77cf0a51-7ace-4f6c-95d4-2c23d8873edd.png",
             "block_title": "AUSTRALIA OWNED",
             "block_description": "Stock and business are operated from Geelong, Victoria."
           }
