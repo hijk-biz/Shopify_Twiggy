@@ -160,7 +160,6 @@
         "section_vso_theme_sections_benefit_boxes_z9VyKj"
       ],
       "custom_css": [
-        "{margin-top: 0px;}",
         ".product__info-container {margin-bottom: -10px;}",
         ".product__title {margin-top: 10px; margin-bottom: -15px;}",
         ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
@@ -175,7 +174,7 @@
         "color_scheme": "scheme-1",
         "media_size": "medium",
         "constrain_to_viewport": true,
-        "media_fit": "cover",
+        "media_fit": "contain",
         "gallery_layout": "thumbnail",
         "mobile_thumbnails": "show",
         "media_position": "left",
