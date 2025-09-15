@@ -14,26 +14,17 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_FRmebr": {
-          "type": "announcement",
-          "settings": {
-            "text": "❗📦 Free Shipping in Austrlalia 📦❗",
-            "link": ""
-          }
-        },
         "announcement_LQDtCf": {
           "type": "announcement",
           "settings": {
-            "text": "❗📦 Free Shipping in Austrlalia 📦❗",
+            "text": "Free shipping - Order now",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_FRmebr",
         "announcement_LQDtCf"
       ],
-      "disabled": true,
       "settings": {
         "auto_rotate": true,
         "change_slides_speed": 5,
