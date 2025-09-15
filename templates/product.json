@@ -39,6 +39,35 @@
           "type": "price",
           "settings": {}
         },
+        "section_vso_theme_sections_features_badges_zPRHN6": {
+          "type": "shopify://apps/section-vso-theme-sections/blocks/featuresBadges/06016590-3938-4460-bd08-bd58cf996a58",
+          "settings": {
+            "block_top_spacing": 0,
+            "block_bottom_spacing": 0,
+            "border_color": "{{ shop.brand.colors.primary[0].foreground }}",
+            "badge_bg_color": "{{ shop.brand.colors.primary[0].foreground }}",
+            "text_color": "#000000",
+            "font_size": 15,
+            "gap_size": 5,
+            "badge_padding": 8,
+            "border_radius": 20,
+            "img_size": 24,
+            "use_box_shadow": false,
+            "badge_1_text": "Recycled Material",
+            "badge_2_text": "dfsdfdsf",
+            "badge_3_text": "sdfsdf",
+            "badge_4_text": "",
+            "badge_5_text": "sdfsdfddf",
+            "badge_6_text": "sfsdfdfsdfsfsdf"
+          }
+        },
+        "text_9KpCCq": {
+          "type": "text",
+          "settings": {
+            "text": "Couple sentences about what hte product is about",
+            "text_style": "body"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -96,6 +125,8 @@
         "title",
         "judge_me_reviews_preview_badge_PPmgrk",
         "price",
+        "section_vso_theme_sections_features_badges_zPRHN6",
+        "text_9KpCCq",
         "buy_buttons",
         "icon_with_text_aLynxM",
         "icon_with_text_CpKL4d",
