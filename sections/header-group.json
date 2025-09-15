@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_LQDtCf": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Free shipping - Order now",
             "link": ""
