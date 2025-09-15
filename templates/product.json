@@ -238,8 +238,7 @@
         "text_cNmYBJ"
       ],
       "custom_css": [
-        "{line-height: 18px;}",
-        ".rich-text__wrapper {margin-left: 0px; margin-right: 0px;}"
+        "{line-height: 18px;}"
       ],
       "name": "Prod Spec Body",
       "settings": {
@@ -248,7 +247,7 @@
         "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 16,
-        "padding_bottom": 4
+        "padding_bottom": 16
       }
     },
     "section_divider_jH3cwX": {
