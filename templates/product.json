@@ -27,12 +27,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "judge_me_reviews_preview_badge_PPmgrk": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "title": {
           "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_PPmgrk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
         "price": {
@@ -93,8 +93,8 @@
         }
       },
       "block_order": [
-        "judge_me_reviews_preview_badge_PPmgrk",
         "title",
+        "judge_me_reviews_preview_badge_PPmgrk",
         "price",
         "icon_with_text_aLynxM",
         "icon_with_text_CpKL4d",
@@ -103,6 +103,7 @@
         "buy_buttons",
         "judge_me_reviews_review_widget_dnUA83"
       ],
+      "disabled": true,
       "custom_css": [
         "{margin-top: -10px;}",
         ".product__info-container {margin-bottom: -10px;}",
@@ -110,15 +111,17 @@
         ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
         ".icon-with-text {margin-bottom: 5px; margin-top: 5px;}",
         ".icon-with-text__item {margin-bottom: 5px; margin-top: 0px;}",
-        ".button--secondary {background-color: #ffd84d !important; color: #3a3a3a; font-size: 20px !important; letter-spacing: 0px;}"
+        ".button--secondary {background-color: #ffd84d !important; color: #3a3a3a; font-size: 20px !important; letter-spacing: 0px;}",
+        ".price-item--regular {font-size: 15px !important;}",
+        ".price-item--sale {font-size: 20px !important;}"
       ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
-        "media_size": "large",
+        "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "cover",
-        "gallery_layout": "thumbnail_slider",
+        "gallery_layout": "thumbnail",
         "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
