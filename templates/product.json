@@ -160,7 +160,7 @@
         "section_vso_theme_sections_benefit_boxes_z9VyKj"
       ],
       "custom_css": [
-        "{margin-top: -10px;}",
+        "{margin-top: 0px;}",
         ".product__info-container {margin-bottom: -10px;}",
         ".product__title {margin-top: 10px; margin-bottom: -15px;}",
         ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
