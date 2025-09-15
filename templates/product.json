@@ -39,6 +39,13 @@
           "type": "price",
           "settings": {}
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
         "icon_with_text_aLynxM": {
           "type": "icon-with-text",
           "settings": {
@@ -76,13 +83,6 @@
           "disabled": true,
           "settings": {}
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
         "judge_me_reviews_review_widget_dnUA83": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
@@ -96,14 +96,13 @@
         "title",
         "judge_me_reviews_preview_badge_PPmgrk",
         "price",
+        "buy_buttons",
         "icon_with_text_aLynxM",
         "icon_with_text_CpKL4d",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
         "judge_me_reviews_review_widget_dnUA83"
       ],
-      "disabled": true,
       "custom_css": [
         "{margin-top: -10px;}",
         ".product__info-container {margin-bottom: -10px;}",
