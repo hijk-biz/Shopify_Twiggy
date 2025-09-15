@@ -330,7 +330,7 @@
         "heading_font_size": 30,
         "heading_font_size_mobile": 25,
         "title_margin_bottom": 20,
-        "columns_desktop": 4,
+        "columns_desktop": 1,
         "columns_tablet": 1,
         "mobile_peek_percentage": 10,
         "mobile_card_gap": 5,
