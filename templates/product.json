@@ -137,7 +137,7 @@
       "custom_css": [
         "{margin-top: -10px;}",
         ".product__info-container {margin-bottom: -10px;}",
-        ".product__title {margin-bottom: -15px;}",
+        ".product__title {margin-top: 10px; margin-bottom: -15px;}",
         ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
         ".icon-with-text {margin-bottom: 5px; margin-top: 5px;}",
         ".icon-with-text__item {margin-bottom: 5px; margin-top: 0px;}",
