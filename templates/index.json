@@ -121,7 +121,7 @@
         "button_xBRLRp"
       ],
       "custom_css": [
-        ".button {font-size: 20px !important; font-weight:bold; color: #3a3a3a; letter-spacing: 0px; opacity: 1; outline: 3px solid #3a3a3a; /* black outline */}"
+        ".button {font-size: 20px !important; font-weight: bold; color: #3a3a3a; letter-spacing: 0px; opacity: 1; outline: 3px solid #3a3a3a; /* black outline */}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -175,7 +175,7 @@
         "heading_font_size": 30,
         "heading_font_size_mobile": 25,
         "title_margin_bottom": 20,
-        "columns_desktop": 4,
+        "columns_desktop": 1,
         "columns_tablet": 1,
         "mobile_peek_percentage": 10,
         "mobile_card_gap": 5,
@@ -197,10 +197,10 @@
         "card_desc_font_size_mobile": 14,
         "margin_top": 0,
         "margin_bottom": 0,
-        "padding_top": 60,
-        "padding_bottom": 60,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "section_bg_color": "{{ shop.brand.colors.secondary[0].background }}",
-        "content_max_width": 82,
+        "content_max_width": 200,
         "padding_top_mobile": 0,
         "padding_bottom_mobile": 0,
         "margin_top_mobile": 0,
