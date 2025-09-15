@@ -247,9 +247,9 @@
           "type": "benefit",
           "name": "Free Shipping",
           "settings": {
-            "image": "shopify://shop_images/DeliveryIcon.svg",
-            "block_title": "FREE LOCAL SHIPPING",
-            "block_description": "Sent from Australia. No surprises at checkout."
+            "image": "{{ metaobjects.trust_center[\"free-shipping\"].trust_icon_1.value }}",
+            "block_title": "{{ metaobjects.trust_center[\"free-shipping\"].trust_title_1.value }}",
+            "block_description": "{{ metaobjects.trust_center[\"free-shipping\"].trust_body_1.value }}"
           }
         },
         "benefit_WyFEQ7": {
