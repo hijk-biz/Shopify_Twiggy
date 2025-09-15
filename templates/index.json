@@ -123,7 +123,7 @@
       "custom_css": [
         ".button {font-size: 20px !important; font-weight: bold; color: #3a3a3a; letter-spacing: 0px; opacity: 1; outline: 3px solid #3a3a3a; /* black outline */}"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Shop All Button",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -165,7 +165,7 @@
         "benefit_JLYhqx"
       ],
       "custom_css": [],
-      "name": "VSO - Benefits Grid",
+      "name": "Purpose (VSO - Benefits Grid)",
       "settings": {
         "heading_custom_font": true,
         "heading_font": "archivo_black_n4",
