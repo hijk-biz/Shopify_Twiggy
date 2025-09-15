@@ -119,6 +119,30 @@
             "review_data": "real_data",
             "max_width": 1200
           }
+        },
+        "section_vso_theme_sections_benefit_boxes_z9VyKj": {
+          "type": "shopify://apps/section-vso-theme-sections/blocks/benefitBoxes/06016590-3938-4460-bd08-bd58cf996a58",
+          "settings": {
+            "block_top_spacing": 0,
+            "block_bottom_spacing": 0,
+            "image_size": 50,
+            "image_size_mobile": 40,
+            "image_radius": 0,
+            "font_size": 16,
+            "font_size_mobile": 14,
+            "text_color": "#121212",
+            "row_gap": 12,
+            "section_gap": 12,
+            "inner_padding": 10,
+            "border_width": 1,
+            "border_color": "#000000",
+            "border_radius": 4,
+            "background_color": "#ffffff",
+            "feature_box_text_1": "Fast Shipping",
+            "feature_box_text_2": "24/7 support",
+            "feature_box_text_3": "Easy returns",
+            "feature_box_text_4": "Secure payment"
+          }
         }
       },
       "block_order": [
@@ -132,7 +156,8 @@
         "icon_with_text_CpKL4d",
         "variant_picker",
         "quantity_selector",
-        "judge_me_reviews_review_widget_dnUA83"
+        "judge_me_reviews_review_widget_dnUA83",
+        "section_vso_theme_sections_benefit_boxes_z9VyKj"
       ],
       "custom_css": [
         "{margin-top: -10px;}",
