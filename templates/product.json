@@ -55,10 +55,10 @@
             "use_box_shadow": false,
             "badge_1_text": "{{ product.metafields.custom.badge_1.value }}",
             "badge_2_text": "{{ product.metafields.custom.badge_2.value }}",
-            "badge_3_text": "sdfsdf",
-            "badge_4_text": "",
-            "badge_5_text": "",
-            "badge_6_text": ""
+            "badge_3_text": "{{ product.metafields.custom.badge_3.value }}",
+            "badge_4_text": "{{ product.metafields.custom.badge_4.value }}",
+            "badge_5_text": "{{ product.metafields.custom.badge_5.value }}",
+            "badge_6_text": "{{ product.metafields.custom.badge_6.value }}"
           }
         },
         "text_9KpCCq": {
