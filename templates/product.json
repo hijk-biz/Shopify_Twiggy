@@ -64,7 +64,7 @@
         "text_9KpCCq": {
           "type": "text",
           "settings": {
-            "text": "Couple sentences about what hte product is about",
+            "text": "{{ product.metafields.custom.short_description.value }}",
             "text_style": "body"
           }
         },
