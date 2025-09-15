@@ -44,9 +44,9 @@
           "settings": {
             "block_top_spacing": 0,
             "block_bottom_spacing": 0,
-            "border_color": "{{ shop.brand.colors.primary[0].foreground }}",
-            "badge_bg_color": "{{ shop.brand.colors.primary[0].foreground }}",
-            "text_color": "#000000",
+            "border_color": "#e7e7e7",
+            "badge_bg_color": "#e7e7e7",
+            "text_color": "{{ shop.brand.colors.secondary[1].background }}",
             "font_size": 15,
             "gap_size": 5,
             "badge_padding": 8,
@@ -57,8 +57,8 @@
             "badge_2_text": "{{ product.metafields.custom.badge_2.value }}",
             "badge_3_text": "sdfsdf",
             "badge_4_text": "",
-            "badge_5_text": "sdfsdfddf",
-            "badge_6_text": "sfsdfdfsdfsfsdf"
+            "badge_5_text": "",
+            "badge_6_text": ""
           }
         },
         "text_9KpCCq": {
