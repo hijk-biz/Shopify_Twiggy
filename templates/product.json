@@ -39,28 +39,6 @@
           "type": "price",
           "settings": {}
         },
-        "section_vso_theme_sections_features_badges_zPRHN6": {
-          "type": "shopify://apps/section-vso-theme-sections/blocks/featuresBadges/06016590-3938-4460-bd08-bd58cf996a58",
-          "settings": {
-            "block_top_spacing": 0,
-            "block_bottom_spacing": 0,
-            "border_color": "#e7e7e7",
-            "badge_bg_color": "#e7e7e7",
-            "text_color": "{{ shop.brand.colors.secondary[1].background }}",
-            "font_size": 15,
-            "gap_size": 5,
-            "badge_padding": 8,
-            "border_radius": 20,
-            "img_size": 24,
-            "use_box_shadow": false,
-            "badge_1_text": "{{ product.metafields.custom.badge_1.value }}",
-            "badge_2_text": "{{ product.metafields.custom.badge_2.value }}",
-            "badge_3_text": "{{ product.metafields.custom.badge_3.value }}",
-            "badge_4_text": "{{ product.metafields.custom.badge_4.value }}",
-            "badge_5_text": "{{ product.metafields.custom.badge_5.value }}",
-            "badge_6_text": "{{ product.metafields.custom.badge_6.value }}"
-          }
-        },
         "text_9KpCCq": {
           "type": "text",
           "settings": {
@@ -73,31 +51,6 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
-          }
-        },
-        "icon_with_text_aLynxM": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "vertical",
-            "icon_1": "return",
-            "heading_1": "60-day money back",
-            "icon_2": "star",
-            "heading_2": "Secure Payments",
-            "icon_3": "truck",
-            "heading_3": "Free and Fast Local Shipping"
-          }
-        },
-        "icon_with_text_CpKL4d": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "vertical",
-            "icon_1": "return",
-            "image_1": "shopify://shop_images/australia_77cf0a51-7ace-4f6c-95d4-2c23d8873edd.png",
-            "heading_1": "Australian owned",
-            "icon_2": "star",
-            "heading_2": "",
-            "icon_3": "truck",
-            "heading_3": ""
           }
         },
         "variant_picker": {
@@ -119,48 +72,20 @@
             "review_data": "real_data",
             "max_width": 1200
           }
-        },
-        "section_vso_theme_sections_benefit_boxes_z9VyKj": {
-          "type": "shopify://apps/section-vso-theme-sections/blocks/benefitBoxes/06016590-3938-4460-bd08-bd58cf996a58",
-          "settings": {
-            "block_top_spacing": 0,
-            "block_bottom_spacing": 0,
-            "image_size": 50,
-            "image_size_mobile": 40,
-            "image_radius": 0,
-            "font_size": 16,
-            "font_size_mobile": 14,
-            "text_color": "#121212",
-            "row_gap": 12,
-            "section_gap": 12,
-            "inner_padding": 10,
-            "border_width": 1,
-            "border_color": "#000000",
-            "border_radius": 4,
-            "background_color": "#ffffff",
-            "feature_box_text_1": "Fast Shipping",
-            "feature_box_text_2": "24/7 support",
-            "feature_box_text_3": "Easy returns",
-            "feature_box_text_4": "Secure payment"
-          }
         }
       },
       "block_order": [
         "title",
         "judge_me_reviews_preview_badge_PPmgrk",
         "price",
-        "section_vso_theme_sections_features_badges_zPRHN6",
         "text_9KpCCq",
         "buy_buttons",
-        "icon_with_text_aLynxM",
-        "icon_with_text_CpKL4d",
         "variant_picker",
         "quantity_selector",
-        "judge_me_reviews_review_widget_dnUA83",
-        "section_vso_theme_sections_benefit_boxes_z9VyKj"
+        "judge_me_reviews_review_widget_dnUA83"
       ],
       "custom_css": [
-        ".product__info-container {margin-bottom: -10px;}",
+        ".product__info-container {margin-bottom: -30px;}",
         ".product__title {margin-top: 10px; margin-bottom: -15px;}",
         ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
         ".icon-with-text {margin-bottom: 5px; margin-top: 5px;}",
@@ -182,7 +107,7 @@
         "hide_variants": true,
         "enable_video_looping": true,
         "padding_top": 12,
-        "padding_bottom": 12
+        "padding_bottom": 0
       }
     },
     "section_divider_exbzpP": {
@@ -200,6 +125,97 @@
         "padding_bottom": 0
       }
     },
+    "vso_benefits_grid_gK7GhM": {
+      "type": "vso-benefits-grid",
+      "blocks": {
+        "benefit_wKqkMp": {
+          "type": "benefit",
+          "name": "Free Shipping",
+          "settings": {
+            "image": "{{ metaobjects.trust_center[\"free-shipping\"].trust_icon_1.value }}",
+            "block_title": "{{ metaobjects.trust_center[\"free-shipping\"].trust_title_1.value }}",
+            "block_description": "{{ metaobjects.trust_center[\"free-shipping\"].trust_body_1.value }}"
+          }
+        },
+        "benefit_Xr3Hha": {
+          "type": "benefit",
+          "name": "Au Owned",
+          "source": "{{ metaobjects.trust_center[\"trust-center-vvnjkuuj\"] }}",
+          "settings": {
+            "image": "{{ metaobjects.trust_center[\"trust-center-vvnjkuuj\"].trust_icon_1.value }}",
+            "block_title": "{{ metaobjects.trust_center[\"trust-center-vvnjkuuj\"].trust_title_1.value }}",
+            "block_description": "{{ metaobjects.trust_center[\"trust-center-vvnjkuuj\"].trust_body_1.value }}"
+          }
+        },
+        "benefit_JyXrAz": {
+          "type": "benefit",
+          "name": "Money Back",
+          "source": "{{ metaobjects.trust_center[\"trust-center-3vgvwtvx\"] }}",
+          "settings": {
+            "image": "{{ metaobjects.trust_center[\"trust-center-3vgvwtvx\"].trust_icon_1.value }}",
+            "block_title": "{{ metaobjects.trust_center[\"trust-center-3vgvwtvx\"].trust_title_1.value }}",
+            "block_description": "{{ metaobjects.trust_center[\"trust-center-3vgvwtvx\"].trust_body_1.value }}"
+          }
+        },
+        "benefit_kKMAGM": {
+          "type": "benefit",
+          "source": "{{ metaobjects.trust_center[\"trust-center-ixd7sdxx\"] }}",
+          "settings": {
+            "image": "{{ metaobjects.trust_center[\"trust-center-ixd7sdxx\"].trust_icon_1.value }}",
+            "block_title": "{{ metaobjects.trust_center[\"trust-center-ixd7sdxx\"].trust_title_1.value }}",
+            "block_description": "{{ metaobjects.trust_center[\"trust-center-ixd7sdxx\"].trust_body_1.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_wKqkMp",
+        "benefit_Xr3Hha",
+        "benefit_JyXrAz",
+        "benefit_kKMAGM"
+      ],
+      "name": "VSO - Benefits Grid",
+      "settings": {
+        "heading_custom_font": false,
+        "heading_font": "archivo_black_n4",
+        "heading": "",
+        "heading_color": "{{ shop.brand.colors.secondary[1].background }}",
+        "heading_text_alignment": "center",
+        "heading_font_size": 30,
+        "heading_font_size_mobile": 25,
+        "title_margin_bottom": 20,
+        "columns_desktop": 1,
+        "columns_tablet": 1,
+        "mobile_peek_percentage": 10,
+        "mobile_card_gap": 5,
+        "grid_gap": 10,
+        "icon_size": 44,
+        "icon_vertical_alignment": "center",
+        "icon_text_gap": 15,
+        "card_padding_vertical": 12,
+        "card_padding_horizontal": 16,
+        "card_border_radius": 15,
+        "card_bg_color": "#ffffff",
+        "card_title_custom_font": false,
+        "card_title_font": "poppins_n4",
+        "card_title_font_size": 18,
+        "card_title_font_size_mobile": 16,
+        "card_desc_custom_font": false,
+        "card_desc_font": "poppins_n4",
+        "card_desc_font_size": 16,
+        "card_desc_font_size_mobile": 14,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "section_bg_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "content_max_width": 82,
+        "padding_top_mobile": 8,
+        "padding_bottom_mobile": 8,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "mobile_layout": "column"
+      }
+    },
     "rich_text_RbVMPi": {
       "type": "rich-text",
       "blocks": {
@@ -214,6 +230,7 @@
       "block_order": [
         "heading_HxKGUy"
       ],
+      "disabled": true,
       "name": "Prod Spec Title",
       "settings": {
         "desktop_content_position": "center",
@@ -399,6 +416,7 @@
     "section_divider_b4jng9",
     "main",
     "section_divider_exbzpP",
+    "vso_benefits_grid_gK7GhM",
     "rich_text_RbVMPi",
     "rich_text_zJBnjq",
     "section_divider_jH3cwX",
