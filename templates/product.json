@@ -323,7 +323,7 @@
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "curve_divider",
+        "shape": "frame_4",
         "flip_horizontal": true,
         "flip_vertical": true,
         "wave_height": 26,
@@ -362,7 +362,7 @@
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "bubble_side_divider",
+        "shape": "frame_4",
         "flip_horizontal": false,
         "flip_vertical": false,
         "wave_height": 26,
