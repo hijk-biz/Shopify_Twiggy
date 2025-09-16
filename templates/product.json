@@ -323,9 +323,9 @@
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "waves_2",
+        "shape": "curve_divider",
         "flip_horizontal": true,
-        "flip_vertical": false,
+        "flip_vertical": true,
         "wave_height": 26,
         "wave_height_mobile": 26,
         "shape_color": "",
@@ -362,9 +362,9 @@
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "waves_2",
+        "shape": "bubble_side_divider",
         "flip_horizontal": false,
-        "flip_vertical": true,
+        "flip_vertical": false,
         "wave_height": 26,
         "wave_height_mobile": 26,
         "shape_color": "",
@@ -382,7 +382,7 @@
         ".price-item--regular {color: #a3afaf;}",
         ".price-item--sale {color: #82c041;}",
         ".price {margin-top: 0px; font-size: 20px;}",
-        ".quick-add__submit {font-size: 20px !important; background-color: #ffd84d !important; color: #3a3a3a !important; border: none !important; letter-spacing: 0px;}"
+        ".quick-add__submit {font-size: 20px !important; color: #3a3a3a !important; border: none !important; letter-spacing: 0px;}"
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
@@ -398,7 +398,7 @@
         "full_width": true,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
