@@ -85,7 +85,7 @@
         "judge_me_reviews_review_widget_dnUA83"
       ],
       "custom_css": [
-        ".product__info-container {margin-bottom: -30px;}",
+        ".product__info-container {margin-bottom: -10px;}",
         ".product__title {margin-top: 10px; margin-bottom: -15px;}",
         ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
         ".icon-with-text {margin-bottom: 5px; margin-top: 5px;}",
@@ -114,9 +114,9 @@
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
-        "shape": "clouds",
+        "shape": "rough",
         "flip_horizontal": true,
-        "flip_vertical": false,
+        "flip_vertical": true,
         "wave_height": 26,
         "wave_height_mobile": 26,
         "shape_color": "",
