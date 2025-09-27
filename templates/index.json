@@ -380,6 +380,62 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "slideshow_a8bmna": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_RMjPWL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Photoroom_20250916_093753.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": true,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_caqJQH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Photoroom_20250910_183959.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_RMjPWL",
+        "slide_caqJQH"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "image_behavior": "ambient",
+        "show_text_below": false,
+        "accessibility_info": ""
+      }
     }
   },
   "order": [
@@ -392,6 +448,7 @@
     "featured_collection",
     "section_divider_Etmxmf",
     "vso_benefits_grid_J87mf7",
-    "section_divider_8VFDMD"
+    "section_divider_8VFDMD",
+    "slideshow_a8bmna"
   ]
 }
