@@ -39,6 +39,31 @@
           "type": "price",
           "settings": {}
         },
+        "section_vso_theme_sections_vso_benefit_boxes_4B66VV": {
+          "type": "shopify://apps/section-vso-theme-sections/blocks/vsoBenefitBoxes/06016590-3938-4460-bd08-bd58cf996a58",
+          "settings": {
+            "block_top_spacing": 0,
+            "block_bottom_spacing": 0,
+            "heading_font_size": 16,
+            "description_font_size": 10,
+            "text_color": "#1a1a1a",
+            "description_text_color": "#6b7280",
+            "inner_padding": 10,
+            "image_size": 10,
+            "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+            "background_radius": 50,
+            "side_by_side_layout": true,
+            "section_gap": 0,
+            "feature_box_heading_1": "Fast Delivery",
+            "feature_box_description_1": "",
+            "feature_box_heading_2": "24/7 Support",
+            "feature_box_description_2": "",
+            "feature_box_heading_3": "Money Back Guarantee",
+            "feature_box_description_3": "",
+            "feature_box_heading_4": "Secure Checkout",
+            "feature_box_description_4": ""
+          }
+        },
         "text_9KpCCq": {
           "type": "text",
           "settings": {
@@ -78,6 +103,7 @@
         "title",
         "judge_me_reviews_preview_badge_PPmgrk",
         "price",
+        "section_vso_theme_sections_vso_benefit_boxes_4B66VV",
         "text_9KpCCq",
         "buy_buttons",
         "variant_picker",
