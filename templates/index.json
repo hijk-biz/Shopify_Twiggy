@@ -30,8 +30,29 @@
     "ss_hero_18_RN6wTF": {
       "type": "ss-hero-18",
       "blocks": {
+        "sticker_HkRDrJ": {
+          "type": "sticker",
+          "disabled": true,
+          "settings": {
+            "sticker_text": "STiCKER",
+            "sticker_shape": "wavy_circle_2",
+            "shape_shadow": false,
+            "sticker_width": 200,
+            "sticker_width_mobile": 116,
+            "show_mobile": false,
+            "vertical_position": 50,
+            "vertical_position_mobile": 50,
+            "horizontal_position": 50,
+            "horizontal_position_mobile": 50,
+            "rotate": 0,
+            "sticker_text_color": "#000000",
+            "sticker_bg_color": "#eef390",
+            "sticker_shadow_color": "#000000"
+          }
+        },
         "sticker_zzCkRr": {
           "type": "sticker",
+          "disabled": true,
           "settings": {
             "sticker_text": "PLAY. LEARN. GROW.",
             "sticker_shape": "square",
@@ -51,6 +72,7 @@
         }
       },
       "block_order": [
+        "sticker_HkRDrJ",
         "sticker_zzCkRr"
       ],
       "name": "SS - Hero #18",
@@ -66,7 +88,7 @@
         "heading_align_mobile": "center",
         "logo_width": 40,
         "logo_width_mobile": 80,
-        "image": "shopify://shop_images/Photoroom_20250902_161752_1_2b1d4bc6-3125-427a-8cef-b85ed9b42251.png",
+        "image": "shopify://shop_images/Banner.png",
         "image_radius": 20,
         "image_border_thickness": 2,
         "image_ratio": "original",
