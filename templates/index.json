@@ -130,7 +130,7 @@
         "slide_A36cTH": {
           "type": "slide",
           "settings": {
-            "autoplay": false,
+            "autoplay": true,
             "video": "shopify://files/videos/1001.mov",
             "title": "",
             "subtitle": "",
