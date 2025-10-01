@@ -132,7 +132,9 @@
           "settings": {
             "autoplay": true,
             "video": "shopify://files/videos/1001.mov",
-            "title": "",
+            "image": "shopify://shop_images/Twigsy-multi-tight.png",
+            "image_mobile": "shopify://shop_images/Twigsy-grey-tight.png",
+            "title": "<p>vcgb</p>",
             "subtitle": "",
             "button": "",
             "button_url": "shopify://collections/all",
