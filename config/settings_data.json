@@ -171,9 +171,9 @@
         "settings": {
           "background": "{{ shop.brand.colors.primary[0].foreground }}",
           "background_gradient": "",
-          "text": "#121212",
+          "text": "{{ shop.brand.colors.secondary[0].background }}",
           "button": "{{ shop.brand.colors.primary[0].background }}",
-          "button_label": "#ffffff",
+          "button_label": "{{ shop.brand.colors.secondary[0].background }}",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
