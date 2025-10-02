@@ -272,9 +272,8 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/face-changing-1.jpg",
-        "image_2": "shopify://shop_images/H60d323db162f4ee29210b0fd8432a52c4.jpg_960x960q80.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "image_behavior": "ambient",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
