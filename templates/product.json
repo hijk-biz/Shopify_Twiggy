@@ -252,6 +252,36 @@
         "padding_bottom": 52
       }
     },
+    "section_divider_jH3cwX": {
+      "type": "section-divider",
+      "name": "Section dividers",
+      "settings": {
+        "shape": "rough",
+        "flip_horizontal": true,
+        "flip_vertical": true,
+        "wave_height": 20,
+        "wave_height_mobile": 20,
+        "shape_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "background_color": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_divider_wMHK6C": {
+      "type": "section-divider",
+      "name": "Section dividers",
+      "settings": {
+        "shape": "rough",
+        "flip_horizontal": true,
+        "flip_vertical": true,
+        "wave_height": 20,
+        "wave_height_mobile": 20,
+        "shape_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "background_color": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "vso_hero_carousel_01_i9jT8D": {
       "type": "vso-hero-carousel-01",
       "blocks": {
@@ -285,6 +315,9 @@
         "item_tqXkNF",
         "item_ncAB6A"
       ],
+      "custom_css": [
+        "{margin-top: -30px; margin-bottom: -30px; z-index: -3;}"
+      ],
       "name": "VSO - Hero Carousel 01",
       "settings": {
         "heading": "",
@@ -299,19 +332,19 @@
         "top_button_link": "",
         "input_button_radius": 0,
         "cards_per_row": 3,
-        "card_width_mobile": 100,
+        "card_width_mobile": 80,
         "card_gap": 20,
-        "card_gap_mobile": 15,
-        "image_height": 430,
+        "card_gap_mobile": 10,
+        "image_height": 360,
         "image_border_radius": 0,
-        "image_object_fit": "cover",
+        "image_object_fit": "contain",
         "product_title_font_size": 18,
         "product_title_font_size_mobile": 16,
         "product_description_font_size": 14,
         "product_description_font_size_mobile": 12,
         "product_title_line_height": 120,
         "product_description_line_height": 140,
-        "show_pagination": true,
+        "show_pagination": false,
         "pagination_indicator_width": 14,
         "pagination_indicator_active_width": 22,
         "pagination_indicator_height": 6,
@@ -325,28 +358,28 @@
         "button_background_color": "#000000",
         "button_text_color": "#ffffff",
         "border_color": "#000000",
-        "section_full_width": false,
+        "section_full_width": true,
         "section_max_width": 100,
         "margin_top": 0,
         "margin_bottom": 0,
-        "padding_top": 60,
-        "padding_bottom": 60,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "padding_horizontal": 0,
         "padding_horizontal_mobile": 0,
         "border_thickness": 0
       }
     },
-    "section_divider_jH3cwX": {
+    "section_divider_fDK3LT": {
       "type": "section-divider",
       "name": "Section dividers",
       "settings": {
         "shape": "rough",
         "flip_horizontal": true,
         "flip_vertical": true,
-        "wave_height": 20,
-        "wave_height_mobile": 20,
-        "shape_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "background_color": "#ffffff",
+        "wave_height": 26,
+        "wave_height_mobile": 26,
+        "shape_color": "",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -514,8 +547,10 @@
     "vso_benefits_grid_gK7GhM",
     "section_divider_exbzpP",
     "rich_text_A6ArN3",
-    "vso_hero_carousel_01_i9jT8D",
     "section_divider_jH3cwX",
+    "vso_hero_carousel_01_i9jT8D",
+    "section_divider_fDK3LT",
+    "section_divider_wMHK6C",
     "rich_text_zJBnjq",
     "17566867484716ae8e",
     "related-products",
