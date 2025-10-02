@@ -93,10 +93,8 @@
       ],
       "custom_css": [
         ".product__info-container {margin-bottom: -10px;}",
-        ".product__title {margin-top: 10px; margin-bottom: -15px;}",
+        ".product__title {margin-top: 10px; margin-bottom: -10px;}",
         ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
-        ".icon-with-text {margin-bottom: 5px; margin-top: 5px;}",
-        ".icon-with-text__item {margin-bottom: 5px; margin-top: 0px;}",
         ".button--secondary {background-color: #ffd84d !important; color: #3a3a3a; font-size: 20px !important; letter-spacing: 0px;}",
         ".price-item--regular {font-size: 15px !important;}",
         ".price-item--sale {font-size: 20px !important;}"
@@ -107,8 +105,8 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "thumbnail",
-        "mobile_thumbnails": "hide",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": true,
