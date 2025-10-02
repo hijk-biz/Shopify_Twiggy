@@ -234,7 +234,7 @@
         "text_wUAjXe": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Exciting and interactive game designed for people of all ages. Grab  a card, assemble the blocks to match the face, fastest wins!<br/><br/></p>"
           }
         }
       },
@@ -248,8 +248,8 @@
         "content_alignment": "center",
         "color_scheme": "scheme-4",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_divider_jH3cwX": {
@@ -274,7 +274,7 @@
         "image": "shopify://shop_images/face-changing-1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
-        "image_behavior": "ambient",
+        "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": true,
