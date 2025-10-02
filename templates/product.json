@@ -221,6 +221,37 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_A6ArN3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FRJmPr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fun for all ages",
+            "heading_size": "h1"
+          }
+        },
+        "text_wUAjXe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FRJmPr",
+        "text_wUAjXe"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "section_divider_jH3cwX": {
       "type": "section-divider",
       "name": "Section dividers",
@@ -397,6 +428,7 @@
     "main",
     "vso_benefits_grid_gK7GhM",
     "section_divider_exbzpP",
+    "rich_text_A6ArN3",
     "section_divider_jH3cwX",
     "rich_text_zJBnjq",
     "17566867484716ae8e",
