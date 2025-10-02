@@ -115,21 +115,6 @@
         "padding_bottom": 0
       }
     },
-    "section_divider_exbzpP": {
-      "type": "section-divider",
-      "name": "Section dividers",
-      "settings": {
-        "shape": "rough",
-        "flip_horizontal": true,
-        "flip_vertical": true,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
-        "shape_color": "",
-        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "vso_benefits_grid_gK7GhM": {
       "type": "vso-benefits-grid",
       "blocks": {
@@ -219,6 +204,21 @@
         "margin_top_mobile": 0,
         "margin_bottom_mobile": 0,
         "mobile_layout": "column"
+      }
+    },
+    "section_divider_exbzpP": {
+      "type": "section-divider",
+      "name": "Section dividers",
+      "settings": {
+        "shape": "rough",
+        "flip_horizontal": true,
+        "flip_vertical": true,
+        "wave_height": 26,
+        "wave_height_mobile": 26,
+        "shape_color": "",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_divider_jH3cwX": {
@@ -395,8 +395,8 @@
   "order": [
     "section_divider_b4jng9",
     "main",
-    "section_divider_exbzpP",
     "vso_benefits_grid_gK7GhM",
+    "section_divider_exbzpP",
     "section_divider_jH3cwX",
     "rich_text_zJBnjq",
     "17566867484716ae8e",
