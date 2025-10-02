@@ -267,91 +267,22 @@
         "padding_bottom": 0
       }
     },
-    "vso_hero_carousel_01_i9jT8D": {
-      "type": "vso-hero-carousel-01",
-      "blocks": {
-        "item_pfJbaW": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/face-changing-1.jpg",
-            "title": "",
-            "description": ""
-          }
-        },
-        "item_tqXkNF": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Photoroom_20250902_1547442.jpg",
-            "title": "",
-            "description": ""
-          }
-        },
-        "item_ncAB6A": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Photoroom_20250902_160937.jpg",
-            "title": "",
-            "description": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_pfJbaW",
-        "item_tqXkNF",
-        "item_ncAB6A"
-      ],
-      "custom_css": [
-        "{margin-top: -30px; margin-bottom: -30px; z-index: -3;}"
-      ],
-      "name": "VSO - Hero Carousel 01",
+    "image_banner_YhHfNC": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "heading": "",
-        "heading_font_size": 42,
-        "heading_font_size_mobile": 32,
-        "alignment": "default",
-        "header_margin_bottom": 20,
-        "description": "",
-        "description_font_size": 16,
-        "description_font_size_mobile": 14,
-        "top_button_label": "",
-        "top_button_link": "",
-        "input_button_radius": 0,
-        "cards_per_row": 3,
-        "card_width_mobile": 80,
-        "card_gap": 20,
-        "card_gap_mobile": 10,
-        "image_height": 360,
-        "image_border_radius": 0,
-        "image_object_fit": "contain",
-        "product_title_font_size": 18,
-        "product_title_font_size_mobile": 16,
-        "product_description_font_size": 14,
-        "product_description_font_size_mobile": 12,
-        "product_title_line_height": 120,
-        "product_description_line_height": 140,
-        "show_pagination": true,
-        "pagination_indicator_width": 14,
-        "pagination_indicator_active_width": 22,
-        "pagination_indicator_height": 6,
-        "pagination_indicator_radius": 6,
-        "pagination_indicator_color": "#cccccc",
-        "pagination_indicator_active_color": "#000000",
-        "pagination_indicator_opacity": 0.5,
-        "background_color": "#FFFFFF",
-        "background_gradient_color": "",
-        "foreground_color": "#000000",
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
-        "border_color": "#000000",
-        "section_full_width": true,
-        "section_max_width": 100,
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "border_thickness": 0
+        "image": "shopify://shop_images/face-changing-1.jpg",
+        "image_2": "shopify://shop_images/H60d323db162f4ee29210b0fd8432a52c4.jpg_960x960q80.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "image_behavior": "ambient",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
       }
     },
     "section_divider_fDK3LT": {
@@ -548,7 +479,7 @@
     "section_divider_exbzpP",
     "rich_text_A6ArN3",
     "section_divider_jH3cwX",
-    "vso_hero_carousel_01_i9jT8D",
+    "image_banner_YhHfNC",
     "section_divider_fDK3LT",
     "section_divider_wMHK6C",
     "rich_text_zJBnjq",
