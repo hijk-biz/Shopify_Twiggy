@@ -184,17 +184,15 @@
       "block_order": [
         "heading_Fj6anK"
       ],
-      "custom_css": [
-        "{line-height: 40px; margin-left: -20px; margin-right: -20px;}"
-      ],
+      "custom_css": [],
       "name": "What's hot",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
         "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     },
     "section_divider_qDkxjM": {
