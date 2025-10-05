@@ -511,12 +511,18 @@
             "header_text": "Customer reviews",
             "show_average_rating": true
           }
+        },
+        "judge_me_reviews_featured_carousel_RN6ee6": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
         }
       },
       "block_order": [
-        "judge_me_reviews_testimonials_carousel_NzbHK8"
+        "judge_me_reviews_testimonials_carousel_NzbHK8",
+        "judge_me_reviews_featured_carousel_RN6ee6"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
