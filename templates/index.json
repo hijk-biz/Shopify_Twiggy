@@ -495,7 +495,7 @@
             "verified_badge_style": "icon",
             "card_height": "medium",
             "text_size": "small",
-            "stars_size": "large",
+            "stars_size": "medium",
             "arrows_position": "sides",
             "max_width": 1100,
             "corner_styling": "extra_round",
@@ -508,7 +508,7 @@
             "border_color": "#108474",
             "show_drop_shadow": true,
             "transition_speed": 5,
-            "header_text": "Twigsy families have spoken...",
+            "header_text": "Customer reviews",
             "show_average_rating": true
           }
         }
