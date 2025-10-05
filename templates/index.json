@@ -496,7 +496,7 @@
             "card_height": "medium",
             "text_size": "small",
             "stars_size": "medium",
-            "arrows_position": "sides",
+            "arrows_position": "hidden",
             "max_width": 1100,
             "corner_styling": "extra_round",
             "quote_marks_style": "basic",
