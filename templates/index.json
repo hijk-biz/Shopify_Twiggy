@@ -16,7 +16,7 @@
       ],
       "name": "Section dividers",
       "settings": {
-        "shape": "bubble_side_divider",
+        "shape": "rough",
         "flip_horizontal": false,
         "flip_vertical": false,
         "wave_height": 16,
