@@ -516,6 +516,7 @@
       "block_order": [
         "judge_me_reviews_testimonials_carousel_NzbHK8"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
