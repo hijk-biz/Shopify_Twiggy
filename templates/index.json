@@ -282,7 +282,90 @@
         "heading_QaM63U",
         "text_bXkzPF"
       ],
+      "custom_css": [
+        "{position: relative; z-index: 2;}"
+      ],
       "name": "Purpose",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "section_divider_m7337E": {
+      "type": "section-divider",
+      "custom_css": [
+        "{position: relative; z-index: 2;}"
+      ],
+      "name": "---",
+      "settings": {
+        "shape": "arc_divider",
+        "flip_horizontal": false,
+        "flip_vertical": false,
+        "wave_height": 16,
+        "wave_height_mobile": 16,
+        "shape_color": "rgba(0,0,0,0)",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_3EJ9h4": {
+      "type": "image-banner",
+      "custom_css": [
+        "{margin-top: -20px; margin-bottom: -20px; z-index: 0;}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Screenshot2025-08-27at9.57.21am.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "section_divider_xamgX6": {
+      "type": "section-divider",
+      "custom_css": [
+        "{position: relative; z-index: 1;}"
+      ],
+      "name": "---",
+      "settings": {
+        "shape": "arc_divider",
+        "flip_horizontal": false,
+        "flip_vertical": true,
+        "wave_height": 16,
+        "wave_height_mobile": 16,
+        "shape_color": "rgba(0,0,0,0)",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_PT87Xr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CQJepL": {
+          "type": "heading",
+          "settings": {
+            "heading": "We make it easy and safe",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CQJepL"
+      ],
+      "name": "Ease of Business",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -502,6 +585,10 @@
     "featured_collection",
     "section_divider_Etmxmf",
     "rich_text_XmAUeP",
+    "section_divider_m7337E",
+    "image_banner_3EJ9h4",
+    "section_divider_xamgX6",
+    "rich_text_PT87Xr",
     "vso_benefits_grid_Gddxfz",
     "vso_benefits_grid_J87mf7",
     "section_divider_8VFDMD",
