@@ -170,6 +170,130 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_VwBHX6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Fj6anK": {
+          "type": "heading",
+          "settings": {
+            "heading": "🔥What's hot at Twigsy🔥",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Fj6anK"
+      ],
+      "custom_css": [
+        "{line-height: 40px;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_divider_qDkxjM": {
+      "type": "section-divider",
+      "name": "Section dividers",
+      "settings": {
+        "shape": "arch_divider",
+        "flip_horizontal": false,
+        "flip_vertical": false,
+        "wave_height": 16,
+        "wave_height_mobile": 16,
+        "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
+        "background_color": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".card__heading {font-size: 14px; letter-spacing: 0px;}",
+        ".rating-count {font-size: 15px;}",
+        ".rating-star {font-size: 20px;}",
+        ".price {margin-top: 0px; font-size: 20px;}",
+        ".quick-add__submit {font-size: 18px !important; background-color: #ffd84d !important; color: #3a3a3a !important; letter-spacing: 0px;}",
+        ".slider-buttons {display: none;}"
+      ],
+      "settings": {
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "uppercase",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "full_width": true,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 4
+      }
+    },
+    "section_divider_Etmxmf": {
+      "type": "section-divider",
+      "name": "Section dividers",
+      "settings": {
+        "shape": "arc_divider",
+        "flip_horizontal": false,
+        "flip_vertical": true,
+        "wave_height": 16,
+        "wave_height_mobile": 16,
+        "shape_color": "rgba(0,0,0,0)",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_XmAUeP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QaM63U": {
+          "type": "heading",
+          "settings": {
+            "heading": "By an Aussie family, for Aussie families",
+            "heading_size": "h1"
+          }
+        },
+        "text_bXkzPF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Twigsy, we believe play is the heart of connection, bringing families closer through. From toddlers to grandparents, every toy is crafted to spark joy across generations and inspire lifelong learning.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QaM63U",
+        "text_bXkzPF"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
     "vso_benefits_grid_Gddxfz": {
       "type": "vso-benefits-grid",
       "blocks": {
@@ -230,72 +354,6 @@
         "mobile_layout": "column"
       }
     },
-    "section_divider_qDkxjM": {
-      "type": "section-divider",
-      "name": "Section dividers",
-      "settings": {
-        "shape": "arch_divider",
-        "flip_horizontal": false,
-        "flip_vertical": false,
-        "wave_height": 16,
-        "wave_height_mobile": 16,
-        "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
-        "background_color": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "custom_css": [
-        ".card__heading {font-size: 14px; letter-spacing: 0px;}",
-        ".rating-count {font-size: 15px;}",
-        ".rating-star {font-size: 20px;}",
-        ".price {margin-top: 0px; font-size: 20px;}",
-        ".quick-add__submit {font-size: 18px !important; background-color: #ffd84d !important; color: #3a3a3a !important; letter-spacing: 0px;}",
-        ".slider-buttons {display: none;}"
-      ],
-      "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "uppercase",
-        "columns_desktop": 6,
-        "enable_desktop_slider": true,
-        "full_width": true,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 32,
-        "padding_bottom": 0
-      }
-    },
-    "section_divider_Etmxmf": {
-      "type": "section-divider",
-      "name": "Section dividers",
-      "settings": {
-        "shape": "arc_divider",
-        "flip_horizontal": false,
-        "flip_vertical": true,
-        "wave_height": 16,
-        "wave_height_mobile": 16,
-        "shape_color": "rgba(0,0,0,0)",
-        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "vso_benefits_grid_J87mf7": {
       "type": "vso-benefits-grid",
       "blocks": {
@@ -349,7 +407,7 @@
       "settings": {
         "heading_custom_font": false,
         "heading_font": "archivo_black_n4",
-        "heading": "WHY US...",
+        "heading": "",
         "heading_color": "{{ shop.brand.colors.secondary[1].background }}",
         "heading_text_alignment": "center",
         "heading_font_size": 30,
@@ -423,10 +481,12 @@
     "ss_hero_18_RN6wTF",
     "rich_text_egaCVe",
     "section_divider_DnxLyR",
-    "vso_benefits_grid_Gddxfz",
+    "rich_text_VwBHX6",
     "section_divider_qDkxjM",
     "featured_collection",
     "section_divider_Etmxmf",
+    "rich_text_XmAUeP",
+    "vso_benefits_grid_Gddxfz",
     "vso_benefits_grid_J87mf7",
     "section_divider_8VFDMD",
     "slideshow_a8bmna"
