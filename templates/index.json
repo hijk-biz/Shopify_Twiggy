@@ -185,7 +185,7 @@
         "heading_Fj6anK"
       ],
       "custom_css": [
-        "{line-height: 40px;}"
+        "{line-height: 40px; margin-left:-20px; margin-right:-20px;}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
