@@ -76,6 +76,8 @@
           "disabled": true,
           "settings": {
             "review_data": "real_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
             "max_width": 1200
           }
         }
@@ -208,7 +210,7 @@
     },
     "section_divider_exbzpP": {
       "type": "section-divider",
-      "name": "Section dividers",
+      "name": "---",
       "settings": {
         "shape": "rough",
         "flip_horizontal": true,
@@ -234,7 +236,7 @@
         "text_wUAjXe": {
           "type": "text",
           "settings": {
-            "text": "<p>Exciting and interactive game designed for people of all ages. Grab  a card, assemble the blocks to match the face, fastest wins!<br/><br/></p>"
+            "text": "<p>Exciting and interactive game designed for people of all ages. Grab  a card, assemble the blocks to match the face, fastest wins!<br/></p>"
           }
         }
       },
@@ -242,27 +244,33 @@
         "heading_FRJmPr",
         "text_wUAjXe"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "custom_css": [
+        "{z-index: 1; position: relative;}"
+      ],
+      "name": "Text",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 12
       }
     },
     "section_divider_jH3cwX": {
       "type": "section-divider",
-      "name": "Section dividers",
+      "custom_css": [
+        "{margin-bottom: -20px; position: relative; z-index: 1;}"
+      ],
+      "name": "---",
       "settings": {
         "shape": "rough",
         "flip_horizontal": true,
-        "flip_vertical": true,
+        "flip_vertical": false,
         "wave_height": 20,
         "wave_height_mobile": 20,
-        "shape_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "background_color": "#ffffff",
+        "shape_color": "rgba(0,0,0,0)",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -271,7 +279,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/face-changing-1.jpg",
+        "image": "shopify://shop_images/H2f64d7e8560c41d4b2997d286f6e9aa5L.jpg_960x960q80.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -286,7 +294,10 @@
     },
     "section_divider_fDK3LT": {
       "type": "section-divider",
-      "name": "Section dividers",
+      "custom_css": [
+        "{margin-top: -20px;}"
+      ],
+      "name": "---",
       "settings": {
         "shape": "rough",
         "flip_horizontal": true,
@@ -299,9 +310,40 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_FRfxLp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7q8qpg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Safe and sound",
+            "heading_size": "h1"
+          }
+        },
+        "text_FeNhUW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Built to last and crafted for safety, as tough as it is trusted.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7q8qpg",
+        "text_FeNhUW"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
     "section_divider_wMHK6C": {
       "type": "section-divider",
-      "name": "Section dividers",
+      "name": "---",
       "settings": {
         "shape": "rough",
         "flip_horizontal": true,
@@ -314,31 +356,112 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_zJBnjq": {
+    "ss_hero_18_Ur7c9Y": {
+      "type": "ss-hero-18",
+      "custom_css": [
+        "{margin-top: -20px; margin-bottom: -20px;}"
+      ],
+      "name": "SS - Hero #18",
+      "settings": {
+        "use_paralax": false,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 172,
+        "heading_size_mobile": 56,
+        "heading_height": 100,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "logo_width": 80,
+        "logo_width_mobile": 80,
+        "image": "shopify://shop_images/Photoroom_20251008_103323.png",
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "image_ratio": "original",
+        "image_ratio_mobile": "original",
+        "image_mt": 0,
+        "image_mt_mobile": 0,
+        "use_shadow": false,
+        "sticker_text_custom": false,
+        "sticker_text_font": "josefin_sans_n4",
+        "sticker_text_size": 16,
+        "sticker_text_size_mobile": 16,
+        "sticker_text_height": 130,
+        "sticker_text_align": "center",
+        "sticker_text_align_mobile": "center",
+        "image_border_color": "#000000",
+        "image_shadow_color": "#000000",
+        "heading_color": "#000000",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "section_divider_BLAWgH": {
+      "type": "section-divider",
+      "name": "---",
+      "settings": {
+        "shape": "rough",
+        "flip_horizontal": true,
+        "flip_vertical": true,
+        "wave_height": 26,
+        "wave_height_mobile": 26,
+        "shape_color": "",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_yya8a3": {
       "type": "rich-text",
       "blocks": {
-        "text_cNmYBJ": {
-          "type": "text",
+        "heading_PPTYCW": {
+          "type": "heading",
           "settings": {
-            "text": "{{ product.description }}"
+            "heading": "What people say about us...",
+            "heading_size": "h1"
           }
         }
       },
       "block_order": [
-        "text_cNmYBJ"
+        "heading_PPTYCW"
       ],
-      "disabled": true,
-      "custom_css": [
-        "{line-height: 18px;}"
-      ],
-      "name": "Prod Spec Body",
+      "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
+        "color_scheme": "scheme-4",
         "full_width": true,
-        "padding_top": 16,
-        "padding_bottom": 16
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "section_divider_yaGUAd": {
+      "type": "section-divider",
+      "name": "---",
+      "settings": {
+        "shape": "rough",
+        "flip_horizontal": true,
+        "flip_vertical": false,
+        "wave_height": 26,
+        "wave_height_mobile": 26,
+        "shape_color": "",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "17566867484716ae8e": {
@@ -348,6 +471,8 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
             "max_width": 1200
           }
         }
@@ -480,8 +605,12 @@
     "section_divider_jH3cwX",
     "image_banner_YhHfNC",
     "section_divider_fDK3LT",
+    "rich_text_FRfxLp",
     "section_divider_wMHK6C",
-    "rich_text_zJBnjq",
+    "ss_hero_18_Ur7c9Y",
+    "section_divider_BLAWgH",
+    "rich_text_yya8a3",
+    "section_divider_yaGUAd",
     "17566867484716ae8e",
     "related-products",
     "section_divider_688dpx",

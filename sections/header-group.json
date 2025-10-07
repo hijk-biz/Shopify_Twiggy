@@ -20,10 +20,18 @@
             "text": "🐨🚚 Free shipping within Australia 📦🦘",
             "link": ""
           }
+        },
+        "announcement_mi9eED": {
+          "type": "announcement",
+          "settings": {
+            "text": "🐨🚚 Free shipping within Australia 📦🦘",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement_LQDtCf"
+        "announcement_LQDtCf",
+        "announcement_mi9eED"
       ],
       "settings": {
         "auto_rotate": true,
