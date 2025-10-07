@@ -11,7 +11,7 @@
   "sections": {
     "section_divider_b4jng9": {
       "type": "section-divider",
-      "name": "Section dividers",
+      "name": "---",
       "settings": {
         "shape": "bubble_side_divider",
         "flip_horizontal": false,
@@ -392,7 +392,7 @@
         "image_border_color": "#000000",
         "image_shadow_color": "#000000",
         "heading_color": "#000000",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "background_gradient": "",
         "border_color": "#000000",
         "margin_top": 0,
