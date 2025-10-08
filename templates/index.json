@@ -321,10 +321,9 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Screenshot2025-08-27at9.57.21am.png",
-        "image_2": "shopify://shop_images/face-changing-1.jpg",
+        "image": "shopify://shop_images/H2f64d7e8560c41d4b2997d286f6e9aa5L.jpg_960x960q80.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "image_behavior": "ambient",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
