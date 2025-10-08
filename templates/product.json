@@ -229,14 +229,14 @@
         "heading_FRJmPr": {
           "type": "heading",
           "settings": {
-            "heading": "Fun for all ages",
+            "heading": "{{ product.metafields.custom.header_1.value }}",
             "heading_size": "h1"
           }
         },
         "text_wUAjXe": {
           "type": "text",
           "settings": {
-            "text": "<p>Exciting and interactive game designed for people of all ages. Grab  a card, assemble the blocks to match the face, fastest wins!<br/></p>"
+            "text": "<p>{{ product.metafields.custom.text_1 | metafield_tag }}</p>"
           }
         }
       },
@@ -279,7 +279,7 @@
       "type": "image-banner",
       "name": "Image",
       "settings": {
-        "image": "shopify://shop_images/H2f64d7e8560c41d4b2997d286f6e9aa5L.jpg_960x960q80.jpg",
+        "image": "{{ product.metafields.custom.media_1.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -316,14 +316,14 @@
         "heading_7q8qpg": {
           "type": "heading",
           "settings": {
-            "heading": "Safe and sound",
+            "heading": "{{ product.metafields.custom.header_2.value }}",
             "heading_size": "h1"
           }
         },
         "text_FeNhUW": {
           "type": "text",
           "settings": {
-            "text": "<p>Built to last and crafted for safety, as tough as it is trusted.<br/></p>"
+            "text": "<p>{{ product.metafields.custom.text_2 | metafield_tag }}</p>"
           }
         }
       },
@@ -374,7 +374,7 @@
         "heading_align_mobile": "center",
         "logo_width": 80,
         "logo_width_mobile": 80,
-        "image": "shopify://shop_images/Photoroom_20251008_103323.png",
+        "image": "{{ product.metafields.custom.media_2.value }}",
         "image_radius": 0,
         "image_border_thickness": 0,
         "image_ratio": "original",
