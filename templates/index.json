@@ -11,6 +11,7 @@
   "sections": {
     "section_divider_LVQYBN": {
       "type": "section-divider",
+      "disabled": true,
       "custom_css": [
         "{position: relative; z-index: 2;}"
       ],
