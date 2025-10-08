@@ -165,7 +165,7 @@
         "benefit_JyXrAz",
         "benefit_kKMAGM"
       ],
-      "name": "VSO - Benefits Grid",
+      "name": "Features Grid",
       "settings": {
         "heading_custom_font": false,
         "heading_font": "archivo_black_n4",
@@ -247,7 +247,7 @@
       "custom_css": [
         "{z-index: 1; position: relative;}"
       ],
-      "name": "Text",
+      "name": "Header",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -277,7 +277,7 @@
     },
     "image_banner_YhHfNC": {
       "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
+      "name": "Image",
       "settings": {
         "image": "shopify://shop_images/H2f64d7e8560c41d4b2997d286f6e9aa5L.jpg_960x960q80.jpg",
         "image_overlay_opacity": 0,
@@ -331,7 +331,7 @@
         "heading_7q8qpg",
         "text_FeNhUW"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Header",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -361,7 +361,7 @@
       "custom_css": [
         "{margin-top: -20px; margin-bottom: -20px;}"
       ],
-      "name": "SS - Hero #18",
+      "name": "Image",
       "settings": {
         "use_paralax": false,
         "heading": "",
@@ -439,7 +439,7 @@
       "block_order": [
         "heading_PPTYCW"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Header",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -505,7 +505,7 @@
     },
     "section_divider_688dpx": {
       "type": "section-divider",
-      "name": "Section dividers",
+      "name": "---",
       "settings": {
         "shape": "rough",
         "flip_horizontal": true,
@@ -532,7 +532,7 @@
       "block_order": [
         "heading_YHFtAt"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Header",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -544,7 +544,7 @@
     },
     "section_divider_qeMCpc": {
       "type": "section-divider",
-      "name": "Section dividers",
+      "name": "---",
       "settings": {
         "shape": "rough",
         "flip_horizontal": false,
