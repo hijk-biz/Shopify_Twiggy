@@ -295,6 +295,37 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_bNEgJX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wkRJtV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Recommended by teachers",
+            "heading_size": "h1"
+          }
+        },
+        "text_aVWCwg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>??????????</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wkRJtV",
+        "text_aVWCwg"
+      ],
+      "name": "Purpose",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
     "section_divider_m7337E": {
       "type": "section-divider",
       "custom_css": [
@@ -585,6 +616,7 @@
     "featured_collection",
     "section_divider_Etmxmf",
     "rich_text_XmAUeP",
+    "rich_text_bNEgJX",
     "section_divider_m7337E",
     "image_banner_3EJ9h4",
     "section_divider_xamgX6",
