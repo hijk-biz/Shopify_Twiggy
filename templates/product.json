@@ -41,6 +41,7 @@
         },
         "custom_liquid_eXFthb": {
           "type": "custom_liquid",
+          "name": "Feature Badge",
           "settings": {
             "custom_liquid": "{% render 'feature-badge' %}"
           }
