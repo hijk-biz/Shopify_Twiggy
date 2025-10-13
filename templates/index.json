@@ -604,6 +604,21 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "section_divider_p6JdqG": {
+      "type": "section-divider",
+      "name": "Section dividers",
+      "settings": {
+        "shape": "bubble_side_divider",
+        "flip_horizontal": false,
+        "flip_vertical": true,
+        "wave_height": 20,
+        "wave_height_mobile": 20,
+        "shape_color": "rgba(0,0,0,0)",
+        "background_color": "{{ shop.brand.colors.secondary[0].background }}",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -625,6 +640,7 @@
     "vso_benefits_grid_J87mf7",
     "section_divider_8VFDMD",
     "slideshow_a8bmna",
-    "1759704725d83f4761"
+    "1759704725d83f4761",
+    "section_divider_p6JdqG"
   ]
 }

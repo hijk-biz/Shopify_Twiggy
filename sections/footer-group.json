@@ -19,15 +19,23 @@
           "settings": {
             "formId": ""
           }
+        },
+        "text_rmEEL9": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Emails suck! Ours don't.</strong>",
+            "subtext": "<p>No spam! We only let you know of exclusive deals on our new products.</p>"
+          }
         }
       },
       "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_NaJAcd"
+        "klaviyo_email_marketing_sms_form_embed_block_NaJAcd",
+        "text_rmEEL9"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
@@ -35,7 +43,7 @@
         "payment_enable": true,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 0,
+        "padding_top": 8,
         "padding_bottom": 0
       }
     }
