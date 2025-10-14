@@ -16,7 +16,7 @@
       ],
       "name": "---",
       "settings": {
-        "shape": "rough",
+        "shape": "arc_divider",
         "flip_horizontal": false,
         "flip_vertical": false,
         "wave_height": 16,
