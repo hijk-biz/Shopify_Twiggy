@@ -9,9 +9,9 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/Twigsy-white-tight.png",
+    "logo": "shopify://shop_images/logo-white-tight.png",
     "logo_width": 110,
-    "favicon": "shopify://shop_images/Twigsy-logo-square-green.png",
+    "favicon": "shopify://shop_images/logo-square-green.png",
     "type_header_font": "poppins_n4",
     "heading_scale": 100,
     "type_body_font": "poppins_n4",
@@ -445,7 +445,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "body.gradient {/* background: #f9f9f6 !important; */ line-height:25px;}",
+      "body.gradient {/* background: #f9f9f6 !important; */ line-height: 25px;}",
       ".cart-remove-button {color: #3a3a3a;}",
       ".badge {font-weight: bold; font-size: 15px;}",
       ".price-item--regular {color: #a3afaf !important;}",
