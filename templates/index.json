@@ -159,9 +159,9 @@
       "type": "section-divider",
       "name": "---",
       "settings": {
-        "shape": "arch_divider",
+        "shape": "bubble_side_divider",
         "flip_horizontal": false,
-        "flip_vertical": true,
+        "flip_vertical": false,
         "wave_height": 16,
         "wave_height_mobile": 16,
         "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
@@ -199,9 +199,9 @@
       "type": "section-divider",
       "name": "---",
       "settings": {
-        "shape": "arch_divider",
+        "shape": "curve_divider",
         "flip_horizontal": false,
-        "flip_vertical": false,
+        "flip_vertical": true,
         "wave_height": 16,
         "wave_height_mobile": 16,
         "shape_color": "{{ shop.brand.colors.secondary[0].background }}",
@@ -295,42 +295,26 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_bNEgJX": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_wkRJtV": {
-          "type": "heading",
-          "settings": {
-            "heading": "Endorsed by educators",
-            "heading_size": "h1"
-          }
-        },
-        "text_aVWCwg": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our products are recommended by teachers and child development professionals to support learning through play.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_wkRJtV",
-        "text_aVWCwg"
-      ],
-      "name": "Purpose",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 0
-      }
-    },
     "section_divider_m7337E": {
       "type": "section-divider",
       "custom_css": [
         "{position: relative; z-index: 2;}"
       ],
+      "name": "---",
+      "settings": {
+        "shape": "frame_4",
+        "flip_horizontal": false,
+        "flip_vertical": false,
+        "wave_height": 16,
+        "wave_height_mobile": 16,
+        "shape_color": "rgba(0,0,0,0)",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_divider_zkqKKA": {
+      "type": "section-divider",
       "name": "---",
       "settings": {
         "shape": "arc_divider",
@@ -369,6 +353,93 @@
       "custom_css": [
         "{position: relative; z-index: 1;}"
       ],
+      "name": "---",
+      "settings": {
+        "shape": "bubble_side_divider",
+        "flip_horizontal": false,
+        "flip_vertical": true,
+        "wave_height": 16,
+        "wave_height_mobile": 16,
+        "shape_color": "rgba(0,0,0,0)",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_bNEgJX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wkRJtV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Endorsed by educators",
+            "heading_size": "h1"
+          }
+        },
+        "text_aVWCwg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our products are recommended by teachers and child development professionals to support learning through play.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wkRJtV",
+        "text_aVWCwg"
+      ],
+      "custom_css": [
+        "{position: relative; z-index: 2;}"
+      ],
+      "name": "Purpose",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "section_divider_HwXcTT": {
+      "type": "section-divider",
+      "custom_css": [
+        "{position: relative; z-index: 2;}"
+      ],
+      "name": "---",
+      "settings": {
+        "shape": "bubble_side_divider",
+        "flip_horizontal": false,
+        "flip_vertical": false,
+        "wave_height": 16,
+        "wave_height_mobile": 16,
+        "shape_color": "rgba(0,0,0,0)",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_maGDnW": {
+      "type": "image-banner",
+      "custom_css": [
+        "{margin-top: -20px; margin-bottom: -20px; z-index: 0;}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/H2f64d7e8560c41d4b2997d286f6e9aa5L.jpg_960x960q80.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "ambient",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "section_divider_JigWDM": {
+      "type": "section-divider",
       "name": "---",
       "settings": {
         "shape": "arc_divider",
@@ -631,10 +702,14 @@
     "featured_collection",
     "section_divider_Etmxmf",
     "rich_text_XmAUeP",
-    "rich_text_bNEgJX",
     "section_divider_m7337E",
+    "section_divider_zkqKKA",
     "image_banner_3EJ9h4",
     "section_divider_xamgX6",
+    "rich_text_bNEgJX",
+    "section_divider_HwXcTT",
+    "image_banner_maGDnW",
+    "section_divider_JigWDM",
     "rich_text_PT87Xr",
     "vso_benefits_grid_Gddxfz",
     "vso_benefits_grid_J87mf7",
