@@ -335,7 +335,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/H2f64d7e8560c41d4b2997d286f6e9aa5L.jpg_960x960q80.jpg",
+        "image": "shopify://shop_images/face-changing-white-bg.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "ambient",
@@ -425,7 +425,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/H2f64d7e8560c41d4b2997d286f6e9aa5L.jpg_960x960q80.jpg",
+        "image": "shopify://shop_images/face-changing-white-bg.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "ambient",
@@ -484,7 +484,6 @@
           "type": "benefit",
           "name": "Free Shipping",
           "settings": {
-            "image": "shopify://shop_images/Twigsy-logo-square-green.png",
             "block_title": "By an Aussie family, for Aussie families",
             "block_description": "At Twigsy, we believe play is the heart of connection, bringing families closer through. From toddlers to grandparents, every toy is crafted to spark joy across generations and inspire lifelong learning."
           }
