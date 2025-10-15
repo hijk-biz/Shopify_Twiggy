@@ -95,7 +95,7 @@
         "image_ratio": "portrait",
         "image_ratio_mobile": "square",
         "image_mt": -52,
-        "image_mt_mobile": -20,
+        "image_mt_mobile": 0,
         "use_shadow": false,
         "sticker_text_custom": false,
         "sticker_text_font": "archivo_black_n4",
