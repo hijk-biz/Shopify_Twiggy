@@ -211,6 +211,7 @@
     },
     "section_divider_exbzpP": {
       "type": "section-divider",
+      "disabled": true,
       "name": "---",
       "settings": {
         "shape": "rough",
@@ -245,6 +246,7 @@
         "heading_FRJmPr",
         "text_wUAjXe"
       ],
+      "disabled": true,
       "custom_css": [
         "{z-index: 1; position: relative;}"
       ],
@@ -279,6 +281,9 @@
     },
     "image_banner_YhHfNC": {
       "type": "image-banner",
+      "custom_css": [
+        "{margin-bottom: 30px;}"
+      ],
       "name": "Media 1",
       "settings": {
         "image": "{{ product.metafields.custom.media_1.value }}",
@@ -296,8 +301,9 @@
     },
     "section_divider_fDK3LT": {
       "type": "section-divider",
+      "disabled": true,
       "custom_css": [
-        "{margin-bottom:30px;}"
+        "{margin-bottom: 30px;}"
       ],
       "name": "---",
       "settings": {
