@@ -320,6 +320,7 @@
     },
     "section_divider_jkAe8t": {
       "type": "section-divider",
+      "disabled": true,
       "name": "---",
       "settings": {
         "shape": "rough",
@@ -354,6 +355,7 @@
         "heading_7q8qpg",
         "text_FeNhUW"
       ],
+      "disabled": true,
       "name": "Header 2",
       "settings": {
         "desktop_content_position": "center",
@@ -366,6 +368,7 @@
     },
     "section_divider_wMHK6C": {
       "type": "section-divider",
+      "disabled": true,
       "name": "---",
       "settings": {
         "shape": "rough",
@@ -381,9 +384,7 @@
     },
     "ss_hero_18_Ur7c9Y": {
       "type": "ss-hero-18",
-      "custom_css": [
-        "{margin-top: -20px; margin-bottom: -20px;}"
-      ],
+      "custom_css": [],
       "name": "Media 2",
       "settings": {
         "use_paralax": false,
@@ -395,9 +396,9 @@
         "heading_height": 100,
         "heading_align": "center",
         "heading_align_mobile": "center",
-        "logo_width": 80,
-        "logo_width_mobile": 80,
-        "image": "{{ product.metafields.custom.media_2.value }}",
+        "logo_width": 20,
+        "logo_width_mobile": 20,
+        "image": "shopify://shop_images/Heat_transfer_printing_790_x_790_px.png",
         "image_radius": 0,
         "image_border_thickness": 0,
         "image_ratio": "original",
@@ -422,10 +423,10 @@
         "margin_bottom": 0,
         "margin_horizontal": 0,
         "margin_horizontal_mobile": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
         "full_width": false,
         "content_width": 1200,
         "border_thickness": 0,
