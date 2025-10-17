@@ -11,6 +11,7 @@
   "sections": {
     "section_divider_b4jng9": {
       "type": "section-divider",
+      "disabled": true,
       "name": "---",
       "settings": {
         "shape": "bubble_side_divider",
