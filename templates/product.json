@@ -530,9 +530,9 @@
       "type": "section-divider",
       "name": "---",
       "settings": {
-        "shape": "rough",
+        "shape": "arch_divider",
         "flip_horizontal": true,
-        "flip_vertical": true,
+        "flip_vertical": false,
         "wave_height": 26,
         "wave_height_mobile": 26,
         "shape_color": "",
@@ -649,6 +649,9 @@
         "slide_AQEhXE",
         "slide_FX8e6b"
       ],
+      "custom_css": [
+        "{margin-top:-30px;}"
+      ],
       "name": "SS - Testimonials #12",
       "settings": {
         "heading": "",
@@ -758,9 +761,9 @@
       "type": "section-divider",
       "name": "---",
       "settings": {
-        "shape": "rough",
+        "shape": "arch_divider",
         "flip_horizontal": true,
-        "flip_vertical": false,
+        "flip_vertical": true,
         "wave_height": 26,
         "wave_height_mobile": 26,
         "shape_color": "",
