@@ -526,25 +526,6 @@
         "show_text_below": true
       }
     },
-    "section_divider_CfANMn": {
-      "type": "section-divider",
-      "disabled": true,
-      "custom_css": [
-        "{margin-bottom: 20px;}"
-      ],
-      "name": "---",
-      "settings": {
-        "shape": "arch_divider",
-        "flip_horizontal": true,
-        "flip_vertical": true,
-        "wave_height": 20,
-        "wave_height_mobile": 50,
-        "shape_color": "rgba(0,0,0,0)",
-        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "section_divider_BLAWgH": {
       "type": "section-divider",
       "name": "---",
@@ -584,40 +565,15 @@
         "padding_bottom": 12
       }
     },
-    "section_divider_yaGUAd": {
-      "type": "section-divider",
-      "name": "---",
-      "settings": {
-        "shape": "rough",
-        "flip_horizontal": true,
-        "flip_vertical": false,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
-        "shape_color": "",
-        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "ss_testimonial_12_7pqVxe": {
       "type": "ss-testimonial-12",
       "blocks": {
-        "slide_khJ9bj": {
-          "type": "slide",
-          "settings": {
-            "media_style": "image",
-            "video_url": "",
-            "controls": false,
-            "stars_count": 5,
-            "text": "<p>Text</p>",
-            "author": "<p>Author</p>"
-          }
-        },
         "slide_4DaMka": {
           "type": "slide",
           "settings": {
             "media_style": "image",
             "image": "shopify://shop_images/IMG_8373-min.png",
+            "video_url": "",
             "controls": false,
             "stars_count": 5,
             "text": "<p>Kids love it! Great birthday gift.</p>",
@@ -629,6 +585,7 @@
           "settings": {
             "media_style": "image",
             "image": "shopify://shop_images/IMG_8374-min.png",
+            "video_url": "",
             "controls": false,
             "stars_count": 5,
             "text": "<p>Fun to play with the kids</p>",
@@ -652,6 +609,7 @@
           "settings": {
             "media_style": "image",
             "image": "shopify://shop_images/IMG_8376-min.png",
+            "video_url": "",
             "controls": false,
             "stars_count": 5,
             "text": "<p>We play this as a family before bedtime.</p>",
@@ -663,6 +621,7 @@
           "settings": {
             "media_style": "image",
             "image": "shopify://shop_images/IMG_8376-min_4e8fe825-8555-4bcb-b177-aa868248e3ef.png",
+            "video_url": "",
             "controls": false,
             "stars_count": 5,
             "text": "<p>My 2yo and 5yo play this together, making up their own rules. Cute.</p>",
@@ -674,6 +633,7 @@
           "settings": {
             "media_style": "image",
             "image": "shopify://shop_images/IMG_8378-min.png",
+            "video_url": "",
             "controls": false,
             "stars_count": 5,
             "text": "<p>Thanks Twigsy, my grandchildren loved their surprise.</p>",
@@ -682,7 +642,6 @@
         }
       },
       "block_order": [
-        "slide_khJ9bj",
         "slide_4DaMka",
         "slide_dmzqdG",
         "slide_byJjne",
@@ -721,9 +680,9 @@
         "card_padding_horizontal": 20,
         "card_padding_horizontal_mobile": 16,
         "card_radius": 20,
-        "card_border_thickness": 1,
+        "card_border_thickness": 0,
         "card_shadow": false,
-        "media_radius": 20,
+        "media_radius": 18,
         "media_border_thickness": 0,
         "media_ratio": "square",
         "media_ratio_mobile": "square",
@@ -732,7 +691,7 @@
         "content_padding_horizontal": 0,
         "content_padding_horizontal_mobile": 0,
         "hide_content": false,
-        "stars_size": 16,
+        "stars_size": 24,
         "stars_mt": 12,
         "stars_align": "center",
         "stars_align_mobile": "center",
@@ -752,7 +711,7 @@
         "author_mt": 12,
         "author_align": "center",
         "author_align_mobile": "center",
-        "navigation_mt": 40,
+        "navigation_mt": 26,
         "navigation_gap": 20,
         "navigation_align": "center",
         "navigation_align_mobile": "center",
@@ -766,21 +725,21 @@
         "dots_show_mobile": true,
         "btn_icon_size": 50,
         "btn_icon_size_mobile": 40,
-        "card_bg_color": "#FFFFFF",
+        "card_bg_color": "#ffffff",
         "card_bg_gradient": "",
-        "card_border_color": "#DEDBC4",
+        "card_border_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "media_border_color": "#121212",
         "stars_color": "#323232",
         "text_color": "#323232",
         "author_color": "#323232",
-        "video_icon_bg_color": "#FFFFFF",
+        "video_icon_bg_color": "#ffffff",
         "video_icon_color": "#121212",
-        "arrow_color": "#837c5c",
-        "arrow_hover_color": "#837c5c",
-        "dots_color": "#837c5c",
-        "heading_color": "#837c5c",
+        "arrow_color": "{{ shop.brand.colors.primary[0].background }}",
+        "arrow_hover_color": "{{ shop.brand.colors.primary[0].background }}",
+        "dots_color": "{{ shop.brand.colors.secondary[1].background }}",
+        "heading_color": "{{ shop.brand.colors.secondary[1].background }}",
         "sub_heading_color": "#837c5c",
-        "background_color": "#F6F5F2",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "background_gradient": "",
         "border_color": "#121212",
         "margin_top": 0,
@@ -793,6 +752,21 @@
         "content_width": 1200,
         "border_thickness": 0,
         "lazy": true
+      }
+    },
+    "section_divider_cf7R48": {
+      "type": "section-divider",
+      "name": "---",
+      "settings": {
+        "shape": "rough",
+        "flip_horizontal": true,
+        "flip_vertical": false,
+        "wave_height": 26,
+        "wave_height_mobile": 26,
+        "shape_color": "",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "17566867484716ae8e": {
@@ -942,11 +916,10 @@
     "section_divider_yLiLA6",
     "rich_text_tRNWCY",
     "image_banner_EKbzKn",
-    "section_divider_CfANMn",
     "section_divider_BLAWgH",
     "rich_text_yya8a3",
-    "section_divider_yaGUAd",
     "ss_testimonial_12_7pqVxe",
+    "section_divider_cf7R48",
     "17566867484716ae8e",
     "related-products",
     "section_divider_688dpx",
