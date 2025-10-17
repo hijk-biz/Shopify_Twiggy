@@ -511,6 +511,9 @@
     },
     "image_banner_EKbzKn": {
       "type": "image-banner",
+      "custom_css": [
+        "{margin-bottom:20px;}"
+      ],
       "name": "Media 1",
       "settings": {
         "image": "shopify://shop_images/Beige_and_Yellow_Modern_Travel_Memories_Instagram_Post_1080_x_1650_px.png",
@@ -650,7 +653,7 @@
         "slide_FX8e6b"
       ],
       "custom_css": [
-        "{margin-top:-30px;}"
+        "{margin-top: -30px;}"
       ],
       "name": "SS - Testimonials #12",
       "settings": {
