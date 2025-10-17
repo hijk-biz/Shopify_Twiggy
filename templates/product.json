@@ -268,7 +268,7 @@
           "type": "slide",
           "settings": {
             "autoplay": true,
-            "video": "shopify://files/videos/1017.mov",
+            "video": "shopify://files/videos/1017(1).mov",
             "video_url": "",
             "title": "",
             "subtitle": "",
@@ -285,7 +285,7 @@
       "name": "SS - Video Banner",
       "settings": {
         "height": 500,
-        "height_mobile": 500,
+        "height_mobile": 400,
         "overlay_opacity": 0,
         "interval": 5,
         "image_object_fit": "fill",
