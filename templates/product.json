@@ -286,7 +286,7 @@
       ],
       "name": "Media 1",
       "settings": {
-        "image": "{{ product.metafields.custom.media_1.value }}",
+        "image": "shopify://shop_images/Love_Grid_1587_x_2545_px_71567252-7b0c-4ae0-99e6-b79cdef14a6f.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -398,7 +398,7 @@
         "heading_align_mobile": "center",
         "logo_width": 20,
         "logo_width_mobile": 20,
-        "image": "shopify://shop_images/Heat_transfer_printing_790_x_790_px.png",
+        "image": "shopify://shop_images/Heat_transfer_printing_790_x_790_px_17769bf3-d1ec-4871-8a84-4b785f9c0cc9.png",
         "image_radius": 0,
         "image_border_thickness": 0,
         "image_ratio": "original",
@@ -436,6 +436,7 @@
     },
     "section_divider_yLiLA6": {
       "type": "section-divider",
+      "disabled": true,
       "name": "---",
       "settings": {
         "shape": "arch_divider",
@@ -485,7 +486,7 @@
       "type": "image-banner",
       "name": "Media 1",
       "settings": {
-        "image": "{{ product.metafields.custom.media_3.value }}",
+        "image": "shopify://shop_images/Beige_and_Yellow_Modern_Travel_Memories_Instagram_Post_1080_x_1650_px.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -500,6 +501,7 @@
     },
     "section_divider_CfANMn": {
       "type": "section-divider",
+      "disabled": true,
       "custom_css": [
         "{margin-bottom: 20px;}"
       ],
