@@ -76,7 +76,7 @@
         "sticker_zzCkRr"
       ],
       "custom_css": [
-        "@media (min-width: 1024px) {.hide-on-desktop {display: none !important; }}"
+        "@media (min-width: 1024px) {:host {display: none !important; }}"
       ],
       "name": "SS - Hero #18",
       "settings": {
