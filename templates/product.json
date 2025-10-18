@@ -365,6 +365,7 @@
       "name": "Media 1",
       "settings": {
         "image": "shopify://shop_images/Love_Grid_1587_x_2545_px_71567252-7b0c-4ae0-99e6-b79cdef14a6f.png",
+        "image_2": "shopify://shop_images/Bsanner_Test.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
