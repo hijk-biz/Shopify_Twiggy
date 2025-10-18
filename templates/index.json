@@ -75,6 +75,9 @@
         "sticker_HkRDrJ",
         "sticker_zzCkRr"
       ],
+      "custom_css": [
+        "@media (min-width: 1024px) {.hide-on-desktop {display: none !important; }}"
+      ],
       "name": "SS - Hero #18",
       "settings": {
         "use_paralax": false,
