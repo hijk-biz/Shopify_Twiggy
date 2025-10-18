@@ -90,7 +90,7 @@
        
       {%- liquid
         assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
-        assign sizes = full_width
+        assign sizes = 'auto'
       -%}
       {{
         section.settings.image
@@ -115,7 +115,7 @@
        
       {%- liquid
         assign image_height = section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio
-        assign sizes = full_width
+        assign sizes = 'auto'
       -%}
       {{
         section.settings.image_2
