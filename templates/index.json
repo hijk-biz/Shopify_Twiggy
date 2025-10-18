@@ -89,7 +89,6 @@
         "heading_align_mobile": "center",
         "logo_width": 40,
         "logo_width_mobile": 68,
-        "image": "shopify://shop_images/Bsanner_Test.png",
         "image_mobile": "shopify://shop_images/Mobile_Banner_Mega_Sale.png",
         "image_radius": 0,
         "image_border_thickness": 2,
