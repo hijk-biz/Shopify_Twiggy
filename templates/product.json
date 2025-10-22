@@ -807,6 +807,8 @@
           "settings": {
             "autoplay": true,
             "video": "shopify://files/videos/1022.mp4",
+            "image": "shopify://shop_images/1_5a1065df-7157-45ad-9154-01caff4308ed.png",
+            "image_mobile": "shopify://shop_images/Heat_transfer_printing_790_x_790_px_17769bf3-d1ec-4871-8a84-4b785f9c0cc9.png",
             "title": "",
             "subtitle": "",
             "button": "",
@@ -825,7 +827,7 @@
         "height_mobile": 240,
         "overlay_opacity": 0,
         "interval": 5,
-        "image_object_fit": "cover",
+        "image_object_fit": "fill",
         "vertical_alignment": "center",
         "horizontal_alignment": "center",
         "title_custom": false,
