@@ -818,89 +818,6 @@
         "section_radius": 0,
         "lazy": false
       }
-    },
-    "ss_video_banner_KBrzdQ": {
-      "type": "ss-video-banner",
-      "blocks": {
-        "slide_m9CFNr": {
-          "type": "slide",
-          "settings": {
-            "autoplay": true,
-            "video": "shopify://files/videos/1017(1).mov",
-            "video_url": "",
-            "title": "",
-            "subtitle": "",
-            "button": "",
-            "button_url": "shopify://collections/all",
-            "second_button": "",
-            "second_button_url": "shopify://collections/all"
-          }
-        }
-      },
-      "block_order": [
-        "slide_m9CFNr"
-      ],
-      "name": "SS - Video Banner",
-      "settings": {
-        "height": 700,
-        "height_mobile": 240,
-        "overlay_opacity": 0,
-        "interval": 5,
-        "image_object_fit": "cover",
-        "vertical_alignment": "center",
-        "horizontal_alignment": "center",
-        "title_custom": false,
-        "title_font": "josefin_sans_n4",
-        "title_size": 50,
-        "title_size_mobile": 32,
-        "title_height": 130,
-        "subtitle_custom": false,
-        "subtitle_font": "josefin_sans_n4",
-        "subtitle_size": 16,
-        "subtitle_size_mobile": 16,
-        "subtitle_height": 130,
-        "subtitle_mt": 20,
-        "buttons_mt": 20,
-        "buttons_gap": 20,
-        "button_custom": false,
-        "button_font": "josefin_sans_n4",
-        "button_size": 16,
-        "button_size_mobile": 16,
-        "button_height": 120,
-        "button_padding_vertical": 16,
-        "button_padding_vertical_mobile": 16,
-        "button_padding_horizontal": 32,
-        "button_padding_horizontal_mobile": 32,
-        "button_radius": 0,
-        "button_border_thickness": 0,
-        "button_color": "#000000",
-        "button_hover_color": "#ffffff",
-        "button_bg_color": "#ffffff",
-        "button_bg_hover_color": "#000000",
-        "button_border_color": "#000000",
-        "button_border_hover_color": "#000000",
-        "second_button_color": "#000000",
-        "second_button_hover_color": "#ffffff",
-        "second_button_bg_color": "#ffffff",
-        "second_button_bg_hover_color": "#000000",
-        "second_button_border_color": "#000000",
-        "second_button_border_hover_color": "#000000",
-        "title_color": "#ffffff",
-        "subtitle_color": "#ffffff",
-        "overlay_color": "#000000",
-        "background_color": "#535353",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 3,
-        "padding_horizontal_mobile": 1.5,
-        "margin_top": 4,
-        "margin_bottom": 4,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "section_width": 120,
-        "section_radius": 0,
-        "lazy": false
-      }
     }
   },
   "order": [
@@ -927,7 +844,6 @@
     "ss_testimonial_12_iRqmDC",
     "slideshow_a8bmna",
     "section_divider_p6JdqG",
-    "ss_video_banner_pjQNgQ",
-    "ss_video_banner_KBrzdQ"
+    "ss_video_banner_pjQNgQ"
   ]
 }
