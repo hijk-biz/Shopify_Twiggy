@@ -306,7 +306,7 @@
         "slide_rnV3cb"
       ],
       "custom_css": [
-        "{margin-top: -15px; margin-bottom: -5px;}"
+        "{margin-top: -5px; margin-bottom: -5px;}"
       ],
       "name": "SS - Video Banner",
       "settings": {
@@ -372,6 +372,7 @@
     },
     "section_divider_YANQ6C": {
       "type": "section-divider",
+      "disabled": true,
       "custom_css": [],
       "name": "Section dividers",
       "settings": {
