@@ -245,123 +245,11 @@
         "padding_bottom": 12
       }
     },
-    "section_divider_jH3cwX": {
-      "type": "section-divider",
-      "custom_css": [],
-      "name": "---",
-      "settings": {
-        "shape": "rough",
-        "flip_horizontal": true,
-        "flip_vertical": true,
-        "wave_height": 20,
-        "wave_height_mobile": 20,
-        "shape_color": "rgba(0,0,0,0)",
-        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "ss_video_banner_ffwihR": {
-      "type": "ss-video-banner",
-      "blocks": {
-        "slide_UTxERy": {
-          "type": "slide",
-          "settings": {
-            "autoplay": true,
-            "video": "shopify://files/videos/Face Changing Unboxing.mov",
-            "video_url": "",
-            "title": "",
-            "subtitle": "",
-            "button": "",
-            "button_url": "shopify://collections/all",
-            "second_button": "",
-            "second_button_url": "shopify://collections/all"
-          }
-        }
-      },
-      "block_order": [
-        "slide_UTxERy"
-      ],
-      "name": "SS - Video Banner",
-      "settings": {
-        "height": 500,
-        "height_mobile": 400,
-        "overlay_opacity": 0,
-        "interval": 5,
-        "image_object_fit": "fill",
-        "vertical_alignment": "center",
-        "horizontal_alignment": "center",
-        "title_custom": false,
-        "title_font": "josefin_sans_n4",
-        "title_size": 50,
-        "title_size_mobile": 32,
-        "title_height": 130,
-        "subtitle_custom": false,
-        "subtitle_font": "josefin_sans_n4",
-        "subtitle_size": 16,
-        "subtitle_size_mobile": 16,
-        "subtitle_height": 130,
-        "subtitle_mt": 20,
-        "buttons_mt": 20,
-        "buttons_gap": 20,
-        "button_custom": false,
-        "button_font": "josefin_sans_n4",
-        "button_size": 16,
-        "button_size_mobile": 16,
-        "button_height": 120,
-        "button_padding_vertical": 16,
-        "button_padding_vertical_mobile": 16,
-        "button_padding_horizontal": 32,
-        "button_padding_horizontal_mobile": 32,
-        "button_radius": 0,
-        "button_border_thickness": 0,
-        "button_color": "#000000",
-        "button_hover_color": "#ffffff",
-        "button_bg_color": "#ffffff",
-        "button_bg_hover_color": "#000000",
-        "button_border_color": "#000000",
-        "button_border_hover_color": "#000000",
-        "second_button_color": "#000000",
-        "second_button_hover_color": "#ffffff",
-        "second_button_bg_color": "#ffffff",
-        "second_button_bg_hover_color": "#000000",
-        "second_button_border_color": "#000000",
-        "second_button_border_hover_color": "#000000",
-        "title_color": "#ffffff",
-        "subtitle_color": "#ffffff",
-        "overlay_color": "#000000",
-        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 10,
-        "padding_horizontal_mobile": 0,
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "section_width": 120,
-        "section_radius": 0,
-        "lazy": false
-      }
-    },
-    "section_divider_exbzpP": {
-      "type": "section-divider",
-      "name": "---",
-      "settings": {
-        "shape": "rough",
-        "flip_horizontal": true,
-        "flip_vertical": false,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
-        "shape_color": "",
-        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "image_banner_YhHfNC": {
       "type": "image-banner",
-      "custom_css": [],
+      "custom_css": [
+        "{margin-bottom: 20px;}"
+      ],
       "name": "Media 1",
       "settings": {
         "image": "shopify://shop_images/1_c9ce933d-19c4-4659-b826-60e1aa81b62f.png",
@@ -378,8 +266,27 @@
         "show_text_below": false
       }
     },
+    "video_RFKbjF": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Unboxing",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/1022.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "scheme-4",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_banner_3UA8qy": {
       "type": "image-banner",
+      "custom_css": [
+        "{margin-bottom: 20px;}"
+      ],
       "name": "Media 1",
       "settings": {
         "image": "shopify://shop_images/1_5a1065df-7157-45ad-9154-01caff4308ed.png",
@@ -880,10 +787,8 @@
     "main",
     "vso_benefits_grid_gK7GhM",
     "rich_text_A6ArN3",
-    "section_divider_jH3cwX",
-    "ss_video_banner_ffwihR",
-    "section_divider_exbzpP",
     "image_banner_YhHfNC",
+    "video_RFKbjF",
     "image_banner_3UA8qy",
     "rich_text_FRfxLp",
     "section_divider_yLiLA6",
