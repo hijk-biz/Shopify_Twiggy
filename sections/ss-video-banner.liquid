@@ -621,7 +621,7 @@
                   {% comment %} We can't use loop here since it won't trigger the 'end' event loop: true {% endcomment %}
                   {% comment %} And using loop:ture doesn't prevent the black screen effect when the video ends {% endcomment %}
                     <video
-                      data-src="{{ video.sources[1].url }}"
+                      data-src="{{ video.sources[1].url | default: video.sources[0].url}}"
                       {% if block.settings.autoplay %}
                       autoplay
                       {% endif %}
