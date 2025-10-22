@@ -252,8 +252,8 @@
       ],
       "name": "Media 1",
       "settings": {
-        "image": "shopify://shop_images/1_c9ce933d-19c4-4659-b826-60e1aa81b62f.png",
-        "image_2": "shopify://shop_images/2_0bdbde96-8104-4cb5-bb32-c7ff65611653.png",
+        "image": "shopify://shop_images/1_33154318-77ca-45d6-9b4a-00298d6adc04.png",
+        "image_2": "shopify://shop_images/2_1889baa6-ebf2-4877-b4d6-3b787d018883.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -307,8 +307,8 @@
       ],
       "name": "Media 1",
       "settings": {
-        "image": "shopify://shop_images/1_5a1065df-7157-45ad-9154-01caff4308ed.png",
-        "image_2": "shopify://shop_images/2_5741ef9a-a2dc-4574-8018-fec3576cb7d2.png",
+        "image": "shopify://shop_images/1_9101bc59-e620-4793-93a4-3d83963c6332.png",
+        "image_2": "shopify://shop_images/2_a4ce4f1c-1566-43c1-b611-12504eb5f3f1.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -321,86 +321,6 @@
         "show_text_below": false
       }
     },
-    "rich_text_FRfxLp": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_7q8qpg": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.header_2.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_FeNhUW": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ product.metafields.custom.text_2 | metafield_tag }}</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_7q8qpg",
-        "text_FeNhUW"
-      ],
-      "disabled": true,
-      "name": "Header 2",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 12
-      }
-    },
-    "section_divider_yLiLA6": {
-      "type": "section-divider",
-      "disabled": true,
-      "name": "---",
-      "settings": {
-        "shape": "arch_divider",
-        "flip_horizontal": true,
-        "flip_vertical": false,
-        "wave_height": 26,
-        "wave_height_mobile": 40,
-        "shape_color": "",
-        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "rich_text_tRNWCY": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_UhJBXh": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.header_3.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_gnbp76": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ product.metafields.custom.text_3 | metafield_tag }}</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_UhJBXh",
-        "text_gnbp76"
-      ],
-      "disabled": true,
-      "name": "Header 3",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 12
-      }
-    },
     "image_banner_EKbzKn": {
       "type": "image-banner",
       "custom_css": [
@@ -408,7 +328,8 @@
       ],
       "name": "Media 1",
       "settings": {
-        "image": "shopify://shop_images/Beige_and_Yellow_Modern_Travel_Memories_Instagram_Post_1080_x_1650_px.png",
+        "image": "shopify://shop_images/1_7e0bf2e2-deb8-4469-84e3-b09155a6a557.png",
+        "image_2": "shopify://shop_images/2_fca71c3a-3283-4ec9-9dd5-57e16012ef3d.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -454,7 +375,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-5",
         "full_width": true,
         "padding_top": 0,
         "padding_bottom": 12
@@ -785,88 +706,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "ss_video_banner_edqCt6": {
-      "type": "ss-video-banner",
-      "blocks": {
-        "slide_DLJeda": {
-          "type": "slide",
-          "settings": {
-            "autoplay": true,
-            "video": "shopify://files/videos/Face Changing Unboxing.mov",
-            "title": "<h1>Meet The Perfect Travel Shoes</h1>",
-            "subtitle": "<p>Super Packable. Versatile. And All-Day (And Night) Adventure Ready.</p>",
-            "button": "Shop Now",
-            "button_url": "shopify://collections/all",
-            "second_button": "Shop Now",
-            "second_button_url": "shopify://collections/all"
-          }
-        }
-      },
-      "block_order": [
-        "slide_DLJeda"
-      ],
-      "name": "SS - Video Banner",
-      "settings": {
-        "height": 1200,
-        "height_mobile": 1200,
-        "overlay_opacity": 0,
-        "interval": 10,
-        "image_object_fit": "fill",
-        "vertical_alignment": "center",
-        "horizontal_alignment": "center",
-        "title_custom": false,
-        "title_font": "josefin_sans_n4",
-        "title_size": 50,
-        "title_size_mobile": 32,
-        "title_height": 130,
-        "subtitle_custom": false,
-        "subtitle_font": "josefin_sans_n4",
-        "subtitle_size": 16,
-        "subtitle_size_mobile": 16,
-        "subtitle_height": 130,
-        "subtitle_mt": 20,
-        "buttons_mt": 20,
-        "buttons_gap": 20,
-        "button_custom": false,
-        "button_font": "josefin_sans_n4",
-        "button_size": 16,
-        "button_size_mobile": 16,
-        "button_height": 120,
-        "button_padding_vertical": 16,
-        "button_padding_vertical_mobile": 16,
-        "button_padding_horizontal": 32,
-        "button_padding_horizontal_mobile": 32,
-        "button_radius": 0,
-        "button_border_thickness": 0,
-        "button_color": "#000000",
-        "button_hover_color": "#FFFFFF",
-        "button_bg_color": "#FFFFFF",
-        "button_bg_hover_color": "#000000",
-        "button_border_color": "#000000",
-        "button_border_hover_color": "#000000",
-        "second_button_color": "#000000",
-        "second_button_hover_color": "#FFFFFF",
-        "second_button_bg_color": "#FFFFFF",
-        "second_button_bg_hover_color": "#000000",
-        "second_button_border_color": "#000000",
-        "second_button_border_hover_color": "#000000",
-        "title_color": "#FFFFFF",
-        "subtitle_color": "#FFFFFF",
-        "overlay_color": "#000000",
-        "background_color": "#535353",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "section_width": 200,
-        "section_radius": 76,
-        "lazy": false
-      }
     }
   },
   "order": [
@@ -878,9 +717,6 @@
     "image_banner_n76LkX",
     "video_RFKbjF",
     "image_banner_3UA8qy",
-    "rich_text_FRfxLp",
-    "section_divider_yLiLA6",
-    "rich_text_tRNWCY",
     "image_banner_EKbzKn",
     "section_divider_BLAWgH",
     "rich_text_yya8a3",
@@ -891,7 +727,6 @@
     "section_divider_688dpx",
     "rich_text_89i6ng",
     "section_divider_qeMCpc",
-    "featured_collection_Tg9ir8",
-    "ss_video_banner_edqCt6"
+    "featured_collection_Tg9ir8"
   ]
 }
