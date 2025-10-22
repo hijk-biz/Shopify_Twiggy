@@ -311,7 +311,7 @@
       "name": "SS - Video Banner",
       "settings": {
         "height": 1080,
-        "height_mobile": 300,
+        "height_mobile": 360,
         "overlay_opacity": 0,
         "interval": 5,
         "image_object_fit": "cover",
