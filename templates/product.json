@@ -270,7 +270,7 @@
       "type": "image-banner",
       "name": "Media 1",
       "settings": {
-        "image": "shopify://shop_images/1_28d8ebac-9d13-4d66-b530-6630e1e68fcf.png",
+        "image": "shopify://shop_images/1_28c6fa5b-88bc-4735-8500-45fe036ff923.png",
         "image_2": "shopify://shop_images/2_aa559674-7e28-4acf-8d00-1f66b5fa4275.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
@@ -304,6 +304,9 @@
       },
       "block_order": [
         "slide_rnV3cb"
+      ],
+      "custom_css": [
+        "{margin-top: -15px; margin-bottom: -5px;}"
       ],
       "name": "SS - Video Banner",
       "settings": {
@@ -365,6 +368,22 @@
         "section_width": 120,
         "section_radius": 0,
         "lazy": false
+      }
+    },
+    "section_divider_YANQ6C": {
+      "type": "section-divider",
+      "custom_css": [],
+      "name": "Section dividers",
+      "settings": {
+        "shape": "clouds",
+        "flip_horizontal": false,
+        "flip_vertical": true,
+        "wave_height": 120,
+        "wave_height_mobile": 40,
+        "shape_color": "",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "image_banner_3UA8qy": {
@@ -783,6 +802,7 @@
     "image_banner_YhHfNC",
     "image_banner_n76LkX",
     "ss_video_banner_7b8Dki",
+    "section_divider_YANQ6C",
     "image_banner_3UA8qy",
     "image_banner_EKbzKn",
     "section_divider_BLAWgH",
