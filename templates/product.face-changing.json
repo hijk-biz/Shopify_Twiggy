@@ -356,11 +356,11 @@
         "title_color": "#ffffff",
         "subtitle_color": "#ffffff",
         "overlay_color": "#000000",
-        "background_color": "#535353",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
         "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 3,
-        "padding_horizontal_mobile": 1.5,
+        "padding_bottom": 28,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 10,
         "margin_top": 4,
         "margin_bottom": 4,
         "margin_horizontal": 0,
@@ -368,6 +368,21 @@
         "section_width": 120,
         "section_radius": 0,
         "lazy": false
+      }
+    },
+    "section_divider_cPJLxe": {
+      "type": "section-divider",
+      "name": "Section dividers",
+      "settings": {
+        "shape": "clouds",
+        "flip_horizontal": false,
+        "flip_vertical": true,
+        "wave_height": 120,
+        "wave_height_mobile": 40,
+        "shape_color": "",
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_divider_YANQ6C": {
@@ -803,6 +818,7 @@
     "image_banner_YhHfNC",
     "image_banner_n76LkX",
     "ss_video_banner_7b8Dki",
+    "section_divider_cPJLxe",
     "section_divider_YANQ6C",
     "image_banner_3UA8qy",
     "image_banner_EKbzKn",
