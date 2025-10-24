@@ -431,12 +431,12 @@
           "type": "slide",
           "settings": {
             "media_style": "image",
-            "image": "shopify://shop_images/IMG_8375-min.png",
+            "image": "{{ product.metafields.custom.testimonial_3_image.value }}",
             "video_url": "",
             "controls": false,
             "stars_count": 5,
-            "text": "<p>Small and sturdy. Can bring to restaurant to occupy the little ones</p>",
-            "author": "<p>Charlie</p>"
+            "text": "<p>{{ product.metafields.custom.testimonial_3_text.value }}</p>",
+            "author": "<p><strong>{{ product.metafields.custom.testimonial_3_name.value }}</strong></p>"
           }
         },
         "slide_AQEhXE": {
