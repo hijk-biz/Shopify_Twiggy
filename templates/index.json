@@ -31,8 +31,8 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Mobile_Banner_Mega_Sale_27a59fec-24f9-43a0-9eb8-7e2bcaf597b9.png",
-        "image_2": "shopify://shop_images/Bsanner_Test.png",
+        "image": "shopify://shop_images/1_eb7ebdcb-e865-43f8-84ac-e631a2cc1c32.png",
+        "image_2": "shopify://shop_images/2_81683bf5-d2e1-4124-a55f-704b360f4767.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -743,7 +743,6 @@
           "type": "slide",
           "settings": {
             "autoplay": true,
-            "video": "shopify://files/videos/Face Changing Unboxing.mov",
             "video_url": "",
             "title": "",
             "subtitle": "",
