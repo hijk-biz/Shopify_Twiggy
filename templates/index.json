@@ -64,7 +64,7 @@
         "button_xBRLRp"
       ],
       "custom_css": [
-        ".button {font-size: 20px !important; font-weight: bold; letter-spacing: 0px; opacity: 1; outline: 0px solid #3a3a3a; /* black outline */}"
+        ".button {font-size: 25px !important; font-weight: bold; letter-spacing: 0px; opacity: 1; outline: 0px solid #3a3a3a; /* black outline */}"
       ],
       "name": "Shop All Button",
       "settings": {
@@ -167,19 +167,22 @@
         "padding_bottom": 4
       }
     },
-    "section_divider_Etmxmf": {
-      "type": "section-divider",
-      "name": "---",
+    "image_banner_cRkDjK": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "shape": "arc_divider",
-        "flip_horizontal": false,
-        "flip_vertical": true,
-        "wave_height": 16,
-        "wave_height_mobile": 16,
-        "shape_color": "rgba(0,0,0,0)",
-        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image": "shopify://shop_images/Local_Business_d183b5f5-d1c7-4fa3-822f-d6709a55823d.png",
+        "image_2": "shopify://shop_images/2_81683bf5-d2e1-4124-a55f-704b360f4767.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
       }
     },
     "rich_text_XmAUeP": {
@@ -827,7 +830,7 @@
     "rich_text_VwBHX6",
     "section_divider_qDkxjM",
     "featured_collection",
-    "section_divider_Etmxmf",
+    "image_banner_cRkDjK",
     "rich_text_XmAUeP",
     "section_divider_m7337E",
     "section_divider_zkqKKA",
