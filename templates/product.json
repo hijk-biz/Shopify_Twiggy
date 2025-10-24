@@ -418,14 +418,13 @@
         "slide_dmzqdG": {
           "type": "slide",
           "settings": {
-            "media_style": "video",
-            "image": "shopify://shop_images/IMG_8374-min.png",
-            "video": "shopify://files/videos/1022(1).mov",
+            "media_style": "image",
+            "image": "{{ product.metafields.custom.testimonial_21_image.value }}",
             "video_url": "",
-            "controls": false,
+            "controls": true,
             "stars_count": 5,
-            "text": "<p>Fun to play with the kids</p>",
-            "author": "<p><strong>Sam</strong></p>"
+            "text": "<p>{{ product.metafields.custom.testimonial_2_text.value }}</p>",
+            "author": ""
           }
         },
         "slide_byJjne": {
@@ -452,6 +451,17 @@
             "author": "<p><strong>Jenny</strong></p>"
           }
         },
+        "slide_XXBwzH": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>Text</p>",
+            "author": "<p>Author</p>"
+          }
+        },
         "slide_FX8e6b": {
           "type": "slide",
           "settings": {
@@ -470,6 +480,7 @@
         "slide_dmzqdG",
         "slide_byJjne",
         "slide_AQEhXE",
+        "slide_XXBwzH",
         "slide_FX8e6b"
       ],
       "custom_css": [
