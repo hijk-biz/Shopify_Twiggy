@@ -412,7 +412,7 @@
             "controls": false,
             "stars_count": 5,
             "text": "<p>{{ product.metafields.custom.testimonial_1_text.value }}</p>",
-            "author": "<p><strong>Maddie F</strong></p>"
+            "author": "<p><strong>{{ product.metafields.custom.testimonial_1_name.value }}</strong></p>"
           }
         },
         "slide_dmzqdG": {
