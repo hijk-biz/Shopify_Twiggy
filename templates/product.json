@@ -455,12 +455,12 @@
           "type": "slide",
           "settings": {
             "media_style": "image",
-            "image": "shopify://shop_images/IMG_8378-min.png",
+            "image": "{{ product.metafields.custom.testimonial_5_image.value }}",
             "video_url": "",
             "controls": false,
             "stars_count": 5,
-            "text": "<p>Thanks Twigsy, my grandchildren loved their surprise.</p>",
-            "author": "<p><strong>@lacey</strong></p>"
+            "text": "<p>{{ product.metafields.custom.testimonial_5_text.value }}</p>",
+            "author": "<p><strong>{{ product.metafields.custom.testimonial_5_name.value }}</strong></p>"
           }
         }
       },
