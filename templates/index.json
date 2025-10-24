@@ -172,7 +172,7 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/Local_Business_d183b5f5-d1c7-4fa3-822f-d6709a55823d.png",
-        "image_2": "shopify://shop_images/2_81683bf5-d2e1-4124-a55f-704b360f4767.png",
+        "image_2": "shopify://shop_images/Local_Business_d183b5f5-d1c7-4fa3-822f-d6709a55823d.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
