@@ -443,11 +443,12 @@
           "type": "slide",
           "settings": {
             "media_style": "image",
+            "image": "{{ product.metafields.custom.testimonial_4_image.value }}",
             "video_url": "",
             "controls": false,
             "stars_count": 5,
-            "text": "<p>Text</p>",
-            "author": "<p>Author</p>"
+            "text": "<p>{{ product.metafields.custom.testimonial_4_text.value }}</p>",
+            "author": "<p><strong>{{ product.metafields.custom.testimonial_4_name.value }}</strong></p>"
           }
         },
         "slide_FX8e6b": {
