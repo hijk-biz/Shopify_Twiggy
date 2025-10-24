@@ -418,8 +418,9 @@
         "slide_dmzqdG": {
           "type": "slide",
           "settings": {
-            "media_style": "image",
+            "media_style": "video",
             "image": "shopify://shop_images/IMG_8374-min.png",
+            "video": "shopify://files/videos/1022(1).mov",
             "video_url": "",
             "controls": false,
             "stars_count": 5,
