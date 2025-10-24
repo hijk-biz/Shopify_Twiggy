@@ -9,22 +9,6 @@
  */
 {
   "sections": {
-    "section_divider_b4jng9": {
-      "type": "section-divider",
-      "disabled": true,
-      "name": "---",
-      "settings": {
-        "shape": "bubble_side_divider",
-        "flip_horizontal": false,
-        "flip_vertical": false,
-        "wave_height": 16,
-        "wave_height_mobile": 16,
-        "shape_color": "",
-        "background_color": "{{ shop.brand.colors.primary[0].background }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -210,47 +194,12 @@
         "mobile_layout": "column"
       }
     },
-    "rich_text_A6ArN3": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_FRJmPr": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ product.metafields.custom.header_1.value }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_wUAjXe": {
-          "type": "text",
-          "settings": {
-            "text": "<p>{{ product.metafields.custom.text_1 | metafield_tag }}</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_FRJmPr",
-        "text_wUAjXe"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "{z-index: 1; position: relative;}"
-      ],
-      "name": "Header 1",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 12
-      }
-    },
     "image_banner_YhHfNC": {
       "type": "image-banner",
       "custom_css": [
         "{margin-bottom: 20px;}"
       ],
-      "name": "Media 1",
+      "name": "Image 1 - Grid",
       "settings": {
         "image": "shopify://shop_images/1_33154318-77ca-45d6-9b4a-00298d6adc04.png",
         "image_2": "shopify://shop_images/2_1889baa6-ebf2-4877-b4d6-3b787d018883.png",
@@ -270,7 +219,7 @@
       "type": "image-banner",
       "name": "Media 1",
       "settings": {
-        "image": "shopify://shop_images/1_28c6fa5b-88bc-4735-8500-45fe036ff923.png",
+        "image": "shopify://shop_images/1_aef17509-216f-4dd6-a9dd-a0a091f5bf55.png",
         "image_2": "shopify://shop_images/2_aa559674-7e28-4acf-8d00-1f66b5fa4275.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
@@ -368,23 +317,6 @@
         "section_width": 120,
         "section_radius": 0,
         "lazy": false
-      }
-    },
-    "section_divider_YANQ6C": {
-      "type": "section-divider",
-      "disabled": true,
-      "custom_css": [],
-      "name": "Section dividers",
-      "settings": {
-        "shape": "clouds",
-        "flip_horizontal": false,
-        "flip_vertical": true,
-        "wave_height": 120,
-        "wave_height_mobile": 40,
-        "shape_color": "",
-        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "image_banner_3UA8qy": {
@@ -796,14 +728,11 @@
     }
   },
   "order": [
-    "section_divider_b4jng9",
     "main",
     "vso_benefits_grid_gK7GhM",
-    "rich_text_A6ArN3",
     "image_banner_YhHfNC",
     "image_banner_n76LkX",
     "ss_video_banner_7b8Dki",
-    "section_divider_YANQ6C",
     "image_banner_3UA8qy",
     "image_banner_EKbzKn",
     "section_divider_BLAWgH",
