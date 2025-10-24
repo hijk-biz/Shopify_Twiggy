@@ -427,7 +427,7 @@
             "author": "<p><strong>{{ product.metafields.custom.testimonial_2_name.value }}</strong></p>"
           }
         },
-        "slide_byJjne": {
+        "slide_AQEhXE": {
           "type": "slide",
           "settings": {
             "media_style": "image",
@@ -437,18 +437,6 @@
             "stars_count": 5,
             "text": "<p>{{ product.metafields.custom.testimonial_3_text.value }}</p>",
             "author": "<p><strong>{{ product.metafields.custom.testimonial_3_name.value }}</strong></p>"
-          }
-        },
-        "slide_AQEhXE": {
-          "type": "slide",
-          "settings": {
-            "media_style": "image",
-            "image": "shopify://shop_images/IMG_8376-min_4e8fe825-8555-4bcb-b177-aa868248e3ef.png",
-            "video_url": "",
-            "controls": false,
-            "stars_count": 5,
-            "text": "<p>My 2yo and 5yo play this together, making up their own rules. Cute.</p>",
-            "author": "<p><strong>Jenny</strong></p>"
           }
         },
         "slide_XXBwzH": {
@@ -478,7 +466,6 @@
       "block_order": [
         "slide_4DaMka",
         "slide_dmzqdG",
-        "slide_byJjne",
         "slide_AQEhXE",
         "slide_XXBwzH",
         "slide_FX8e6b"
