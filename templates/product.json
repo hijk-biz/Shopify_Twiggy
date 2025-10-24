@@ -424,7 +424,7 @@
             "controls": true,
             "stars_count": 5,
             "text": "<p>{{ product.metafields.custom.testimonial_2_text.value }}</p>",
-            "author": ""
+            "author": "<p><strong>{{ product.metafields.custom.testimonial_2_name.value }}</strong></p>"
           }
         },
         "slide_byJjne": {
