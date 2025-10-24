@@ -201,8 +201,8 @@
       ],
       "name": "Image 1 - Grid",
       "settings": {
-        "image": "shopify://shop_images/1_33154318-77ca-45d6-9b4a-00298d6adc04.png",
-        "image_2": "shopify://shop_images/2_1889baa6-ebf2-4877-b4d6-3b787d018883.png",
+        "image": "{{ product.metafields.custom.media_1.value }}",
+        "image_2": "{{ product.metafields.custom.media_1_desktop.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
