@@ -407,11 +407,11 @@
           "type": "slide",
           "settings": {
             "media_style": "image",
-            "image": "shopify://shop_images/IMG_8373-min.png",
+            "image": "{{ product.metafields.custom.testimonial_1_image.value }}",
             "video_url": "",
             "controls": false,
             "stars_count": 5,
-            "text": "<p>Kids love it! Great birthday gift.</p>",
+            "text": "<p>{{ product.metafields.custom.testimonial_1_text.value }}</p>",
             "author": "<p><strong>Maddie F</strong></p>"
           }
         },
