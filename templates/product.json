@@ -219,8 +219,8 @@
       "type": "image-banner",
       "name": "Image 2 - What you get",
       "settings": {
-        "image": "shopify://shop_images/1_aef17509-216f-4dd6-a9dd-a0a091f5bf55.png",
-        "image_2": "shopify://shop_images/2_aa559674-7e28-4acf-8d00-1f66b5fa4275.png",
+        "image": "{{ product.metafields.custom.media_2.value }}",
+        "image_2": "{{ product.metafields.custom.media_2_desktop.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
