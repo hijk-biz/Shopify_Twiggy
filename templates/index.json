@@ -414,59 +414,11 @@
             "text": "<p>Our kids occupy themselves with this at restaurants. Great find!</p>",
             "author": "<p><strong>John S</strong></p>"
           }
-        },
-        "slide_FRBpEP": {
-          "type": "slide",
-          "settings": {
-            "media_style": "image",
-            "video_url": "",
-            "controls": false,
-            "stars_count": 5,
-            "text": "<p>This is the brand to go for lamps, love the quality and design, as always you get what you pay</p>",
-            "author": "<p><strong>@niels_homes</strong></p>"
-          }
-        },
-        "slide_ki4FmF": {
-          "type": "slide",
-          "settings": {
-            "media_style": "image",
-            "video_url": "",
-            "controls": false,
-            "stars_count": 5,
-            "text": "<p>Love them, they give the perfect luxury touch to any room</p>",
-            "author": "<p><strong>@allfinds</strong></p>"
-          }
-        },
-        "slide_zeW4hL": {
-          "type": "slide",
-          "settings": {
-            "media_style": "image",
-            "video_url": "",
-            "controls": false,
-            "stars_count": 5,
-            "text": "<p>The cordless lamp you've been looking for!</p>",
-            "author": "<p><strong>@lacey</strong></p>"
-          }
-        },
-        "slide_UFqr9y": {
-          "type": "slide",
-          "settings": {
-            "media_style": "image",
-            "video_url": "",
-            "controls": false,
-            "stars_count": 5,
-            "text": "<p>All my friends want them too now, at least I was the first one to get them..!</p>",
-            "author": "<p><strong>@mcqueen</strong></p>"
-          }
         }
       },
       "block_order": [
         "slide_AitrkR",
-        "slide_kehUMd",
-        "slide_FRBpEP",
-        "slide_ki4FmF",
-        "slide_zeW4hL",
-        "slide_UFqr9y"
+        "slide_kehUMd"
       ],
       "name": "SS - Testimonials #12",
       "settings": {

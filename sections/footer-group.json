@@ -23,8 +23,8 @@
         "text_rmEEL9": {
           "type": "text",
           "settings": {
-            "heading": "<strong>Emails suck! Ours don't.</strong>",
-            "subtext": "<p>No spam! We only let you know of exclusive deals on our new products.</p>"
+            "heading": "<strong>Get 10% off! Emails suck! Ours don't. </strong>",
+            "subtext": "<p>No spam! We only let you know of exclusive deals on our new products. Get 10% off your first order.</p>"
           }
         }
       },
