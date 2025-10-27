@@ -407,11 +407,12 @@
           "type": "slide",
           "settings": {
             "media_style": "image",
+            "image": "shopify://shop_images/face-changing-testimonial-2.png",
             "video_url": "",
             "controls": false,
             "stars_count": 5,
-            "text": "<p>Our kids bring them everywhere, specially when doing puzzles and drawings</p>",
-            "author": "<p><strong>@theworldisyours</strong></p>"
+            "text": "<p>Our kids occupy themselves with this at restaurants. Great find!</p>",
+            "author": "<p><strong>John S</strong></p>"
           }
         },
         "slide_FRBpEP": {
