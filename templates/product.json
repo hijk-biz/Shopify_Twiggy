@@ -256,6 +256,7 @@
       "blocks": {
         "heading_HCJhz6": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Unboxing",
             "heading_custom": false,
@@ -326,7 +327,7 @@
         "desktop_content_alignment": "center",
         "mobile_content_alignment": "center",
         "content_padding_top": 24,
-        "content_padding_bottom": 36,
+        "content_padding_bottom": 0,
         "content_padding_horizontal": 5,
         "content_padding_horizontal_mobile": 1.5,
         "content_spacing": 18,
@@ -342,8 +343,8 @@
         "content_border_color": "{{ shop.brand.colors.primary[0].background }}",
         "margin_top": 0,
         "margin_bottom": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 24,
+        "padding_bottom": 28,
         "padding_horizontal": 5,
         "padding_horizontal_mobile": 1.5,
         "content_layout": false,
