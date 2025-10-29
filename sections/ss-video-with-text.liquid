@@ -677,7 +677,7 @@
               {% else %}
 
                 <video
-                  data-src="{{ video.sources[1].url }}"
+                  data-src="{{ video.sources[1].url | default: video.sources[0].url }}"
                   {% if video_autoplay %}
                   autoplay
                   muted
