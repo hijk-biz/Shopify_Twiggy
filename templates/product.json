@@ -80,9 +80,9 @@
           "disabled": true,
           "settings": {
             "review_data": "real_data",
+            "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
+            "empty_state": "empty_widget"
           }
         }
       },
@@ -249,6 +249,107 @@
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
+      }
+    },
+    "ss_video_with_text_6w8kU4": {
+      "type": "ss-video-with-text",
+      "blocks": {
+        "heading_HCJhz6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unboxing",
+            "heading_custom": false,
+            "heading_font": "assistant_n4",
+            "header_size": 54,
+            "font_weight": "600",
+            "heading_height": 130,
+            "heading_mt": 0,
+            "heading_color": "{{ shop.brand.colors.secondary[0].background }}"
+          }
+        },
+        "text_D963V4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is what you get</p>",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_size": 18,
+            "text_height": 150,
+            "text_mt": 0,
+            "text_color": "{{ shop.brand.colors.secondary[0].background }}"
+          }
+        },
+        "button_n7aNKR": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Learn more",
+            "button_link": "",
+            "button_custom": false,
+            "button_font": "assistant_n4",
+            "button_size": 16,
+            "button_height": 100,
+            "button_style": "button",
+            "button_padding_horizontal": 32,
+            "button_padding_vertical": 16,
+            "button_radius": 100,
+            "button_border_thickness": 1,
+            "button_mt": 12,
+            "use_arrow": true,
+            "button_text_color": "#ffffff",
+            "button_text_hover_color": "#ffffff",
+            "button_color": "#121212",
+            "button_hover_color": "#121212",
+            "button_border_color": "#121212",
+            "button_border_hover_color": "#121212"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HCJhz6",
+        "text_D963V4",
+        "button_n7aNKR"
+      ],
+      "name": "SS - Video with text #1",
+      "settings": {
+        "media": "video",
+        "image_height": "adapt",
+        "desktop_image_width": "50",
+        "image_radius": 20,
+        "layout": "image_first",
+        "video": "shopify://files/videos/1022(1).mov",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "icon_play_size": 30,
+        "video_controls": true,
+        "video_autoplay": true,
+        "video_loop": true,
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "content_padding_top": 24,
+        "content_padding_bottom": 36,
+        "content_padding_horizontal": 5,
+        "content_padding_horizontal_mobile": 1.5,
+        "content_spacing": 18,
+        "wrapper_border": false,
+        "content_border_thickness": 1,
+        "border_radius": 20,
+        "padding_inside": 20,
+        "shadow": true,
+        "background_color": "{{ shop.brand.colors.primary[0].foreground }}",
+        "background_gradient": "",
+        "border_color": "#121212",
+        "content_background_color": "{{ shop.brand.colors.primary[0].background }}",
+        "content_border_color": "#D3D3D3",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "content_layout": false,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "lazy": true
       }
     },
     "ss_video_banner_7b8Dki": {
@@ -619,9 +720,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
+            "empty_state": "empty_widget"
           }
         }
       },
@@ -751,6 +852,7 @@
     "vso_benefits_grid_gK7GhM",
     "image_banner_YhHfNC",
     "image_banner_n76LkX",
+    "ss_video_with_text_6w8kU4",
     "ss_video_banner_7b8Dki",
     "image_banner_3UA8qy",
     "image_banner_EKbzKn",
