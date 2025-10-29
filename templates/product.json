@@ -237,6 +237,7 @@
       "type": "image-banner",
       "name": "Image 2 - What you get",
       "settings": {
+        "image": "{{ product.metafields.custom.media_2.value }}",
         "image_2": "{{ product.metafields.custom.media_2_desktop.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
