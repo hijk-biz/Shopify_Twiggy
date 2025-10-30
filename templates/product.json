@@ -468,8 +468,8 @@
       ],
       "name": "Image 4 - Play Anywhere",
       "settings": {
-        "image": "shopify://shop_images/1_7e0bf2e2-deb8-4469-84e3-b09155a6a557.png",
-        "image_2": "shopify://shop_images/2_fca71c3a-3283-4ec9-9dd5-57e16012ef3d.png",
+        "image": "{{ product.metafields.custom.media_4_mobile.value }}",
+        "image_2": "{{ product.metafields.custom.media_4_desktop.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
