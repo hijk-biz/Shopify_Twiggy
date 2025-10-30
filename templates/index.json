@@ -414,11 +414,24 @@
             "text": "<p>Our kids occupy themselves with this at restaurants. Great find!</p>",
             "author": "<p><strong>John S</strong></p>"
           }
+        },
+        "slide_iCMGtR": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "image": "shopify://shop_images/Testimonial_Number_Garden8588.heic",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>Quick to setup and play. Recommended.</p>",
+            "author": "<p>Vikash</p>"
+          }
         }
       },
       "block_order": [
         "slide_AitrkR",
-        "slide_kehUMd"
+        "slide_kehUMd",
+        "slide_iCMGtR"
       ],
       "name": "SS - Testimonials #12",
       "settings": {
