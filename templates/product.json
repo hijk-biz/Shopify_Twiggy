@@ -271,7 +271,7 @@
         "text_D963V4": {
           "type": "text",
           "settings": {
-            "text": "<p>16 blocks, 4 different colours. 72 cards, a set of rules within a sturdy box. Unlimited fun!</p>",
+            "text": "<p>{{ product.metafields.custom.video_text_1.value }}</p>",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_size": 19,
@@ -318,7 +318,7 @@
         "desktop_image_width": "50",
         "image_radius": 20,
         "layout": "image_first",
-        "video": "shopify://files/videos/video-face-changing-unboxing.mov",
+        "video": "{{ product.metafields.custom.video_clip_1.value }}",
         "video_url": "",
         "icon_play_size": 30,
         "video_controls": true,
