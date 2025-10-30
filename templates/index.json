@@ -426,12 +426,25 @@
             "text": "<p>Quick to setup and play. Recommended.</p>",
             "author": "<p>Vikash</p>"
           }
+        },
+        "slide_4QwrTh": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "image": "shopify://shop_images/Testimonial_Number_Garden8591.heic",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>Quick and easy game to play with the boys!!</p>",
+            "author": "<p>Andy</p>"
+          }
         }
       },
       "block_order": [
         "slide_AitrkR",
         "slide_kehUMd",
-        "slide_iCMGtR"
+        "slide_iCMGtR",
+        "slide_4QwrTh"
       ],
       "name": "SS - Testimonials #12",
       "settings": {
