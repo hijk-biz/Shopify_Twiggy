@@ -424,7 +424,7 @@
             "controls": false,
             "stars_count": 5,
             "text": "<p>Quick to setup and play. Recommended.</p>",
-            "author": "<p>Vikash</p>"
+            "author": "<p><strong>Vikash</strong></p>"
           }
         },
         "slide_4QwrTh": {
@@ -436,7 +436,7 @@
             "controls": false,
             "stars_count": 5,
             "text": "<p>Quick and easy game to play with the boys!!</p>",
-            "author": "<p>Andy</p>"
+            "author": "<p><strong>Andy</strong></p>"
           }
         },
         "slide_nd7AeR": {
@@ -448,7 +448,7 @@
             "controls": false,
             "stars_count": 5,
             "text": "<p>My 3 years old daughter can write her name thanks to this</p>",
-            "author": "<p>Magalie</p>"
+            "author": "<p><strong>Magalie</strong></p>"
           }
         }
       },
@@ -510,7 +510,7 @@
         "text_size": 16,
         "text_size_mobile": 16,
         "text_height": 110,
-        "text_mt": 0,
+        "text_mt": 10,
         "text_align": "center",
         "text_align_mobile": "center",
         "author_custom": false,
@@ -518,7 +518,7 @@
         "author_size": 14,
         "author_size_mobile": 14,
         "author_height": 80,
-        "author_mt": 0,
+        "author_mt": 10,
         "author_align": "center",
         "author_align_mobile": "center",
         "navigation_mt": 30,
@@ -531,7 +531,7 @@
         "arrow_show_mobile": false,
         "dots_size": 10,
         "dots_size_mobile": 10,
-        "dots_show_desktop": false,
+        "dots_show_desktop": true,
         "dots_show_mobile": true,
         "btn_icon_size": 50,
         "btn_icon_size_mobile": 40,
