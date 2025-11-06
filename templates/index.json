@@ -438,13 +438,26 @@
             "text": "<p>Quick and easy game to play with the boys!!</p>",
             "author": "<p>Andy</p>"
           }
+        },
+        "slide_nd7AeR": {
+          "type": "slide",
+          "settings": {
+            "media_style": "image",
+            "image": "shopify://shop_images/IMG_8493_d34e893e-8c27-43e8-bc7b-3ba0e03e64a3.heic",
+            "video_url": "",
+            "controls": false,
+            "stars_count": 5,
+            "text": "<p>My 3 years old daughter can write her name thanks to this</p>",
+            "author": "<p>Magalie</p>"
+          }
         }
       },
       "block_order": [
         "slide_AitrkR",
         "slide_kehUMd",
         "slide_iCMGtR",
-        "slide_4QwrTh"
+        "slide_4QwrTh",
+        "slide_nd7AeR"
       ],
       "name": "SS - Testimonials #12",
       "settings": {
