@@ -481,7 +481,7 @@
         "text_xRM3be": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ product.metafields.custom.video_text_1.value }}</p>",
+            "text": "<p>{{ product.metafields.custom.video_text_2.value }}</p>",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_size": 19,
@@ -528,7 +528,7 @@
         "desktop_image_width": "50",
         "image_radius": 20,
         "layout": "image_first",
-        "video": "{{ product.metafields.custom.video_clip_1.value }}",
+        "video": "{{ product.metafields.custom.video_clip_2.value }}",
         "video_url": "",
         "icon_play_size": 30,
         "video_controls": true,
