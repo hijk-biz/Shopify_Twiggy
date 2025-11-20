@@ -17,23 +17,30 @@
         "announcement_LQDtCf": {
           "type": "announcement",
           "settings": {
-            "text": "🚚  Free shipping  📦",
+            "text": "FREE SHIPPING ORDERS $49+",
             "link": ""
           }
         },
-        "announcement_mi9eED": {
+        "announcement_dJY8LK": {
           "type": "announcement",
           "settings": {
-            "text": "🚚  Free shipping  📦",
+            "text": "EXTRA 10% OFF ORDERS $69+",
+            "link": ""
+          }
+        },
+        "announcement_mhKFA3": {
+          "type": "announcement",
+          "settings": {
+            "text": "EXTRA 20% OFF ORDERS $89+",
             "link": ""
           }
         }
       },
       "block_order": [
         "announcement_LQDtCf",
-        "announcement_mi9eED"
+        "announcement_dJY8LK",
+        "announcement_mhKFA3"
       ],
-      "disabled": true,
       "settings": {
         "auto_rotate": true,
         "change_slides_speed": 5,
