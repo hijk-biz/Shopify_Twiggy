@@ -812,13 +812,13 @@
     "featured_collection_Tg9ir8": {
       "type": "featured-collection",
       "custom_css": [
-        ".card__heading {font-size: 20px;}",
-        ".rating-count {font-size: 15px;}",
+        ".card__heading {font-size: 15px;}",
+        ".rating-count {font-size: 12px;}",
         ".rating-star {font-size: 20px;}",
         ".price-item--regular {color: #a3afaf;}",
         ".price-item--sale {color: #82c041;}",
-        ".price {margin-top: 0px; font-size: 20px;}",
-        ".quick-add__submit {font-size: 20px !important; color: #3a3a3a !important; border: none !important; letter-spacing: 0px; background-color: #ffd84d !important;}"
+        ".price {margin-top: 0px; font-size: 15px;}",
+        ".quick-add__submit {font-size: 18px !important; color: #3a3a3a !important; border: none !important; letter-spacing: 0px; background-color: #ffd84d !important;}"
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
@@ -829,10 +829,10 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 4,
+        "columns_desktop": 6,
         "enable_desktop_slider": true,
         "full_width": true,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "color_scheme": "scheme-1",
         "image_ratio": "square",
