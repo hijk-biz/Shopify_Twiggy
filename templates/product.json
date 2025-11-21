@@ -212,6 +212,21 @@
         "mobile_layout": "column"
       }
     },
+    "section_divider_688dpx": {
+      "type": "section-divider",
+      "name": "---",
+      "settings": {
+        "shape": "rough",
+        "flip_horizontal": true,
+        "flip_vertical": true,
+        "wave_height": 26,
+        "wave_height_mobile": 26,
+        "shape_color": "",
+        "background_color": "{{ shop.brand.colors.primary[0].background }}",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "image_banner_YhHfNC": {
       "type": "image-banner",
       "custom_css": [
@@ -755,21 +770,6 @@
         "padding_bottom": 28
       }
     },
-    "section_divider_688dpx": {
-      "type": "section-divider",
-      "name": "---",
-      "settings": {
-        "shape": "rough",
-        "flip_horizontal": true,
-        "flip_vertical": true,
-        "wave_height": 26,
-        "wave_height_mobile": 26,
-        "shape_color": "",
-        "background_color": "{{ shop.brand.colors.primary[0].background }}",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "rich_text_89i6ng": {
       "type": "rich-text",
       "blocks": {
@@ -867,6 +867,10 @@
     "section_divider_n3Rn6k",
     "main",
     "vso_benefits_grid_gK7GhM",
+    "section_divider_688dpx",
+    "rich_text_89i6ng",
+    "section_divider_qeMCpc",
+    "featured_collection_Tg9ir8",
     "image_banner_YhHfNC",
     "image_banner_n76LkX",
     "ss_video_with_text_6w8kU4",
@@ -879,10 +883,6 @@
     "section_divider_cf7R48",
     "17566867484716ae8e",
     "related-products",
-    "section_divider_688dpx",
-    "rich_text_89i6ng",
-    "section_divider_qeMCpc",
-    "featured_collection_Tg9ir8",
     "section_divider_jHhUNE"
   ]
 }
