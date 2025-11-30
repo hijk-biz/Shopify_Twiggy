@@ -17,21 +17,21 @@
         "announcement_LQDtCf": {
           "type": "announcement",
           "settings": {
-            "text": "FREE SHIPPING ORDERS $49+",
+            "text": "FREE SHIPPING ORDERS $59+",
             "link": ""
           }
         },
         "announcement_dJY8LK": {
           "type": "announcement",
           "settings": {
-            "text": "EXTRA 10% OFF ORDERS $69+",
+            "text": "EXTRA 10% OFF ORDERS $79+",
             "link": ""
           }
         },
         "announcement_mhKFA3": {
           "type": "announcement",
           "settings": {
-            "text": "EXTRA 20% OFF ORDERS $89+",
+            "text": "EXTRA 20% OFF ORDERS $99+",
             "link": ""
           }
         }
