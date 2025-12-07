@@ -363,7 +363,7 @@
       ],
       "name": "SS - Video Banner",
       "settings": {
-        "height": 700,
+        "height": 1200,
         "height_mobile": 500,
         "overlay_opacity": 0,
         "interval": 5,
