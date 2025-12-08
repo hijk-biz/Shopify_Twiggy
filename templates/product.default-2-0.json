@@ -347,7 +347,7 @@
           "type": "slide",
           "settings": {
             "autoplay": true,
-            "video": "shopify://files/videos/IMG_9067.MOV",
+            "video": "shopify://files/videos/StackCraft_WebsiteVideo.mov",
             "video_url": "",
             "title": "",
             "subtitle": "",
@@ -363,8 +363,8 @@
       ],
       "name": "SS - Video Banner",
       "settings": {
-        "height": 900,
-        "height_mobile": 500,
+        "height": 800,
+        "height_mobile": 400,
         "overlay_opacity": 0,
         "interval": 5,
         "image_object_fit": "cover",
