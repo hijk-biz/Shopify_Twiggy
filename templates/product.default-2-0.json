@@ -531,7 +531,7 @@
       "name": "Image 3",
       "settings": {
         "image": "shopify://shop_images/2_2_3bcfcc7e-419a-44f8-ba1a-d89fb2e2f5a8.png",
-        "image_2": "{{ product.metafields.custom.media_2_desktop.value }}",
+        "image_2": "shopify://shop_images/Desktop_3.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
