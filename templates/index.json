@@ -600,8 +600,8 @@
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "",
-            "title_color": "",
-            "title_size_v2": 33,
+            "title_color": "#242833",
+            "title_size_v2": 30,
             "alignment": "center",
             "instafeed_margin_top": 0,
             "instafeed_margin_bottom": 0,
