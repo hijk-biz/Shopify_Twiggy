@@ -33,7 +33,7 @@
         "text_rmEEL9"
       ],
       "custom_css": [
-        "p {margin-top: -15px; margin-bottom: -20px; line-height: 20px;}"
+        "p {margin-top: 0px; margin-bottom: -20px; line-height: 20px;}"
       ],
       "settings": {
         "color_scheme": "scheme-6f71e34f-73ff-4c2c-81fd-bf3ca68bc69c",
