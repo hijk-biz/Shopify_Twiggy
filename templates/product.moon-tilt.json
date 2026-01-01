@@ -308,8 +308,8 @@
       "type": "image-banner",
       "name": "Image 1",
       "settings": {
-        "image": "shopify://shop_images/1_eb617d01-4e1a-4ba4-8964-2cba6dc03a63.png",
-        "image_2": "shopify://shop_images/Desktop_1.png",
+        "image": "shopify://shop_images/Mobile_1.png",
+        "image_2": "shopify://shop_images/Desktop_1_4d7cddb0-a544-4daa-b118-d1eb9a7d13b8.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -326,8 +326,8 @@
       "type": "image-banner",
       "name": "Image 2",
       "settings": {
-        "image": "shopify://shop_images/2_0b7880df-49c4-4184-ae8a-9eee9c4b88b3.png",
-        "image_2": "shopify://shop_images/Desktop_2.png",
+        "image": "shopify://shop_images/Mobile_2.png",
+        "image_2": "shopify://shop_images/Desktop_2_6d1ff86d-a89d-4f9d-8213-ec6516ae91ee.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -427,8 +427,8 @@
       "type": "image-banner",
       "name": "Image 3",
       "settings": {
-        "image": "shopify://shop_images/2_2_3bcfcc7e-419a-44f8-ba1a-d89fb2e2f5a8.png",
-        "image_2": "shopify://shop_images/Desktop_3.png",
+        "image": "shopify://shop_images/Mobile_3_10e3b190-9503-479d-a590-2345456875cd.png",
+        "image_2": "shopify://shop_images/Desktop_3_dd1f3ad2-f559-41e5-a5cd-84b3ee61f542.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
