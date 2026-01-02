@@ -463,7 +463,7 @@
           "type": "heading",
           "settings": {
             "heading": "What people say...",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         }
       },
