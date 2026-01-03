@@ -39,7 +39,8 @@
         endif
       -%}
 
-      {%- for media in product.media -%}
+      {% comment %} Jon {% endcomment %}
+      {%- for media in product.media offset: 1 -%}
         {%- liquid
           if section.settings.hide_variants and variant_images contains media.src or variant_images contains media.id
             assign variant_image = true
