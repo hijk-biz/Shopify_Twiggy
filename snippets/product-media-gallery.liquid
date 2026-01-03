@@ -85,7 +85,8 @@
           %}
         </li>
       {%- endif -%}
-      {%- for media in product.media -%}
+      {% comment %} Jon {% endcomment %}
+      {%- for media in product.media offset: 1 -%}
         {% if media_position >= limit
           or media_position >= 1
           and section.settings.hide_variants
