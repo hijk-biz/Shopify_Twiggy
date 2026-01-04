@@ -308,8 +308,8 @@
       "type": "image-banner",
       "name": "Image 1",
       "settings": {
-        "image": "shopify://shop_images/Mobile_1_ba43bd7f-38a7-40e3-b630-a219585ba9ea.png",
-        "image_2": "shopify://shop_images/Desktop_1_3130aa57-772b-48ed-ba83-ad31bafda7a5.png",
+        "image": "shopify://shop_images/Mobile_1_32b0d338-3ab6-412d-be50-3a2412d3f1c2.png",
+        "image_2": "shopify://shop_images/Desktop_1_57bad290-aaad-42f0-a608-de9f497f4dc3.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -326,8 +326,8 @@
       "type": "image-banner",
       "name": "Image 2",
       "settings": {
-        "image": "shopify://shop_images/Mobile_2_e5c72225-ff2c-4f44-835d-ae935b0f7c6e.png",
-        "image_2": "shopify://shop_images/Desktop_2_0245d4d5-bb7e-4584-a6a0-4c5166bcfe64.png",
+        "image": "shopify://shop_images/Mobile_2_059065b9-1457-465d-8ad3-15a396390be5.png",
+        "image_2": "shopify://shop_images/Desktop_2_86f1be14-b194-46cf-89c2-345cf4a449ae.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -347,7 +347,7 @@
           "type": "slide",
           "settings": {
             "autoplay": true,
-            "video": "shopify://files/videos/WebsiteOnly.mov",
+            "video": "shopify://files/videos/woodfall.mov",
             "video_url": "",
             "title": "",
             "subtitle": "",
@@ -427,8 +427,8 @@
       "type": "image-banner",
       "name": "Image 3",
       "settings": {
-        "image": "shopify://shop_images/Mobile_3_6f1c0ecc-9b07-4e9c-801f-6be034d9bc88.png",
-        "image_2": "shopify://shop_images/Desktop_3_730de92a-77f0-467a-8436-a5d0bc34b89a.png",
+        "image": "shopify://shop_images/Mobile_3_325ee06a-6ba4-4ba3-adb4-abdb43dd4b44.png",
+        "image_2": "shopify://shop_images/Desktop_3_cb6bd384-9b0c-4adb-9446-581feba3dbdf.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
