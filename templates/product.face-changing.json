@@ -52,7 +52,7 @@
         "text_9KpCCq": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.short_description.value }}",
+            "text": "A screen-free toy that keeps kids focused, builds real skills, and finally gives parents a break. Grab a card, assemble the blocks to match the face, fastest wins!",
             "text_style": "body"
           }
         },
@@ -308,8 +308,8 @@
       "type": "image-banner",
       "name": "Image 1",
       "settings": {
-        "image": "shopify://shop_images/Mobile_1.png",
-        "image_2": "shopify://shop_images/Desktop_1_4d7cddb0-a544-4daa-b118-d1eb9a7d13b8.png",
+        "image": "shopify://shop_images/Mobile_1_ba43bd7f-38a7-40e3-b630-a219585ba9ea.png",
+        "image_2": "shopify://shop_images/Desktop_1_3130aa57-772b-48ed-ba83-ad31bafda7a5.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -326,8 +326,8 @@
       "type": "image-banner",
       "name": "Image 2",
       "settings": {
-        "image": "shopify://shop_images/Mobile_2.png",
-        "image_2": "shopify://shop_images/Desktop_2_6d1ff86d-a89d-4f9d-8213-ec6516ae91ee.png",
+        "image": "shopify://shop_images/Mobile_2_e5c72225-ff2c-4f44-835d-ae935b0f7c6e.png",
+        "image_2": "shopify://shop_images/Desktop_2_0245d4d5-bb7e-4584-a6a0-4c5166bcfe64.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -347,7 +347,7 @@
           "type": "slide",
           "settings": {
             "autoplay": true,
-            "video": "shopify://files/videos/MoonTiltSquare.mov",
+            "video": "shopify://files/videos/WebsiteOnly.mov",
             "video_url": "",
             "title": "",
             "subtitle": "",
@@ -364,7 +364,7 @@
       "name": "SS - Video Banner",
       "settings": {
         "height": 1200,
-        "height_mobile": 400,
+        "height_mobile": 600,
         "overlay_opacity": 0,
         "interval": 5,
         "image_object_fit": "cover",
@@ -427,8 +427,8 @@
       "type": "image-banner",
       "name": "Image 3",
       "settings": {
-        "image": "shopify://shop_images/Mobile_3_10e3b190-9503-479d-a590-2345456875cd.png",
-        "image_2": "shopify://shop_images/Desktop_3_dd1f3ad2-f559-41e5-a5cd-84b3ee61f542.png",
+        "image": "shopify://shop_images/Mobile_3_6f1c0ecc-9b07-4e9c-801f-6be034d9bc88.png",
+        "image_2": "shopify://shop_images/Desktop_3_730de92a-77f0-467a-8436-a5d0bc34b89a.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -462,7 +462,7 @@
         "heading_PPTYCW": {
           "type": "heading",
           "settings": {
-            "heading": "What people say...",
+            "heading": "What parents say...",
             "heading_size": "h2"
           }
         }
