@@ -31,8 +31,8 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/1_6fed352f-f6a1-4fac-b8e0-16aa76c357be.png",
-        "image_2": "shopify://shop_images/2_c1d9a7a6-dd55-47c3-bc58-8bdfcc0dd2aa.png",
+        "image": "shopify://shop_images/1_90119265-5887-4431-a1ea-7b50bb409cc2.png",
+        "image_2": "shopify://shop_images/2_a1df142a-e41c-479f-b9ec-1f186d437612.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
