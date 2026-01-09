@@ -579,20 +579,6 @@
         "padding_bottom": 0
       }
     },
-    "slideshow_a8bmna": {
-      "type": "slideshow",
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "small",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 3,
-        "image_behavior": "ambient",
-        "show_text_below": false,
-        "accessibility_info": ""
-      }
-    },
     "1765164541b54a93ba": {
       "type": "apps",
       "blocks": {
@@ -659,7 +645,6 @@
     "section_divider_JigWDM",
     "ss_testimonial_12_iRqmDC",
     "section_divider_PbzQpi",
-    "slideshow_a8bmna",
     "1765164541b54a93ba",
     "section_divider_p6JdqG"
   ]

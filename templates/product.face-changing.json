@@ -526,7 +526,7 @@
         "slide_KDmBhk"
       ],
       "custom_css": [
-        "{margin-bottom: 20px}"
+        "{margin-bottom: 20px;}"
       ],
       "name": "SS - Video Banner",
       "settings": {
@@ -823,6 +823,35 @@
         "padding_bottom": 0
       }
     },
+    "1767938270b17beff9": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_wgMb4U": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 30,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": true,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_wgMb4U"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "17566867484716ae8e": {
       "type": "apps",
       "blocks": {
@@ -898,6 +927,7 @@
     "rich_text_yya8a3",
     "ss_testimonial_12_7pqVxe",
     "section_divider_cf7R48",
+    "1767938270b17beff9",
     "17566867484716ae8e",
     "related-products",
     "section_divider_jHhUNE"
