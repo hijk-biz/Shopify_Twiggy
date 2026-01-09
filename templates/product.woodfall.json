@@ -486,7 +486,7 @@
         ".price-item--regular {font-size: 15px !important;}",
         ".price-item--sale {font-size: 20px !important;}",
         ".product__tax {display: none !important;}",
-        ".shopify-payment-button{display: none !important;}"
+        ".shopify-payment-button {display: none !important;}"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
@@ -820,6 +820,35 @@
         "padding_bottom": 0
       }
     },
+    "176793811330bc7dbc": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_h8zLVG": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 30,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": true,
+            "link_alignment": "center",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_h8zLVG"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "17566867484716ae8e": {
       "type": "apps",
       "blocks": {
@@ -895,6 +924,7 @@
     "rich_text_yya8a3",
     "ss_testimonial_12_7pqVxe",
     "section_divider_cf7R48",
+    "176793811330bc7dbc",
     "17566867484716ae8e",
     "related-products",
     "section_divider_jHhUNE"
