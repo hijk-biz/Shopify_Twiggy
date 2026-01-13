@@ -52,7 +52,7 @@
         "text_9KpCCq": {
           "type": "text",
           "settings": {
-            "text": "This wooden block puzzle is designed to grow with your child, offering <strong>9 different puzzles in one compact set</strong>, each one building confidence, creativity, and problem-solving skills. With <strong>chunky, oversized wooden blocks</strong>, it’s perfectly sized for little hands and made for safer, frustration-free play.",
+            "text": "This wooden block puzzle is designed to grow with your child, offering <strong>6</strong> <strong>different puzzles in one compact set</strong>, each one building confidence, creativity, and problem-solving skills. With <strong>chunky, oversized wooden blocks</strong>, it’s perfectly sized for little hands and made for safer, frustration-free play.",
             "text_style": "body"
           }
         },
@@ -427,8 +427,8 @@
       "type": "image-banner",
       "name": "Image 3",
       "settings": {
-        "image": "shopify://shop_images/Mobile_3_325ee06a-6ba4-4ba3-adb4-abdb43dd4b44.png",
-        "image_2": "shopify://shop_images/Desktop_3_cb6bd384-9b0c-4adb-9446-581feba3dbdf.png",
+        "image": "shopify://shop_images/Mobile_3_b1dfc411-51be-47a2-a929-f10f990eb201.png",
+        "image_2": "shopify://shop_images/Desktop_3_f4c3353c-8cd6-4509-8cdc-8877a9e0c52a.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -445,8 +445,8 @@
       "type": "image-banner",
       "name": "Image 4",
       "settings": {
-        "image": "shopify://shop_images/Mobile_3_068f06a9-ebea-42c9-b4c5-c11e2d8bf22f.png",
-        "image_2": "shopify://shop_images/Desktop_3_cb6bd384-9b0c-4adb-9446-581feba3dbdf.png",
+        "image": "shopify://shop_images/Mobile_3_2_8159bc08-1cb0-4d25-a1c7-3cf36e46be69.png",
+        "image_2": "shopify://shop_images/Desktop_4_7e5c161f-d260-44c5-ae51-734c63034712.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -502,89 +502,6 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "ss_video_banner_nYD3AK": {
-      "type": "ss-video-banner",
-      "blocks": {
-        "slide_x8gPeH": {
-          "type": "slide",
-          "settings": {
-            "autoplay": true,
-            "video": "shopify://files/videos/woodfall-pouch.mov",
-            "video_url": "",
-            "title": "",
-            "subtitle": "",
-            "button": "",
-            "button_url": "shopify://collections/all",
-            "second_button": "",
-            "second_button_url": "shopify://collections/all"
-          }
-        }
-      },
-      "block_order": [
-        "slide_x8gPeH"
-      ],
-      "name": "SS - Video Banner",
-      "settings": {
-        "height": 1200,
-        "height_mobile": 600,
-        "overlay_opacity": 0,
-        "interval": 5,
-        "image_object_fit": "cover",
-        "vertical_alignment": "center",
-        "horizontal_alignment": "center",
-        "title_custom": false,
-        "title_font": "josefin_sans_n4",
-        "title_size": 0,
-        "title_size_mobile": 0,
-        "title_height": 50,
-        "subtitle_custom": false,
-        "subtitle_font": "josefin_sans_n4",
-        "subtitle_size": 0,
-        "subtitle_size_mobile": 0,
-        "subtitle_height": 50,
-        "subtitle_mt": 0,
-        "buttons_mt": 0,
-        "buttons_gap": 0,
-        "button_custom": false,
-        "button_font": "josefin_sans_n4",
-        "button_size": 16,
-        "button_size_mobile": 16,
-        "button_height": 120,
-        "button_padding_vertical": 16,
-        "button_padding_vertical_mobile": 16,
-        "button_padding_horizontal": 32,
-        "button_padding_horizontal_mobile": 32,
-        "button_radius": 0,
-        "button_border_thickness": 0,
-        "button_color": "#000000",
-        "button_hover_color": "#ffffff",
-        "button_bg_color": "#ffffff",
-        "button_bg_hover_color": "#000000",
-        "button_border_color": "#000000",
-        "button_border_hover_color": "#000000",
-        "second_button_color": "#000000",
-        "second_button_hover_color": "#ffffff",
-        "second_button_bg_color": "#ffffff",
-        "second_button_bg_hover_color": "#000000",
-        "second_button_border_color": "#000000",
-        "second_button_border_hover_color": "#000000",
-        "title_color": "#ffffff",
-        "subtitle_color": "#ffffff",
-        "overlay_color": "#000000",
-        "background_color": "#535353",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "section_width": 120,
-        "section_radius": 0,
-        "lazy": true
       }
     },
     "section_divider_BLAWgH": {
@@ -919,7 +836,6 @@
     "image_banner_mLRzQr",
     "image_banner_n3KDyW",
     "featured_product_ygzwg8",
-    "ss_video_banner_nYD3AK",
     "section_divider_BLAWgH",
     "rich_text_yya8a3",
     "ss_testimonial_12_7pqVxe",
