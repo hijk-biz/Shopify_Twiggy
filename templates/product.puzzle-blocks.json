@@ -347,7 +347,7 @@
           "type": "slide",
           "settings": {
             "autoplay": true,
-            "video": "shopify://files/videos/woodfall.mov",
+            "video": "shopify://files/videos/Puzzle Blocks 480.mov",
             "video_url": "",
             "title": "",
             "subtitle": "",
@@ -581,38 +581,12 @@
             "text": "<p>{{ product.metafields.custom.testimonial_3_text.value }}</p>",
             "author": "<p><strong>{{ product.metafields.custom.testimonial_3_name.value }}</strong></p>"
           }
-        },
-        "slide_XXBwzH": {
-          "type": "slide",
-          "settings": {
-            "media_style": "image",
-            "image": "{{ product.metafields.custom.testimonial_4_image.value }}",
-            "video_url": "",
-            "controls": false,
-            "stars_count": 5,
-            "text": "<p>{{ product.metafields.custom.testimonial_4_text.value }}</p>",
-            "author": "<p><strong>{{ product.metafields.custom.testimonial_4_name.value }}</strong></p>"
-          }
-        },
-        "slide_FX8e6b": {
-          "type": "slide",
-          "settings": {
-            "media_style": "image",
-            "image": "{{ product.metafields.custom.testimonial_5_image.value }}",
-            "video_url": "",
-            "controls": false,
-            "stars_count": 5,
-            "text": "<p>{{ product.metafields.custom.testimonial_5_text.value }}</p>",
-            "author": "<p><strong>{{ product.metafields.custom.testimonial_5_name.value }}</strong></p>"
-          }
         }
       },
       "block_order": [
         "slide_4DaMka",
         "slide_dmzqdG",
-        "slide_AQEhXE",
-        "slide_XXBwzH",
-        "slide_FX8e6b"
+        "slide_AQEhXE"
       ],
       "custom_css": [
         "{margin-top: -30px;}"
