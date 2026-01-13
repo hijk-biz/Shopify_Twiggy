@@ -52,7 +52,7 @@
         "text_9KpCCq": {
           "type": "text",
           "settings": {
-            "text": "Designed for ages 3–10, this wooden stacking game strengthens hand-eye coordination, patience and spatial thinking. No batteries, no apps, no noise.",
+            "text": "This wooden block puzzle is designed to grow with your child, offering <strong>9 different puzzles in one compact set</strong>, each one building confidence, creativity, and problem-solving skills. With <strong>chunky, oversized wooden blocks</strong>, it’s perfectly sized for little hands and made for safer, frustration-free play.",
             "text_style": "body"
           }
         },
@@ -308,8 +308,8 @@
       "type": "image-banner",
       "name": "Image 1",
       "settings": {
-        "image": "shopify://shop_images/Mobile_1_32b0d338-3ab6-412d-be50-3a2412d3f1c2.png",
-        "image_2": "shopify://shop_images/Desktop_1_57bad290-aaad-42f0-a608-de9f497f4dc3.png",
+        "image": "shopify://shop_images/Mobile_1_61a6708d-9230-45da-94da-797d8a15d062.png",
+        "image_2": "shopify://shop_images/Desktop_1_68d6c899-689d-4a21-91d1-c35aae3f9e02.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -326,8 +326,8 @@
       "type": "image-banner",
       "name": "Image 2",
       "settings": {
-        "image": "shopify://shop_images/Mobile_2_059065b9-1457-465d-8ad3-15a396390be5.png",
-        "image_2": "shopify://shop_images/Desktop_2_86f1be14-b194-46cf-89c2-345cf4a449ae.png",
+        "image": "shopify://shop_images/Mobile_2_e7f4ec47-2acc-4f96-bb75-57f1eb1eb2ad.png",
+        "image_2": "shopify://shop_images/Desktop_2_2b1953ed-2789-4fce-ab9b-75c883ceed9b.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
