@@ -52,7 +52,7 @@
         "text_9KpCCq": {
           "type": "text",
           "settings": {
-            "text": "This wooden block puzzle is designed to grow with your child, offering <strong>6</strong> <strong>different puzzles in one compact set</strong>, each one building confidence, creativity, and problem-solving skills. With <strong>chunky, oversized wooden blocks</strong>, it’s perfectly sized for little hands and made for safer, frustration-free play.",
+            "text": "Helps children <em>see</em>, <em>touch</em> and <em>build</em> numbers and fractions instead of just memorising them. With chunky magnetic pieces that snap into place, kids naturally explore counting, addition, subtraction and fractions, all while playing independently.",
             "text_style": "body"
           }
         },
@@ -308,8 +308,8 @@
       "type": "image-banner",
       "name": "Image 1",
       "settings": {
-        "image": "shopify://shop_images/Mobile_1_61a6708d-9230-45da-94da-797d8a15d062.png",
-        "image_2": "shopify://shop_images/Desktop_1_68d6c899-689d-4a21-91d1-c35aae3f9e02.png",
+        "image": "shopify://shop_images/Mobile_1_042b5e21-a6c5-4b01-8772-93158c09e261.png",
+        "image_2": "shopify://shop_images/Desktop_1_efe55a1e-f7b6-422b-9827-8c7def8ae27d.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -326,8 +326,8 @@
       "type": "image-banner",
       "name": "Image 2",
       "settings": {
-        "image": "shopify://shop_images/Mobile_2_e7f4ec47-2acc-4f96-bb75-57f1eb1eb2ad.png",
-        "image_2": "shopify://shop_images/Desktop_2_2b1953ed-2789-4fce-ab9b-75c883ceed9b.png",
+        "image": "shopify://shop_images/Mobile_2_1ed1b458-34b2-4695-93ba-4fd0f17cffa4.png",
+        "image_2": "shopify://shop_images/Desktop_2_410aee2f-566c-45e3-9a80-b25cb919e8de.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -347,7 +347,7 @@
           "type": "slide",
           "settings": {
             "autoplay": true,
-            "video": "shopify://files/videos/Puzzle Blocks 480.mov",
+            "video": "shopify://files/videos/Fraction Game 480p.mov",
             "video_url": "",
             "title": "",
             "subtitle": "",
@@ -427,8 +427,8 @@
       "type": "image-banner",
       "name": "Image 3",
       "settings": {
-        "image": "shopify://shop_images/Mobile_3_b1dfc411-51be-47a2-a929-f10f990eb201.png",
-        "image_2": "shopify://shop_images/Desktop_3_f4c3353c-8cd6-4509-8cdc-8877a9e0c52a.png",
+        "image": "shopify://shop_images/Mobile_3_12384e62-f10b-4a3b-b5e1-0e71085f0cff.png",
+        "image_2": "shopify://shop_images/Desktop_3_364d533d-4e10-475e-a6da-33e1e24eb406.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -445,8 +445,8 @@
       "type": "image-banner",
       "name": "Image 4",
       "settings": {
-        "image": "shopify://shop_images/Mobile_3_2_8159bc08-1cb0-4d25-a1c7-3cf36e46be69.png",
-        "image_2": "shopify://shop_images/Desktop_4_7e5c161f-d260-44c5-ae51-734c63034712.png",
+        "image": "shopify://shop_images/Mobile_5.png",
+        "image_2": "shopify://shop_images/Desktop_5.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -488,9 +488,72 @@
         ".product__tax {display: none !important;}",
         ".shopify-payment-button {display: none !important;}"
       ],
-      "name": "t:sections.featured-product.presets.name",
+      "name": "Featured Pouch",
       "settings": {
         "product": "twigsy-pouch",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_gDAxLR": {
+      "type": "image-banner",
+      "name": "Image 5",
+      "settings": {
+        "image": "shopify://shop_images/Mobile_4.png",
+        "image_2": "shopify://shop_images/Desktop_4_37fdf2aa-e7ab-4c09-a909-0e3e3fd0e24d.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "featured_product_CkMG4b": {
+      "type": "featured-product",
+      "blocks": {
+        "price_DKpn9Y": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_buttons_YhL8EH": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "price_DKpn9Y",
+        "buy_buttons_YhL8EH"
+      ],
+      "custom_css": [
+        ".product__info-container {margin-bottom: -10px;}",
+        ".product__title {margin-top: 10px; margin-bottom: -10px;}",
+        ".shopify-block {margin-bottom: -10px; font-size: 20px;}",
+        ".button--secondary {background-color: #ffd84d !important; color: #3a3a3a; font-size: 20px !important; letter-spacing: 0px;}",
+        ".price-item--regular {font-size: 15px !important;}",
+        ".price-item--sale {font-size: 20px !important;}",
+        ".product__tax {display: none !important;}",
+        ".shopify-payment-button {display: none !important;}"
+      ],
+      "name": "Featured Pouch",
+      "settings": {
+        "product": "alphabet-letters",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
@@ -810,6 +873,8 @@
     "image_banner_mLRzQr",
     "image_banner_n3KDyW",
     "featured_product_ygzwg8",
+    "image_banner_gDAxLR",
+    "featured_product_CkMG4b",
     "section_divider_BLAWgH",
     "rich_text_yya8a3",
     "ss_testimonial_12_7pqVxe",
