@@ -279,7 +279,7 @@
       ],
       "name": "Collection All",
       "settings": {
-        "collection": "all-but-fraction-game",
+        "collection": "all-but-alphabet-letters",
         "products_to_show": 25,
         "title": "",
         "heading_size": "h2",
