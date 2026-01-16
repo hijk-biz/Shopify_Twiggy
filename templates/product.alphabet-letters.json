@@ -52,7 +52,7 @@
         "text_9KpCCq": {
           "type": "text",
           "settings": {
-            "text": "Helps children <em>see</em>, <em>touch</em> and <em>build</em> numbers and fractions instead of just memorising them. With chunky magnetic pieces that snap into place, kids naturally explore counting, addition, subtraction and fractions, all while playing independently.",
+            "text": "{{ product.metafields.custom.short_description.value }}",
             "text_style": "body"
           }
         },
@@ -308,8 +308,8 @@
       "type": "image-banner",
       "name": "Image 1",
       "settings": {
-        "image": "shopify://shop_images/Mobile_1_042b5e21-a6c5-4b01-8772-93158c09e261.png",
-        "image_2": "shopify://shop_images/Desktop_1_efe55a1e-f7b6-422b-9827-8c7def8ae27d.png",
+        "image": "shopify://shop_images/Mobile_1_ee6dd94b-d44e-4d4b-bbaf-e15e6a6a8b5e.png",
+        "image_2": "shopify://shop_images/Desktop_1_108e71c3-f92a-46d6-8b09-46b79f890a69.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -326,8 +326,8 @@
       "type": "image-banner",
       "name": "Image 2",
       "settings": {
-        "image": "shopify://shop_images/Mobile_2_1ed1b458-34b2-4695-93ba-4fd0f17cffa4.png",
-        "image_2": "shopify://shop_images/Desktop_2_410aee2f-566c-45e3-9a80-b25cb919e8de.png",
+        "image": "shopify://shop_images/Mobile_2_91bdd88a-5a9a-4960-b388-482c26012cb6.png",
+        "image_2": "shopify://shop_images/Desktop_2_d180c453-4f48-4c16-9df3-77896618647b.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -427,8 +427,8 @@
       "type": "image-banner",
       "name": "Image 3",
       "settings": {
-        "image": "shopify://shop_images/Mobile_3_12384e62-f10b-4a3b-b5e1-0e71085f0cff.png",
-        "image_2": "shopify://shop_images/Desktop_3_364d533d-4e10-475e-a6da-33e1e24eb406.png",
+        "image": "shopify://shop_images/Mobile_3_e5d81d88-9918-47ce-8215-a55ecd04108a.png",
+        "image_2": "shopify://shop_images/Desktop_3_cb074b6e-dcfa-43b6-a681-265da108ab09.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -445,8 +445,8 @@
       "type": "image-banner",
       "name": "Image 4",
       "settings": {
-        "image": "shopify://shop_images/Mobile_5.png",
-        "image_2": "shopify://shop_images/Desktop_5.png",
+        "image": "shopify://shop_images/Mobile_5_87056d3f-9dc7-4af0-b417-03c5fa0b2994.png",
+        "image_2": "shopify://shop_images/Desktop_5_e0885d9c-6318-4448-991b-3e6af7b750e8.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -508,8 +508,8 @@
       "type": "image-banner",
       "name": "Image 5",
       "settings": {
-        "image": "shopify://shop_images/Mobile_4.png",
-        "image_2": "shopify://shop_images/Desktop_4_37fdf2aa-e7ab-4c09-a909-0e3e3fd0e24d.png",
+        "image": "shopify://shop_images/Mobile_4_4cf6c855-4428-4280-947a-5dc6067a7240.png",
+        "image_2": "shopify://shop_images/Desktop_4_66636f8e-e724-460c-9455-325c17c56e56.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -553,7 +553,7 @@
       ],
       "name": "Featured Pouch",
       "settings": {
-        "product": "alphabet-letters",
+        "product": "fraction-game",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
