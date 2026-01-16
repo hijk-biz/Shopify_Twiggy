@@ -85,8 +85,8 @@
           %}
         </li>
       {%- endif -%}
-      {% comment %} Jon {% endcomment %}
-      {%- for media in product.media offset: 1 -%}
+      {% comment %} Jon offset: 1 {% endcomment %}  
+      {%- for media in product.media -%}
         {% if media_position >= limit
           or media_position >= 1
           and section.settings.hide_variants
@@ -252,8 +252,8 @@
             </button>
           </li>
         {%- endif -%}
-        {% comment %} Jon {% endcomment %}
-        {%- for media in product.media offset: 1 -%}
+        {% comment %} Jon offset: 1 {% endcomment %}
+        {%- for media in product.media -%}
           {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
             {%- liquid
               capture media_index
