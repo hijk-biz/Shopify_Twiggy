@@ -3596,6 +3596,10 @@ details-disclosure > details {
   }
 }
 
+.shopify-payment-button + .shopify-payment-button {
+  display: none !important;
+}
+
 /*
 .button,
 .shopify-challenge__button,
