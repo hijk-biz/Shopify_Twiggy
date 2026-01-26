@@ -30,6 +30,7 @@
         },
         "announcement_mhKFA3": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "FREE POUCH ORDERS $49+",
             "link": ""
